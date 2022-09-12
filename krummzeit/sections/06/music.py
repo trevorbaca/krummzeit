@@ -67,9 +67,9 @@ def GLOBALS(skips):
 
 
 def OB(voice, accumulator):
-    music = library.make_oboe_trill_rhythm(accumulator.get(1, 8))
+    music = library.make_oboe_trill_rhythm_function(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_oboe_trill_rhythm(accumulator.get(9, 10))
+    music = library.make_oboe_trill_rhythm_function(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
@@ -123,7 +123,7 @@ def CL(voice, accumulator):
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11, 16))
     voice.extend(music)
@@ -189,7 +189,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
@@ -210,7 +210,7 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
@@ -249,7 +249,7 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)

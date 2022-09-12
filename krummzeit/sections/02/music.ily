@@ -13578,7 +13578,7 @@ number.2.Piano.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % AFTER:
     % MARKUP:
@@ -13638,26 +13638,26 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 46]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 47]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13680,14 +13680,14 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 48]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13710,19 +13710,19 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 49]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13745,31 +13745,31 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 50]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 51]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13792,14 +13792,14 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 52]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13822,19 +13822,19 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 53]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13857,26 +13857,26 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 54]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 55]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13899,14 +13899,14 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 56]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13934,12 +13934,12 @@ number.2.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16800,12 +16800,12 @@ number.2.Percussion.Music = {
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 45]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16831,31 +16831,31 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 46]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 47]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16866,19 +16866,19 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 48]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16889,24 +16889,24 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 49]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16917,36 +16917,36 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 50]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 51]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16957,19 +16957,19 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 52]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -16980,24 +16980,24 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 53]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17008,31 +17008,31 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 54]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 55]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17043,19 +17043,19 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 56]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17066,24 +17066,24 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 57]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17094,36 +17094,36 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 58]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 59]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17134,19 +17134,19 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 60]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -17157,12 +17157,12 @@ number.2.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:

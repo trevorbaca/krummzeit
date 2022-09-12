@@ -114,7 +114,7 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
-    music = library.make_incise_attacks(accumulator.get(3, 22))
+    music = library.make_incise_attacks_function(accumulator.get(3, 22))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(23))
     voice.extend(music)

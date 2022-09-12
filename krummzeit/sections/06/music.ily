@@ -2346,9 +2346,9 @@ number.6.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 4/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2391,7 +2391,7 @@ number.6.Oboe.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2412,7 +2412,7 @@ number.6.Oboe.Music = {
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Oboe”)"
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -2436,7 +2436,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!16
         % AFTER:
         % MARKUP:
@@ -2449,7 +2449,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!16
         % AFTER:
         % MARKUP:
@@ -2462,7 +2462,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!16
         % AFTER:
         % MARKUP:
@@ -2475,7 +2475,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2485,27 +2485,27 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''8.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 8/9
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2515,13 +2515,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a'16.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2531,7 +2531,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''8
         % AFTER:
         % MARKUP:
@@ -2539,52 +2539,52 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         fs''!32
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'''32
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 3/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 2]
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''8
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         b''8
         % AFTER:
         % MARKUP:
@@ -2597,7 +2597,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2607,13 +2607,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!8
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2623,7 +2623,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!4.
         % AFTER:
         % MARKUP:
@@ -2641,7 +2641,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!4.
         % AFTER:
         % MARKUP:
@@ -2660,12 +2660,12 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r4
     % AFTER:
     % SPANNER_STOPS:
@@ -2678,25 +2678,25 @@ number.6.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 3]
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 8/9
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         af''!8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''4
         % AFTER:
         % MARKUP:
@@ -2709,7 +2709,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'''16
         % AFTER:
         % MARKUP:
@@ -2720,7 +2720,7 @@ number.6.Oboe.Music = {
           %! baca.trill_spanner()
         \stopTrillSpan
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2730,27 +2730,27 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 4/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2760,11 +2760,11 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2774,7 +2774,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''16
         % AFTER:
         % MARKUP:
@@ -2787,7 +2787,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''16
         % AFTER:
         % MARKUP:
@@ -2800,7 +2800,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ef'''!16
         % AFTER:
         % MARKUP:
@@ -2813,7 +2813,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ef''!8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2823,27 +2823,27 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ef''!8.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 2/3
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2855,7 +2855,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ef''!4.
         % AFTER:
         % MARKUP:
@@ -2868,7 +2868,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf'!2
         % AFTER:
         % MARKUP:
@@ -2886,7 +2886,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''8
         % AFTER:
         % SPANNER_STOPS:
@@ -2895,45 +2895,45 @@ number.6.Oboe.Music = {
           %! baca.trill_spanner()
         \stopTrillSpan
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         fs''!8
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 3/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2943,7 +2943,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''16
         % AFTER:
         % MARKUP:
@@ -2956,7 +2956,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2966,7 +2966,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a''16
         % AFTER:
         % MARKUP:
@@ -2979,7 +2979,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a'8.
         % AFTER:
         % MARKUP:
@@ -2987,55 +2987,55 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         b''8.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 5]
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 8/9
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 6]
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!16.
         % AFTER:
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         af''!8
         % AFTER:
         % MARKUP:
@@ -3048,7 +3048,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs'''!32
         % AFTER:
         % MARKUP:
@@ -3061,27 +3061,27 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs''!32
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 4/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3091,11 +3091,11 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs''!64
         % AFTER:
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3105,7 +3105,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs''!64
         % AFTER:
         % MARKUP:
@@ -3118,7 +3118,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         c''64
         % AFTER:
         % MARKUP:
@@ -3131,7 +3131,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         c''64
         % AFTER:
         % MARKUP:
@@ -3144,7 +3144,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         c''32.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3154,43 +3154,43 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         c'''32.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 8/9
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         b''16.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''8
         % AFTER:
         % MARKUP:
@@ -3198,34 +3198,34 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''32
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         af''!32
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 3/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3237,13 +3237,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''8
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3253,7 +3253,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''8
         % AFTER:
         % MARKUP:
@@ -3266,7 +3266,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g'8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3276,18 +3276,18 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g'8
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         a'4.
         % AFTER:
         % MARKUP:
@@ -3300,7 +3300,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         b'4.
         % AFTER:
         % MARKUP:
@@ -3319,12 +3319,12 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r4.
     % AFTER:
     % SPANNER_STOPS:
@@ -3337,20 +3337,20 @@ number.6.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 8]
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 2/3
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3360,7 +3360,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'4
         % AFTER:
         % MARKUP:
@@ -3378,7 +3378,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'16
         % AFTER:
         % MARKUP:
@@ -3389,7 +3389,7 @@ number.6.Oboe.Music = {
           %! baca.trill_spanner()
         \stopTrillSpan
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3399,29 +3399,29 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 3/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3433,11 +3433,11 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3447,7 +3447,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs''!16
         % AFTER:
         % MARKUP:
@@ -3460,7 +3460,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs''!16
         % AFTER:
         % MARKUP:
@@ -3473,7 +3473,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs'''!16
         % AFTER:
         % MARKUP:
@@ -3486,48 +3486,48 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         cs'''!8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         c'''8.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 8/9
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         b''16.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         g''8
         % AFTER:
         % MARKUP:
@@ -3535,7 +3535,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         fs''!32
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3545,29 +3545,29 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'32
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     \times 3/5
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3579,13 +3579,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3595,7 +3595,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'16
         % AFTER:
         % MARKUP:
@@ -3608,12 +3608,12 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         f'16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         e'''16
         % AFTER:
         % MARKUP:
@@ -3621,7 +3621,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ef'''!8.
         % AFTER:
         % MARKUP:
@@ -3629,24 +3629,24 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         bf''!8.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_oboe_trill_rhythm()
+          %! krummzeit.make_oboe_trill_rhythm_function()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_oboe_trill_rhythm()
+      %! krummzeit.make_oboe_trill_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6801,7 +6801,7 @@ number.6.Piano.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 4
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6864,14 +6864,14 @@ number.6.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 10]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6891,7 +6891,7 @@ number.6.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6911,7 +6911,7 @@ number.6.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % AFTER:
     % COMMANDS:
@@ -10794,12 +10794,12 @@ number.6.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 9]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -10821,7 +10821,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -10830,7 +10830,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -10839,19 +10839,19 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 10]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -10860,12 +10860,12 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -10874,7 +10874,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13190,12 +13190,12 @@ number.6.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 9]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -13217,7 +13217,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -13226,7 +13226,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -13235,19 +13235,19 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 10]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -13256,12 +13256,12 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -13270,7 +13270,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14476,12 +14476,12 @@ number.6.Cello.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14503,7 +14503,7 @@ number.6.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -14512,7 +14512,7 @@ number.6.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14521,19 +14521,19 @@ number.6.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -14542,12 +14542,12 @@ number.6.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -14556,7 +14556,7 @@ number.6.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % AFTER:
     % COMMANDS:

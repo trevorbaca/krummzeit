@@ -7221,7 +7221,7 @@ number.5.Piano.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -7276,7 +7276,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7296,14 +7296,14 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 46]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7323,7 +7323,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7343,14 +7343,14 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 47]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7370,14 +7370,14 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 48]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7412,7 +7412,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7432,7 +7432,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % AFTER:
     % COMMANDS:
@@ -7530,7 +7530,7 @@ number.5.Percussion.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r16
     % AFTER:
     % ARTICULATIONS:
@@ -7565,7 +7565,7 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % AFTER:
     % ARTICULATIONS:
@@ -7587,36 +7587,36 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 2]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 3]
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r2..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     c'16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_attacks()
+      %! krummzeit.make_incise_attacks_function()
     r8.
     % AFTER:
     % COMMANDS:
@@ -11983,12 +11983,12 @@ number.5.Violin.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 8
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12013,19 +12013,19 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 40]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12034,12 +12034,12 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12048,26 +12048,26 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 41]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 42]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12076,7 +12076,7 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -12107,12 +12107,12 @@ number.5.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 45]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12121,7 +12121,7 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -12130,12 +12130,12 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12144,19 +12144,19 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 46]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -12165,12 +12165,12 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -12179,19 +12179,19 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 47]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12200,19 +12200,19 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 48]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12221,7 +12221,7 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -12230,12 +12230,12 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     aqs!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -12244,7 +12244,7 @@ number.5.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % AFTER:
     % COMMANDS:
@@ -14818,7 +14818,7 @@ number.5.Viola.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -14828,7 +14828,7 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14853,19 +14853,19 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 40]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14874,12 +14874,12 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14888,26 +14888,26 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 41]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 42]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14916,7 +14916,7 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14947,12 +14947,12 @@ number.5.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 45]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14961,7 +14961,7 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -14970,12 +14970,12 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -14984,19 +14984,19 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 46]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -15005,12 +15005,12 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -15019,19 +15019,19 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 47]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -15040,19 +15040,19 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 48]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -15061,7 +15061,7 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -15070,12 +15070,12 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     bf,!8
     % AFTER:
     % STEM_TREMOLOS:
@@ -15084,7 +15084,7 @@ number.5.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % AFTER:
     % COMMANDS:
@@ -17324,7 +17324,7 @@ number.5.Cello.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -17334,7 +17334,7 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17359,19 +17359,19 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 40]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17380,12 +17380,12 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17394,26 +17394,26 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 41]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 42]
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17422,7 +17422,7 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_rhythm()
+      %! krummzeit.make_incise_chain_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17453,12 +17453,12 @@ number.5.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 45]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17467,7 +17467,7 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -17476,12 +17476,12 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17490,19 +17490,19 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 46]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -17511,12 +17511,12 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -17525,19 +17525,19 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 47]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17546,19 +17546,19 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 48]
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17567,7 +17567,7 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8.
     % AFTER:
     % STEM_TREMOLOS:
@@ -17576,12 +17576,12 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r4..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     a,8
     % AFTER:
     % STEM_TREMOLOS:
@@ -17590,7 +17590,7 @@ number.5.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_incise_chain_b_rhythm()
+      %! krummzeit.make_incise_chain_b_rhythm_function()
     r8
     % AFTER:
     % COMMANDS:

@@ -124,12 +124,12 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(43, 44))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(45, 48))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(45, 48))
     voice.extend(music)
 
 
 def PERC(voice, accumulator):
-    music = library.make_incise_attacks(accumulator.get(1, 3))
+    music = library.make_incise_attacks_function(accumulator.get(1, 3))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 5))
     voice.extend(music)
@@ -178,11 +178,11 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35, 38))
     voice.extend(music)
-    music = library.make_incise_chain_rhythm(accumulator.get(39, 42))
+    music = library.make_incise_chain_rhythm_function(accumulator.get(39, 42))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(43, 44))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(45, 48))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(45, 48))
     voice.extend(music)
 
 
@@ -210,11 +210,11 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35, 38))
     voice.extend(music)
-    music = library.make_incise_chain_rhythm(accumulator.get(39, 42))
+    music = library.make_incise_chain_rhythm_function(accumulator.get(39, 42))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(43, 44))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(45, 48))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(45, 48))
     voice.extend(music)
 
 
@@ -243,11 +243,11 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35, 38))
     voice.extend(music)
-    music = library.make_incise_chain_rhythm(accumulator.get(39, 42))
+    music = library.make_incise_chain_rhythm_function(accumulator.get(39, 42))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(43, 44))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(accumulator.get(45, 48))
+    music = library.make_incise_chain_b_rhythm_function(accumulator.get(45, 48))
     voice.extend(music)
 
 

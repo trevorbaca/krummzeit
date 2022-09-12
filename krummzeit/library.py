@@ -663,52 +663,6 @@ def make_opening_triplets_function(
     return music
 
 
-def make_piano_harmonics_rhythm(
-    time_signatures, division_ratios, *, force_rest_plts=None, tie_across_divisions=None
-):
-    assert isinstance(division_ratios, list), repr(division_ratios)
-    commands_ = []
-    if force_rest_plts is not None:
-        command = rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.plts(_), force_rest_plts)
-        )
-        commands_.append(command)
-    if isinstance(tie_across_divisions, abjad.Pattern):
-
-        def selector(argument):
-            selection = baca.select.lts(argument)[:-1]
-            selection = abjad.select.get(selection, tie_across_divisions)
-            selection = [
-                baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
-                for _ in selection
-            ]
-            selection = [_ for _ in selection if len(_) == 2]
-            selection = [abjad.select.leaf(_, 0) for _ in selection]
-            return selection
-
-        specifier = rmakers.tie(selector)
-        commands_.append(specifier)
-
-    def preprocessor(divisions):
-        sequences = []
-        ratios = abjad.CyclicTuple(division_ratios)
-        for i, division in enumerate(divisions):
-            ratio = ratios[i]
-            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
-            sequences.append(sequence)
-        return sequences
-
-    rhythm_maker = rmakers.stack(
-        rmakers.note(),
-        *commands_,
-        rmakers.beam(lambda _: baca.select.plts(_)),
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_piano_harmonics_rhythm_function(
     time_signatures, division_ratios, *, force_rest_plts=None, tie_across_divisions=None
 ):
@@ -721,7 +675,7 @@ def make_piano_harmonics_rhythm_function(
         ratio = ratios[i]
         sequence = baca.sequence.ratios([division], [ratio], rounded=True)
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences)
+    divisions = abjad.sequence.flatten(sequences, depth=-1)
     nested_music = rmakers.note_function(divisions, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_plts is not None:
@@ -744,32 +698,6 @@ def make_piano_harmonics_rhythm_function(
     return music
 
 
-def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6, 18)):
-    durations = [(_, 16) for _ in split]
-    commands = []
-    if force_rest_tuplets is not None:
-        command = rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, force_rest_tuplets)
-        )
-        commands.append(command)
-    rhythm_maker = rmakers.stack(
-        rmakers.talea(
-            [2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-            16,
-            extra_counts=[2, 2, 0, 2, 4, 6],
-        ),
-        *commands,
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_pizzicato_rhythm_function(
     time_signatures, *, force_rest_tuplets=None, split=(6, 18)
 ):
@@ -777,10 +705,13 @@ def make_pizzicato_rhythm_function(
     durations = [(_, 16) for _ in split]
     divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     divisions = baca.sequence.split_divisions(divisions, durations, cyclic=True)
+    divisions = abjad.sequence.flatten(divisions)
     nested_music = rmakers.talea_function(
+        divisions,
         [2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         16,
         extra_counts=[2, 2, 0, 2, 4, 6],
+        tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_tuplets is not None:
@@ -788,42 +719,10 @@ def make_pizzicato_rhythm_function(
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest_function(tuplets, tag=tag)
     rmakers.beam_function(voice, tag=tag)
-    rmakers.rewrite_dots_function(voice)
-    rmakers.rewrite_rest_filled_function(voice)
+    rmakers.rewrite_dots_function(voice, tag=tag)
+    rmakers.rewrite_rest_filled_function(voice, tag=tag)
     rmakers.extract_trivial_function(voice)
-    music = abjad.mutat.eject_contents(voice)
-    return music
-
-
-def make_pizzicato_sixteenths(
-    time_signatures, *, extra_counts=None, force_rest_tuplets=None
-):
-    commands = []
-    if force_rest_tuplets is not None:
-        command = rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, force_rest_tuplets)
-        )
-        commands.append(command)
-    rhythm_maker = rmakers.stack(
-        rmakers.talea(
-            [1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
-            16,
-            extra_counts=extra_counts,
-        ),
-        rmakers.force_rest(
-            lambda _: baca.select.leaf_in_each_tuplet(_, 0),
-        ),
-        *commands,
-        rmakers.beam(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.sequence.split_divisions(
-            _, [(6, 16), (18, 16)], cyclic=True
-        ),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
+    music = abjad.mutate.eject_contents(voice)
     return music
 
 
@@ -835,11 +734,13 @@ def make_pizzicato_sixteenths_function(
     divisions = baca.sequence.split_divisions(
         divisions, [(6, 16), (18, 16)], cyclic=True
     )
+    divisions = abjad.sequence.flatten(divisions)
     nested_music = rmakers.talea_function(
         divisions,
         [1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
         16,
         extra_counts=extra_counts,
+        tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     leaves = baca.select.leaf_in_each_tuplet(voice, 0)
@@ -847,98 +748,12 @@ def make_pizzicato_sixteenths_function(
     if force_rest_tuplets is not None:
         tuplets = baca.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
-        rmakers.force_rest_function(tuplets)
+        rmakers.force_rest_function(tuplets, tag=tag)
     rmakers.beam_function(voice, tag=tag)
     rmakers.rewrite_rest_filled_function(voice, tag=tag)
     rmakers.trivialize_function(voice)
     rmakers.extract_trivial_function(voice)
     music = abjad.mutate.eject_contents(voice)
-    return music
-
-
-def make_polyphony_rhythm(
-    time_signatures,
-    *,
-    durations=None,
-    rotation=None,
-    fuse=None,
-    denominators=(),
-    extra_counts=None,
-    final_quarter_notes=None,
-    initial_eighth_notes=None,
-    ties=None,
-):
-    assert isinstance(ties, abjad.Pattern), repr(ties)
-
-    def select(pattern):
-        def selector(argument):
-            selection = abjad.select.tuplets(argument)[:-1]
-            selection = abjad.select.get(selection, pattern)
-            selection = [baca.select.pleaf(_, -1) for _ in selection]
-            return selection
-
-        return selector
-
-    tie_specifier = rmakers.tie(select(ties))
-    eighths = rmakers.stack(
-        rmakers.even_division([8]),
-        rmakers.beam(),
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-    )
-
-    even_divisions = rmakers.stack(
-        rmakers.even_division(denominators, extra_counts=extra_counts),
-        rmakers.beam(),
-        tie_specifier,
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-    )
-
-    quarters = rmakers.stack(
-        rmakers.note(
-            spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2))
-        ),
-        rmakers.untie(),
-        rmakers.beam(lambda _: baca.select.plts(_)),
-    )
-
-    if final_quarter_notes:
-        indices = [-3, -2, -1]
-        rhythm_maker = rmakers.bind(
-            rmakers.assign(even_divisions, ~abjad.index(indices)),
-            rmakers.assign(quarters, abjad.index(indices)),
-        )
-    elif initial_eighth_notes:
-        indices = [0, 1]
-        rhythm_maker = rmakers.bind(
-            rmakers.assign(even_divisions, ~abjad.index(indices)),
-            rmakers.assign(eighths, abjad.index(indices)),
-        )
-    else:
-        rhythm_maker = even_divisions
-
-    def preprocessor(divisions):
-        sequences = []
-        durations_ = durations[:]
-        for i, division in enumerate(divisions):
-            durations__ = abjad.sequence.rotate(durations_, n=i * rotation)
-            sequence = [division]
-            sequence = baca.sequence.split_divisions(
-                sequence,
-                durations__,
-                cyclic=True,
-                remainder_fuse_threshold=fuse,
-            )
-            sequences.append(sequence)
-        return sequences
-
-    rhythm_maker = rmakers.stack(
-        rhythm_maker,
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
     return music
 
 
@@ -958,7 +773,7 @@ def make_polyphony_rhythm_function(
     assert isinstance(ties, abjad.Pattern), repr(ties)
 
     def make_eighths(divisions):
-        nested_music = rmakers.even_division_function(divisions, [8])
+        nested_music = rmakers.even_division_function(divisions, [8], tag=tag)
         voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
         rmakers.beam_function(voice, tag=tag)
         rmakers.trivialize_function(voice)
@@ -967,8 +782,8 @@ def make_polyphony_rhythm_function(
         return music
 
     def make_even_divisions(divisions):
-        nested_music = rmakers.even_division(
-            denominators, extra_counts=extra_counts, tag=tag
+        nested_music = rmakers.even_division_function(
+            divisions, denominators, extra_counts=extra_counts, tag=tag
         )
         voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
         rmakers.beam_function(voice)
@@ -985,6 +800,7 @@ def make_polyphony_rhythm_function(
         nested_music = rmakers.note_function(
             divisions,
             spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
+            tag=tag,
         )
         voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
         rmakers.untie_function(voice)
@@ -1006,7 +822,7 @@ def make_polyphony_rhythm_function(
             remainder_fuse_threshold=fuse,
         )
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences)
+    divisions = abjad.sequence.flatten(sequences, depth=-1)
     music = []
     if final_quarter_notes:
         music_ = make_even_divisions(divisions[:-3])
@@ -1014,11 +830,9 @@ def make_polyphony_rhythm_function(
         music_ = make_quarters(divisions[-3:])
         music.extend(music_)
     elif initial_eighth_notes:
-        music_ = make_eighths(divisions[0])
+        music_ = make_eighths(divisions[:2])
         music.extend(music_)
-        music_ = make_even_divisions(divisions[1:-1])
-        music.extend(music_)
-        music_ = make_eighths(divisions[-1])
+        music_ = make_even_divisions(divisions[2:])
         music.extend(music_)
     else:
         music_ = make_even_divisions(divisions)
@@ -1170,7 +984,7 @@ def make_silver_points_rhythm_function(
         rmakers.force_rest_function(tuplets, tag=tag)
     rmakers.beam_function(voice, tag=tag)
     rmakers.rewrite_dots_function(voice, tag=tag)
-    rmakers.rewrite_rest_filled_function(voice)
+    rmakers.rewrite_rest_filled_function(voice, tag=tag)
     rmakers.extract_trivial_function(voice)
     rmakers.reduce_multiplier_function(voice)
     music = abjad.mutate.eject_contents(voice)

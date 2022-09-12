@@ -8190,7 +8190,7 @@ number.6.Piano.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     r4.
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -8201,11 +8201,11 @@ number.6.Piano.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 7/8
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8215,7 +8215,7 @@ number.6.Piano.Music = {
           %! SPANNER_START
           %! baca._do_spanner_indicator_command(1)
         \ottava 1
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         c''''8
         % AFTER:
         % ARTICULATIONS:
@@ -8236,7 +8236,7 @@ number.6.Piano.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         cs''''!2
         % AFTER:
         % ARTICULATIONS:
@@ -8245,7 +8245,7 @@ number.6.Piano.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         d''''4
         % AFTER:
         % ARTICULATIONS:
@@ -8254,7 +8254,7 @@ number.6.Piano.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         e''''8
         % AFTER:
         % ARTICULATIONS:
@@ -8266,18 +8266,18 @@ number.6.Piano.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 31]
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     e''''8
     % AFTER:
     % START_BEAM:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8287,24 +8287,24 @@ number.6.Piano.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     c''''8
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccatissimo()
     - \staccatissimo
     % STOP_BEAM:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 3/4
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8314,31 +8314,31 @@ number.6.Piano.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         c''''16
         % AFTER:
         % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         af''''!16
         % AFTER:
         % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         d''''4.
         % AFTER:
         % ARTICULATIONS:
@@ -8348,12 +8348,12 @@ number.6.Piano.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8372,22 +8372,22 @@ number.6.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 33]
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     r4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 3/4
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         ef''''!8
         % AFTER:
         % ARTICULATIONS:
@@ -8396,7 +8396,7 @@ number.6.Piano.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         e''''4.
         % AFTER:
         % ARTICULATIONS:
@@ -8408,19 +8408,19 @@ number.6.Piano.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 34]
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     e''''8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     fs''''!4
     % AFTER:
     % ARTICULATIONS:
@@ -8429,7 +8429,7 @@ number.6.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     g''''4
     % AFTER:
     % ARTICULATIONS:

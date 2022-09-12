@@ -5563,7 +5563,7 @@ number.5.Piano.Music = {
     % COMMANDS:
       %! baca.note_head_style_harmonic(1)
     \override NoteHead.style = #'harmonic
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4.
     % AFTER:
     % ARTICULATIONS:
@@ -5587,21 +5587,21 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 9]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % AFTER:
     % SPANNER_STARTS:
@@ -5609,98 +5609,98 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 10]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 11]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 12]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 13]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % COMMANDS:
@@ -6137,7 +6137,7 @@ number.5.Piano.Music = {
     \override DynamicLineSpanner.staff-padding = 3
       %! baca.note_head_style_harmonic(1)
     \override NoteHead.style = #'harmonic
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2.
     % AFTER:
     % ARTICULATIONS:
@@ -6161,7 +6161,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -6172,7 +6172,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 28]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -6181,7 +6181,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6192,7 +6192,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 29]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6201,7 +6201,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6210,7 +6210,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6221,7 +6221,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 30]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2.
     % AFTER:
     % ARTICULATIONS:
@@ -6230,7 +6230,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6241,7 +6241,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 31]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2..
     % AFTER:
     % ARTICULATIONS:
@@ -6250,7 +6250,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -6261,7 +6261,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 32]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6270,7 +6270,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6279,7 +6279,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6290,7 +6290,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 33]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4.
     % AFTER:
     % ARTICULATIONS:
@@ -6299,7 +6299,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6310,7 +6310,7 @@ number.5.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 34]
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'2.
     % AFTER:
     % ARTICULATIONS:
@@ -6319,7 +6319,7 @@ number.5.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_piano_harmonics_rhythm()
+      %! krummzeit.make_piano_harmonics_rhythm_function()
     c'4.
     % AFTER:
     % ARTICULATIONS:

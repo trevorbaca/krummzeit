@@ -53,7 +53,7 @@ def GLOBALS(skips):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(4, 10),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -70,7 +70,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(4, 10),
         durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
         rotation=-1,

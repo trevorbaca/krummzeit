@@ -133,7 +133,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 21))
     voice.extend(music)
-    music = library.make_pizzicato_rhythm(
+    music = library.make_pizzicato_rhythm_function(
         accumulator.get(22),
         split=[6, 18],
     )
@@ -155,7 +155,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 21))
     voice.extend(music)
-    music = library.make_pizzicato_rhythm(
+    music = library.make_pizzicato_rhythm_function(
         accumulator.get(22),
         split=[8, 10],
     )
@@ -177,7 +177,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 21))
     voice.extend(music)
-    music = library.make_pizzicato_rhythm(
+    music = library.make_pizzicato_rhythm_function(
         accumulator.get(22),
         split=[10, 8],
     )

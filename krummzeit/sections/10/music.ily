@@ -8336,18 +8336,18 @@ number.10.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 3/4
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 22]
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         e'''8
         % AFTER:
         % ARTICULATIONS:
@@ -8371,7 +8371,7 @@ number.10.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -8380,7 +8380,7 @@ number.10.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         f'''8
         % AFTER:
         % ARTICULATIONS:
@@ -8392,27 +8392,27 @@ number.10.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 7/8
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         f'''8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         a'''2
         % AFTER:
         % ARTICULATIONS:
@@ -8421,7 +8421,7 @@ number.10.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         c'''4
         % AFTER:
         % ARTICULATIONS:
@@ -8430,7 +8430,7 @@ number.10.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         f'''8
         % AFTER:
         % ARTICULATIONS:
@@ -8440,7 +8440,7 @@ number.10.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9552,16 +9552,16 @@ number.10.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 4/5
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 22]
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         ef'''!8
         % AFTER:
         % ARTICULATIONS:
@@ -9585,7 +9585,7 @@ number.10.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         d'''4
         % AFTER:
         % ARTICULATIONS:
@@ -9594,7 +9594,7 @@ number.10.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         g'''4
         % AFTER:
         % ARTICULATIONS:
@@ -9604,22 +9604,22 @@ number.10.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 5/6
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         ef'''!2
         % AFTER:
         % ARTICULATIONS:
@@ -9628,7 +9628,7 @@ number.10.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         b'''4
         % AFTER:
         % ARTICULATIONS:
@@ -9638,12 +9638,12 @@ number.10.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     ef'''!8
     % AFTER:
     % ARTICULATIONS:
@@ -10753,18 +10753,18 @@ number.10.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 5/6
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 22]
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         f'''8
         % AFTER:
         % ARTICULATIONS:
@@ -10788,7 +10788,7 @@ number.10.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         e'''4
         % AFTER:
         % ARTICULATIONS:
@@ -10797,7 +10797,7 @@ number.10.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -10806,7 +10806,7 @@ number.10.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         bf'''!8
         % AFTER:
         % ARTICULATIONS:
@@ -10818,25 +10818,25 @@ number.10.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     \times 4/5
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         bf'''4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_pizzicato_rhythm()
+          %! krummzeit.make_pizzicato_rhythm_function()
         af'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -10846,12 +10846,12 @@ number.10.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_pizzicato_rhythm()
+      %! krummzeit.make_pizzicato_rhythm_function()
     e'''8
     % AFTER:
     % ARTICULATIONS:

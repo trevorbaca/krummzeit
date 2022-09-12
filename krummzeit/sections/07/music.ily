@@ -1508,7 +1508,7 @@ number.7.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 4]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     a'''4.
     % AFTER:
     % ARTICULATIONS:
@@ -1547,16 +1547,16 @@ number.7.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 5/6
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         af'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -1565,7 +1565,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         c'''4
         % AFTER:
         % ARTICULATIONS:
@@ -1574,29 +1574,29 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         bf'''!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 5]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     bf'''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     af'''!4
     % AFTER:
     % ARTICULATIONS:
@@ -1605,19 +1605,19 @@ number.7.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     d'''16
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     cs'''!16
     % AFTER:
     % ARTICULATIONS:
@@ -1626,7 +1626,7 @@ number.7.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ef'''!16
     % AFTER:
     % ARTICULATIONS:
@@ -1635,32 +1635,32 @@ number.7.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f'''16
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 2/3
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f'''4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d'''4
         % AFTER:
         % ARTICULATIONS:
@@ -1669,29 +1669,29 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         b''4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 6]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     b''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -1700,7 +1700,7 @@ number.7.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     g''4
     % AFTER:
     % ARTICULATIONS:
@@ -1710,28 +1710,28 @@ number.7.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 8/12
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 7]
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a''16
         % AFTER:
         % ARTICULATIONS:
           %! baca.staccato()
         - \staccato
         % START_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1740,7 +1740,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1749,7 +1749,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         af''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1758,7 +1758,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a''16
         % AFTER:
         % ARTICULATIONS:
@@ -1767,7 +1767,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         c'''16
         % AFTER:
         % ARTICULATIONS:
@@ -1776,7 +1776,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1785,7 +1785,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         bf''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1794,7 +1794,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1803,7 +1803,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         g''16
         % AFTER:
         % ARTICULATIONS:
@@ -1812,7 +1812,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a''16
         % AFTER:
         % ARTICULATIONS:
@@ -1821,69 +1821,69 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         b'16
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         ]
         % SPANNER_STARTS:
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     b'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 8]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 8/12
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 9]
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f''16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1892,7 +1892,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1901,7 +1901,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         fs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1910,7 +1910,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1924,7 +1924,7 @@ number.7.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -1938,7 +1938,7 @@ number.7.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -1947,7 +1947,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         g''16
         % AFTER:
         % ARTICULATIONS:
@@ -1956,7 +1956,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -1965,7 +1965,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1974,7 +1974,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1983,25 +1983,25 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
           %! baca.staccato()
         - \staccato
         % STOP_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -2010,45 +2010,45 @@ number.7.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 10]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 10/14
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         g'16
         % AFTER:
         % ARTICULATIONS:
           %! baca.staccato()
         - \staccato
         % START_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2057,7 +2057,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f'16
         % AFTER:
         % ARTICULATIONS:
@@ -2066,7 +2066,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d'16
         % AFTER:
         % ARTICULATIONS:
@@ -2075,7 +2075,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         bf'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2084,7 +2084,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         b'16
         % AFTER:
         % ARTICULATIONS:
@@ -2093,7 +2093,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2102,7 +2102,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2111,7 +2111,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ef'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2120,7 +2120,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         f'16
         % AFTER:
         % ARTICULATIONS:
@@ -2129,7 +2129,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         fs'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2138,7 +2138,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         g'16
         % AFTER:
         % ARTICULATIONS:
@@ -2147,7 +2147,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         b'16
         % AFTER:
         % ARTICULATIONS:
@@ -2156,7 +2156,7 @@ number.7.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         c'16
         % AFTER:
         % ARTICULATIONS:
@@ -2177,13 +2177,13 @@ number.7.Oboe.Music = {
           %! baca.hairpin()
         \ff
         % STOP_BEAM:
-          %! krummzeit.make_polyphony_rhythm()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2466,16 +2466,16 @@ number.7.Clarinet.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 2/3
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 4]
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2517,7 +2517,7 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         as!4
         % AFTER:
         % ARTICULATIONS:
@@ -2526,7 +2526,7 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d'4
         % AFTER:
         % ARTICULATIONS:
@@ -2536,65 +2536,65 @@ number.7.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     gs'!4
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     gs'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 5]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     fs'!8
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     d'8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 2/3
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         gs'!4
         % AFTER:
         % ARTICULATIONS:
@@ -2603,35 +2603,35 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         fs'!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 2/3
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         fs'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         g'4
         % AFTER:
         % ARTICULATIONS:
@@ -2640,7 +2640,7 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         a'4
         % AFTER:
         % ARTICULATIONS:
@@ -2650,14 +2650,14 @@ number.7.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 6]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     as'!4
     % AFTER:
     % ARTICULATIONS:
@@ -2666,7 +2666,7 @@ number.7.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4
     % AFTER:
     % ARTICULATIONS:
@@ -2675,86 +2675,86 @@ number.7.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ds''!8
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     as'!8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 7]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     as'4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 8]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     fs''!4
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     fs''8
     % AFTER:
     % START_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     a''8
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccato()
     - \staccato
     % STOP_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 9]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     b''4
     % AFTER:
     % ARTICULATIONS:
@@ -2764,14 +2764,14 @@ number.7.Clarinet.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     \times 2/3
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         d'''4
         % AFTER:
         % ARTICULATIONS:
@@ -2780,7 +2780,7 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ds'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -2789,41 +2789,41 @@ number.7.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         fs''!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_polyphony_rhythm()
+          %! krummzeit.make_polyphony_rhythm_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     fs''4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 10]
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     gs''!8
     % AFTER:
     % ARTICULATIONS:
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     a''8
     % AFTER:
     % ARTICULATIONS:
@@ -2832,7 +2832,7 @@ number.7.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     f'''8
     % AFTER:
     % ARTICULATIONS:
@@ -2841,19 +2841,19 @@ number.7.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     a''8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.make_polyphony_rhythm()
+      %! rmakers.beam()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_polyphony_rhythm()
+      %! krummzeit.make_polyphony_rhythm_function()
     a''4.
     % AFTER:
     % ARTICULATIONS:

@@ -2968,18 +2968,18 @@ number.5.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 11]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2989,7 +2989,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -3013,13 +3013,13 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3029,13 +3029,13 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3045,29 +3045,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3079,7 +3079,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3089,27 +3089,27 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 6/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3121,7 +3121,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3131,29 +3131,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3165,33 +3165,33 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 15]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3201,7 +3201,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''4
         % AFTER:
         % MARKUP:
@@ -3214,7 +3214,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''16
         % AFTER:
         % MARKUP:
@@ -3227,27 +3227,27 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''!2.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3259,7 +3259,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''1.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3269,29 +3269,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''!1
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/11
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3303,7 +3303,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''2..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3313,7 +3313,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''!8
         % AFTER:
         % MARKUP:
@@ -3326,29 +3326,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''!4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3360,25 +3360,25 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 19]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3388,11 +3388,11 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ef''!8
     % AFTER:
     % START_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3402,7 +3402,7 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ef''!32
     % AFTER:
     % MARKUP:
@@ -3415,13 +3415,13 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ef''!32
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % STOP_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3431,23 +3431,23 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ef''!4.
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3459,7 +3459,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ef''4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3469,27 +3469,27 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3501,7 +3501,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3511,19 +3511,19 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3535,19 +3535,19 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     d''4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 23]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r16.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3557,13 +3557,13 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     d''8
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % START_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3573,13 +3573,13 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     d''32
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % STOP_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3589,21 +3589,21 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     d''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3615,7 +3615,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3625,7 +3625,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         d''2
         % AFTER:
         % MARKUP:
@@ -3634,7 +3634,7 @@ number.5.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3760,18 +3760,18 @@ number.5.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/10
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 35]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3781,7 +3781,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''4
         % AFTER:
         % ARTICULATIONS:
@@ -3805,13 +3805,13 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3821,13 +3821,13 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3837,29 +3837,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 7/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3871,7 +3871,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3881,27 +3881,27 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3913,7 +3913,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3923,29 +3923,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''!4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3957,35 +3957,35 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 39]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3995,7 +3995,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4005,7 +4005,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''16
         % AFTER:
         % MARKUP:
@@ -4018,29 +4018,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4052,7 +4052,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4062,29 +4062,29 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 6/11
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4096,7 +4096,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4106,7 +4106,7 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4116,27 +4116,27 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''!4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4148,25 +4148,25 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 43]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4176,7 +4176,7 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     f''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4186,13 +4186,13 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     f''16
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % START_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4202,13 +4202,13 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     f''16
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % STOP_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4218,21 +4218,21 @@ number.5.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     f''2.
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4244,18 +4244,18 @@ number.5.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         f''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs''!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4531,24 +4531,24 @@ number.5.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 11]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 12]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'''!2.
         % AFTER:
         % ARTICULATIONS:
@@ -4567,30 +4567,30 @@ number.5.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 13]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4600,7 +4600,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'''!4
         % AFTER:
         % MARKUP:
@@ -4613,13 +4613,13 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'''!16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4629,24 +4629,24 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'''!16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''!2.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4905,29 +4905,29 @@ number.5.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 35]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 7/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 36]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''4.
         % AFTER:
         % ARTICULATIONS:
@@ -4946,30 +4946,30 @@ number.5.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/10
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 37]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4979,7 +4979,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''4
         % AFTER:
         % MARKUP:
@@ -4992,13 +4992,13 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5008,13 +5008,13 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5024,27 +5024,27 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''!2.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5056,7 +5056,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5066,29 +5066,29 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''!2
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 6/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5100,67 +5100,67 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''4.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 40]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 41]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5170,7 +5170,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''4
         % AFTER:
         % MARKUP:
@@ -5183,7 +5183,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''16
         % AFTER:
         % MARKUP:
@@ -5196,27 +5196,27 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5228,39 +5228,39 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''!2
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 10/11
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 43]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gs'''2..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5270,7 +5270,7 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5280,27 +5280,27 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5312,18 +5312,18 @@ number.5.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         g'''2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

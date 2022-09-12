@@ -3664,16 +3664,16 @@ number.6.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 12]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3683,7 +3683,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3707,13 +3707,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         c'16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3723,13 +3723,13 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         c'16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -3743,19 +3743,19 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         bqs'!2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3767,7 +3767,7 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     bqs'2.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3777,21 +3777,21 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     bqs'!2
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 5/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3803,7 +3803,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         bqs'1
         % AFTER:
         % SPANNER_STARTS:
@@ -3813,64 +3813,64 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'2.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 15]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 16]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3880,7 +3880,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'4
         % AFTER:
         % MARKUP:
@@ -3893,7 +3893,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'16
         % AFTER:
         % MARKUP:
@@ -3906,25 +3906,25 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'2.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3936,7 +3936,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         a'2.
         % AFTER:
         % SPANNER_STARTS:
@@ -3951,19 +3951,19 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gqs'!2
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3975,7 +3975,7 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     gqs'2..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3985,7 +3985,7 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     gqs'!8
     % AFTER:
     % MARKUP:
@@ -3998,23 +3998,23 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     gqs'!4.
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4026,25 +4026,25 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gqs'2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 20]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4054,11 +4054,11 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     fqs'!8
     % AFTER:
     % START_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4068,7 +4068,7 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     fqs'!32
     % AFTER:
     % MARKUP:
@@ -4085,13 +4085,13 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     eqf'!32
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % STOP_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4101,23 +4101,23 @@ number.6.Oboe.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     eqf'!4.
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4129,7 +4129,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqf'4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4139,7 +4139,7 @@ number.6.Oboe.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqf'!4
         % AFTER:
         % COMMANDS:
@@ -4151,7 +4151,7 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4241,9 +4241,9 @@ number.6.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4256,7 +4256,7 @@ number.6.Oboe.Music = {
         \override DynamicLineSpanner.staff-padding = 4
           %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 2
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % ARTICULATIONS:
@@ -4280,7 +4280,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4291,11 +4291,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4306,25 +4306,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4335,7 +4335,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4346,7 +4346,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4358,20 +4358,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4382,7 +4382,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4393,11 +4393,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4408,25 +4408,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4437,7 +4437,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4448,7 +4448,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4460,22 +4460,22 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 30]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4486,7 +4486,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4497,11 +4497,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4512,25 +4512,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4541,7 +4541,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4552,7 +4552,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4564,20 +4564,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4588,7 +4588,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4599,11 +4599,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4614,25 +4614,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4643,7 +4643,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4654,7 +4654,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4666,20 +4666,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4690,7 +4690,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4701,11 +4701,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4716,27 +4716,27 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 31]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4747,7 +4747,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4758,7 +4758,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4770,20 +4770,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4794,7 +4794,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4805,11 +4805,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4820,25 +4820,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4849,7 +4849,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4860,7 +4860,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4872,20 +4872,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4896,7 +4896,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4907,11 +4907,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -4922,27 +4922,27 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 32]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4953,7 +4953,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -4964,7 +4964,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -4976,20 +4976,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5000,7 +5000,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5011,11 +5011,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -5026,25 +5026,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5055,7 +5055,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5066,7 +5066,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5078,20 +5078,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5102,7 +5102,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5113,11 +5113,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -5128,25 +5128,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5157,7 +5157,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5168,7 +5168,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5180,20 +5180,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5204,7 +5204,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5215,11 +5215,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -5230,25 +5230,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5259,7 +5259,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5270,7 +5270,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5282,20 +5282,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5308,7 +5308,7 @@ number.6.Oboe.Music = {
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 34]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5319,11 +5319,11 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -5334,25 +5334,25 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5363,7 +5363,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5374,7 +5374,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5386,20 +5386,20 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5410,7 +5410,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -5421,7 +5421,7 @@ number.6.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         a''8
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -5438,7 +5438,7 @@ number.6.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5756,7 +5756,7 @@ number.6.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 12]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5769,7 +5769,7 @@ number.6.Clarinet.Music = {
     \override DynamicLineSpanner.staff-padding = 5
       %! baca.tuplet_bracket_staff_padding(1)
     \override TupletBracket.staff-padding = 3
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     a2.
     % AFTER:
     % ARTICULATIONS:
@@ -5788,14 +5788,14 @@ number.6.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 14]
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5805,7 +5805,7 @@ number.6.Clarinet.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     a4
     % AFTER:
     % MARKUP:
@@ -5818,13 +5818,13 @@ number.6.Clarinet.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     a16
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % START_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     [
     % SPANNER_STARTS:
       %! abjad.glissando(7)
@@ -5838,13 +5838,13 @@ number.6.Clarinet.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     gtqs'!16
     % AFTER:
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % STOP_BEAM:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5854,21 +5854,21 @@ number.6.Clarinet.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     gtqs'!2.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5880,7 +5880,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         gtqs'2.
         % AFTER:
         % SPANNER_STARTS:
@@ -5895,29 +5895,29 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'!2
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 6/7
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5929,7 +5929,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5939,27 +5939,27 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'!4.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 4/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5971,35 +5971,35 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 11/20
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 18]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6009,7 +6009,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'!2
         % AFTER:
         % MARKUP:
@@ -6022,7 +6022,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         fs'!8
         % AFTER:
         % SPANNER_STARTS:
@@ -6037,29 +6037,29 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqs'!1.
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 3/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6071,7 +6071,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqs'2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6081,29 +6081,29 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqs'!2
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 10/11
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6115,7 +6115,7 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqs'4..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6125,13 +6125,13 @@ number.6.Clarinet.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         eqs'!16
         % AFTER:
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % START_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         [
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -6140,42 +6140,42 @@ number.6.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         dqs'!8.
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ]
         % SPANNER_STARTS:
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     \times 9/5
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 21]
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         dqs'4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_color_tuplets()
+          %! krummzeit.make_color_tuplets_function()
         r4
         % AFTER:
         % COMMANDS:
@@ -6187,7 +6187,7 @@ number.6.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_color_tuplets()
+      %! krummzeit.make_color_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -11573,9 +11573,9 @@ number.6.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -11594,7 +11594,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % ARTICULATIONS:
@@ -11618,7 +11618,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11635,11 +11635,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -11650,25 +11650,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11685,7 +11685,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11696,7 +11696,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11708,15 +11708,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -11727,7 +11727,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11738,7 +11738,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11755,11 +11755,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -11770,25 +11770,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11805,7 +11805,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11816,7 +11816,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11828,15 +11828,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -11849,7 +11849,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11860,7 +11860,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11877,11 +11877,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -11892,25 +11892,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11927,7 +11927,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11938,7 +11938,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11950,15 +11950,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -11969,7 +11969,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -11980,7 +11980,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -11997,11 +11997,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12012,25 +12012,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12047,7 +12047,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12058,7 +12058,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12070,15 +12070,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12089,7 +12089,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12100,7 +12100,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12117,11 +12117,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12132,27 +12132,27 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 31]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12169,7 +12169,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12180,7 +12180,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12192,15 +12192,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12211,7 +12211,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12222,7 +12222,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12239,11 +12239,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12254,25 +12254,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12289,7 +12289,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12300,7 +12300,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12312,15 +12312,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12331,7 +12331,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12342,7 +12342,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12359,11 +12359,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12374,27 +12374,27 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 32]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12411,7 +12411,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12422,7 +12422,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12434,15 +12434,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12453,7 +12453,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12464,7 +12464,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12481,11 +12481,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12496,25 +12496,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12531,7 +12531,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12542,7 +12542,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12554,15 +12554,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12573,7 +12573,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12584,7 +12584,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12601,11 +12601,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12616,25 +12616,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12651,7 +12651,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12662,7 +12662,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12674,15 +12674,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12693,7 +12693,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12704,7 +12704,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12721,11 +12721,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12736,25 +12736,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12771,7 +12771,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12782,7 +12782,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12794,15 +12794,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12813,7 +12813,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12826,7 +12826,7 @@ number.6.Violin.Music = {
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 34]
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12843,11 +12843,11 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
@@ -12858,25 +12858,25 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12893,7 +12893,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12904,7 +12904,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12916,15 +12916,15 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     \times 2/3
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -12935,7 +12935,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8.
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12946,7 +12946,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         r16
         % AFTER:
         % SPANNER_STOPS:
@@ -12963,7 +12963,7 @@ number.6.Violin.Music = {
           %! baca._do_spanner_indicator_command(1)
           %! baca.trill_spanner()
         \pitchedTrill
-          %! krummzeit.make_detached_triplets()
+          %! krummzeit.make_detached_triplets_function()
         g''8
         % AFTER:
         % TRILL_SPANNER_STARTS:
@@ -12980,7 +12980,7 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_detached_triplets()
+      %! krummzeit.make_detached_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

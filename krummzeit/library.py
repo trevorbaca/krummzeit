@@ -390,6 +390,48 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
     return music
 
 
+def make_color_tuplets_function(
+    time_signatures, *, force_rest_tuplets=None, rotation=0
+):
+    tag = baca.tags.function_name(inspect.currentframe())
+    tuplet_ratios = [
+        (-2, 4, 1, 1, 12),
+        (3, 2),
+        (4, 3),
+        (3, -2),
+        (-3, 4, 1, 12),
+        (3, 2),
+        (7, 1, 3),
+        (3, -2),
+    ]
+    tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
+
+    def selector(argument):
+        selection = abjad.select.tuplets(argument)[:-1]
+        selection = [
+            baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
+            for _ in selection
+        ]
+        selection = [_ for _ in selection if len(_) == 2]
+        selection = [abjad.select.leaf(_, 0) for _ in selection]
+        return selection
+
+    nested_music = rmakers.tuplet_function(time_signatures, tuplet_ratios, tag=tag)
+    voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
+    rmakers.tie_function(selector(voice), tag=tag)
+    if force_rest_tuplets is not None:
+        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.get(tuplets, force_rest_tuplets)
+        rmakers.force_rest_function(tuplets)
+    rmakers.rewrite_dots_function(voice, tag=tag)
+    rmakers.rewrite_rest_filled_function(voice, tag=tag)
+    rmakers.beam_function(voice, tag=tag)
+    rmakers.extract_trivial_function(voice)
+    rmakers.reduce_multiplier_function(voice)
+    music = abjad.mutate.eject_contents(voice)
+    return music
+
+
 def make_detached_triplets(time_signatures):
     def selector(argument):
         result = abjad.select.tuplets(argument)[:-1]
@@ -405,6 +447,26 @@ def make_detached_triplets(time_signatures):
     )
     music = rhythm_maker(time_signatures)
     return music
+
+
+def make_detached_triplets_function(time_signatures):
+    tag = baca.tags.function_name(inspect.currentframe())
+
+    def selector(argument):
+        result = abjad.select.tuplets(argument)[:-1]
+        result = abjad.select.get(result, [0], 2)
+        result = [baca.select.pleaf(_, -1) for _ in result]
+        return result
+
+    divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
+    divisions = baca.sequence.fuse(divisions)
+    divisions = baca.sequence.quarters(divisions)
+    nested_music = rmakers.tuplet_function(
+        divisions, [(3, -1, 2), (1, -1, 3, -1)], tag=tag
+    )
+    pleaves = selector(nested_music)
+    rmakers.tie_function(pleaves, tag=tag)
+    return nested_music
 
 
 def make_empty_score():

@@ -73,11 +73,11 @@ def OB(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
-    music = library.make_color_tuplets(accumulator.get(12, 21))
+    music = library.make_color_tuplets_function(accumulator.get(12, 21))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(22, 28))
     voice.extend(music)
-    music = library.make_detached_triplets(accumulator.get(29, 34))
+    music = library.make_detached_triplets_function(accumulator.get(29, 34))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)
@@ -88,7 +88,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
-    music = library.make_color_tuplets(
+    music = library.make_color_tuplets_function(
         accumulator.get(12, 21),
         force_rest_tuplets=[0],
         rotation=2,
@@ -201,7 +201,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 28))
     voice.extend(music)
-    music = library.make_detached_triplets(accumulator.get(29, 34))
+    music = library.make_detached_triplets_function(accumulator.get(29, 34))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)

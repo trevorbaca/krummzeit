@@ -170,11 +170,11 @@ def PF(voice, accumulator):
 
 
 def PERC(voice, accumulator):
-    music = library.make_sponge_rhythm(accumulator.get(1, 3))
+    music = library.make_sponge_rhythm_function(accumulator.get(1, 3))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 22))
     voice.extend(music)
-    music = library.make_sponge_rhythm(accumulator.get(23, 38))
+    music = library.make_sponge_rhythm_function(accumulator.get(23, 38))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(39, 44))
     voice.extend(music)

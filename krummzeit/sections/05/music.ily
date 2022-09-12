@@ -7650,18 +7650,18 @@ number.5.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 9/17
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 6]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7687,7 +7687,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -7696,7 +7696,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7705,7 +7705,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % ARTICULATIONS:
@@ -7720,24 +7720,24 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 9/13
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 7]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2..
         % AFTER:
         % SPANNER_STARTS:
@@ -7745,7 +7745,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7754,7 +7754,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -7769,14 +7769,14 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 8]
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'2
     % AFTER:
     % SPANNER_STARTS:
@@ -7788,7 +7788,7 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'8
     % AFTER:
     % SPANNER_STARTS:
@@ -7801,18 +7801,18 @@ number.5.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 7/8
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 9]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -7820,7 +7820,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7829,7 +7829,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'4.
         % AFTER:
         % ARTICULATIONS:
@@ -7844,24 +7844,24 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 5/7
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 10]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % SPANNER_STARTS:
@@ -7873,7 +7873,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -7881,7 +7881,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7890,7 +7890,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7904,7 +7904,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -7917,14 +7917,14 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 11]
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -7932,7 +7932,7 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'4.
     % AFTER:
     % ARTICULATIONS:
@@ -7947,18 +7947,18 @@ number.5.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 3/4
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 12]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -7966,7 +7966,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2..
         % AFTER:
         % ARTICULATIONS:
@@ -7981,24 +7981,24 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 3/5
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 13]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -8006,7 +8006,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -8015,7 +8015,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -8029,7 +8029,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -8042,14 +8042,14 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 14]
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -8057,7 +8057,7 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'4.
     % AFTER:
     % ARTICULATIONS:
@@ -8073,7 +8073,7 @@ number.5.Percussion.Music = {
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 15]
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'8
     % AFTER:
     % SPANNER_STARTS:
@@ -8081,7 +8081,7 @@ number.5.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'2..
     % AFTER:
     % ARTICULATIONS:
@@ -8096,18 +8096,18 @@ number.5.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 3/4
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 16]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'8
         % AFTER:
         % SPANNER_STARTS:
@@ -8115,7 +8115,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -8124,7 +8124,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -8133,7 +8133,7 @@ number.5.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'4.
         % AFTER:
         % ARTICULATIONS:
@@ -8143,7 +8143,7 @@ number.5.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

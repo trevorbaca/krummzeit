@@ -515,40 +515,14 @@ def make_glissando_rhythm_function(
     return music
 
 
-def make_hypermeter_tuplets(
-    time_signatures, tuplet_ratios, counts=(2, 3, 1), *, force_rest_tuplets=None
-):
-    commands = []
-    if force_rest_tuplets is not None:
-        command = rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, force_rest_tuplets)
-        )
-        commands.append(command)
-    rhythm_maker = rmakers.stack(
-        rmakers.tuplet(tuplet_ratios, denominator=abjad.Duration(1, 4)),
-        *commands,
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.force_augmentation(),
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-        rmakers.reduce_multiplier(),
-        preprocessor=lambda _: baca.sequence.fuse(_, counts, cyclic=True),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_hypermeter_tuplets_function(
     time_signatures, tuplet_ratios, counts=(2, 3, 1), *, force_rest_tuplets=None
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     divisions = baca.sequence.fuse(divisions, counts, cyclic=True)
-    nested_music = rmakers.tuplet(
-        divisions, tuplet_ratios, denominator=abjad.Duration(1, 4)
+    nested_music = rmakers.tuplet_function(
+        divisions, tuplet_ratios, denominator=abjad.Duration(1, 4), tag=tag
     )
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_tuplets is not None:
@@ -558,10 +532,10 @@ def make_hypermeter_tuplets_function(
     rmakers.beam_function(voice, tag=tag)
     rmakers.rewrite_dots_function(voice, tag=tag)
     rmakers.rewrite_rest_filled_function(voice, tag=tag)
-    rmakers.force_augmentation_function(voice, tag=tag)
-    rmakers.trivialize_function(voice, tag=tag)
+    rmakers.force_augmentation_function(voice)
+    rmakers.trivialize_function(voice)
     rmakers.extract_trivial_function(voice)
-    rmakers.reduce_multiplier_function(voice, tag=tag)
+    rmakers.reduce_multiplier_function(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 

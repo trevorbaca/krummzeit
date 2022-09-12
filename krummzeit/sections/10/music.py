@@ -59,7 +59,7 @@ def GLOBALS(skips, rests):
 
 
 def OB(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1),
         [(3, 2)],
     )
@@ -69,7 +69,7 @@ def OB(voice, accumulator):
 
 
 def CL(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1),
         [(1, 4)],
     )
@@ -83,7 +83,7 @@ def CL(voice, accumulator):
 
 
 def PF(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1),
         [(3, 4)],
     )
@@ -107,7 +107,7 @@ def PF(voice, accumulator):
 
 
 def PERC(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1),
         [(1, 6)],
     )

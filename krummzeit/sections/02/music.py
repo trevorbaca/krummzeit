@@ -238,17 +238,17 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1, 11),
         [(1, 4)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(12, 22),
         [(1, 4)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(23, 28),
         [(1, 3, 1)],
     )
@@ -283,17 +283,17 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1, 11),
         [(3, 2)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(12, 22),
         [(3, 2)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(23, 28),
         [(4, 1, 2)],
     )

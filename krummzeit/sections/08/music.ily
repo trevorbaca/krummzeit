@@ -2432,7 +2432,7 @@ number.8.Oboe.Music = {
     % COMMANDS:
       %! baca.tuplet_bracket_staff_padding(1)
     \override TupletBracket.staff-padding = 3
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     c'1.
     % AFTER:
     % ARTICULATIONS:
@@ -2451,7 +2451,7 @@ number.8.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     c'1
     % AFTER:
     % MARKUP:
@@ -2460,18 +2460,18 @@ number.8.Oboe.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 7/5
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 20]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c'4
         % AFTER:
         % MARKUP:
@@ -2479,7 +2479,7 @@ number.8.Oboe.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c'1
         % AFTER:
         % MARKUP:
@@ -2488,29 +2488,29 @@ number.8.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 7/5
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 22]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c'2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c'2
         % AFTER:
         % MARKUP:
@@ -2522,7 +2522,7 @@ number.8.Oboe.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3194,11 +3194,11 @@ number.8.Clarinet.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 5/4
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3211,7 +3211,7 @@ number.8.Clarinet.Music = {
         \override DynamicLineSpanner.staff-padding = 10
           %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 6
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d2
         % AFTER:
         % ARTICULATIONS:
@@ -3251,7 +3251,7 @@ number.8.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d1.
         % AFTER:
         % MARKUP:
@@ -3260,24 +3260,24 @@ number.8.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 21/16
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 20]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d1
         % AFTER:
         % MARKUP:
@@ -3285,7 +3285,7 @@ number.8.Clarinet.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d1
         % AFTER:
         % MARKUP:
@@ -3294,29 +3294,29 @@ number.8.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 7/4
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 23]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         d4.
         % AFTER:
         % ARTICULATIONS:
@@ -3345,7 +3345,7 @@ number.8.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6537,18 +6537,18 @@ number.8.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 11/10
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 21]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c'1.
         % AFTER:
         % STEM_TREMOLOS:
@@ -6560,7 +6560,7 @@ number.8.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         df'!1
         % AFTER:
         % STEM_TREMOLOS:
@@ -6570,7 +6570,7 @@ number.8.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6815,11 +6815,11 @@ number.8.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 13/10
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6832,7 +6832,7 @@ number.8.Viola.Music = {
         \override DynamicLineSpanner.staff-padding = 7
           %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 4
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         g2
         % AFTER:
         % ARTICULATIONS:
@@ -6874,7 +6874,7 @@ number.8.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         ftqs!\breve
         % AFTER:
         % ARTICULATIONS:
@@ -6901,7 +6901,7 @@ number.8.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7415,18 +7415,18 @@ number.8.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 7/5
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 20]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         bqs,!4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7438,7 +7438,7 @@ number.8.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c1
         % AFTER:
         % STEM_TREMOLOS:
@@ -7448,24 +7448,24 @@ number.8.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 7/5
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 22]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         bqs,!4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7474,7 +7474,7 @@ number.8.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c1
         % AFTER:
         % STEM_TREMOLOS:
@@ -7484,7 +7484,7 @@ number.8.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7701,11 +7701,11 @@ number.8.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 13/10
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7718,7 +7718,7 @@ number.8.Cello.Music = {
         \override DynamicLineSpanner.staff-padding = 7
           %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 4
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         b,1.
         % AFTER:
         % ARTICULATIONS:
@@ -7760,7 +7760,7 @@ number.8.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         atqs,!1
         % AFTER:
         % ARTICULATIONS:
@@ -7787,7 +7787,7 @@ number.8.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8408,18 +8408,18 @@ number.8.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     \times 11/10
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 21]
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         b,,2
         % AFTER:
         % STEM_TREMOLOS:
@@ -8431,7 +8431,7 @@ number.8.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets_function()
         c,\breve
         % AFTER:
         % STEM_TREMOLOS:
@@ -8441,7 +8441,7 @@ number.8.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

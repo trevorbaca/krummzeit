@@ -142,7 +142,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 6))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 19),
         [(3, 4)],
         [2, 2, 2, 2, 2, 3],
@@ -161,7 +161,7 @@ def VA(voice, accumulator):
         32,
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 19),
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
@@ -181,7 +181,7 @@ def VC(voice, accumulator):
         32,
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 19),
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],

@@ -133,7 +133,7 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 5))
     voice.extend(music)
-    music = library.make_sponge_rhythm(accumulator.get(6, 16))
+    music = library.make_sponge_rhythm_function(accumulator.get(6, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 24))
     voice.extend(music)

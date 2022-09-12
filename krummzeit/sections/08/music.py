@@ -77,7 +77,7 @@ def OB(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13, 17))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(18, 23),
         [(3, 2), (1, 4)],
         [2],
@@ -104,7 +104,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13, 17))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(18, 23),
         [(1, 3), (1, 1)],
     )
@@ -172,7 +172,7 @@ def VN(voice, accumulator):
         tie_across_divisions=abjad.index([1], 2),
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(21, 23),
         [(3, 2)],
         [3],
@@ -190,7 +190,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 10))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(11, 12),
         [(1, 4)],
     )
@@ -203,7 +203,7 @@ def VA(voice, accumulator):
         tie_across_divisions=abjad.index([1], 2),
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(20, 23),
         [(1, 4)],
         [2],
@@ -231,7 +231,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(11, 12),
         [(3, 2)],
     )
@@ -244,7 +244,7 @@ def VC(voice, accumulator):
         tie_across_divisions=abjad.index([1], 2),
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(21, 23),
         [(1, 4)],
         [3],

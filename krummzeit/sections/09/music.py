@@ -50,7 +50,7 @@ def OB(voice, accumulator):
     voice.extend(music)
     music = baca.make_repeat_tied_notes_function(accumulator.get(4, 7))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(8, 10),
         [(3, 2)],
         counts=[2],
@@ -65,7 +65,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 7))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(8, 10),
         [(1, 4)],
         counts=[2],
@@ -78,7 +78,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 8))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(9, 10),
         [(3, 4)],
         counts=[2],
@@ -96,7 +96,7 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 8))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(9, 10),
         [(1, 6)],
         counts=[2],
@@ -105,7 +105,7 @@ def PERC(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1, 2),
         [(3, 2)],
         [2],
@@ -119,7 +119,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 10),
         [(3, 2)],
         [2],
@@ -128,7 +128,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1, 2),
         [(1, 4)],
         [2],
@@ -142,7 +142,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 10),
         [(1, 4)],
         [2],
@@ -151,7 +151,7 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(1, 2),
         [(2, 3)],
         [2],
@@ -165,7 +165,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets(
+    music = library.make_hypermeter_tuplets_function(
         accumulator.get(7, 10),
         [(2, 3)],
         [2],

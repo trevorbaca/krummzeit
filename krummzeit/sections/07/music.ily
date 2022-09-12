@@ -4590,7 +4590,7 @@ number.7.Percussion.Music = {
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 19]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4616,7 +4616,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4625,7 +4625,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4634,7 +4634,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4643,7 +4643,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4652,7 +4652,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4661,7 +4661,7 @@ number.7.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:

@@ -110,11 +110,11 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 8))
     voice.extend(music)
-    music = baca.make_tied_notes(accumulator.get(9, 12))
+    music = baca.make_tied_notes_function(accumulator.get(9, 12))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = baca.make_tied_notes(accumulator.get(14, 16))
+    music = baca.make_tied_notes_function(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)
@@ -125,7 +125,9 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 13))
     voice.extend(music)
-    music = baca.make_repeated_duration_notes(accumulator.get(14, 19), [(1, 4)])
+    music = baca.make_repeated_duration_notes_function(
+        accumulator.get(14, 19), [(1, 4)]
+    )
     voice.extend(music)
 
 

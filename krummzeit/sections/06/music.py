@@ -84,7 +84,9 @@ def OB(voice, accumulator):
 
 
 def CL(voice, accumulator):
-    music = baca.make_repeated_duration_notes(accumulator.get(1, 10), [(16, 4)])
+    music = baca.make_repeated_duration_notes_function(
+        accumulator.get(1, 10), [(16, 4)]
+    )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)

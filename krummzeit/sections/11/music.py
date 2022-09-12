@@ -80,7 +80,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_closing_pizzicato_rhythm(
+    music = library.make_closing_pizzicato_rhythm_function(
         accumulator.get(1, 4),
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
         extra_counts=[3, 3, 2, 3, 5, 7],

@@ -56,11 +56,11 @@ def GLOBALS(skips):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 10))
     voice.extend(music)
-    music = library.make_color_tuplets(accumulator.get(11, 24))
+    music = library.make_color_tuplets_function(accumulator.get(11, 24))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(25, 34))
     voice.extend(music)
-    music = library.make_color_tuplets(accumulator.get(35, 44))
+    music = library.make_color_tuplets_function(accumulator.get(35, 44))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(45, 48))
     voice.extend(music)
@@ -69,7 +69,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 10))
     voice.extend(music)
-    music = library.make_color_tuplets(
+    music = library.make_color_tuplets_function(
         accumulator.get(11, 13),
         force_rest_tuplets=[0],
         rotation=2,
@@ -77,7 +77,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(14, 34))
     voice.extend(music)
-    music = library.make_color_tuplets(
+    music = library.make_color_tuplets_function(
         accumulator.get(35, 44),
         force_rest_tuplets=[0],
         rotation=2,

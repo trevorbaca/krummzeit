@@ -917,24 +917,6 @@ def make_silver_points_rhythm_function(
     return music
 
 
-def make_single_cluster_piano_rhythm(time_signatures):
-    rhythm_maker = rmakers.stack(
-        rmakers.incised(
-            fill_with_rests=True,
-            prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
-            prefix_counts=[3, 1, 1, 3],
-            suffix_talea=[0, 0, 1, -3, 0],
-            suffix_counts=[1, 1, 2, 1],
-            talea_denominator=16,
-        ),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_single_cluster_piano_rhythm_function(time_signatures):
     tag = baca.tags.function_name(inspect.currentframe())
     nested_music = rmakers.incised_function(
@@ -951,24 +933,6 @@ def make_single_cluster_piano_rhythm_function(time_signatures):
     rmakers.beam_function(voice, tag=tag)
     rmakers.extract_trivial_function(voice)
     music = abjad.mutate.eject_contents(voice)
-    return music
-
-
-def make_single_division_tuplets(time_signatures, ratios):
-    def selector(argument):
-        selection = abjad.select.tuplets(argument)[:-1]
-        return [baca.select.pleaf(_, -1) for _ in selection]
-
-    rhythm_maker = rmakers.stack(
-        rmakers.tuplet(ratios),
-        rmakers.tie(selector),
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.force_augmentation(),
-        rmakers.reduce_multiplier(),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
     return music
 
 
@@ -1001,35 +965,6 @@ def make_sponge_rhythm_function(time_signatures):
     return music
 
 
-def make_white_rhythm(
-    time_signatures, durations=None, remainder=abjad.LEFT, do_not_burnish=None
-):
-    force_rest = []
-    if not do_not_burnish:
-        command = rmakers.force_rest(lambda _: abjad.select.leaf(_, 0))
-        force_rest.append(command)
-
-    def preprocessor(divisions):
-        divisions = baca.sequence.fuse(divisions)
-        divisions = baca.sequence.split_divisions(
-            divisions,
-            durations,
-            cyclic=True,
-            remainder=remainder,
-        )
-        return divisions
-
-    rhythm_maker = rmakers.stack(
-        rmakers.note(),
-        *force_rest,
-        rmakers.beam(lambda _: baca.select.plts(_)),
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_white_rhythm_function(
     time_signatures, durations=None, remainder=abjad.LEFT, do_not_burnish=None
 ):
@@ -1042,11 +977,12 @@ def make_white_rhythm_function(
         cyclic=True,
         remainder=remainder,
     )
+    divisions = abjad.sequence.flatten(divisions, depth=-1)
     nested_music = rmakers.note_function(divisions, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if not do_not_burnish:
         leaf = abjad.select.leaf(voice, 0)
-        rmakers.force_rest_function(leaf)
+        rmakers.force_rest_function(leaf, tag=tag)
     plts = baca.select.plts(voice)
     rmakers.beam_function(plts, tag=tag)
     music = abjad.mutate.eject_contents(voice)

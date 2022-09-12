@@ -106,7 +106,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(14, 24))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(25, 26),
         [(1, 2), (2, 1)],
     )
@@ -116,7 +116,7 @@ def PF(voice, accumulator):
         [(2, 1), (2, 1), (1, 1, 1)],
     )
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(35, 42),
         [(1, 2), (2, 1)],
         force_rest_tuplets=([2], 7),
@@ -137,14 +137,14 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 24))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(25, 26),
         [(2, 1), (1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(27, 34))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(35, 42),
         [(2, 1), (1, 2)],
         force_rest_tuplets=([5], 7),
@@ -155,7 +155,7 @@ def PERC(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_right_remainder_quarters(accumulator.get(1, 13))
+    music = library.make_right_remainder_quarters_function(accumulator.get(1, 13))
     voice.extend(music)
     music = library.make_glissando_rhythm_function(
         accumulator.get(14, 16),
@@ -187,7 +187,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_right_remainder_quarters(accumulator.get(1, 7))
+    music = library.make_right_remainder_quarters_function(accumulator.get(1, 7))
     voice.extend(music)
     music = library.make_glissando_rhythm_function(
         accumulator.get(8, 10),
@@ -219,7 +219,7 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_right_remainder_quarters(accumulator.get(1, 13))
+    music = library.make_right_remainder_quarters_function(accumulator.get(1, 13))
     voice.extend(music)
     music = library.make_glissando_rhythm_function(
         accumulator.get(14, 16),

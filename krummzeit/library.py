@@ -840,43 +840,14 @@ def make_polyphony_rhythm_function(
     return music
 
 
-def make_prolated_quarters(time_signatures, extra_counts):
-    rhythm_maker = rmakers.stack(
-        rmakers.even_division([4], extra_counts=extra_counts),
-        rmakers.beam(),
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_prolated_quarters_function(time_signatures, extra_counts):
     tag = baca.tags.function_name(inspect.currentframe())
-    nested_music = rmakers.even_division(
-        time_signatures, [4], extra_counts=extra_counts
+    nested_music = rmakers.even_division_function(
+        time_signatures, [4], extra_counts=extra_counts, tag=tag
     )
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     rmakers.beam_function(voice, tag=tag)
     music = abjad.mutate.eject_contents(voice)
-    return music
-
-
-def make_rest_delimited_repeated_duration_notes(time_signatures, duration, denominator):
-    def preprocessor(divisions):
-        result = baca.sequence.fuse(divisions)
-        result = baca.sequence.split_divisions(result, [duration], cyclic=True)
-        return result
-
-    rhythm_maker = rmakers.stack(
-        rmakers.incised(
-            suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
-        ),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
     return music
 
 
@@ -887,8 +858,13 @@ def make_rest_delimited_repeated_duration_notes_function(
     divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     divisions = baca.sequence.fuse(divisions)
     divisions = baca.sequence.split_divisions(divisions, [duration], cyclic=True)
+    divisions = abjad.sequence.flatten(divisions, depth=-1)
     nested_music = rmakers.incised_function(
-        divisions, suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
+        divisions,
+        suffix_talea=[-1],
+        suffix_counts=[1],
+        talea_denominator=denominator,
+        tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     rmakers.beam_function(voice, tag=tag)
@@ -897,66 +873,16 @@ def make_rest_delimited_repeated_duration_notes_function(
     return music
 
 
-def make_right_remainder_quarters(time_signatures):
-    def preprocessor(divisions):
-        return [baca.sequence.quarters([_]) for _ in divisions]
-
-    rhythm_maker = rmakers.stack(
-        rmakers.note(),
-        rmakers.beam(lambda _: baca.select.plts(_)),
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
-    return music
-
-
 def make_right_remainder_quarters_function(time_signatures):
     tag = baca.tags.function_name(inspect.currentframe())
     divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
-    divisions = [baca.sequence.quarters([divisions]) for _ in divisions]
+    divisions = [baca.sequence.quarters([_]) for _ in divisions]
+    divisions = abjad.sequence.flatten(divisions, depth=-1)
     nested_music = rmakers.note_function(divisions, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     plts = baca.select.plts(voice)
     rmakers.beam_function(plts, tag=tag)
     music = abjad.mutate.eject_contents(voice)
-    return music
-
-
-def make_silver_points_rhythm(
-    time_signatures,
-    ratios,
-    *,
-    force_rest_tuplets=None,
-    tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)],
-):
-    def preprocessor(divisions):
-        sequences = []
-        ratios_ = abjad.CyclicTuple(ratios)
-        for i, division in enumerate(divisions):
-            ratio = ratios_[i]
-            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
-            sequences.append(sequence)
-        return sequences
-
-    commands = []
-    if force_rest_tuplets is not None:
-        command = rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, force_rest_tuplets)
-        )
-        commands.append(command)
-    rhythm_maker = rmakers.stack(
-        rmakers.tuplet(tuplet_ratios),
-        *commands,
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.extract_trivial(),
-        rmakers.reduce_multiplier(),
-        preprocessor=preprocessor,
-        tag=baca.tags.function_name(inspect.currentframe()),
-    )
-    music = rhythm_maker(time_signatures)
     return music
 
 

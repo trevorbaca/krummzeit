@@ -138,54 +138,54 @@ def CL(voice, accumulator):
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 13))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(14),
         [(1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(15))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(16),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(18),
         [(1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(19))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(20),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 27))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(28),
         [(1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(30),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(31))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(32, 33),
         [(1, 2)],
     )
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(34, 35),
         [(2, 1)],
     )
@@ -197,28 +197,28 @@ def PF(voice, accumulator):
 def PERC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 13))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(14),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(15))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(16),
         [(1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(18),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(19))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(20),
         [(1, 2)],
     )
@@ -227,21 +227,21 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(26, 27))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(28),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(30),
         [(1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(31))
     voice.extend(music)
-    music = library.make_silver_points_rhythm(
+    music = library.make_silver_points_rhythm_function(
         accumulator.get(32, 33),
         [(2, 1)],
     )

@@ -23427,11 +23427,11 @@ number.2.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/8
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23467,7 +23467,7 @@ number.2.Viola.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b'4
         % AFTER:
         % ARTICULATIONS:
@@ -23485,7 +23485,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23498,7 +23498,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23511,7 +23511,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23525,24 +23525,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 6/5
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 40]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23555,7 +23555,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b'4
         % AFTER:
         % ARTICULATIONS:
@@ -23568,7 +23568,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23581,7 +23581,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23599,7 +23599,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23609,17 +23609,17 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/9
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23631,7 +23631,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23644,7 +23644,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23657,7 +23657,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23670,7 +23670,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         a'4
         % AFTER:
         % ARTICULATIONS:
@@ -23683,7 +23683,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23696,7 +23696,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23709,7 +23709,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f'4
         % AFTER:
         % ARTICULATIONS:
@@ -23722,7 +23722,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -23735,7 +23735,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         a'4
         % AFTER:
         % ARTICULATIONS:
@@ -23749,24 +23749,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/5
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 42]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23779,7 +23779,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23792,7 +23792,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf!4
         % AFTER:
         % ARTICULATIONS:
@@ -23810,7 +23810,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23824,7 +23824,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23838,24 +23838,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 3/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 43]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g'4
         % AFTER:
         % ARTICULATIONS:
@@ -23868,7 +23868,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -23881,7 +23881,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         d'4
         % AFTER:
         % ARTICULATIONS:
@@ -23894,7 +23894,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f4
         % AFTER:
         % ARTICULATIONS:
@@ -23908,24 +23908,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 11/8
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 44]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs'!4
         % AFTER:
         % ARTICULATIONS:
@@ -23938,7 +23938,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f4
         % AFTER:
         % ARTICULATIONS:
@@ -23951,7 +23951,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g4
         % AFTER:
         % ARTICULATIONS:
@@ -23964,7 +23964,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf!4
         % AFTER:
         % ARTICULATIONS:
@@ -23978,24 +23978,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 5/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 45]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -24008,7 +24008,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -24022,24 +24022,24 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 4/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 46]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef!4
         % AFTER:
         % ARTICULATIONS:
@@ -24052,7 +24052,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -24065,7 +24065,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef!4
         % AFTER:
         % ARTICULATIONS:
@@ -24083,7 +24083,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -24093,15 +24093,15 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 2/3
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24113,7 +24113,7 @@ number.2.Viola.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -24126,7 +24126,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e4
         % AFTER:
         % ARTICULATIONS:
@@ -24139,7 +24139,7 @@ number.2.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef!4
         % AFTER:
         % ARTICULATIONS:
@@ -24149,7 +24149,7 @@ number.2.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26526,18 +26526,18 @@ number.2.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 39]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b'4
         % AFTER:
         % ARTICULATIONS:
@@ -26550,7 +26550,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         d'4
         % AFTER:
         % ARTICULATIONS:
@@ -26564,24 +26564,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 6/8
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 40]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f'4
         % AFTER:
         % ARTICULATIONS:
@@ -26594,7 +26594,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         d'4
         % AFTER:
         % ARTICULATIONS:
@@ -26607,7 +26607,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -26620,7 +26620,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef'!4
         % AFTER:
         % ARTICULATIONS:
@@ -26633,7 +26633,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f'4
         % AFTER:
         % ARTICULATIONS:
@@ -26646,7 +26646,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef'!4
         % AFTER:
         % ARTICULATIONS:
@@ -26659,7 +26659,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b'4
         % AFTER:
         % ARTICULATIONS:
@@ -26672,7 +26672,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e'4
         % AFTER:
         % ARTICULATIONS:
@@ -26686,24 +26686,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/5
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 41]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g'4
         % AFTER:
         % ARTICULATIONS:
@@ -26716,7 +26716,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -26729,7 +26729,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f'4
         % AFTER:
         % ARTICULATIONS:
@@ -26742,7 +26742,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g'4
         % AFTER:
         % ARTICULATIONS:
@@ -26755,7 +26755,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf!4
         % AFTER:
         % ARTICULATIONS:
@@ -26769,24 +26769,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/8
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 42]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef'!4
         % AFTER:
         % ARTICULATIONS:
@@ -26799,7 +26799,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -26812,7 +26812,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f'4
         % AFTER:
         % ARTICULATIONS:
@@ -26825,7 +26825,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -26838,7 +26838,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -26851,7 +26851,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef'!4
         % AFTER:
         % ARTICULATIONS:
@@ -26864,7 +26864,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -26877,7 +26877,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -26891,24 +26891,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 3/2
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 43]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -26921,7 +26921,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g4
         % AFTER:
         % ARTICULATIONS:
@@ -26935,24 +26935,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 11/14
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 44]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -26965,7 +26965,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -26978,7 +26978,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -26991,7 +26991,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf!4
         % AFTER:
         % ARTICULATIONS:
@@ -27004,7 +27004,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f4
         % AFTER:
         % ARTICULATIONS:
@@ -27022,7 +27022,7 @@ number.2.Cello.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -27036,7 +27036,7 @@ number.2.Cello.Music = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -27050,17 +27050,17 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 5/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27096,7 +27096,7 @@ number.2.Cello.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -27114,7 +27114,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -27128,22 +27128,22 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 4/5
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 46]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b4
         % AFTER:
         % ARTICULATIONS:
@@ -27156,7 +27156,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         a4
         % AFTER:
         % ARTICULATIONS:
@@ -27169,7 +27169,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         c4
         % AFTER:
         % ARTICULATIONS:
@@ -27182,7 +27182,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         d4
         % AFTER:
         % ARTICULATIONS:
@@ -27195,7 +27195,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e4
         % AFTER:
         % ARTICULATIONS:
@@ -27209,24 +27209,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 2/2
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 47]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g4
         % AFTER:
         % ARTICULATIONS:
@@ -27239,7 +27239,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e4
         % AFTER:
         % ARTICULATIONS:
@@ -27253,24 +27253,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/9
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 48]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b,4
         % AFTER:
         % ARTICULATIONS:
@@ -27283,7 +27283,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e4
         % AFTER:
         % ARTICULATIONS:
@@ -27296,7 +27296,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af!4
         % AFTER:
         % ARTICULATIONS:
@@ -27309,7 +27309,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         g4
         % AFTER:
         % ARTICULATIONS:
@@ -27322,7 +27322,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         c4
         % AFTER:
         % ARTICULATIONS:
@@ -27335,7 +27335,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         bf,!4
         % AFTER:
         % ARTICULATIONS:
@@ -27348,7 +27348,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         fs!4
         % AFTER:
         % ARTICULATIONS:
@@ -27361,7 +27361,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f,4
         % AFTER:
         % ARTICULATIONS:
@@ -27374,7 +27374,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         e,4
         % AFTER:
         % ARTICULATIONS:
@@ -27388,24 +27388,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 4/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 49]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af,!4
         % AFTER:
         % ARTICULATIONS:
@@ -27418,7 +27418,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f,4
         % AFTER:
         % ARTICULATIONS:
@@ -27431,7 +27431,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b,4
         % AFTER:
         % ARTICULATIONS:
@@ -27444,7 +27444,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         a,4
         % AFTER:
         % ARTICULATIONS:
@@ -27458,24 +27458,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/8
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 50]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         af,!4
         % AFTER:
         % ARTICULATIONS:
@@ -27488,7 +27488,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         ef,!4
         % AFTER:
         % ARTICULATIONS:
@@ -27501,7 +27501,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b,4
         % AFTER:
         % ARTICULATIONS:
@@ -27514,7 +27514,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         f,4
         % AFTER:
         % ARTICULATIONS:
@@ -27528,24 +27528,24 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     \times 7/4
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 51]
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         b,4
         % AFTER:
         % ARTICULATIONS:
@@ -27558,7 +27558,7 @@ number.2.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_prolated_quarters()
+          %! krummzeit.make_prolated_quarters_function()
         a,4
         % AFTER:
         % ARTICULATIONS:
@@ -27568,7 +27568,7 @@ number.2.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_prolated_quarters()
+      %! krummzeit.make_prolated_quarters_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

@@ -65,7 +65,7 @@ def OB(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(9, 12),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -92,7 +92,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 8))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(9, 12),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -116,7 +116,7 @@ def CL(voice, accumulator):
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(5, 11),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -128,7 +128,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 13))
     voice.extend(music)
-    music = library.make_piano_harmonics_rhythm(
+    music = library.make_piano_harmonics_rhythm_function(
         accumulator.get(14, 20),
         [(2, 1), (2, 1), (1, 1, 1)],
         force_rest_plts=([5, 6], 7),
@@ -154,7 +154,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_polyphony_rhythm(
+    music = library.make_polyphony_rhythm_function(
         accumulator.get(5, 12),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,

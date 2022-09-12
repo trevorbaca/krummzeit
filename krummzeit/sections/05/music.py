@@ -90,14 +90,14 @@ def CL(voice, accumulator):
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 7))
     voice.extend(music)
-    music = library.make_piano_harmonics_rhythm(
+    music = library.make_piano_harmonics_rhythm_function(
         accumulator.get(8, 10),
         [(2, 1), (2, 1), (1, 1, 1)],
         force_rest_plts=([5, 6], 7),
         tie_across_divisions=abjad.index([1], 2),
     )
     voice.extend(music)
-    music = library.make_piano_harmonics_rhythm(
+    music = library.make_piano_harmonics_rhythm_function(
         accumulator.get(11, 13),
         [(2, 1), (2, 1), (1, 1, 1)],
         force_rest_plts=[0],
@@ -111,7 +111,7 @@ def PF(voice, accumulator):
         [(1, 2), (2, 1)],
     )
     voice.extend(music)
-    music = library.make_piano_harmonics_rhythm(
+    music = library.make_piano_harmonics_rhythm_function(
         accumulator.get(27, 34),
         [(2, 1), (2, 1), (1, 1, 1)],
     )

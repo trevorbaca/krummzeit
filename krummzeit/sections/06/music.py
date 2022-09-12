@@ -145,14 +145,14 @@ def PF(voice, accumulator):
         32,
     )
     voice.extend(music)
-    music = library.make_pizzicato_rhythm(
+    music = library.make_pizzicato_rhythm_function(
         accumulator.get(30, 31),
         force_rest_tuplets=([0, 4, 5], 6),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(32))
     voice.extend(music)
-    music = library.make_pizzicato_rhythm(
+    music = library.make_pizzicato_rhythm_function(
         accumulator.get(33, 34),
         force_rest_tuplets=([0, 4, 5], 6),
     )

@@ -74,7 +74,7 @@ def CL(voice, accumulator):
 
 
 def PF(voice, accumulator):
-    music = library.make_opening_triplets(accumulator.get(1, 6))
+    music = library.make_opening_triplets_function(accumulator.get(1, 6))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 8))
     voice.extend(music)
@@ -111,7 +111,7 @@ def VN(voice, accumulator):
         [2],
     )
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(3, 5),
         [(1, 2), (2, 1), (1, 1, 1)],
         tie_across_divisions=abjad.index([1], 2),
@@ -134,7 +134,7 @@ def VA(voice, accumulator):
         [2],
     )
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(3, 5),
         [(2, 1), (1, 1, 1), (1, 2)],
         tie_across_divisions=abjad.index([1], 2),
@@ -157,7 +157,7 @@ def VC(voice, accumulator):
         [2],
     )
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(3, 5),
         [(1, 1, 1), (1, 2), (2, 1)],
         tie_across_divisions=abjad.index([1], 2),

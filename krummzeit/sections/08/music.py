@@ -166,7 +166,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(14, 20),
         [(1, 2), (2, 1), (1, 1, 1)],
         tie_across_divisions=abjad.index([1], 2),
@@ -183,7 +183,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_fused_expanse(
+    music = library.make_fused_expanse_function(
         accumulator.get(1, 7),
         [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
     )
@@ -197,7 +197,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(14, 19),
         [(2, 1), (1, 1, 1), (1, 2)],
         tie_across_divisions=abjad.index([1], 2),
@@ -214,7 +214,7 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_fused_expanse(
+    music = library.make_fused_expanse_function(
         accumulator.get(1, 9),
         [
             (3, 4),
@@ -238,7 +238,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(14, 20),
         [(1, 1, 1), (1, 2), (2, 1)],
         tie_across_divisions=abjad.index([1], 2),

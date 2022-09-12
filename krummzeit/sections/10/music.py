@@ -90,14 +90,14 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
-    music = library.make_opening_triplets(
+    music = library.make_opening_triplets_function(
         accumulator.get(3, 4),
         force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 7))
     voice.extend(music)
-    music = library.make_opening_triplets(
+    music = library.make_opening_triplets_function(
         accumulator.get(8, 22),
         force_rest_tuplets=[0],
     )
@@ -121,7 +121,7 @@ def PERC(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_opening_triplets(
+    music = library.make_opening_triplets_function(
         accumulator.get(1, 3),
         force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,
@@ -143,7 +143,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_opening_triplets(
+    music = library.make_opening_triplets_function(
         accumulator.get(1, 3),
         force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,
@@ -165,7 +165,7 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_opening_triplets(
+    music = library.make_opening_triplets_function(
         accumulator.get(1, 3),
         force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,

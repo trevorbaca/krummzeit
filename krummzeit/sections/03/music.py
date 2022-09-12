@@ -259,7 +259,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29, 35))
     voice.extend(music)
-    music = library.make_fused_expanse(
+    music = library.make_fused_expanse_function(
         accumulator.get(36, 42),
         [(3, 2), (1, 1), (2, 1)],
     )
@@ -306,7 +306,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(24, 31))
     voice.extend(music)
-    music = library.make_fused_expanse(
+    music = library.make_fused_expanse_function(
         accumulator.get(32, 42),
         [(1, 1), (2, 1), (3, 2)],
     )
@@ -353,7 +353,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(24, 31))
     voice.extend(music)
-    music = library.make_fused_expanse(
+    music = library.make_fused_expanse_function(
         accumulator.get(32, 42),
         [(2, 1), (3, 2), (1, 1)],
     )

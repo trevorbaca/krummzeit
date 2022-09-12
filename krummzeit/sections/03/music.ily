@@ -10039,7 +10039,7 @@ number.3.Violin.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     ftqs!1.
     % AFTER:
     % ARTICULATIONS:
@@ -10083,7 +10083,7 @@ number.3.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     g1
     % AFTER:
     % SPANNER_STARTS:
@@ -10093,7 +10093,7 @@ number.3.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     ftqs!\breve
     % AFTER:
     % SPANNER_STARTS:
@@ -10103,7 +10103,7 @@ number.3.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     g1.
     % AFTER:
     % SPANNER_STARTS:
@@ -10113,7 +10113,7 @@ number.3.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     ftqs!2
     % AFTER:
     % ARTICULATIONS:
@@ -11156,7 +11156,7 @@ number.3.Viola.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 5
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     btqs,!1
     % AFTER:
     % ARTICULATIONS:
@@ -11200,7 +11200,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     c\breve
     % AFTER:
     % SPANNER_STARTS:
@@ -11210,7 +11210,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     bqs,!1.
     % AFTER:
     % SPANNER_STARTS:
@@ -11220,7 +11220,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     cqs!1
     % AFTER:
     % SPANNER_STARTS:
@@ -11230,7 +11230,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     btqs,!\breve
     % AFTER:
     % SPANNER_STARTS:
@@ -11240,7 +11240,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     c1.
     % AFTER:
     % SPANNER_STARTS:
@@ -11252,7 +11252,7 @@ number.3.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 41]
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     bqs,!1
     % AFTER:
     % SPANNER_STARTS:
@@ -11262,7 +11262,7 @@ number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     cqs!2.
     % AFTER:
     % ARTICULATIONS:
@@ -12293,7 +12293,7 @@ number.3.Cello.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 5
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     b,,\breve
     % AFTER:
     % ARTICULATIONS:
@@ -12337,7 +12337,7 @@ number.3.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     cqs,!1.
     % AFTER:
     % SPANNER_STARTS:
@@ -12347,7 +12347,7 @@ number.3.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     bqf,,!1
     % AFTER:
     % SPANNER_STARTS:
@@ -12357,7 +12357,7 @@ number.3.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     c,\breve
     % AFTER:
     % SPANNER_STARTS:
@@ -12369,7 +12369,7 @@ number.3.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 38]
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     b,,1.
     % AFTER:
     % SPANNER_STARTS:
@@ -12379,7 +12379,7 @@ number.3.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     cqs,!1
     % AFTER:
     % SPANNER_STARTS:
@@ -12391,7 +12391,7 @@ number.3.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 41]
-      %! krummzeit.make_fused_expanse()
+      %! krummzeit.make_fused_expanse_function()
     bqf,,!1..
     % AFTER:
     % ARTICULATIONS:

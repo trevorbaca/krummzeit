@@ -72,7 +72,7 @@ def GLOBALS(skips, rests):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)
@@ -81,12 +81,12 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14, 19))
+    music = baca.make_repeat_tied_notes(accumulator.get(14, 19))
     voice.extend(music)
 
 
 def PF(voice, accumulator):
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(1),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
@@ -94,7 +94,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(3),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
@@ -102,7 +102,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(5),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
@@ -110,31 +110,29 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 8))
     voice.extend(music)
-    music = baca.make_tied_notes_function(accumulator.get(9, 12))
+    music = baca.make_tied_notes(accumulator.get(9, 12))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = baca.make_tied_notes_function(accumulator.get(14, 16))
+    music = baca.make_tied_notes(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)
 
 
 def PERC(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 9))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 9))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 13))
     voice.extend(music)
-    music = baca.make_repeated_duration_notes_function(
-        accumulator.get(14, 19), [(1, 4)]
-    )
+    music = baca.make_repeated_duration_notes(accumulator.get(14, 19), [(1, 4)])
     voice.extend(music)
 
 
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(5),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
@@ -142,7 +140,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(7),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
@@ -150,7 +148,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(9),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
@@ -158,7 +156,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)
@@ -167,7 +165,7 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(5),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
@@ -175,7 +173,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(7),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
@@ -183,7 +181,7 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(9),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
@@ -191,11 +189,11 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(11, 12))
+    music = baca.make_repeat_tied_notes(accumulator.get(11, 12))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)
@@ -204,7 +202,7 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(5),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
@@ -212,7 +210,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(7),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
@@ -220,7 +218,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(9),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
@@ -228,7 +226,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(14, 16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 19))
     voice.extend(music)

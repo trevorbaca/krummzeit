@@ -53,7 +53,7 @@ def GLOBALS(skips):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(4, 10),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -70,7 +70,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(4, 10),
         durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
         rotation=-1,
@@ -82,28 +82,28 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11, 15))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(16, 22))
+    music = baca.make_repeat_tied_notes(accumulator.get(16, 22))
     voice.extend(music)
 
 
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(4, 9),
         [(1, 2), (2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 12))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(13),
         [(1, 2), (2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(14, 15))
     voice.extend(music)
-    music = library.make_silver_points_rhythm_function(
+    music = library.make_silver_points_rhythm(
         accumulator.get(16),
         [(1, 2), (2, 1)],
     )
@@ -115,23 +115,23 @@ def PF(voice, accumulator):
 def PERC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(2, 3))
+    music = baca.make_repeat_tied_notes(accumulator.get(2, 3))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(5, 9))
+    music = baca.make_repeat_tied_notes(accumulator.get(5, 9))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 12))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(13))
+    music = baca.make_repeat_tied_notes(accumulator.get(13))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(14, 15))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(16))
+    music = baca.make_repeat_tied_notes(accumulator.get(16))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 18))
     voice.extend(music)
-    music = baca.make_repeated_duration_notes_function(
+    music = baca.make_repeated_duration_notes(
         accumulator.get(19, 22),
         [(1, 2)],
         do_not_rewrite_meter=True,
@@ -142,7 +142,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 6))
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(7, 19),
         [(3, 4)],
         [2, 2, 2, 2, 2, 3],
@@ -155,13 +155,13 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = library.make_rest_delimited_repeated_duration_notes_function(
+    music = library.make_rest_delimited_repeated_duration_notes(
         accumulator.get(2, 6),
         (1, 4),
         32,
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(7, 19),
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
@@ -175,13 +175,13 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = library.make_rest_delimited_repeated_duration_notes_function(
+    music = library.make_rest_delimited_repeated_duration_notes(
         accumulator.get(2, 6),
         (1, 4),
         32,
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(7, 19),
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],

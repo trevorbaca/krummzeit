@@ -44,31 +44,31 @@ def GLOBALS(skips):
 
 
 def OB(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 40))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 40))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(41, 48))
     voice.extend(music)
 
 
 def CL(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 40))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 40))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(41, 48))
     voice.extend(music)
 
 
 def PF(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get())
+    music = baca.make_repeat_tied_notes(accumulator.get())
     voice.extend(music)
 
 
 def PERC(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get())
+    music = baca.make_repeat_tied_notes(accumulator.get())
     voice.extend(music)
 
 
 def VN(voice, accumulator):
-    music = library.make_closing_pizzicato_rhythm_function(
+    music = library.make_closing_pizzicato_rhythm(
         accumulator.get(1, 40),
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts=[2, 2, 1, 2, 4, 6],
@@ -80,7 +80,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_closing_pizzicato_rhythm_function(
+    music = library.make_closing_pizzicato_rhythm(
         accumulator.get(1, 4),
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
         extra_counts=[3, 3, 2, 3, 5, 7],
@@ -92,9 +92,9 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 24))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 24))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(25, 48))
+    music = baca.make_repeat_tied_notes(accumulator.get(25, 48))
     voice.extend(music)
 
 

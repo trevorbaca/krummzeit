@@ -71,7 +71,7 @@ def GLOBALS(skips):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 22))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(23, 37),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -88,7 +88,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(5, 11),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -100,7 +100,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 15))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(16, 36),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -112,7 +112,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(37, 68))
     voice.extend(music)
-    music = library.make_white_rhythm_function(
+    music = library.make_white_rhythm(
         accumulator.get(69, 75),
         [(3, 8)],
     )
@@ -120,7 +120,7 @@ def CL(voice, accumulator):
 
 
 def PF(voice, accumulator):
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(1, 11),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -130,7 +130,7 @@ def PF(voice, accumulator):
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(12, 22),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -141,7 +141,7 @@ def PF(voice, accumulator):
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(23, 31),
         durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
         rotation=-1,
@@ -154,15 +154,15 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(32, 44))
     voice.extend(music)
-    music = library.make_incise_attacks_function(accumulator.get(45, 56))
+    music = library.make_incise_attacks(accumulator.get(45, 56))
     voice.extend(music)
-    music = library.make_pizzicato_sixteenths_function(
+    music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
         force_rest_tuplets=([1, 5], 7),
         extra_counts=[4, 0, 2, 4, 6],
     )
     voice.extend(music)
-    music = library.make_pizzicato_sixteenths_function(
+    music = library.make_pizzicato_sixteenths(
         accumulator.get(72, 75),
         extra_counts=[4, 0, 2, 4, 6],
     )
@@ -170,15 +170,15 @@ def PF(voice, accumulator):
 
 
 def PERC(voice, accumulator):
-    music = library.make_sponge_rhythm_function(accumulator.get(1, 3))
+    music = library.make_sponge_rhythm(accumulator.get(1, 3))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 22))
     voice.extend(music)
-    music = library.make_sponge_rhythm_function(accumulator.get(23, 38))
+    music = library.make_sponge_rhythm(accumulator.get(23, 38))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(39, 44))
     voice.extend(music)
-    music = library.make_incise_attacks_function(accumulator.get(45, 60))
+    music = library.make_incise_attacks(accumulator.get(45, 60))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(61, 75))
     voice.extend(music)
@@ -187,7 +187,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 7))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(8, 11),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -199,7 +199,7 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 18))
     voice.extend(music)
-    music = library.make_polyphony_rhythm_function(
+    music = library.make_polyphony_rhythm(
         accumulator.get(19, 37),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
@@ -209,46 +209,46 @@ def VN(voice, accumulator):
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-    music = library.make_white_rhythm_function(
+    music = library.make_white_rhythm(
         accumulator.get(38),
         durations=[(3, 8)],
         do_not_burnish=True,
     )
     voice.extend(music)
-    music = library.make_white_rhythm_function(
+    music = library.make_white_rhythm(
         accumulator.get(39, 53),
         durations=[(2, 8)],
         remainder=abjad.RIGHT,
         do_not_burnish=True,
     )
     voice.extend(music)
-    music = library.make_pizzicato_rhythm_function(
+    music = library.make_pizzicato_rhythm(
         accumulator.get(54, 56),
         force_rest_tuplets=([3, 4, 5], 6),
     )
     voice.extend(music)
-    music = library.make_pizzicato_sixteenths_function(
+    music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
         force_rest_tuplets=([3, 6], 8),
         extra_counts=[6, 0, 4, 4, 0, 2],
     )
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(72, 75))
+    music = baca.make_repeat_tied_notes(accumulator.get(72, 75))
     voice.extend(music)
 
 
 def VA(voice, accumulator):
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(1, 11),
         [(1, 4)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(12, 22),
         [(1, 4)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(23, 28),
         [(1, 3, 1)],
     )
@@ -256,23 +256,23 @@ def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(29, 33))
     voice.extend(music)
 
-    music = library.make_white_rhythm_function(
+    music = library.make_white_rhythm(
         accumulator.get(34, 38),
         durations=[(3, 8)],
     )
     voice.extend(music)
-    music = library.make_prolated_quarters_function(
+    music = library.make_prolated_quarters(
         accumulator.get(39, 47),
         [1, -1, 2, -2],
     )
     voice.extend(music)
-    music = library.make_pizzicato_rhythm_function(
+    music = library.make_pizzicato_rhythm(
         accumulator.get(48, 56),
         force_rest_tuplets=([1, 2, 3], 6),
     )
     voice.extend(music)
-    rmakers.untie_function(abjad.select.leaf(music, -12))
-    music = library.make_pizzicato_sixteenths_function(
+    rmakers.untie(abjad.select.leaf(music, -12))
+    music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
         force_rest_tuplets=([2, 3], 6),
         extra_counts=[2, 2, 0, 2, 4, 6],
@@ -283,39 +283,39 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(1, 11),
         [(3, 2)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(12, 22),
         [(3, 2)],
     )
     voice.extend(music)
-    music = library.make_hypermeter_tuplets_function(
+    music = library.make_hypermeter_tuplets(
         accumulator.get(23, 28),
         [(4, 1, 2)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29, 33))
     voice.extend(music)
-    music = library.make_white_rhythm_function(
+    music = library.make_white_rhythm(
         accumulator.get(34, 38),
         durations=[(3, 8)],
     )
     voice.extend(music)
-    music = library.make_prolated_quarters_function(
+    music = library.make_prolated_quarters(
         accumulator.get(39, 51),
         [-1, 2, -2, 1],
     )
     voice.extend(music)
-    music = library.make_pizzicato_rhythm_function(
+    music = library.make_pizzicato_rhythm(
         accumulator.get(52, 56),
         force_rest_tuplets=([2, 3, 4], 6),
     )
     voice.extend(music)
-    music = library.make_pizzicato_sixteenths_function(
+    music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
         force_rest_tuplets=([0, 2], 7),
         extra_counts=[4, 4, 2, 0, 2, 4],

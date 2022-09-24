@@ -61,7 +61,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(4, 5))
+    music = baca.make_repeat_tied_notes(accumulator.get(4, 5))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 13))
     voice.extend(music)
@@ -70,11 +70,11 @@ def CL(voice, accumulator):
 def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = library.make_single_cluster_piano_rhythm_function(accumulator.get(4))
+    music = library.make_single_cluster_piano_rhythm(accumulator.get(4))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 6))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
+    music = baca.make_repeat_tied_notes(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 13))
     voice.extend(music)
@@ -83,23 +83,23 @@ def PF(voice, accumulator):
 def PERC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 6))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
+    music = baca.make_repeat_tied_notes(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 9))
     voice.extend(music)
-    music = library.make_sponge_rhythm_function(accumulator.get(10, 13))
+    music = library.make_sponge_rhythm(accumulator.get(10, 13))
     voice.extend(music)
 
 
 def VN(voice, accumulator):
-    music = library.make_opening_triplets_function(
+    music = library.make_opening_triplets(
         accumulator.get(1, 2),
         force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(3))
     voice.extend(music)
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(4, 8),
         [(2, 1), (2, 1), (1, 1, 1)],
         force_rest_tuplets=([5, 6], 7),
@@ -110,14 +110,14 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_opening_triplets_function(
+    music = library.make_opening_triplets(
         accumulator.get(1, 2),
         force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(3))
     voice.extend(music)
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(4, 8),
         [(2, 1), (1, 1, 1), (2, 1)],
         force_rest_tuplets=([0, 1], 7),
@@ -128,14 +128,14 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_opening_triplets_function(
+    music = library.make_opening_triplets(
         accumulator.get(1, 2),
         force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(3))
     voice.extend(music)
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(4, 8),
         [(1, 1, 1), (2, 1), (2, 1)],
         force_rest_tuplets=([2, 3], 7),

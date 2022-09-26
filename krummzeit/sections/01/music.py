@@ -35,7 +35,7 @@ def GLOBALS(skips, rests):
         ("[_.9]", 10),
         ("[_.10]", 11),
     )
-    baca.label_stage_numbers(skips, stage_markup)
+    baca.section.label_stage_numbers(skips, stage_markup)
     for index, item in (
         (1 - 1, "135"),
         (4 - 1, "45"),
@@ -277,10 +277,10 @@ def make_score():
         score,
         accumulator.time_signatures,
         accumulator,
-        library.manifests,
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_section=True,
+        manifests=library.manifests,
     )
     GLOBALS(score["Skips"], score["Rests"])
     OB(accumulator.voice("ob"), accumulator)
@@ -310,15 +310,16 @@ def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
     timing = baca.build.Timing()
     score, accumulator = make_score(timing)
-    metadata, persist, timing = baca.build.postprocess_score(
+    metadata, persist = baca.section.postprocess_score(
         score,
-        library.manifests,
         accumulator.time_signatures,
-        environment,
         **baca.section.section_defaults(),
         activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
+        environment=environment,
         error_on_not_yet_pitched=True,
+        manifests=library.manifests,
+        timing=timing,
         transpose_score=True,
     )
     lilypond_file = baca.lilypond.file(

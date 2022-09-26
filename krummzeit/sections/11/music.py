@@ -174,6 +174,7 @@ def vc_48(m):
         baca.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 
 
+@baca.build.timed
 def make_score(first_measure_number, previous_persistent_indicators):
     score, accumulator = make_empty_score()
     baca.section.set_up_score(
@@ -215,9 +216,11 @@ def make_score(first_measure_number, previous_persistent_indicators):
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
+    timing = baca.build.Timing()
     score, accumulator = make_score(
         environment.first_measure_number,
         environment.previous_persist["persistent_indicators"],
+        timing,
     )
     defaults = baca.section.section_defaults()
     del defaults["append_anchor_skip"]

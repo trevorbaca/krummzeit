@@ -270,7 +270,7 @@ def composites(cache):
             baca.tuplet_bracket_padding(o, 2)
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score():
     score, accumulator = make_empty_score()
     baca.section.set_up_score(

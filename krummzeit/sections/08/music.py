@@ -466,19 +466,18 @@ def make_score(first_measure_number, previous_persistent_indicators):
     ob_cl_pf_vn_5_12(cache)
     va_vc_11_12(cache)
     pf_vn_vc_va_14_23(cache)
-    return score, measures
+    return score
 
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
-    score, measures = make_score(
+    score = make_score(
         environment.first_measure_number,
         environment.previous_metadata["persistent_indicators"],
         environment.timing,
     )
     metadata = baca.section.postprocess_score(
         score,
-        measures(),
         **baca.section.section_defaults(),
         activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,

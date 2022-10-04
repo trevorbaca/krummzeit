@@ -327,19 +327,18 @@ def make_score(first_measure_number, previous_persistent_indicators):
     strings_1_2(cache)
     strings_3_5(cache)
     strings_7_10(cache)
-    return score, measures
+    return score
 
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
-    score, measures = make_score(
+    score = make_score(
         environment.first_measure_number,
         environment.previous_metadata["persistent_indicators"],
         environment.timing,
     )
     metadata = baca.section.postprocess_score(
         score,
-        measures(),
         **baca.section.section_defaults(),
         activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,

@@ -221,13 +221,15 @@ def main():
     metadata = baca.section.postprocess_score(
         score,
         **defaults,
-        activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
         environment=environment,
         error_on_not_yet_pitched=True,
         final_section=True,
         manifests=library.manifests,
         transpose_score=True,
+        tags=baca.tags.Tags(
+            activate=[baca.tags.LOCAL_MEASURE_NUMBER],
+        ),
     )
     lilypond_file = baca.lilypond.file(
         score,

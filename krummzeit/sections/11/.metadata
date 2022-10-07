@@ -27,6 +27,7 @@
     "duration": "1'20''",
     "final_measure_number": 361,
     "first_measure_number": 314,
+    "has_anchor_skip": False,
     "persistent_indicators": {
         "Cello.Music": [
             baca.Memento(

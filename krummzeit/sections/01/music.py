@@ -306,10 +306,10 @@ def main():
     score = make_score(environment.timing)
     metadata = baca.section.postprocess_score(
         score,
+        environment,
+        library.manifests,
         always_make_global_rests=True,
-        environment=environment,
         error_on_not_yet_pitched=True,
-        manifests=library.manifests,
         transpose_score=True,
     )
     baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER)

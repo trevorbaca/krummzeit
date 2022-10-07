@@ -560,28 +560,28 @@ number.2.Skips = {
     % AFTER:
     % SPANNER_STARTS:
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'green4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._reapply_persistent_indicators(2)
       %! baca._set_status_tag()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! REAPPLIED_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._reapply_persistent_indicators(2)
       %! baca._set_status_tag()
+      %! baca.span_metronome_marks(2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"
       %! REAPPLIED_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._reapply_persistent_indicators(2)
       %! baca._set_status_tag()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1642,7 +1642,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -1653,51 +1653,51 @@ number.2.Skips = {
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \baca-metronome-mark-spanner-left-markup \markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \tweak bound-details.left.text \markup \concat { \concat { \abjad-metronome-mark-markup #2 #0 #1 #"67.5" \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \concat { \abjad-metronome-mark-markup #2 #0 #1 #"67.5" \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1968,7 +1968,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -1978,31 +1978,31 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2245,7 +2245,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -2255,31 +2255,31 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2522,7 +2522,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -2532,52 +2532,52 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \baca-bracketed-metric-modulation #2 #0 #1 #"90" #2 #1 #2 #0 #'(1 . 1)
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \baca-colored-bracketed-metric-modulation #2 #0 #1 #"90" #2 #1 #2 #0 #'(1 . 1) #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2848,7 +2848,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -2858,31 +2858,31 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -3024,7 +3024,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -3034,31 +3034,31 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -3485,7 +3485,7 @@ number.2.Skips = {
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca._attach_metronome_marks(1)
+      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
@@ -3495,52 +3495,52 @@ number.2.Skips = {
     %@% \bacaStopTextSpanSNM
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% - \baca-bracketed-metric-modulation-tuplet-lhs #2 #0 #1 #"108" #2 #0 #5 #4 #2 #0 #'(1 . 1)
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     - \baca-colored-bracketed-metric-modulation-tuplet-lhs #2 #0 #1 #"108" #2 #0 #5 #4 #2 #0 #'(1 . 1) #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
+      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "108"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-      %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.metronome_mark()
+      %! baca.span_metronome_marks(2.2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -4372,17 +4372,17 @@ number.2.Skips = {
 
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
-      %! baca._style_anchor_skip(1)
+      %! baca.style_anchor_skip(1)
     % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
-      %! baca._style_anchor_skip(2)
+      %! baca.style_anchor_skip(2)
     \baca-time-signature-transparent
       %! ANCHOR_SKIP
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._set_status_tag()
-      %! baca._style_anchor_skip(1)
+      %! baca.style_anchor_skip(1)
     \time 1/4
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
@@ -4392,34 +4392,34 @@ number.2.Skips = {
       %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! baca._label_clock_time()
-      %! baca._style_anchor_skip(1)
+      %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanCT
       %! ANCHOR_SKIP
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
-      %! baca._style_anchor_skip(1)
+      %! baca.style_anchor_skip(1)
     \bacaStopTextSpanLMN
       %! ANCHOR_SKIP
       %! EOS_STOP_MM_SPANNER
-      %! baca._attach_metronome_marks(4)
-      %! baca._style_anchor_skip(1)
+      %! baca.span_metronome_marks(4)
+      %! baca.style_anchor_skip(1)
     \bacaStopTextSpanMM
       %! ANCHOR_SKIP
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
-      %! baca._style_anchor_skip(1)
+      %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanMN
       %! ANCHOR_SKIP
       %! STAGE_NUMBER
-      %! baca._style_anchor_skip(1)
       %! baca.label_stage_numbers()
+      %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanSNM
     % COMMANDS:
       %! ANCHOR_SKIP
-      %! baca._style_anchor_skip(3)
+      %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
-      %! baca._style_anchor_skip(3)
+      %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
     % CLOSING:
     % COMMANDS:

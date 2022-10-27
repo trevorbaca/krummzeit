@@ -1,8 +1,8 @@
+import fractions
 import inspect
 
 import abjad
 import baca
-import quicktions
 from abjadext import rmakers
 
 
@@ -1149,7 +1149,7 @@ metronome_marks = {
     "45": abjad.MetronomeMark((1, 4), 45),
     "67.5": abjad.MetronomeMark(
         reference_duration=(1, 4),
-        units_per_minute=quicktions.Fraction(135, 2),
+        units_per_minute=fractions.Fraction(135, 2),
         custom_markup=abjad.Markup(
             r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
         ),

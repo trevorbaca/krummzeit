@@ -473,12 +473,11 @@ def make_glissando_rhythm(
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert not isinstance(tie_across_divisions, list)
     tag = baca.tags.function_name(inspect.currentframe())
-    divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     sequences = []
     ratios = abjad.CyclicTuple(division_ratios)
-    for i, division in enumerate(divisions):
+    for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([division], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, depth=-1)
     if tie_across_divisions is True:
@@ -614,12 +613,11 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
 
 def make_oboe_trill_rhythm(time_signatures):
     tag = baca.tags.function_name(inspect.currentframe())
-    divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     ratios = abjad.CyclicTuple([(2, 1), (2, 1), (1, 1, 1)])
     sequences = []
-    for i, division in enumerate(divisions):
+    for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = [division]
+        sequence = [time_signature]
         sequence = baca.sequence.ratios(sequence, [ratio], rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences)
@@ -662,12 +660,11 @@ def make_piano_harmonics_rhythm(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     assert isinstance(division_ratios, list), repr(division_ratios)
-    divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     sequences = []
     ratios = abjad.CyclicTuple(division_ratios)
-    for i, division in enumerate(divisions):
+    for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([division], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, depth=-1)
     nested_music = rmakers.note(divisions, tag=tag)
@@ -884,12 +881,11 @@ def make_silver_points_rhythm(
     tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)],
 ):
     tag = baca.tags.function_name(inspect.currentframe())
-    divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
     sequences = []
     ratios_ = abjad.CyclicTuple(ratios)
-    for i, division in enumerate(divisions):
+    for i, time_signature in enumerate(time_signatures):
         ratio = ratios_[i]
-        sequence = baca.sequence.ratios([division], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences)
     nested_music = rmakers.tuplet(divisions, tuplet_ratios, tag=tag)

@@ -477,7 +477,7 @@ def make_glissando_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
@@ -619,7 +619,7 @@ def make_oboe_trill_rhythm(time_signatures):
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
         sequence = [time_signature]
-        sequence = baca.sequence.ratios(sequence, [ratio], rounded=True)
+        sequence = baca.sequence.ratios(sequence, ratio, rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
@@ -666,7 +666,7 @@ def make_piano_harmonics_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
@@ -888,7 +888,7 @@ def make_silver_points_rhythm(
     ratios_ = abjad.CyclicTuple(ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios_[i]
-        sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
+        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
         sequences.append(sequence)
     divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]

@@ -479,7 +479,7 @@ def make_glissando_rhythm(
         ratio = ratios[i]
         sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences, depth=-1)
+    divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
     if tie_across_divisions is True:
         tie_across_divisions = ([0], 1)
@@ -621,7 +621,7 @@ def make_oboe_trill_rhythm(time_signatures):
         sequence = [time_signature]
         sequence = baca.sequence.ratios(sequence, [ratio], rounded=True)
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences)
+    divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
     nested_music = rmakers.tuplet(
         divisions, [(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)], tag=tag
@@ -668,7 +668,7 @@ def make_piano_harmonics_rhythm(
         ratio = ratios[i]
         sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences, depth=-1)
+    divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
     nested_music = rmakers.note(divisions, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
@@ -890,7 +890,7 @@ def make_silver_points_rhythm(
         ratio = ratios_[i]
         sequence = baca.sequence.ratios([time_signature], [ratio], rounded=True)
         sequences.append(sequence)
-    divisions = abjad.sequence.flatten(sequences)
+    divisions = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     divisions = [abjad.Duration(_) for _ in divisions]
     nested_music = rmakers.tuplet(divisions, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)

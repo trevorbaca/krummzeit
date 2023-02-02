@@ -207,13 +207,13 @@ def VN(voice, measures):
     voice.extend(music)
     music = library.make_white_rhythm(
         measures(38),
-        durations=[(3, 8)],
+        weights=[(3, 8)],
         do_not_burnish=True,
     )
     voice.extend(music)
     music = library.make_white_rhythm(
         measures(39, 53),
-        durations=[(2, 8)],
+        weights=[(2, 8)],
         remainder=abjad.RIGHT,
         do_not_burnish=True,
     )
@@ -254,7 +254,7 @@ def VA(voice, measures):
 
     music = library.make_white_rhythm(
         measures(34, 38),
-        durations=[(3, 8)],
+        weights=[(3, 8)],
     )
     voice.extend(music)
     music = library.make_prolated_quarters(
@@ -298,7 +298,7 @@ def VC(voice, measures):
     voice.extend(music)
     music = library.make_white_rhythm(
         measures(34, 38),
-        durations=[(3, 8)],
+        weights=[(3, 8)],
     )
     voice.extend(music)
     music = library.make_prolated_quarters(

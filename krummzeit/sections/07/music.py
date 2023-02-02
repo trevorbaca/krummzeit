@@ -51,7 +51,7 @@ def OB(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(4, 10),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
@@ -68,7 +68,7 @@ def CL(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(4, 10),
-        durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
+        weights=[(4, 8), (2, 8), (4, 8), (3, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],

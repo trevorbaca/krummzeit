@@ -69,7 +69,7 @@ def OB(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(23, 37),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
@@ -86,7 +86,7 @@ def CL(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(5, 11),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
@@ -98,7 +98,7 @@ def CL(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(16, 36),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
@@ -118,7 +118,7 @@ def CL(voice, measures):
 def PF(voice, measures):
     music = library.make_polyphony_rhythm(
         measures(1, 11),
-        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        weights=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
@@ -128,7 +128,7 @@ def PF(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(12, 22),
-        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        weights=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
@@ -139,7 +139,7 @@ def PF(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(23, 31),
-        durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
+        weights=[(4, 16), (3, 16), (4, 16), (2, 16)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[8, 8, 16, 16, 16, 16],
@@ -185,7 +185,7 @@ def VN(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(8, 11),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
@@ -197,7 +197,7 @@ def VN(voice, measures):
     voice.extend(music)
     music = library.make_polyphony_rhythm(
         measures(19, 37),
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        weights=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],

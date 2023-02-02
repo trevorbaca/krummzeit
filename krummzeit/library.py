@@ -314,7 +314,7 @@ def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, spli
     tag = baca.tags.function_name(inspect.currentframe())
     weights = [(_, 4) for _ in split]
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split_divisions(durations, weights, cyclic=True)
+    durations = baca.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations, counts, 4, extra_counts=extra_counts, tag=tag
@@ -454,7 +454,7 @@ def make_fused_expanse(time_signatures, weights):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = baca.sequence.fuse(durations)
-    durations = baca.sequence.split_divisions(durations, weights, cyclic=True)
+    durations = baca.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.note(durations, tag=tag)
     music = abjad.sequence.flatten(nested_music)
@@ -700,7 +700,7 @@ def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6,
     tag = baca.tags.function_name(inspect.currentframe())
     weights = [(_, 16) for _ in split]
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split_divisions(durations, weights, cyclic=True)
+    durations = baca.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations,
@@ -727,7 +727,7 @@ def make_pizzicato_sixteenths(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split_divisions(
+    durations = baca.sequence.split(
         durations, [(6, 16), (18, 16)], cyclic=True
     )
     durations = abjad.sequence.flatten(durations)
@@ -811,7 +811,7 @@ def make_polyphony_rhythm(
     for i, division in enumerate(durations):
         weights__ = abjad.sequence.rotate(weights_, n=i * rotation)
         sequence = [division]
-        sequence = baca.sequence.split_divisions(
+        sequence = baca.sequence.split(
             sequence,
             weights__,
             cyclic=True,
@@ -852,7 +852,7 @@ def make_rest_delimited_repeated_duration_notes(time_signatures, duration, denom
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = baca.sequence.fuse(durations)
-    durations = baca.sequence.split_divisions(durations, [duration], cyclic=True)
+    durations = baca.sequence.split(durations, [duration], cyclic=True)
     durations = abjad.sequence.flatten(durations, depth=-1)
     nested_music = rmakers.incised(
         durations,
@@ -967,7 +967,7 @@ def make_white_rhythm(
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = baca.sequence.fuse(durations)
-    durations = baca.sequence.split_divisions(
+    durations = baca.sequence.split(
         durations,
         weights,
         cyclic=True,

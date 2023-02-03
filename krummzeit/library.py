@@ -341,21 +341,17 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
         (3, -2),
     ]
     tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
-
-    def selector(argument):
-        selection = abjad.select.tuplets(argument)[:-1]
-        selection = [
-            baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
-            for _ in selection
-        ]
-        selection = [_ for _ in selection if len(_) == 2]
-        selection = [abjad.select.leaf(_, 0) for _ in selection]
-        return selection
-
     durations = [_.duration for _ in time_signatures]
     nested_music = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
-    rmakers.tie(selector(voice), tag=tag)
+    tuplets = abjad.select.tuplets(voice)[:-1]
+    lists = [
+        baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
+        for _ in tuplets
+    ]
+    lists = [_ for _ in lists if len(_) == 2]
+    leaves = [abjad.select.leaf(_, 0) for _ in lists]
+    rmakers.tie(leaves, tag=tag)
     if force_rest_tuplets is not None:
         tuplets = baca.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
@@ -371,18 +367,13 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
 
 def make_detached_triplets(time_signatures):
     tag = baca.tags.function_name(inspect.currentframe())
-
-    def selector(argument):
-        result = abjad.select.tuplets(argument)[:-1]
-        result = abjad.select.get(result, [0], 2)
-        result = [baca.select.pleaf(_, -1) for _ in result]
-        return result
-
     durations = [_.duration for _ in time_signatures]
     durations = baca.sequence.fuse(durations)
     durations = baca.sequence.quarters(durations)
     nested_music = rmakers.tuplet(durations, [(3, -1, 2), (1, -1, 3, -1)], tag=tag)
-    pleaves = selector(nested_music)
+    tuplets = abjad.select.tuplets(nested_music)[:-1]
+    tuplets = abjad.select.get(tuplets, [0], 2)
+    pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
     return nested_music
 
@@ -484,20 +475,11 @@ def make_glissando_rhythm(
     durations = [abjad.Duration(_) for _ in durations]
     if tie_across_divisions is True:
         tie_across_divisions = ([0], 1)
-
-    def select(pattern):
-        def selector(argument):
-            selection = abjad.select.tuplets(argument)[:-1]
-            selection = abjad.select.get(selection, pattern)
-            selection = [baca.select.pleaf(_, -1) for _ in selection]
-            return selection
-
-        return selector
-
     nested_music = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
-    selector = select(tie_across_divisions)
-    pleaves = selector(voice)
+    tuplets = abjad.select.tuplets(voice)[:-1]
+    tuplets = abjad.select.get(tuplets, tie_across_divisions)
+    pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
     if force_rest_tuplets is not None:
         tuplets = baca.select.tuplets(voice)

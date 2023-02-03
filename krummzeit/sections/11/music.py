@@ -16,8 +16,8 @@ def make_empty_score():
     time_signatures = maker_.run()
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.section.measures(time_signatures)
-    return score, voices, measures
+    signatures = baca.section.signatures(time_signatures)
+    return score, voices, signatures
 
 
 def GLOBALS(skips):
@@ -39,58 +39,58 @@ def GLOBALS(skips):
     baca.bar_line(skips[48 - 1], "|.")
 
 
-def OB(voice, measures):
-    music = baca.make_repeat_tied_notes(measures(1, 40))
+def OB(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures(1, 40))
     voice.extend(music)
-    music = baca.make_mmrests(measures(41, 48))
-    voice.extend(music)
-
-
-def CL(voice, measures):
-    music = baca.make_repeat_tied_notes(measures(1, 40))
-    voice.extend(music)
-    music = baca.make_mmrests(measures(41, 48))
+    music = baca.make_mmrests(signatures(41, 48))
     voice.extend(music)
 
 
-def PF(voice, measures):
-    music = baca.make_repeat_tied_notes(measures())
+def CL(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures(1, 40))
+    voice.extend(music)
+    music = baca.make_mmrests(signatures(41, 48))
     voice.extend(music)
 
 
-def PERC(voice, measures):
-    music = baca.make_repeat_tied_notes(measures())
+def PF(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures())
     voice.extend(music)
 
 
-def VN(voice, measures):
+def PERC(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures())
+    voice.extend(music)
+
+
+def VN(voice, signatures):
     music = library.make_closing_pizzicato_rhythm(
-        measures(1, 40),
+        signatures(1, 40),
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts=[2, 2, 1, 2, 4, 6],
         split=[6, 18],
     )
     voice.extend(music)
-    music = baca.make_mmrests(measures(41, 48))
+    music = baca.make_mmrests(signatures(41, 48))
     voice.extend(music)
 
 
-def VA(voice, measures):
+def VA(voice, signatures):
     music = library.make_closing_pizzicato_rhythm(
-        measures(1, 4),
+        signatures(1, 4),
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
         extra_counts=[3, 3, 2, 3, 5, 7],
         split=[8, 10],
     )
     voice.extend(music)
-    music = baca.make_mmrests(measures(5, 48))
+    music = baca.make_mmrests(signatures(5, 48))
     voice.extend(music)
 
 
-def VC(voice, measures):
-    music = baca.make_repeat_tied_notes(measures(1, 24))
+def VC(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures(1, 24))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(measures(25, 48))
+    music = baca.make_repeat_tied_notes(signatures(25, 48))
     voice.extend(music)
 
 
@@ -172,23 +172,23 @@ def vc_48(m):
 
 @baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
-    score, voices, measures = make_empty_score()
+    score, voices, signatures = make_empty_score()
     baca.section.set_up_score(
         score,
-        measures(),
+        signatures(),
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
     GLOBALS(score["Skips"])
-    OB(voices("ob"), measures)
-    CL(voices("cl"), measures)
-    PF(voices("pf"), measures)
-    PERC(voices("perc"), measures)
-    VN(voices("vn"), measures)
-    VA(voices("va"), measures)
-    VC(voices("vc"), measures)
+    OB(voices("ob"), signatures)
+    CL(voices("cl"), signatures)
+    PF(voices("pf"), signatures)
+    PERC(voices("perc"), signatures)
+    VN(voices("vn"), signatures)
+    VA(voices("va"), signatures)
+    VC(voices("vc"), signatures)
     baca.section.reapply(
         voices,
         previous_persistent_indicators,
@@ -196,7 +196,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     )
     cache = baca.section.cache_leaves(
         score,
-        len(measures()),
+        len(signatures()),
         library.voice_abbreviations,
     )
     ob_1_40(cache["ob"])

@@ -497,7 +497,10 @@ def make_hypermeter_tuplets(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations, counts, cyclic=True)
+    lists = abjad.sequence.partition_by_counts(
+        durations, counts, cyclic=True, overhang=True
+    )
+    durations = [sum(_) for _ in lists]
     nested_music = rmakers.tuplet(
         durations, tuplet_ratios, denominator=abjad.Duration(1, 4), tag=tag
     )

@@ -368,7 +368,7 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
 def make_detached_triplets(time_signatures):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.quarters(durations)
     nested_music = rmakers.tuplet(durations, [(3, -1, 2), (1, -1, 3, -1)], tag=tag)
     tuplets = abjad.select.tuplets(nested_music)[:-1]
@@ -444,7 +444,7 @@ def make_empty_score():
 def make_fused_expanse(time_signatures, weights):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.note(durations, tag=tag)
@@ -586,7 +586,7 @@ def make_incise_chain_b_rhythm(time_signatures):
 def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.quarters(durations, remainder=abjad.LEFT)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.note(durations, tag=tag)
@@ -632,7 +632,7 @@ def make_opening_triplets(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.quarters(durations, remainder=remainder)
     nested_music = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
@@ -834,7 +834,7 @@ def make_prolated_quarters(time_signatures, extra_counts):
 def make_rest_delimited_repeated_duration_notes(time_signatures, duration, denominator):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.split(durations, [duration], cyclic=True)
     durations = abjad.sequence.flatten(durations, depth=-1)
     nested_music = rmakers.incised(
@@ -949,7 +949,7 @@ def make_white_rhythm(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.fuse(durations)
+    durations = [sum(durations)]
     durations = baca.sequence.split(
         durations,
         weights,

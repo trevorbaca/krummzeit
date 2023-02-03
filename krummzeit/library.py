@@ -727,9 +727,7 @@ def make_pizzicato_sixteenths(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split(
-        durations, [(6, 16), (18, 16)], cyclic=True
-    )
+    durations = baca.sequence.split(durations, [(6, 16), (18, 16)], cyclic=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations,

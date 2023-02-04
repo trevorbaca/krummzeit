@@ -5,6 +5,8 @@ import abjad
 import baca
 from abjadext import rmakers
 
+from krummzeit import library
+
 
 def _do_register_transition_command(argument, start_registration, stop_registration):
     leaves = abjad.select.leaves(argument)
@@ -469,9 +471,7 @@ def make_glissando_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.split_by_ratio(
-            [time_signature.pair], ratio, rounded=True
-        )
+        sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -611,9 +611,7 @@ def make_oboe_trill_rhythm(time_signatures):
     sequences = []
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.split_by_ratio(
-            [time_signature.pair], ratio, rounded=True
-        )
+        sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -662,9 +660,7 @@ def make_piano_harmonics_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.split_by_ratio(
-            [time_signature.pair], ratio, rounded=True
-        )
+        sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -885,9 +881,7 @@ def make_silver_points_rhythm(
     ratios_ = abjad.CyclicTuple(ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios_[i]
-        sequence = baca.sequence.split_by_ratio(
-            [time_signature.pair], ratio, rounded=True
-        )
+        sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -1121,6 +1115,16 @@ def replace_with_clusters(argument, flavor):
 
 def section_time_signatures(section_name):
     return _make_time_signatures_by_section()[section_name]
+
+
+def split_by_rounded_ratio(pair, ratio):
+    assert isinstance(pair, tuple)
+    assert isinstance(ratio, tuple)
+    numerator, denominator = pair
+    numerators = abjad.math.partition_integer_by_ratio(numerator, ratio)
+    weights = [abjad.Duration(_, denominator) for _ in numerators]
+    lists = abjad.sequence.split([abjad.Duration(pair)], weights)
+    return lists
 
 
 def violet_pitch_classes():

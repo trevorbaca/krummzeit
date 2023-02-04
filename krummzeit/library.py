@@ -469,7 +469,9 @@ def make_glissando_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
+        sequence = baca.sequence.split_by_ratio(
+            [time_signature.pair], ratio, rounded=True
+        )
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -609,8 +611,9 @@ def make_oboe_trill_rhythm(time_signatures):
     sequences = []
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = [time_signature]
-        sequence = baca.sequence.ratios(sequence, ratio, rounded=True)
+        sequence = baca.sequence.split_by_ratio(
+            [time_signature.pair], ratio, rounded=True
+        )
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -659,7 +662,9 @@ def make_piano_harmonics_rhythm(
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios[i]
-        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
+        sequence = baca.sequence.split_by_ratio(
+            [time_signature.pair], ratio, rounded=True
+        )
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
@@ -880,7 +885,9 @@ def make_silver_points_rhythm(
     ratios_ = abjad.CyclicTuple(ratios)
     for i, time_signature in enumerate(time_signatures):
         ratio = ratios_[i]
-        sequence = baca.sequence.ratios([time_signature], ratio, rounded=True)
+        sequence = baca.sequence.split_by_ratio(
+            [time_signature.pair], ratio, rounded=True
+        )
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]

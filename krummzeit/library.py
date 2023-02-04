@@ -587,7 +587,9 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
-    durations = baca.sequence.quarters(durations, remainder=abjad.LEFT)
+    durations = baca.sequence.split(
+        durations, [(1, 4)], cyclic=True, remainder=abjad.LEFT
+    )
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
@@ -633,7 +635,9 @@ def make_opening_triplets(
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
-    durations = baca.sequence.quarters(durations, remainder=remainder)
+    durations = baca.sequence.split(
+        durations, [(1, 4)], cyclic=True, remainder=remainder
+    )
     nested_music = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_tuplets is not None:

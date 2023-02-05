@@ -741,6 +741,48 @@ def make_pizzicato_sixteenths(
     return music
 
 
+def make_polyphony_even_divisions(
+    durations, denominators, extra_counts, tag, ties, time_signatures
+):
+    nested_music = rmakers.even_division(
+        durations, denominators, extra_counts=extra_counts, tag=tag
+    )
+    voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
+    rmakers.beam(voice)
+    selection = abjad.select.tuplets(voice)[:-1]
+    selection = abjad.select.get(selection, ties)
+    selection = [baca.select.pleaf(_, -1) for _ in selection]
+    rmakers.tie(selection, tag=tag)
+    rmakers.trivialize(voice)
+    rmakers.extract_trivial(voice)
+    music = abjad.mutate.eject_contents(voice)
+    return music
+
+
+def make_polyphony_eighths(durations, tag, time_signatures):
+    nested_music = rmakers.even_division(durations, [8], tag=tag)
+    voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
+    rmakers.beam(voice, tag=tag)
+    rmakers.trivialize(voice)
+    rmakers.extract_trivial(voice)
+    music = abjad.mutate.eject_contents(voice)
+    return music
+
+
+def make_polyphony_quarters(durations, tag, time_signatures):
+    nested_music = rmakers.note(
+        durations,
+        spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
+        tag=tag,
+    )
+    voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
+    rmakers.untie(voice)
+    plts = baca.select.plts(voice)
+    rmakers.beam(plts, tag=tag)
+    music = abjad.mutate.eject_contents(voice)
+    return music
+
+
 def make_polyphony_rhythm(
     time_signatures,
     *,
@@ -755,71 +797,35 @@ def make_polyphony_rhythm(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     assert isinstance(ties, abjad.Pattern), repr(ties)
-
-    def make_eighths(durations):
-        nested_music = rmakers.even_division(durations, [8], tag=tag)
-        voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
-        rmakers.beam(voice, tag=tag)
-        rmakers.trivialize(voice)
-        rmakers.extract_trivial(voice)
-        music = abjad.mutate.eject_contents(voice)
-        return music
-
-    def make_even_divisions(durations):
-        nested_music = rmakers.even_division(
-            durations, denominators, extra_counts=extra_counts, tag=tag
-        )
-        voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
-        rmakers.beam(voice)
-        selection = abjad.select.tuplets(voice)[:-1]
-        selection = abjad.select.get(selection, ties)
-        selection = [baca.select.pleaf(_, -1) for _ in selection]
-        rmakers.tie(selection, tag=tag)
-        rmakers.trivialize(voice)
-        rmakers.extract_trivial(voice)
-        music = abjad.mutate.eject_contents(voice)
-        return music
-
-    def make_quarters(durations):
-        nested_music = rmakers.note(
-            durations,
-            spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
-            tag=tag,
-        )
-        voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
-        rmakers.untie(voice)
-        plts = baca.select.plts(voice)
-        rmakers.beam(plts, tag=tag)
-        music = abjad.mutate.eject_contents(voice)
-        return music
-
-    durations = [_.duration for _ in time_signatures]
-    sequences = []
-    weights_ = weights[:]
-    for i, division in enumerate(durations):
-        weights__ = abjad.sequence.rotate(weights_, n=i * rotation)
-        sequence = [division]
-        sequence = baca.sequence.split(
-            sequence,
-            weights__,
+    durations = []
+    for i, time_signature in enumerate(time_signatures):
+        durations_ = baca.sequence.split(
+            [time_signature.duration],
+            abjad.sequence.rotate(weights, n=i * rotation),
             cyclic=True,
             remainder_fuse_threshold=fuse,
         )
-        sequences.append(sequence)
-    durations = abjad.sequence.flatten(sequences, depth=-1)
+        durations.extend(durations_)
     music = []
     if final_quarter_notes:
-        music_ = make_even_divisions(durations[:-3])
+        music_ = make_polyphony_even_divisions(
+            durations[:-3], denominators, extra_counts, tag, ties, time_signatures
+        )
+
         music.extend(music_)
-        music_ = make_quarters(durations[-3:])
+        music_ = make_polyphony_quarters(durations[-3:], tag, time_signatures)
         music.extend(music_)
     elif initial_eighth_notes:
-        music_ = make_eighths(durations[:2])
+        music_ = make_polyphony_eighths(durations[:2], tag, time_signatures)
         music.extend(music_)
-        music_ = make_even_divisions(durations[2:])
+        music_ = make_polyphony_even_divisions(
+            durations[2:], denominators, extra_counts, tag, ties, time_signatures
+        )
         music.extend(music_)
     else:
-        music_ = make_even_divisions(durations)
+        music_ = make_polyphony_even_divisions(
+            durations, denominators, extra_counts, tag, ties, time_signatures
+        )
         music.extend(music_)
     return music
 

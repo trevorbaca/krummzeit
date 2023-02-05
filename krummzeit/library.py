@@ -797,15 +797,7 @@ def make_polyphony_rhythm(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     assert isinstance(ties, abjad.Pattern), repr(ties)
-    durations = []
-    for i, time_signature in enumerate(time_signatures):
-        durations_ = baca.sequence.split(
-            [time_signature.duration],
-            abjad.sequence.rotate(weights, n=i * rotation),
-            cyclic=True,
-            remainder_fuse_threshold=fuse,
-        )
-        durations.extend(durations_)
+    durations = split_polyphony_time_signatures(rotation, time_signatures, weights)
     music = []
     if final_quarter_notes:
         music_ = make_polyphony_even_divisions(
@@ -1131,6 +1123,27 @@ def split_by_rounded_ratio(pair, ratio):
     weights = [abjad.Duration(_, denominator) for _ in numerators]
     lists = abjad.sequence.split([abjad.Duration(pair)], weights)
     return lists
+
+
+def split_polyphony_time_signatures(rotation, time_signatures, weights):
+    durations = []
+    weights = [abjad.Duration(_) for _ in weights]
+    remainder_fuse_threshold = abjad.Duration(1, 8)
+    for i, time_signature in enumerate(time_signatures):
+        duration = time_signature.duration
+        weights_ = abjad.sequence.rotate(weights, n=i * rotation)
+        with_overhang = abjad.sequence.split(
+            [duration], weights_, cyclic=True, overhang=True
+        )
+        without_overhang = abjad.sequence.split([duration], weights_, cyclic=True)
+        if with_overhang != without_overhang:
+            final_list = with_overhang.pop()
+            if sum(final_list) <= remainder_fuse_threshold:
+                with_overhang[-1] = [sum(with_overhang[-1] + final_list)]
+            else:
+                with_overhang.append(final_list)
+        durations.extend(with_overhang)
+    return durations
 
 
 def violet_pitch_classes():

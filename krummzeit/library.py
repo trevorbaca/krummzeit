@@ -314,9 +314,9 @@ def instrument(argument, key, manifests):
 
 def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, split):
     tag = baca.tags.function_name(inspect.currentframe())
-    weights = [(_, 4) for _ in split]
+    weights = abjad.durations([(_, 4) for _ in split])
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split(durations, weights, cyclic=True)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations, counts, 4, extra_counts=extra_counts, tag=tag
@@ -447,7 +447,8 @@ def make_fused_expanse(time_signatures, weights):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
-    durations = baca.sequence.split(durations, weights, cyclic=True)
+    weights = abjad.durations(weights)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.note(durations, tag=tag)
     music = abjad.sequence.flatten(nested_music)
@@ -691,9 +692,9 @@ def make_piano_harmonics_rhythm(
 
 def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6, 18)):
     tag = baca.tags.function_name(inspect.currentframe())
-    weights = [(_, 16) for _ in split]
+    weights = abjad.durations([(_, 16) for _ in split])
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split(durations, weights, cyclic=True)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations,
@@ -720,7 +721,8 @@ def make_pizzicato_sixteenths(
 ):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
-    durations = baca.sequence.split(durations, [(6, 16), (18, 16)], cyclic=True)
+    weights = abjad.durations([(6, 16), (18, 16)])
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     nested_music = rmakers.talea(
         durations,
@@ -837,11 +839,12 @@ def make_prolated_quarters(time_signatures, extra_counts):
     return music
 
 
-def make_rest_delimited_repeated_duration_notes(time_signatures, duration, denominator):
+def make_rest_delimited_repeated_duration_notes(time_signatures, weight, denominator):
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
-    durations = baca.sequence.split(durations, [duration], cyclic=True)
+    weights = abjad.durations([weight])
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations, depth=-1)
     nested_music = rmakers.incised(
         durations,

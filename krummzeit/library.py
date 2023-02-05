@@ -587,12 +587,13 @@ def make_incise_chain_b_rhythm(time_signatures):
 
 def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     tag = baca.tags.function_name(inspect.currentframe())
-    durations = [_.duration for _ in time_signatures]
-    durations = [sum(durations)]
-    durations = baca.sequence.split(
-        durations, [(1, 4)], cyclic=True, remainder=abjad.LEFT
-    )
-    durations = abjad.sequence.flatten(durations)
+    durations = [sum([_.duration for _ in time_signatures])]
+    weights = [abjad.Duration(1, 4)]
+    without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
+    if durations != without_overhang:
+        final_list = durations.pop()
+        durations.insert(0, final_list)
     nested_music = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_lts is not None:
@@ -634,11 +635,13 @@ def make_opening_triplets(
     time_signatures, *, force_rest_tuplets=None, remainder=abjad.LEFT
 ):
     tag = baca.tags.function_name(inspect.currentframe())
-    durations = [_.duration for _ in time_signatures]
-    durations = [sum(durations)]
-    durations = baca.sequence.split(
-        durations, [(1, 4)], cyclic=True, remainder=remainder
-    )
+    durations = [sum([_.duration for _ in time_signatures])]
+    weights = [abjad.Duration(1, 4)]
+    without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
+    if durations != without_overhang and remainder == abjad.LEFT:
+        final_list = durations.pop()
+        durations.insert(0, final_list)
     nested_music = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if force_rest_tuplets is not None:
@@ -953,13 +956,12 @@ def make_white_rhythm(
     tag = baca.tags.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
-    durations = baca.sequence.split(
-        durations,
-        weights,
-        cyclic=True,
-        remainder=remainder,
-    )
-    durations = abjad.sequence.flatten(durations, depth=-1)
+    weights = [abjad.Duration(_) for _ in weights]
+    without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
+    durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
+    if durations != without_overhang and remainder == abjad.LEFT:
+        final_list = durations.pop()
+        durations.insert(0, final_list)
     nested_music = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(nested_music, time_signatures)
     if not do_not_burnish:

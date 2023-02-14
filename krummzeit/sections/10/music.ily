@@ -1,178 +1,125 @@
   %! baca.path.extern()
 number.10.Rests = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 2]
       %! baca._make_global_rests(1)
     R1 * 9/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 3]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 4]
       %! baca._make_global_rests(1)
     R1 * 5/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 5]
       %! baca._make_global_rests(1)
     R1 * 9/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 6]
       %! baca._make_global_rests(1)
     R1 * 9/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 7]
       %! baca._make_global_rests(1)
     R1 * 5/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 8]
       %! baca._make_global_rests(1)
     R1 * 5/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 9]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 10]
       %! baca._make_global_rests(1)
     R1 * 5/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 11]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 12]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 13]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 14]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 15]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 16]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 17]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 18]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 19]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 20]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 21]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 22]
       %! baca._make_global_rests(1)
     R1 * 5/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 23]
-    % OPENING:
-    % COMMANDS:
       %! baca.global_fermata(2)
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! baca.global_fermata(1)
     ^ \baca-very-long-fermata-markup
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -180,13 +127,9 @@ number.10.Rests = {
 
   %! baca.path.extern()
 number.10.Skips = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 1]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -200,8 +143,6 @@ number.10.Skips = {
     \time 4/4
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STARTS:
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -250,13 +191,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 2]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -266,8 +203,6 @@ number.10.Skips = {
     \time 9/8
       %! baca._make_global_skips(1)
     s1 * 9/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -280,7 +215,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[13'53'']"
@@ -305,13 +239,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 3]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -321,8 +251,6 @@ number.10.Skips = {
     \time 3/4
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -337,7 +265,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -389,13 +316,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 4]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -405,8 +328,6 @@ number.10.Skips = {
     \time 5/8
       %! baca._make_global_skips(1)
     s1 * 5/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -419,7 +340,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[13'57'']"
@@ -444,13 +364,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 5]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -460,8 +376,6 @@ number.10.Skips = {
     \time 9/8
       %! baca._make_global_skips(1)
     s1 * 9/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -476,7 +390,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -528,15 +441,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 6]
       %! baca._make_global_skips(1)
     s1 * 9/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -549,7 +458,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'01'']"
@@ -574,13 +482,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 7]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -590,8 +494,6 @@ number.10.Skips = {
     \time 5/8
       %! baca._make_global_skips(1)
     s1 * 5/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -606,7 +508,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -658,15 +559,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 8]
       %! baca._make_global_skips(1)
     s1 * 5/8
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -679,7 +576,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'06'']"
@@ -704,13 +600,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 9]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -720,8 +612,6 @@ number.10.Skips = {
     \time 4/4
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -736,7 +626,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -788,13 +677,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 10]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -804,8 +689,6 @@ number.10.Skips = {
     \time 5/4
       %! baca._make_global_skips(1)
     s1 * 5/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -818,7 +701,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'11'']"
@@ -843,13 +725,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 11]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -859,8 +737,6 @@ number.10.Skips = {
     \time 4/4
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -875,7 +751,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -927,15 +802,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 12]
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -945,7 +816,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'22'']"
@@ -964,15 +834,11 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 13]
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -982,7 +848,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'29'']"
@@ -1001,15 +866,11 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 14]
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1019,7 +880,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'36'']"
@@ -1038,13 +898,9 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 15]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1054,8 +910,6 @@ number.10.Skips = {
     \time 3/4
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1068,7 +922,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'42'']"
@@ -1093,15 +946,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 16]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1111,7 +960,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'47'']"
@@ -1130,15 +978,11 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 17]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1148,7 +992,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'52'']"
@@ -1167,15 +1010,11 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 18]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1185,7 +1024,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[14'57'']"
@@ -1204,15 +1042,11 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 19]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1227,7 +1061,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -1279,15 +1112,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 20]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1300,7 +1129,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[15'07'']"
@@ -1325,15 +1153,11 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 21]
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1343,7 +1167,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[15'12'']"
@@ -1362,13 +1185,9 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 22]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1378,8 +1197,6 @@ number.10.Skips = {
     \time 5/4
       %! baca._make_global_skips(1)
     s1 * 5/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1392,7 +1209,6 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[15'17'']"
@@ -1417,13 +1233,9 @@ number.10.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     %@% \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 23]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1433,8 +1245,6 @@ number.10.Skips = {
     \time 1/4
       %! baca._make_global_skips(1)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -1446,7 +1256,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -1492,8 +1301,6 @@ number.10.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
@@ -1502,8 +1309,6 @@ number.10.Skips = {
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1529,17 +1334,13 @@ number.10.Skips = {
       %! baca.label_stage_numbers()
       %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanSNM
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -1547,23 +1348,16 @@ number.10.Skips = {
 
   %! baca.path.extern()
 number.10.Oboe.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_hypermeter_tuplets()
     \times 8/5
       %! krummzeit.make_hypermeter_tuplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-ob-markup
           %! -PARTS
@@ -1571,8 +1365,6 @@ number.10.Oboe.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \set Staff.shortInstrumentName = \krummzeit-ob-markup
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -1593,8 +1385,6 @@ number.10.Oboe.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_hypermeter_tuplets()
         ef''!4.
-        % AFTER:
-        % ARTICULATIONS:
           %! REDUNDANT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REDUNDANT_DYNAMIC
@@ -1607,12 +1397,9 @@ number.10.Oboe.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \ff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Oboe”)"
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -1625,288 +1412,190 @@ number.10.Oboe.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-ob-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_hypermeter_tuplets()
         ef''!4
-        % AFTER:
-        % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 3]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 8]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 9]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 12]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 13]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 14]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 22]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -1914,19 +1603,13 @@ number.10.Oboe.Music = {
 
   %! baca.path.extern()
 number.10.Oboe.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Oboe.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Oboe.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -1934,23 +1617,16 @@ number.10.Oboe.Staff = {
 
   %! baca.path.extern()
 number.10.Clarinet.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_hypermeter_tuplets()
     \times 8/5
       %! krummzeit.make_hypermeter_tuplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-bcl-markup
           %! -PARTS
@@ -1958,8 +1634,6 @@ number.10.Clarinet.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \set Staff.shortInstrumentName = \krummzeit-bcl-markup
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -1980,8 +1654,6 @@ number.10.Clarinet.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_hypermeter_tuplets()
         f8
-        % AFTER:
-        % ARTICULATIONS:
           %! REDUNDANT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REDUNDANT_DYNAMIC
@@ -1994,12 +1666,9 @@ number.10.Clarinet.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \ff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -2012,41 +1681,26 @@ number.10.Clarinet.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-bcl-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_hypermeter_tuplets()
         f2
-        % AFTER:
-        % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 3]
       %! baca.make_repeat_tied_notes()
     fs!2.
-    % AFTER:
-    % ARTICULATIONS:
       %! REDUNDANT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REDUNDANT_DYNAMIC
@@ -2059,43 +1713,30 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \ff
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 4]
     fs4.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 5]
     fs2.
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2110,7 +1751,6 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \ff
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2130,49 +1770,33 @@ number.10.Clarinet.Music = {
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs4.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 6]
     fs2.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs4.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 7]
     fs4.
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2187,56 +1811,39 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \fff
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 8]
     fs4.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 9]
       %! baca.make_repeat_tied_notes()
     fs1
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2249,46 +1856,33 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-fff-poss
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_repeat_tied_notes()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 10]
     fs2.
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     fs2
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 11]
       %! baca.make_repeat_tied_notes()
     fs1
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2303,7 +1897,6 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \fff
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2324,45 +1917,33 @@ number.10.Clarinet.Music = {
     ~
       %! baca.make_repeat_tied_notes()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 12]
       %! baca.make_repeat_tied_notes()
     fs1
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_repeat_tied_notes()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 13]
       %! baca.make_repeat_tied_notes()
     fs1
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_repeat_tied_notes()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 14]
       %! baca.make_repeat_tied_notes()
     fs1
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2377,121 +1958,81 @@ number.10.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \ppp
-    % SPANNER_STARTS:
       %! baca.make_repeat_tied_notes()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 22]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -2499,19 +2040,13 @@ number.10.Clarinet.Music = {
 
   %! baca.path.extern()
 number.10.Clarinet.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Clarinet.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Clarinet.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -2519,23 +2054,16 @@ number.10.Clarinet.Staff = {
 
   %! baca.path.extern()
 number.10.Piano.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
       %! krummzeit.make_hypermeter_tuplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-pf-markup
           %! -PARTS
@@ -2543,8 +2071,6 @@ number.10.Piano.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \set Staff.shortInstrumentName = \krummzeit-pf-markup
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -2565,11 +2091,8 @@ number.10.Piano.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_hypermeter_tuplets()
         fs'''!4.
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! REAPPLIED_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REAPPLIED_DYNAMIC
@@ -2580,12 +2103,9 @@ number.10.Piano.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \fff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Piano”)"
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -2598,60 +2118,39 @@ number.10.Piano.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-pf-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_hypermeter_tuplets()
         fs'''!2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 3]
-    % BEFORE:
-    % COMMANDS:
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)
       %! krummzeit.make_opening_triplets()
     r8
-    % AFTER:
-    % MARKUP:
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-instrument-markup "(“Harpsichord”)"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
@@ -2662,19 +2161,12 @@ number.10.Piano.Music = {
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2682,17 +2174,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2700,14 +2185,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2715,31 +2194,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2747,17 +2213,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2765,14 +2224,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2780,31 +2233,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2812,17 +2252,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2830,14 +2263,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2845,31 +2272,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2877,17 +2291,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2895,14 +2302,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2910,31 +2311,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2942,17 +2330,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2960,14 +2341,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -2975,61 +2350,39 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 8]
-    % BEFORE:
-    % COMMANDS:
       %! MEASURE_298
       %! SHIFTED_CLEF
       %! baca.clef_x_extent_false(1)
@@ -3044,8 +2397,6 @@ number.10.Piano.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -3068,13 +2419,9 @@ number.10.Piano.Music = {
     \set Staff.forceClef = ##t
       %! krummzeit.make_opening_triplets()
     r8
-    % AFTER:
-    % MARKUP:
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-instrument-markup "(“Piano”)"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -3088,24 +2435,16 @@ number.10.Piano.Music = {
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % COMMANDS:
           %! SPANNER_START
           %! baca._do_spanner_indicator_command(1)
           %! baca.ottava_bassa()
         \ottava -1
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3113,8 +2452,6 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -3127,16 +2464,10 @@ number.10.Piano.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \baca-fff-poss
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3144,14 +2475,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3159,31 +2484,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3191,17 +2503,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3209,14 +2514,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3224,33 +2523,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 9]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3258,17 +2544,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3276,14 +2555,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3291,31 +2564,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3323,17 +2583,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3341,14 +2594,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3356,31 +2603,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3388,17 +2622,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3406,14 +2633,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3421,31 +2642,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3453,17 +2661,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3471,14 +2672,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3486,33 +2681,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 10]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3520,17 +2702,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3538,14 +2713,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3553,31 +2722,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3585,17 +2741,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3603,14 +2752,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3618,31 +2761,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3650,17 +2780,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3668,14 +2791,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3683,31 +2800,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3715,17 +2819,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3733,14 +2830,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3748,31 +2839,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3780,17 +2858,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3798,14 +2869,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3813,33 +2878,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 11]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3847,17 +2899,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3865,14 +2910,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3880,31 +2919,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3912,17 +2938,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3930,14 +2949,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3945,31 +2958,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3977,17 +2977,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -3995,14 +2988,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4010,31 +2997,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4042,17 +3016,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4060,14 +3027,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4075,33 +3036,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 12]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4109,17 +3057,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4127,14 +3068,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4142,31 +3077,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4174,17 +3096,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4192,14 +3107,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4207,31 +3116,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4239,17 +3135,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4257,14 +3146,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4272,31 +3155,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4304,17 +3174,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4322,14 +3185,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4337,33 +3194,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 13]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4371,17 +3215,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4389,14 +3226,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4404,31 +3235,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4436,17 +3254,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4454,14 +3265,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4469,31 +3274,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4501,17 +3293,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4519,14 +3304,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4534,31 +3313,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4566,17 +3332,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4584,14 +3343,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4599,33 +3352,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 14]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4633,17 +3373,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4651,14 +3384,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4666,31 +3393,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4698,17 +3412,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4716,14 +3423,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4731,31 +3432,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4763,17 +3451,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4781,14 +3462,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4796,31 +3471,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4828,17 +3490,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4846,14 +3501,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4861,33 +3510,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 15]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4895,17 +3531,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4913,14 +3542,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4928,31 +3551,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4960,17 +3570,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4978,14 +3581,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4993,31 +3590,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5025,17 +3609,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5043,14 +3620,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5058,33 +3629,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 16]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5092,17 +3650,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5110,14 +3661,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5125,31 +3670,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5157,17 +3689,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5175,14 +3700,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5190,31 +3709,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5222,17 +3728,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5240,14 +3739,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5255,33 +3748,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 17]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5289,17 +3769,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5307,14 +3780,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5322,31 +3789,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5354,17 +3808,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5372,14 +3819,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5387,31 +3828,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5419,17 +3847,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5437,14 +3858,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5452,33 +3867,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 18]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5486,17 +3888,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5504,14 +3899,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5519,31 +3908,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5551,17 +3927,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5569,14 +3938,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5584,31 +3947,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5616,17 +3966,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5634,14 +3977,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5649,33 +3986,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 19]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5683,17 +4007,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5701,14 +4018,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5716,31 +4027,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5748,17 +4046,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5766,14 +4057,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5781,31 +4066,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5813,17 +4085,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5831,14 +4096,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5846,33 +4105,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 20]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5880,17 +4126,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5898,14 +4137,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5913,31 +4146,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5945,17 +4165,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5963,14 +4176,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -5978,31 +4185,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6010,17 +4204,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6028,14 +4215,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6043,33 +4224,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 21]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6077,17 +4245,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6095,14 +4256,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6110,31 +4265,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6142,17 +4284,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6160,14 +4295,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6175,31 +4304,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6207,17 +4323,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6225,14 +4334,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6240,33 +4343,20 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano.Music measure 22]
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6274,17 +4364,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6292,14 +4375,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6307,31 +4384,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6339,17 +4403,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6357,14 +4414,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6372,31 +4423,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6404,17 +4442,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6422,14 +4453,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6437,31 +4462,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6469,17 +4481,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6487,14 +4492,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6502,31 +4501,18 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6534,17 +4520,10 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6552,14 +4531,8 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
-        % BEFORE:
-        % GROB_OVERRIDES:
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -6567,39 +4540,25 @@ number.10.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        % AFTER:
-        % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % COMMANDS:
           %! SPANNER_STOP
           %! baca._do_spanner_indicator_command(2)
           %! baca.ottava_bassa()
         \ottava 0
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -6607,19 +4566,13 @@ number.10.Piano.Music = {
 
   %! baca.path.extern()
 number.10.Piano.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Piano.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Piano.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -6627,23 +4580,16 @@ number.10.Piano.Staff = {
 
   %! baca.path.extern()
 number.10.Percussion.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
       %! krummzeit.make_hypermeter_tuplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! REAPPLIED_BAR_EXTENT
@@ -6669,8 +4615,6 @@ number.10.Percussion.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \startStaff
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -6694,11 +4638,8 @@ number.10.Percussion.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_hypermeter_tuplets()
         fs''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! REAPPLIED_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REAPPLIED_DYNAMIC
@@ -6709,12 +4650,9 @@ number.10.Percussion.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \fff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Xylophone”)"
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -6727,40 +4665,25 @@ number.10.Percussion.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-perc-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_hypermeter_tuplets()
         fs''!2.
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_hypermeter_tuplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 9/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 3]
-    % BEFORE:
-    % COMMANDS:
       %! MEASURE_293
       %! SHIFTED_CLEF
       %! baca.clef_x_extent_false(1)
@@ -6784,8 +4707,6 @@ number.10.Percussion.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(2)
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -6808,26 +4729,18 @@ number.10.Percussion.Music = {
     \set Staff.forceClef = ##t
       %! krummzeit.make_incise_attacks()
     r16
-    % AFTER:
-    % COMMANDS:
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(0 . 2)
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -6842,419 +4755,263 @@ number.10.Percussion.Music = {
     \f
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % MARKUP:
       %! baca.markup()
     ^ \baca-tam-tam-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 4]
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 5]
       %! krummzeit.make_incise_attacks()
     r2..
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 6]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2..
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 7]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r4.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 8]
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 9]
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 10]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r1
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 11]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 12]
       %! krummzeit.make_incise_attacks()
     r1
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 13]
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 14]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 15]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 16]
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 17]
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 18]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 19]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 20]
       %! krummzeit.make_incise_attacks()
     r2.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 21]
       %! krummzeit.make_incise_attacks()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 22]
       %! krummzeit.make_incise_attacks()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     c'16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.laissez_vibrer()
     \laissezVibrer
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_incise_attacks()
     r1
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -7262,19 +5019,13 @@ number.10.Percussion.Music = {
 
   %! baca.path.extern()
 number.10.Percussion.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Percussion.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Percussion.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -7282,21 +5033,14 @@ number.10.Percussion.Staff = {
 
   %! baca.path.extern()
 number.10.Violin.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! REAPPLIED_BAR_EXTENT
@@ -7322,8 +5066,6 @@ number.10.Violin.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \startStaff
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -7347,11 +5089,8 @@ number.10.Violin.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! REDUNDANT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REDUNDANT_DYNAMIC
@@ -7364,15 +5103,11 @@ number.10.Violin.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Violin”)"
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -7385,531 +5120,309 @@ number.10.Violin.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-vn-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 2]
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_opening_triplets()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
       %! krummzeit.make_right_remainder_quarters()
     g''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
@@ -7924,433 +5437,279 @@ number.10.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-f
-    % MARKUP:
       %! baca.markup()
     ^ \krummzeit-on-bridge-full-bow-markup
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     cs''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     fs''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e''8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 6]
       %! krummzeit.make_right_remainder_quarters()
     a''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     bf'!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 7]
       %! krummzeit.make_right_remainder_quarters()
     d''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e'8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 8]
       %! krummzeit.make_right_remainder_quarters()
     bf'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     d'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e'8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 9]
       %! krummzeit.make_right_remainder_quarters()
     d'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % BEFORE:
-    % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
       %! krummzeit.make_right_remainder_quarters()
     g'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % BEFORE:
-    % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
       %! krummzeit.make_right_remainder_quarters()
     g'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 12]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 13]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 14]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_pizzicato_rhythm()
     \times 3/4
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 22]
           %! krummzeit.make_pizzicato_rhythm()
         e'''8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -8365,99 +5724,59 @@ number.10.Violin.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! baca.markup()
         ^ \baca-pizz-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         cs'''!4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         f'''8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % SPANNER_STARTS:
         ~
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_pizzicato_rhythm()
     \times 7/8
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         f'''8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         a'''2
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         c'''4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         f'''8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -8465,19 +5784,13 @@ number.10.Violin.Music = {
 
   %! baca.path.extern()
 number.10.Violin.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Violin.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Violin.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -8485,21 +5798,14 @@ number.10.Violin.Staff = {
 
   %! baca.path.extern()
 number.10.Viola.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-va-markup
           %! -PARTS
@@ -8507,8 +5813,6 @@ number.10.Viola.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \set Staff.shortInstrumentName = \krummzeit-va-markup
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -8529,11 +5833,8 @@ number.10.Viola.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! REDUNDANT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REDUNDANT_DYNAMIC
@@ -8546,15 +5847,11 @@ number.10.Viola.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Viola”)"
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -8567,529 +5864,307 @@ number.10.Viola.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-va-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 2]
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         a8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_opening_triplets()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 5]
-    % BEFORE:
-    % COMMANDS:
       %! MEASURE_295
       %! SHIFTED_CLEF
       %! baca.clef_x_extent_false(1)
@@ -9098,8 +6173,6 @@ number.10.Viola.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -9119,8 +6192,6 @@ number.10.Viola.Music = {
     \set Staff.forceClef = ##t
       %! krummzeit.make_right_remainder_quarters()
     ef''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
@@ -9135,436 +6206,280 @@ number.10.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-f
-    % MARKUP:
       %! baca.markup()
     ^ \krummzeit-on-bridge-full-bow-markup
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     bf''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     af''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     b'8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 6]
       %! krummzeit.make_right_remainder_quarters()
     fs''!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     af'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     g'8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
       %! krummzeit.make_right_remainder_quarters()
     cs'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     af'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     b8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 8]
-    % BEFORE:
-    % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
       %! krummzeit.make_right_remainder_quarters()
     g'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % BEFORE:
-    % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
       %! krummzeit.make_right_remainder_quarters()
     g'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef'!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 9]
       %! krummzeit.make_right_remainder_quarters()
     cs'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     fs!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     b4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 12]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 13]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 14]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \times 4/5
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 22]
           %! krummzeit.make_pizzicato_rhythm()
         ef'''!8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -9579,92 +6494,55 @@ number.10.Viola.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! baca.markup()
         ^ \baca-pizz-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         d'''4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         g'''4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_pizzicato_rhythm()
     \times 5/6
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         ef'''!2
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         b'''4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_pizzicato_rhythm()
     ef'''!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.staccatissimo()
     - \staccatissimo
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -9672,19 +6550,13 @@ number.10.Viola.Music = {
 
   %! baca.path.extern()
 number.10.Viola.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Viola.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Viola.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -9692,21 +6564,14 @@ number.10.Viola.Staff = {
 
   %! baca.path.extern()
 number.10.Cello.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-vc-markup
           %! -PARTS
@@ -9714,8 +6579,6 @@ number.10.Cello.Music = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \set Staff.shortInstrumentName = \krummzeit-vc-markup
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -9736,11 +6599,8 @@ number.10.Cello.Music = {
         \set Staff.forceClef = ##t
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! REDUNDANT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! REDUNDANT_DYNAMIC
@@ -9753,15 +6613,11 @@ number.10.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Cello”)"
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -9774,529 +6630,307 @@ number.10.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-vc-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_opening_triplets()
     \times 2/3
       %! krummzeit.make_opening_triplets()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % START_BEAM:
           %! krummzeit.make_opening_triplets()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_opening_triplets()
         eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % STOP_BEAM:
           %! krummzeit.make_opening_triplets()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_opening_triplets()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_opening_triplets()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 5/8
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-    % BEFORE:
-    % COMMANDS:
       %! MEASURE_295
       %! SHIFTED_CLEF
       %! baca.clef_x_extent_false(1)
@@ -10305,8 +6939,6 @@ number.10.Cello.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
@@ -10326,8 +6958,6 @@ number.10.Cello.Music = {
     \set Staff.forceClef = ##t
       %! krummzeit.make_right_remainder_quarters()
     d''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
@@ -10342,432 +6972,279 @@ number.10.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-f
-    % MARKUP:
       %! baca.markup()
     ^ \krummzeit-on-bridge-full-bow-markup
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     g''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     bf'!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
       %! krummzeit.make_right_remainder_quarters()
     e'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     g'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     bf'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     ef'!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
       %! krummzeit.make_right_remainder_quarters()
     bf'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     cs'!8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
       %! krummzeit.make_right_remainder_quarters()
     ef'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     fs'!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
       %! krummzeit.make_right_remainder_quarters()
     bf!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     f4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     e4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \downbow
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_right_remainder_quarters()
     bf!4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.alternate_bow_strokes()
     - \upbow
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 5/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 13]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 14]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! krummzeit.make_pizzicato_rhythm()
     \times 5/6
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 22]
           %! krummzeit.make_pizzicato_rhythm()
         f'''8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -10782,97 +7259,57 @@ number.10.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! baca.markup()
         ^ \baca-pizz-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         e'''4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         cs'''!4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         bf'''!8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % SPANNER_STARTS:
         ~
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     \times 4/5
       %! krummzeit.make_pizzicato_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         bf'''4.
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! krummzeit.make_pizzicato_rhythm()
         af'''!4
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.staccatissimo()
         - \staccatissimo
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! krummzeit.make_pizzicato_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! krummzeit.make_pizzicato_rhythm()
     e'''8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.staccatissimo()
     - \staccatissimo
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }
@@ -10880,19 +7317,13 @@ number.10.Cello.Music = {
 
   %! baca.path.extern()
 number.10.Cello.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
     \context Voice = "Cello.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
     { \number.10.Cello.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! krummzeit.make_empty_score()
   %! baca.path.extern()
 }

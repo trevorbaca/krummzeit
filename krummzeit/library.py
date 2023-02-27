@@ -594,7 +594,8 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
         final_list = durations.pop()
         durations.insert(0, final_list)
     lists = rmakers.note(durations, tag=tag)
-    voice = rmakers.wrap_in_time_signature_staff(lists, time_signatures)
+    components = abjad.sequence.flatten(lists)
+    voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_lts is not None:
         lts = baca.select.lts(voice)
         lts = abjad.select.get(lts, force_rest_lts)
@@ -665,7 +666,8 @@ def make_piano_harmonics_rhythm(
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
     lists = rmakers.note(durations, tag=tag)
-    voice = rmakers.wrap_in_time_signature_staff(lists, time_signatures)
+    components = abjad.sequence.flatten(lists)
+    voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_plts is not None:
         plts = baca.select.plts(voice)
         plts = abjad.select.get(plts, force_rest_plts)
@@ -776,7 +778,8 @@ def make_polyphony_quarters(durations, tag, time_signatures):
         spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
         tag=tag,
     )
-    voice = rmakers.wrap_in_time_signature_staff(lists, time_signatures)
+    components = abjad.sequence.flatten(lists)
+    voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     rmakers.untie(voice)
     plts = baca.select.plts(voice)
     rmakers.beam(plts, tag=tag)
@@ -860,7 +863,8 @@ def make_right_remainder_quarters(time_signatures):
     durations = [baca.sequence.quarters([_]) for _ in durations]
     durations = abjad.sequence.flatten(durations, depth=-1)
     lists = rmakers.note(durations, tag=tag)
-    voice = rmakers.wrap_in_time_signature_staff(lists, time_signatures)
+    components = abjad.sequence.flatten(lists)
+    voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     plts = baca.select.plts(voice)
     rmakers.beam(plts, tag=tag)
     music = abjad.mutate.eject_contents(voice)
@@ -960,7 +964,8 @@ def make_white_rhythm(
         final_list = durations.pop()
         durations.insert(0, final_list)
     lists = rmakers.note(durations, tag=tag)
-    voice = rmakers.wrap_in_time_signature_staff(lists, time_signatures)
+    components = abjad.sequence.flatten(lists)
+    voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if not do_not_burnish:
         leaf = abjad.select.leaf(voice, 0)
         rmakers.force_rest(leaf, tag=tag)

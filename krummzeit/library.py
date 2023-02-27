@@ -448,11 +448,10 @@ def make_fused_expanse(time_signatures, weights):
     weights = abjad.durations(weights)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
-    lists = rmakers.note(durations, tag=tag)
-    music = abjad.sequence.flatten(lists)
-    plts = baca.select.plts(music)
+    components = rmakers.note(durations, tag=tag)
+    plts = baca.select.plts(components)
     rmakers.beam(plts, tag=tag)
-    return music
+    return components
 
 
 def make_glissando_rhythm(
@@ -593,8 +592,7 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     if durations != without_overhang:
         final_list = durations.pop()
         durations.insert(0, final_list)
-    lists = rmakers.note(durations, tag=tag)
-    components = abjad.sequence.flatten(lists)
+    components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_lts is not None:
         lts = baca.select.lts(voice)
@@ -665,8 +663,7 @@ def make_piano_harmonics_rhythm(
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
     durations = [abjad.Duration(_) for _ in durations]
-    lists = rmakers.note(durations, tag=tag)
-    components = abjad.sequence.flatten(lists)
+    components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_plts is not None:
         plts = baca.select.plts(voice)
@@ -773,12 +770,11 @@ def make_polyphony_eighths(durations, tag, time_signatures):
 
 
 def make_polyphony_quarters(durations, tag, time_signatures):
-    lists = rmakers.note(
+    components = rmakers.note(
         durations,
         spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
         tag=tag,
     )
-    components = abjad.sequence.flatten(lists)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     rmakers.untie(voice)
     plts = baca.select.plts(voice)
@@ -862,8 +858,7 @@ def make_right_remainder_quarters(time_signatures):
     durations = [_.duration for _ in time_signatures]
     durations = [baca.sequence.quarters([_]) for _ in durations]
     durations = abjad.sequence.flatten(durations, depth=-1)
-    lists = rmakers.note(durations, tag=tag)
-    components = abjad.sequence.flatten(lists)
+    components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     plts = baca.select.plts(voice)
     rmakers.beam(plts, tag=tag)
@@ -963,8 +958,7 @@ def make_white_rhythm(
     if durations != without_overhang and remainder == abjad.LEFT:
         final_list = durations.pop()
         durations.insert(0, final_list)
-    lists = rmakers.note(durations, tag=tag)
-    components = abjad.sequence.flatten(lists)
+    components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if not do_not_burnish:
         leaf = abjad.select.leaf(voice, 0)

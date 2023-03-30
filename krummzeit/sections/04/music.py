@@ -9,9 +9,7 @@ from krummzeit import library
 
 
 def make_empty_score():
-    time_signatures = baca.make_time_signatures(
-        library.section_time_signatures("D"), 19
-    )
+    time_signatures = library.section_time_signatures("D")
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.time_signatures(time_signatures)

@@ -1034,7 +1034,7 @@ def register_narrow(argument, start, stop=None):
     }
     if stop is None:
         registration = octave_number_to_registration[start]
-        baca.pitchcommands._do_register_command(argument, registration)
+        baca.pitchtools._do_register_command(argument, registration)
     else:
         start_registration = octave_number_to_registration[start]
         stop_registration = octave_number_to_registration[stop]
@@ -1095,7 +1095,7 @@ def register_wide(argument, start):
         ),
     }
     registration = start_to_registration[start]
-    baca.pitchcommands._do_register_command(argument, registration)
+    baca.pitchtools._do_register_command(argument, registration)
 
 
 def replace_with_clusters(argument, flavor):

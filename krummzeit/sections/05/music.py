@@ -319,7 +319,6 @@ def perc(m):
         baca.markup(o.pleaf(0), r"\krummzeit-accent-changes-markup")
     with baca.scope(m[25, 26]) as o:
         baca.staff_lines(o.leaf(0), 5)
-        baca.clef(o.leaf(0), "treble")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
             baca.beam_positions(o, -4)

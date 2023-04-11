@@ -498,7 +498,6 @@ def composites(cache):
         baca.pitch(o, "C#6")
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][28, 33]) as o:
-        baca.staff_lines(o.leaf(0), 5)
         baca.pitch(o, "C#6")
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][34, 44]) as o:

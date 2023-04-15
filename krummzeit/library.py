@@ -1166,27 +1166,27 @@ instruments = {
 
 
 metronome_marks = {
-    "36": abjad.MetronomeMark((1, 4), 36),
-    "45": abjad.MetronomeMark((1, 4), 45),
+    "36": abjad.MetronomeMark(abjad.Duration(1, 4), 36),
+    "45": abjad.MetronomeMark(abjad.Duration(1, 4), 45),
     "67.5": abjad.MetronomeMark(
-        reference_duration=(1, 4),
+        reference_duration=abjad.Duration(1, 4),
         units_per_minute=fractions.Fraction(135, 2),
         custom_markup=abjad.Markup(
             r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
         ),
     ),
-    "72": abjad.MetronomeMark((1, 4), 72),
+    "72": abjad.MetronomeMark(abjad.Duration(1, 4), 72),
     "72/108": abjad.MetronomeMark(
-        reference_duration=(1, 4),
+        reference_duration=abjad.Duration(1, 4),
         units_per_minute=108,
         custom_markup=abjad.Markup(
             r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
         ),
     ),
-    "90": abjad.MetronomeMark((1, 4), 90),
-    "108": abjad.MetronomeMark((1, 4), 108),
-    "135": abjad.MetronomeMark((1, 4), 135),
-    "144": abjad.MetronomeMark((1, 4), 144),
+    "90": abjad.MetronomeMark(abjad.Duration(1, 4), 90),
+    "108": abjad.MetronomeMark(abjad.Duration(1, 4), 108),
+    "135": abjad.MetronomeMark(abjad.Duration(1, 4), 135),
+    "144": abjad.MetronomeMark(abjad.Duration(1, 4), 144),
     # slower
     "4:5(4)=4": abjad.MetricModulation(
         left_rhythm=abjad.Tuplet("4:5", "c4"),

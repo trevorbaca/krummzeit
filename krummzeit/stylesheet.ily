@@ -92,6 +92,7 @@
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
+        \consists Bar_engraver
         % causes programming error: cyclic dependency: calculation-in-progress
         % encountered for VerticalAxisGroup.adjacent-pure-heights:
         % \consists Bar_number_engraver
@@ -105,6 +106,8 @@
         \override BarNumber.Y-extent = ##f
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
+
+        \override TextSpanner.to-barline = ##t
 
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
@@ -211,6 +214,8 @@
         %            makes LilyPond ignore self-alignment-X tweaks;
         %            probably should never be done at stylesheet level.
         % NOTE:      may be best to override NO text script properties.
+
+        \override TextSpanner.to-barline = ##t
 
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f

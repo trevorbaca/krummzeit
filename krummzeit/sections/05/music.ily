@@ -159,13 +159,13 @@ number.5.Skips = {
     \time 3/4
     s1 * 3/4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "36" #'green4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "36"
       %! REAPPLIED_METRONOME_MARK
@@ -361,13 +361,13 @@ number.5.Skips = {
       %! STAGE_NUMBER
     %@% \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-dashed-line-with-arrow
+    %@% - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -803,13 +803,13 @@ number.5.Skips = {
       %! STAGE_NUMBER
     %@% \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-markup \krummzeit-seventy-two-subito-one-hundred-eight-markup #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-markup \krummzeit-seventy-two-subito-one-hundred-eight-markup
       %! EXPLICIT_METRONOME_MARK
@@ -868,20 +868,20 @@ number.5.Skips = {
       %! STAGE_NUMBER
     %@% \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-dashed-line-with-arrow
+    %@% - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-bracketed-metric-modulation #2 #0 #1 #"72" #2 #1 #2 #0 #'(1 . 1)
       %! EXPLICIT_METRONOME_MARK
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-colored-bracketed-metric-modulation #2 #0 #1 #"72" #2 #1 #2 #0 #'(1 . 1) #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
-    %@% - \abjad-dashed-line-with-arrow
+    %@% - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
@@ -1088,13 +1088,13 @@ number.5.Skips = {
       %! STAGE_NUMBER
     %@% \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "108" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "108"
       %! EXPLICIT_METRONOME_MARK
@@ -4429,7 +4429,7 @@ number.5.Violin.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \abjad-dashed-line-with-arrow
+        - \baca-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START
@@ -5336,7 +5336,7 @@ number.5.Viola.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \abjad-dashed-line-with-arrow
+        - \baca-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START
@@ -6324,7 +6324,7 @@ number.5.Cello.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \abjad-dashed-line-with-arrow
+        - \baca-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START

@@ -45,7 +45,7 @@ def GLOBALS(skips, rests):
         (23 - 1, "144"),
     ):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
     for index, string in ((23 - 1, "very_long"),):
         baca.global_fermata(rests[index], string)
 

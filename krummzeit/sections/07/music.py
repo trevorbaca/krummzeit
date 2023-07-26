@@ -39,7 +39,7 @@ def GLOBALS(skips):
         (19 - 1, "144"),
     ):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def OB(voice, time_signatures):

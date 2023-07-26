@@ -4429,17 +4429,17 @@ number.5.Violin.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 6
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START
         - \baca-text-spanner-right-text "molto gridato"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 6
           %! SPANNER_START
         \startTextSpan
           %! EXPLICIT_DYNAMIC_COLOR
@@ -5336,17 +5336,17 @@ number.5.Viola.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 6
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START
         - \baca-text-spanner-right-text "molto gridato"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 6
           %! SPANNER_START
         \startTextSpan
           %! EXPLICIT_DYNAMIC_COLOR
@@ -6324,17 +6324,17 @@ number.5.Cello.Music = {
           %! SPANNER_STOP
         \pp
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 6
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "molto flautando"
           %! SPANNER_START
         - \baca-text-spanner-right-text "molto gridato"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 6
           %! SPANNER_START
         \startTextSpan
           %! EXPLICIT_DYNAMIC_COLOR

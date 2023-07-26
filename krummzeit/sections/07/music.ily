@@ -2144,17 +2144,17 @@ number.7.Violin.Music = {
         % [Violin.Music measure 11]
         fs!2.
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 5
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "grid. possibile"
           %! SPANNER_START
         - \baca-text-spanner-right-text "flaut. possibile"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 5
           %! SPANNER_START
         \startTextSpan
 
@@ -2383,17 +2383,17 @@ number.7.Viola.Music = {
         % [Viola.Music measure 13]
         bf,!4
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 5
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "grid. possibile"
           %! SPANNER_START
         - \baca-text-spanner-right-text "flaut. possibile"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 5
           %! SPANNER_START
         \startTextSpan
 
@@ -2611,17 +2611,17 @@ number.7.Cello.Music = {
         % [Cello.Music measure 13]
         a,,1.
           %! SPANNER_START
-        - \tweak bound-details.right.padding 0.5
-          %! SPANNER_START
-        - \tweak bound-details.right.stencil-align-dir-y #center
-          %! SPANNER_START
-        - \tweak staff-padding 5
-          %! SPANNER_START
         - \abjad-dashed-line-with-arrow
           %! SPANNER_START
         - \baca-text-spanner-left-text "grid. possibile"
           %! SPANNER_START
         - \baca-text-spanner-right-text "flaut. possibile"
+          %! SPANNER_START
+        - \tweak bound-details.right.padding 0.5
+          %! SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center
+          %! SPANNER_START
+        - \tweak staff-padding 5
           %! SPANNER_START
         \startTextSpan
 

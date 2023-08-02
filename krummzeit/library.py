@@ -313,7 +313,7 @@ def instrument(argument, key, manifests):
 
 
 def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, split):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     weights = abjad.durations([(_, 4) for _ in split])
     durations = [_.duration for _ in time_signatures]
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
@@ -329,7 +329,7 @@ def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, spli
 
 
 def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     tuplet_ratios = [
         (-2, 4, 1, 1, 12),
         (3, 2),
@@ -366,7 +366,7 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
 
 
 def make_detached_triplets(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
     durations = baca.sequence.quarters(durations)
@@ -379,7 +379,7 @@ def make_detached_triplets(time_signatures):
 
 
 def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     oboe_music_voice = abjad.Voice(name="Oboe.Music", tag=tag)
     oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe.Staff", tag=tag)
@@ -442,7 +442,7 @@ def make_empty_score():
 
 
 def make_fused_expanse(time_signatures, weights):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
     weights = abjad.durations(weights)
@@ -464,7 +464,7 @@ def make_glissando_rhythm(
 ):
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert not isinstance(tie_across_divisions, list)
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     sequences = []
     ratios = abjad.CyclicTuple(division_ratios)
     for i, time_signature in enumerate(time_signatures):
@@ -495,7 +495,7 @@ def make_glissando_rhythm(
 def make_hypermeter_tuplets(
     time_signatures, tuplet_ratios, counts=(2, 3, 1), *, force_rest_tuplets=None
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     lists = abjad.sequence.partition_by_counts(
         durations, counts, cyclic=True, overhang=True
@@ -521,7 +521,7 @@ def make_hypermeter_tuplets(
 
 
 def make_incise_attacks(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.incised(
         durations,
@@ -541,7 +541,7 @@ def make_incise_attacks(time_signatures):
 
 
 def make_incise_chain_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.incised(
         durations,
@@ -565,7 +565,7 @@ def make_incise_chain_rhythm(time_signatures):
 
 
 def make_incise_chain_b_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.incised(
         durations,
@@ -584,7 +584,7 @@ def make_incise_chain_b_rhythm(time_signatures):
 
 
 def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [sum([_.duration for _ in time_signatures])]
     weights = [abjad.Duration(1, 4)]
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
@@ -605,7 +605,7 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
 
 
 def make_oboe_trill_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     ratios = abjad.CyclicTuple([(2, 1), (2, 1), (1, 1, 1)])
     sequences = []
     for i, time_signature in enumerate(time_signatures):
@@ -630,7 +630,7 @@ def make_oboe_trill_rhythm(time_signatures):
 def make_opening_triplets(
     time_signatures, *, force_rest_tuplets=None, remainder=abjad.LEFT
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [sum([_.duration for _ in time_signatures])]
     weights = [abjad.Duration(1, 4)]
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
@@ -653,7 +653,7 @@ def make_opening_triplets(
 def make_piano_harmonics_rhythm(
     time_signatures, division_ratios, *, force_rest_plts=None, tie_across_divisions=None
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     assert isinstance(division_ratios, list), repr(division_ratios)
     sequences = []
     ratios = abjad.CyclicTuple(division_ratios)
@@ -686,7 +686,7 @@ def make_piano_harmonics_rhythm(
 
 
 def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6, 18)):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     weights = abjad.durations([(_, 16) for _ in split])
     durations = [_.duration for _ in time_signatures]
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
@@ -714,7 +714,7 @@ def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6,
 def make_pizzicato_sixteenths(
     time_signatures, *, extra_counts=None, force_rest_tuplets=None
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     weights = abjad.durations([(6, 16), (18, 16)])
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
@@ -795,7 +795,7 @@ def make_polyphony_rhythm(
     ties=None,
     weights=None,
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     assert isinstance(ties, abjad.Pattern), repr(ties)
     durations = split_polyphony_time_signatures(rotation, time_signatures, weights)
     music = []
@@ -823,7 +823,7 @@ def make_polyphony_rhythm(
 
 
 def make_prolated_quarters(time_signatures, extra_counts):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.even_division(durations, [4], extra_counts=extra_counts, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -833,7 +833,7 @@ def make_prolated_quarters(time_signatures, extra_counts):
 
 
 def make_rest_delimited_repeated_duration_notes(time_signatures, weight, denominator):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
     weights = abjad.durations([weight])
@@ -854,7 +854,7 @@ def make_rest_delimited_repeated_duration_notes(time_signatures, weight, denomin
 
 
 def make_right_remainder_quarters(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [baca.sequence.quarters([_]) for _ in durations]
     durations = abjad.sequence.flatten(durations, depth=-1)
@@ -873,7 +873,7 @@ def make_silver_points_rhythm(
     force_rest_tuplets=None,
     tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)],
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     sequences = []
     ratios_ = abjad.CyclicTuple(ratios)
     for i, time_signature in enumerate(time_signatures):
@@ -898,7 +898,7 @@ def make_silver_points_rhythm(
 
 
 def make_single_cluster_piano_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.incised(
         durations,
@@ -918,7 +918,7 @@ def make_single_cluster_piano_rhythm(time_signatures):
 
 
 def make_single_division_tuplets(time_signatures, ratios):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.tuplet(durations, ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -934,7 +934,7 @@ def make_single_division_tuplets(time_signatures, ratios):
 
 
 def make_sponge_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.talea(durations, [1, 2], 2, extra_counts=[2, 1, 0], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -949,7 +949,7 @@ def make_sponge_rhythm(time_signatures):
 def make_white_rhythm(
     time_signatures, weights=None, remainder=abjad.LEFT, do_not_burnish=None
 ):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     durations = [sum(durations)]
     weights = [abjad.Duration(_) for _ in weights]

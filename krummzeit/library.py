@@ -320,7 +320,8 @@ def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, spli
     durations = abjad.sequence.flatten(durations)
     tuplets = rmakers.talea(durations, counts, 4, extra_counts=extra_counts, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    lists = baca.select.leaves_in_each_lt(voice, 1, None)
+    lts = baca.select.lts(voice)
+    lists = [_[1:] for _ in lts]
     rmakers.force_rest(lists, tag=tag)
     rmakers.beam(voice)
     rmakers.extract_trivial(voice)
@@ -727,7 +728,8 @@ def make_pizzicato_sixteenths(
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    leaves = baca.select.leaf_in_each_tuplet(voice, 0)
+    tuplets = abjad.select.tuplets(voice)
+    leaves = [abjad.select.leaf(_, 0) for _ in tuplets]
     rmakers.force_rest(leaves, tag=tag)
     if force_rest_tuplets is not None:
         tuplets = baca.select.tuplets(voice)

@@ -354,7 +354,7 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
     leaves = [abjad.select.leaf(_, 0) for _ in lists]
     rmakers.tie(leaves, tag=tag)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets)
     rmakers.rewrite_dots(voice, tag=tag)
@@ -483,7 +483,7 @@ def make_glissando_rhythm(
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets)
     rmakers.rewrite_rest_filled(voice, tag=tag)
@@ -507,7 +507,7 @@ def make_hypermeter_tuplets(
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets)
     rmakers.beam(voice, tag=tag)
@@ -555,7 +555,7 @@ def make_incise_chain_rhythm(time_signatures):
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    tuplets = baca.select.tuplets(voice)
+    tuplets = abjad.select.tuplets(voice)
     tuplets = abjad.select.get(tuplets, ([2], 5))
     rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)
@@ -617,7 +617,7 @@ def make_oboe_trill_rhythm(time_signatures):
     durations = [abjad.Duration(_) for _ in durations]
     tuplets = rmakers.tuplet(durations, [(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    tuplets = baca.select.tuplets(voice)
+    tuplets = abjad.select.tuplets(voice)
     tuplets = abjad.select.get(tuplets, ([3, 4], 6))
     rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)
@@ -642,7 +642,8 @@ def make_opening_triplets(
     tuplets = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice, force_rest_tuplets)
+        tuplets = abjad.select.tuplets(voice)
+        tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)
     rmakers.rewrite_rest_filled(voice, tag=tag)
@@ -701,7 +702,7 @@ def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)
@@ -732,7 +733,7 @@ def make_pizzicato_sixteenths(
     leaves = [abjad.select.leaf(_, 0) for _ in tuplets]
     rmakers.force_rest(leaves, tag=tag)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)
@@ -887,7 +888,7 @@ def make_silver_points_rhythm(
     tuplets = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
-        tuplets = baca.select.tuplets(voice)
+        tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         rmakers.force_rest(tuplets, tag=tag)
     rmakers.beam(voice, tag=tag)

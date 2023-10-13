@@ -179,14 +179,14 @@ def ob_cl_4_10(cache):
         with baca.scope(cache[name].get(8, 10)) as o:
             if name == "ob":
                 baca.pitch(o, "Eb5")
-                baca.tuplet_bracket_staff_padding(o, 2)
+                baca.override.tuplet_bracket_staff_padding(o, 2)
             if name == "cl":
                 baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
                 baca.pitch(o, "Eb2")
                 baca.dynamic(o.pleaf(0), "ff")
                 baca.override.dls_staff_padding(o, 9)
-                baca.stem_up(o)
-                baca.tuplet_bracket_staff_padding(o, 5)
+                baca.override.stem_up(o)
+                baca.override.tuplet_bracket_staff_padding(o, 5)
             library.color_fingerings(o)
 
 
@@ -212,7 +212,7 @@ def pf_perc_9_10(cache):
             if name == "pf":
                 baca.instrument(o.leaf(0), "Piano", library.manifests)
                 baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
-                baca.tuplet_bracket_staff_padding(o, 2)
+                baca.override.tuplet_bracket_staff_padding(o, 2)
                 baca.override.dls_staff_padding(o, 6)
             if name == "perc":
                 baca.instrument(
@@ -220,7 +220,7 @@ def pf_perc_9_10(cache):
                     "Xylophone",
                     manifests=library.manifests,
                 )
-                baca.tuplet_bracket_staff_padding(o, 3)
+                baca.override.tuplet_bracket_staff_padding(o, 3)
             baca.pitch(o, "F#6")
             baca.stem_tremolo(o.pleaves())
             baca.dynamic(o.pleaf(0), "fff")
@@ -258,7 +258,7 @@ def strings_3_5(cache):
                 library.register_wide(o, register)
             elif name in ("va", "vc"):
                 library.register_narrow(o, register)
-            baca.note_head_style_harmonic(o.pleaves())
+            baca.override.note_head_style_harmonic(o.pleaves())
             for run in baca.select.runs(o):
                 baca.glissando(run)
             baca.dynamic(o.pleaf(0), "ppp")
@@ -274,13 +274,13 @@ def strings_7_10(cache):
             baca.pitches(o, pitches)
             if name == "vn":
                 baca.override.dls_staff_padding(o, 7)
-                baca.tuplet_bracket_staff_padding(o, 3)
+                baca.override.tuplet_bracket_staff_padding(o, 3)
             if name == "va":
                 baca.override.dls_staff_padding(o, 9)
-                baca.tuplet_bracket_staff_padding(o, 5)
+                baca.override.tuplet_bracket_staff_padding(o, 5)
             if name == "vc":
                 baca.override.dls_staff_padding(o, 9)
-                baca.tuplet_bracket_staff_padding(o, 5)
+                baca.override.tuplet_bracket_staff_padding(o, 5)
             baca.stem_tremolo(baca.select.plts(o)[1:])
             for run in baca.select.runs(o):
                 baca.glissando(run)

@@ -247,14 +247,14 @@ def ob(m):
     with baca.scope(m.leaves()) as o:
         baca.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
 
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
         baca.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
 
 
 def ob_cl(cache):
@@ -285,13 +285,13 @@ def pf(cache):
             baca.markup(o.pleaf(0), r"\krummzeit-fifth-harmonic-of-F-one-markup")
             baca.pitch(o, "C4")
             baca.tenuto(o.pheads())
-            baca.note_head_style_harmonic(o.pleaves())
+            baca.override.note_head_style_harmonic(o.pleaves())
             baca.dynamic(o.pleaf(0), "mp")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
             baca.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
-            baca.tuplet_bracket_staff_padding(o, 3)
+            baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[45, 48]) as o:
         library.replace_with_clusters(o, "tenor")
         cache.rebuild()
@@ -323,7 +323,7 @@ def perc(m):
         with baca.scope(m[pair]) as o:
             baca.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
-            baca.tuplet_bracket_staff_padding(o, 3)
+            baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[43, 48]) as o:
         baca.staff_lines(o.leaf(0), 1)
         baca.clef(o.leaf(0), "percussion")
@@ -351,7 +351,7 @@ def strings(cache):
     with baca.scope(cache["va"].get(8, 13)) as o:
         baca.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(
         cache["vn"].get(1, 13) + cache["va"].get(1, 7) + cache["vc"].get(1, 13)
     ) as o:
@@ -394,7 +394,7 @@ def strings(cache):
             for run in baca.select.runs(o):
                 baca.glissando(run)
             library.register_narrow(o, 5)
-            baca.note_head_style_harmonic(o.pleaves())
+            baca.override.note_head_style_harmonic(o.pleaves())
     with baca.scope(cache.va.get(8, 10)) as o:
         baca.clef(o.leaf(0), "treble")
         baca.hairpin(o.tleaves(), "pp < f")
@@ -425,7 +425,7 @@ def strings(cache):
         with baca.scope(m.get(14, 34)) as o:
             baca.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
-            baca.tuplet_bracket_staff_padding(o, 3)
+            baca.override.tuplet_bracket_staff_padding(o, 3)
         with baca.scope(m.get(39, 48)) as o:
             baca.pitch(o, pitch)
             baca.stem_tremolo(o.pleaves())

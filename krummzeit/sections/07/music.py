@@ -187,17 +187,17 @@ def VC(voice, time_signatures):
 def ob(m):
     with baca.scope(m.leaves()) as o:
         baca.tuplet_bracket_staff_padding(o, 4)
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
 
 
 def cl(m):
     with baca.scope(m.get(1, 10)) as o:
         baca.tuplet_bracket_staff_padding(o, 4)
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
     with baca.scope(m.get(4, 10)) as o:
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(11, 22)) as o:
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
         baca.stem_up(o.pleaves())
     with baca.scope(m.get(16, 19)) as o:
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
@@ -218,7 +218,7 @@ def perc(m):
         baca.markup(o.leaf(0), r"\baca-snare-drum-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_position(o, 0)
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
     with baca.scope(m.get(2, 16)) as o:
         baca.dynamic(o.pleaf(0), "ppp")
         baca.stem_tremolo(o.pleaves())
@@ -239,7 +239,7 @@ def va_vc_1_6(cache):
             baca.pitch(o, pitch)
             baca.hairpin(o.tleaves(), "ppp < fff")
         with baca.scope(cache[name].get(2, 6)) as o:
-            baca.dls_staff_padding(o, 6)
+            baca.override.dls_staff_padding(o, 6)
 
 
 def strings_7_19(cache):

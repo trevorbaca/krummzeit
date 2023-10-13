@@ -229,7 +229,7 @@ def ob(m):
         baca.pitch(o, "B3")
         baca.stem_up(o),
         baca.dynamic(o.pleaf(0), "fff")
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def cl(m):
@@ -268,7 +268,7 @@ def pf(cache):
         baca.ottava_bassa(o.tleaves())
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m[9, 16]) as o:
-        baca.dls_staff_padding(o, 10)
+        baca.override.dls_staff_padding(o, 10)
 
 
 def perc(m):
@@ -281,7 +281,7 @@ def perc(m):
         baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
         baca.staff_position(o, 0)
         baca.dynamic(o.pleaf(0), "pp-sempre")
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
 
 
 def vn(m):
@@ -369,7 +369,7 @@ def composites(cache):
     for name in ["vn", "va", "vc"]:
         m = cache[name]
         with baca.scope(m[5, 9]) as o:
-            baca.dls_staff_padding(o, 8)
+            baca.override.dls_staff_padding(o, 8)
             baca.tuplet_bracket_staff_padding(o, 4)
         with baca.scope(m[11, 16]) as o:
             baca.stem_up(o.tleaves())

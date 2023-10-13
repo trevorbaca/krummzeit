@@ -248,7 +248,7 @@ def VC(voice, time_signatures):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
     with baca.scope(m.get(1, 7)) as o:
         baca.pitch(o, "B3")
         baca.dynamic(o.pleaf(0), "ff")
@@ -264,29 +264,29 @@ def cl(m):
     with baca.scope(m.get(1, 5)) as o:
         baca.pitch(o, "B1")
         baca.hairpin(o.tleaves(), "ppp < ff")
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
     with baca.scope(m[9]) as o:
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
     with baca.scope(m.get(18, 23)) as o:
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.pitch(o, "C2")
         library.color_fingerings(o.pheads())
         baca.tuplet_bracket_staff_padding(o, 6)
         baca.hairpin(o.tleaves(), "f < ff")
-        baca.dls_staff_padding(o, 10)
+        baca.override.dls_staff_padding(o, 10)
 
 
 def pf(m):
     with baca.scope(m.get(5, 11)) as o:
         baca.clef(o.leaf(0), "treble")
         baca.tuplet_bracket_staff_padding(o, 3)
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
     with baca.scope(m.get(14, 20)) as o:
         baca.instrument(o.leaf(0), "Piano", library.manifests)
         baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
         baca.clef(o.leaf(0), "bass")
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
 
 
 def perc(m):
@@ -298,7 +298,7 @@ def perc(m):
 def vn(m):
     with baca.scope(m.get(5, 12)) as o:
         baca.tuplet_bracket_staff_padding(o, 3)
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def va(m):
@@ -309,7 +309,7 @@ def va(m):
         for run in baca.select.runs(o):
             baca.glissando(run)
         baca.hairpin(o, "ff < fff")
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
 
 
 def vc(m):
@@ -320,7 +320,7 @@ def vc(m):
             baca.glissando(run)
         baca.pitches(o, "A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2")
         baca.hairpin(o, "ff < fff")
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
 
 
 def ob_cl_pf_vn_5_12(cache):
@@ -367,7 +367,7 @@ def va_vc_11_12(cache):
                 baca.glissando(o)
             baca.tuplet_bracket_staff_padding(o, 4)
             baca.hairpin(o, "ff > pp")
-            baca.dls_staff_padding(o, 7)
+            baca.override.dls_staff_padding(o, 7)
 
 
 def pf_vn_vc_va_14_23(cache):
@@ -376,7 +376,7 @@ def pf_vn_vc_va_14_23(cache):
         baca.note_head_style_harmonic(o.pleaves())
         baca.tenuto(o.pheads())
         baca.dynamic(o.pleaf(0), "ff-sempre")
-        baca.dls_staff_padding(o, 4)
+        baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\krummzeit-fifth-harmonic-of-F-one-markup")
     triples = (
         ("vn", (14, 20), 4),

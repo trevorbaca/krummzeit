@@ -174,7 +174,7 @@ def ob_cl_4_10(cache):
             if name == "ob":
                 baca.trill_spanner(baca.select.rleak(o))
             baca.dynamic(o.pleaf(0), "ff")
-            baca.dls_staff_padding(o, 3)
+            baca.override.dls_staff_padding(o, 3)
     for name in ["ob", "cl"]:
         with baca.scope(cache[name].get(8, 10)) as o:
             if name == "ob":
@@ -184,7 +184,7 @@ def ob_cl_4_10(cache):
                 baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
                 baca.pitch(o, "Eb2")
                 baca.dynamic(o.pleaf(0), "ff")
-                baca.dls_staff_padding(o, 9)
+                baca.override.dls_staff_padding(o, 9)
                 baca.stem_up(o)
                 baca.tuplet_bracket_staff_padding(o, 5)
             library.color_fingerings(o)
@@ -203,7 +203,7 @@ def pf_perc_1_6(cache):
         baca.pitch(o, "D5")
         baca.accent(o.pheads())
         baca.dynamic(o.pleaf(0), "ff-sempre")
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
 
 
 def pf_perc_9_10(cache):
@@ -213,7 +213,7 @@ def pf_perc_9_10(cache):
                 baca.instrument(o.leaf(0), "Piano", library.manifests)
                 baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
                 baca.tuplet_bracket_staff_padding(o, 2)
-                baca.dls_staff_padding(o, 6)
+                baca.override.dls_staff_padding(o, 6)
             if name == "perc":
                 baca.instrument(
                     o.leaf(0),
@@ -273,13 +273,13 @@ def strings_7_10(cache):
         with baca.scope(cache[name].get(7, 10)) as o:
             baca.pitches(o, pitches)
             if name == "vn":
-                baca.dls_staff_padding(o, 7)
+                baca.override.dls_staff_padding(o, 7)
                 baca.tuplet_bracket_staff_padding(o, 3)
             if name == "va":
-                baca.dls_staff_padding(o, 9)
+                baca.override.dls_staff_padding(o, 9)
                 baca.tuplet_bracket_staff_padding(o, 5)
             if name == "vc":
-                baca.dls_staff_padding(o, 9)
+                baca.override.dls_staff_padding(o, 9)
                 baca.tuplet_bracket_staff_padding(o, 5)
             baca.stem_tremolo(baca.select.plts(o)[1:])
             for run in baca.select.runs(o):

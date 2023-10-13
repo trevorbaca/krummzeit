@@ -344,7 +344,7 @@ def pf(cache):
         baca.override.dls_staff_padding(o, 4)
     with baca.scope(m.get(17, 26)) as o:
         baca.clef(o.leaf(0), "treble")
-        baca.beam_positions(o, -4)
+        baca.override.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 5)
         baca.override.tuplet_bracket_staff_padding(o, 3)
     baca.clef(abjad.select.leaf(m[20], 0), "treble")
@@ -364,7 +364,7 @@ def pf(cache):
         baca.staccatissimo(o.pheads())
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m.get(30, 35)) as o:
-        baca.beam_positions(o, -4)
+        baca.override.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 5)
         baca.override.tuplet_bracket_staff_padding(o, 3)
 

@@ -245,14 +245,14 @@ def VC(voice, time_signatures):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.beam_positions(o, -4)
+        baca.override.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
         baca.override.tuplet_bracket_staff_padding(o, 3)
 
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
-        baca.beam_positions(o, -4)
+        baca.override.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
         baca.override.tuplet_bracket_staff_padding(o, 3)
 
@@ -289,7 +289,7 @@ def pf(cache):
             baca.dynamic(o.pleaf(0), "mp")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
-            baca.beam_positions(o, -4)
+            baca.override.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
             baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[45, 48]) as o:
@@ -321,7 +321,7 @@ def perc(m):
         baca.staff_lines(o.leaf(0), 5)
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
-            baca.beam_positions(o, -4)
+            baca.override.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
             baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[43, 48]) as o:
@@ -349,7 +349,7 @@ def pf_perc(cache):
 
 def strings(cache):
     with baca.scope(cache["va"].get(8, 13)) as o:
-        baca.beam_positions(o, -4)
+        baca.override.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 6)
         baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(
@@ -423,7 +423,7 @@ def strings(cache):
             baca.dynamic(o.pleaf(0), "ff-ancora")
             baca.markup(o.pleaf(0), r"\baca-scratch-molto-markup")
         with baca.scope(m.get(14, 34)) as o:
-            baca.beam_positions(o, -4)
+            baca.override.beam_positions(o, -4)
             baca.override.dls_staff_padding(o, 6)
             baca.override.tuplet_bracket_staff_padding(o, 3)
         with baca.scope(m.get(39, 48)) as o:

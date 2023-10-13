@@ -258,7 +258,7 @@ def composites(cache):
             baca.hairpin(o.tleaves(), "pp < ff")
     for abbreviation in ["perc", "vn", "va", "vc"]:
         with baca.scope(cache[abbreviation].leaves()) as o:
-            baca.dls_padding(o, 4)
+            baca.override.dls_padding(o, 4)
             baca.tuplet_bracket_padding(o, 2)
 
 

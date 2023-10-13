@@ -356,7 +356,7 @@ def VC(voice, time_signatures):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
         baca.tuplet_bracket_staff_padding(o, 4)
     pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
@@ -377,7 +377,7 @@ def ob(m):
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
-        baca.dls_staff_padding(o, 3),
+        baca.override.dls_staff_padding(o, 3),
     with baca.scope(m[1, 4]) as o:
         baca.pitches(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''")
     with baca.scope(m[24, 30]) as o:
@@ -392,7 +392,7 @@ def cl(m):
 
 def pf(m):
     with baca.scope(m[14, 35]) as o:
-        baca.dls_staff_padding(o, 6),
+        baca.override.dls_staff_padding(o, 6),
         baca.tuplet_bracket_staff_padding(o, 3),
 
 
@@ -404,7 +404,7 @@ def perc(m):
         ("perc", (14, 20))
     with baca.scope(m[14, 20]) as o:
         baca.tuplet_bracket_staff_padding(o, 3)
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
     with baca.scope(m[21, 27]) as o:
         baca.instrument(o.leaf(0), "Percussion", library.manifests)
         baca.markup(o.pleaf(0), r"\baca-slate-scrape-markup")
@@ -413,20 +413,20 @@ def perc(m):
         baca.staff_position(o, 0)
         baca.dynamic(o.pleaf(0), "f")
     with baca.scope(m[21]) as o:
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
     with baca.scope(m[28]) as o:
         baca.instrument(o.leaf(0), "Xylophone", library.manifests)
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
     with baca.scope(m[28, 33]) as o:
         baca.tuplet_bracket_staff_padding(o, 3)
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
     with baca.scope(m[34, 44]) as o:
         baca.markup(o.pleaf(0), r"\baca-snare-drum-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_lines(o.leaf(0), 1)
         baca.staff_position(o, 0)
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def vn(m):
@@ -457,10 +457,10 @@ def vn(m):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner(plt)
         baca.dynamic(o.pleaf(0), "ff")
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
         baca.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[36, 42]) as o:
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
 
 
 def va(m):
@@ -472,9 +472,9 @@ def va(m):
     with baca.scope(m[6, 23]) as o:
         baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
         baca.tuplet_bracket_staff_padding(o, 4)
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
     with baca.scope(m[32, 42]) as o:
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def vc(m):
@@ -485,7 +485,7 @@ def vc(m):
             baca.glissando(run)
     baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
     with baca.scope(m[32, 42]) as o:
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def composites(cache):

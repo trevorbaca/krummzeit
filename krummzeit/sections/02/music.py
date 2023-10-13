@@ -338,17 +338,17 @@ def pf(m):
         baca.instrument(o.leaf(0), "Harpsichord", library.manifests)
         baca.short_instrument_name(o.leaf(0), "Hpschd.", library.manifests)
     with baca.scope(m[1, 22]) as o:
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
         baca.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[23, 31]) as o:
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
         baca.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[45, 46]) as o:
         baca.clef(o.leaf(0), "bass")
         baca.instrument(o.leaf(0), "Piano", library.manifests)
         baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
     with baca.scope(m[57, 75]) as o:
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
         baca.tuplet_bracket_staff_padding(o, 4)
 
 

@@ -94,7 +94,7 @@ def ob_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch(o, "C#4")
         baca.dynamic(o.pleaf(0), "fff")
-        baca.dls_staff_padding(o, 5)
+        baca.override.dls_staff_padding(o, 5)
 
 
 def cl_1_40(m):
@@ -102,7 +102,7 @@ def cl_1_40(m):
         baca.pitch(o, "D2")
         baca.stem_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "f")
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
 
 
 def pf_1_48(m):
@@ -121,7 +121,7 @@ def perc_1_48(m):
         baca.pitch(o, "C#6")
         baca.stem_tremolo(o.pleaves())
         baca.dynamic(o.pleaf(0), "fff")
-        baca.dls_staff_padding(o, 4)
+        baca.override.dls_staff_padding(o, 4)
 
 
 def vn_va_1_40(cache):
@@ -141,7 +141,7 @@ def vn_va_1_40(cache):
             baca.staccatissimo(o.pheads())
             baca.tuplet_bracket_staff_padding(o, 2)
             baca.dynamic(o.pleaf(0), "ff")
-            baca.dls_staff_padding(o, 5)
+            baca.override.dls_staff_padding(o, 5)
 
 
 def vc_1_48(m):
@@ -151,7 +151,7 @@ def vc_1_48(m):
         for run in baca.select.runs(o):
             baca.glissando(run)
         baca.dynamic(o.pleaf(0), "fff-ancora")
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
     with baca.scope(m.get(25, 48)) as o:
         baca.markup(o.pleaf(0), r"\baca-ordinario-markup")
         baca.pitch(o, "D2")

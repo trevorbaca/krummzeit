@@ -100,7 +100,7 @@ def ob_1_40(m):
 def cl_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch(o, "D2")
-        baca.stem_up(o.pleaves())
+        baca.override.stem_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "f")
         baca.override.dls_staff_padding(o, 7)
 
@@ -139,7 +139,7 @@ def vn_va_1_40(cache):
             library.displacement(o)
             library.register_narrow(o, 6)
             baca.staccatissimo(o.pheads())
-            baca.tuplet_bracket_staff_padding(o, 2)
+            baca.override.tuplet_bracket_staff_padding(o, 2)
             baca.dynamic(o.pleaf(0), "ff")
             baca.override.dls_staff_padding(o, 5)
 
@@ -161,9 +161,9 @@ def vc_1_48(m):
 def vc_48(m):
     with baca.scope(baca.select.rleaves(m[48])[-1:]) as o:
         baca.mark(o.leaf(0), r"\krummzeit-colophon-markup")
-        baca.rehearsal_mark_down(o)
-        baca.rehearsal_mark_padding(o, 6)
-        baca.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
+        baca.override.rehearsal_mark_down(o)
+        baca.override.rehearsal_mark_padding(o, 6)
+        baca.override.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 
 
 @baca.build.timed("make_score")

@@ -253,13 +253,13 @@ def composites(cache):
                 pheads = baca.select.pheads(qrun)[1:]
                 baca.repeat_tie(pheads)
             library.register_narrow(o, *register)
-            baca.note_head_style_harmonic(o.tleaves())
+            baca.override.note_head_style_harmonic(o.tleaves())
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             baca.hairpin(o.tleaves(), "pp < ff")
     for abbreviation in ["perc", "vn", "va", "vc"]:
         with baca.scope(cache[abbreviation].leaves()) as o:
             baca.override.dls_padding(o, 4)
-            baca.tuplet_bracket_padding(o, 2)
+            baca.override.tuplet_bracket_padding(o, 2)
 
 
 @baca.build.timed("make_score")

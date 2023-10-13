@@ -357,7 +357,7 @@ def VC(voice, time_signatures):
 def ob(m):
     with baca.scope(m.leaves()) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
     pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
@@ -393,7 +393,7 @@ def cl(m):
 def pf(m):
     with baca.scope(m[14, 35]) as o:
         baca.override.dls_staff_padding(o, 6),
-        baca.tuplet_bracket_staff_padding(o, 3),
+        baca.override.tuplet_bracket_staff_padding(o, 3),
 
 
 def perc(m):
@@ -403,7 +403,7 @@ def perc(m):
         baca.staff_lines(o.leaf(0), 5)
         ("perc", (14, 20))
     with baca.scope(m[14, 20]) as o:
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m[21, 27]) as o:
         baca.instrument(o.leaf(0), "Percussion", library.manifests)
@@ -419,7 +419,7 @@ def perc(m):
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
     with baca.scope(m[28, 33]) as o:
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m[34, 44]) as o:
         baca.markup(o.pleaf(0), r"\baca-snare-drum-markup")
@@ -458,7 +458,7 @@ def vn(m):
                 baca.trill_spanner(plt)
         baca.dynamic(o.pleaf(0), "ff")
         baca.override.dls_staff_padding(o, 7)
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[36, 42]) as o:
         baca.override.dls_staff_padding(o, 6)
 
@@ -471,7 +471,7 @@ def va(m):
             baca.glissando(run)
     with baca.scope(m[6, 23]) as o:
         baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
         baca.override.dls_staff_padding(o, 7)
     with baca.scope(m[32, 42]) as o:
         baca.override.dls_staff_padding(o, 5)

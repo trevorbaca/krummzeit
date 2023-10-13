@@ -227,7 +227,7 @@ def VC(voice, time_signatures):
 def ob(m):
     with baca.scope(m[14, 16]) as o:
         baca.pitch(o, "B3")
-        baca.stem_up(o),
+        baca.override.stem_up(o),
         baca.dynamic(o.pleaf(0), "fff")
         baca.override.dls_staff_padding(o, 5)
 
@@ -236,7 +236,7 @@ def cl(m):
     with baca.scope(m[14, 19]) as o:
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.pitch(o, "B1")
-        baca.stem_up(o)
+        baca.override.stem_up(o)
         baca.dynamic(o.pleaf(0), "ppp")
 
 
@@ -370,9 +370,9 @@ def composites(cache):
         m = cache[name]
         with baca.scope(m[5, 9]) as o:
             baca.override.dls_staff_padding(o, 8)
-            baca.tuplet_bracket_staff_padding(o, 4)
+            baca.override.tuplet_bracket_staff_padding(o, 4)
         with baca.scope(m[11, 16]) as o:
-            baca.stem_up(o.tleaves())
+            baca.override.stem_up(o.tleaves())
         baca.dynamic(baca.select.pleaf(m[14], 0), "fff-poss")
     baca.markup(baca.select.pleaf(cache["vn"][14], 0), r"\baca-arco-markup")
     baca.markup(baca.select.pleaf(cache["vc"][14], 0), r"\baca-arco-markup")

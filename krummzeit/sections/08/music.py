@@ -253,7 +253,7 @@ def ob(m):
         baca.pitch(o, "B3")
         baca.dynamic(o.pleaf(0), "ff")
     for pair in [(9, 12), (18, 23)]:
-        baca.tuplet_bracket_staff_padding(m.get(pair), 3)
+        baca.override.tuplet_bracket_staff_padding(m.get(pair), 3)
     with baca.scope(m.get(18, 24)) as o:
         baca.pitch(o, "C4")
         library.color_fingerings(o.pheads())
@@ -272,7 +272,7 @@ def cl(m):
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.pitch(o, "C2")
         library.color_fingerings(o.pheads())
-        baca.tuplet_bracket_staff_padding(o, 6)
+        baca.override.tuplet_bracket_staff_padding(o, 6)
         baca.hairpin(o.tleaves(), "f < ff")
         baca.override.dls_staff_padding(o, 10)
 
@@ -280,7 +280,7 @@ def cl(m):
 def pf(m):
     with baca.scope(m.get(5, 11)) as o:
         baca.clef(o.leaf(0), "treble")
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         baca.override.dls_staff_padding(o, 7)
     with baca.scope(m.get(14, 20)) as o:
         baca.instrument(o.leaf(0), "Piano", library.manifests)
@@ -297,7 +297,7 @@ def perc(m):
 
 def vn(m):
     with baca.scope(m.get(5, 12)) as o:
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         baca.override.dls_staff_padding(o, 5)
 
 
@@ -365,7 +365,7 @@ def va_vc_11_12(cache):
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             for run in baca.select.runs(o):
                 baca.glissando(o)
-            baca.tuplet_bracket_staff_padding(o, 4)
+            baca.override.tuplet_bracket_staff_padding(o, 4)
             baca.hairpin(o, "ff > pp")
             baca.override.dls_staff_padding(o, 7)
 
@@ -373,7 +373,7 @@ def va_vc_11_12(cache):
 def pf_vn_vc_va_14_23(cache):
     with baca.scope(cache["pf"].get(14, 20)) as o:
         baca.pitch(o, "C4")
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.tenuto(o.pheads())
         baca.dynamic(o.pleaf(0), "ff-sempre")
         baca.override.dls_staff_padding(o, 4)
@@ -393,7 +393,7 @@ def pf_vn_vc_va_14_23(cache):
     for name, pair, register in triples:
         with baca.scope(cache[name].get(pair)) as o:
             baca.markup(o.pleaf(0), r"\baca-scratch-molto-markup")
-            baca.note_head_style_harmonic(o.pleaves())
+            baca.override.note_head_style_harmonic(o.pleaves())
             baca.dynamic(o.pleaf(0), "fff-poss")
             library.displacement(o)
             if name == "vn":

@@ -186,19 +186,19 @@ def VC(voice, time_signatures):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
         baca.override.dls_staff_padding(o, 8)
 
 
 def cl(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
         baca.override.dls_staff_padding(o, 8)
     with baca.scope(m.get(4, 10)) as o:
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(11, 22)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.stem_up(o.pleaves())
+        baca.override.stem_up(o.pleaves())
     with baca.scope(m.get(16, 19)) as o:
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.pitch(o, "B1")
@@ -210,7 +210,7 @@ def pf(m):
         baca.instrument(o.leaf(0), "Harpsichord", library.manifests)
         baca.short_instrument_name(o.leaf(0), "Hpschd.", library.manifests)
     with baca.scope(m.get(1, 10)) as o:
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
 
 
 def perc(m):

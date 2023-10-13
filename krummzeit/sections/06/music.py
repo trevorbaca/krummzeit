@@ -292,10 +292,10 @@ def ob(m):
                 baca.trill_spanner(plt)
         baca.dynamic(o.pleaf(0), "p")
     with baca.scope(m.get(1, 21)) as o:
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m.get(29, 34)) as o:
-        baca.tuplet_bracket_staff_padding(o, 2)
+        baca.override.tuplet_bracket_staff_padding(o, 2)
         baca.override.dls_staff_padding(o, 4)
 
 
@@ -304,17 +304,17 @@ def cl(m):
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch(o, "B3")
-        baca.stem_up(o.pleaves())
+        baca.override.stem_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "ppp")
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m.get(13, 21)) as o:
         baca.override.dls_staff_padding(o, 5)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m.get(23, 35)) as o:
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.short_instrument_name(o.leaf(0), "B. cl.", library.manifests)
         baca.pitch(o, "Bb1")
-        baca.stem_up(o.pleaves())
+        baca.override.stem_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "ppp")
         baca.override.dls_staff_padding(o, 7)
 
@@ -346,7 +346,7 @@ def pf(cache):
         baca.clef(o.leaf(0), "treble")
         baca.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 5)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
     baca.clef(abjad.select.leaf(m[20], 0), "treble")
     with baca.scope(m.get(27, 29)) as o:
         baca.clef(o.leaf(0), "bass")
@@ -366,7 +366,7 @@ def pf(cache):
     with baca.scope(m.get(30, 35)) as o:
         baca.beam_positions(o, -4)
         baca.override.dls_staff_padding(o, 5)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
 
 
 def perc(m):
@@ -397,10 +397,10 @@ def vn(m):
         baca.override.dls_staff_padding(o, 8.5)
     with baca.scope(m.get(12, 17)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m.get(29, 34)) as o:
         baca.override.dls_staff_padding(o, 4)
-        baca.tuplet_bracket_staff_padding(o, 2)
+        baca.override.tuplet_bracket_staff_padding(o, 2)
 
 
 def ob_vn_29_34(cache):
@@ -421,7 +421,7 @@ def va(m):
         baca.override.dls_staff_padding(o, 8.5)
     with baca.scope(m.get(12, 17)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m.get(23, 24)) as o:
         baca.override.dls_staff_padding(o, 6)
 
@@ -431,7 +431,7 @@ def vc(m):
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m.get(12, 19)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m.get(23, 24)) as o:
         baca.override.dls_staff_padding(o, 6)
 
@@ -462,7 +462,7 @@ def strings_12_20(cache):
                 baca.glissando(run)
             baca.hairpin(o.tleaves(), "p > ppp")
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
-            baca.note_head_style_harmonic(o.pleaves())
+            baca.override.note_head_style_harmonic(o.pleaves())
             library.register_narrow(o, *pair),
 
 

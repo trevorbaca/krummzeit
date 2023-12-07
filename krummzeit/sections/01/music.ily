@@ -508,6 +508,8 @@ number.1.Skips = {
 number.1.Oboe.Music = {
 
     % [Oboe.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -527,8 +529,6 @@ number.1.Oboe.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-ob-markup
-      %! EXPLICIT_CLEF
-    \clef "treble"
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
@@ -616,6 +616,8 @@ number.1.Oboe.Staff = {
 number.1.Clarinet.Music = {
 
     % [Clarinet.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -635,8 +637,6 @@ number.1.Clarinet.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-bcl-markup
-      %! EXPLICIT_CLEF
-    \clef "treble"
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
@@ -733,6 +733,8 @@ number.1.Clarinet.Staff = {
 number.1.Piano.Music = {
 
     % [Piano.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "bass"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -752,8 +754,6 @@ number.1.Piano.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
-      %! EXPLICIT_CLEF
-    \clef "bass"
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
@@ -810,6 +810,8 @@ number.1.Piano.Music = {
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     % [Piano.Music measure 7]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_7
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -822,8 +824,6 @@ number.1.Piano.Music = {
     %@% \override Staff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set Staff.forceClef = ##t
-      %! EXPLICIT_CLEF
-    \clef "treble"
     cs''!2.
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -885,6 +885,8 @@ number.1.Piano.Staff = {
 number.1.Percussion.Music = {
 
     % [Percussion.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -906,8 +908,6 @@ number.1.Percussion.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-perc-markup
-      %! EXPLICIT_CLEF
-    \clef "treble"
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
@@ -977,6 +977,8 @@ number.1.Percussion.Music = {
     {
 
         % [Percussion.Music measure 10]
+          %! EXPLICIT_CLEF
+        \clef "percussion"
           %! MEASURE_10
           %! SHIFTED_CLEF
         \once \override Staff.Clef.X-extent = ##f
@@ -1000,8 +1002,6 @@ number.1.Percussion.Music = {
         \once \override Staff.StaffSymbol.line-count = 1
           %! EXPLICIT_STAFF_LINES
         \startStaff
-          %! EXPLICIT_CLEF
-        \clef "percussion"
         c'2
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1081,6 +1081,8 @@ number.1.Percussion.Staff = {
 number.1.Violin.Music = {
 
     % [Violin.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -1102,8 +1104,6 @@ number.1.Violin.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-vn-markup
-      %! EXPLICIT_CLEF
-    \clef "treble"
     r8
       %! EXPLICIT_INSTRUMENT_ALERT
     ^ \baca-explicit-instrument-markup "(“Violin”)"
@@ -1423,6 +1423,8 @@ number.1.Violin.Staff = {
 number.1.Viola.Music = {
 
     % [Viola.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "alto"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -1444,8 +1446,6 @@ number.1.Viola.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-va-markup
-      %! EXPLICIT_CLEF
-    \clef "alto"
     r8
       %! EXPLICIT_INSTRUMENT_ALERT
     ^ \baca-explicit-instrument-markup "(“Viola”)"
@@ -1761,6 +1761,8 @@ number.1.Viola.Staff = {
 number.1.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "bass"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -1782,8 +1784,6 @@ number.1.Cello.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-vc-markup
-      %! EXPLICIT_CLEF
-    \clef "bass"
     r8
       %! EXPLICIT_INSTRUMENT_ALERT
     ^ \baca-explicit-instrument-markup "(“Cello”)"

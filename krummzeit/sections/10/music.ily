@@ -834,6 +834,8 @@ number.10.Oboe.Music = {
     {
 
         % [Oboe.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -846,8 +848,6 @@ number.10.Oboe.Music = {
           %! -PARTS
           %! REAPPLIED_SHORT_INSTRUMENT_NAME
         \set Staff.shortInstrumentName = \krummzeit-ob-markup
-          %! REAPPLIED_CLEF
-        \clef "treble"
         ef''!4.
           %! REDUNDANT_DYNAMIC_COLOR
           %! REDUNDANT_DYNAMIC
@@ -997,6 +997,8 @@ number.10.Clarinet.Music = {
     {
 
         % [Clarinet.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1009,8 +1011,6 @@ number.10.Clarinet.Music = {
           %! -PARTS
           %! REAPPLIED_SHORT_INSTRUMENT_NAME
         \set Staff.shortInstrumentName = \krummzeit-bcl-markup
-          %! REAPPLIED_CLEF
-        \clef "treble"
         f8
           %! REDUNDANT_DYNAMIC_COLOR
           %! REDUNDANT_DYNAMIC
@@ -1251,6 +1251,8 @@ number.10.Piano.Music = {
     {
 
         % [Piano.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1263,8 +1265,6 @@ number.10.Piano.Music = {
           %! -PARTS
           %! REAPPLIED_SHORT_INSTRUMENT_NAME
         \set Staff.shortInstrumentName = \krummzeit-pf-markup
-          %! REAPPLIED_CLEF
-        \clef "treble"
         fs'''!4.
         :32
           %! REAPPLIED_DYNAMIC_COLOR
@@ -1493,6 +1493,8 @@ number.10.Piano.Music = {
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Piano.Music measure 8]
+      %! EXPLICIT_CLEF
+    \clef "bass"
       %! MEASURE_298
       %! SHIFTED_CLEF
     \once \override Staff.Clef.X-extent = ##f
@@ -1510,8 +1512,6 @@ number.10.Piano.Music = {
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
-      %! EXPLICIT_CLEF
-    \clef "bass"
     r8
       %! EXPLICIT_INSTRUMENT_ALERT
     ^ \baca-explicit-instrument-markup "(“Piano”)"
@@ -3371,6 +3371,8 @@ number.10.Percussion.Music = {
     {
 
         % [Percussion.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -3395,8 +3397,6 @@ number.10.Percussion.Music = {
         \once \override Staff.StaffSymbol.line-count = 5
           %! REAPPLIED_STAFF_LINES
         \startStaff
-          %! REAPPLIED_CLEF
-        \clef "treble"
         fs''!8
         :32
           %! REAPPLIED_DYNAMIC_COLOR
@@ -3425,6 +3425,8 @@ number.10.Percussion.Music = {
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     % [Percussion.Music measure 3]
+      %! EXPLICIT_CLEF
+    \clef "percussion"
       %! MEASURE_293
       %! SHIFTED_CLEF
     \once \override Staff.Clef.X-extent = ##f
@@ -3445,8 +3447,6 @@ number.10.Percussion.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! EXPLICIT_CLEF
-    \clef "percussion"
     r16
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -3638,6 +3638,8 @@ number.10.Violin.Music = {
     {
 
         % [Violin.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -3662,8 +3664,6 @@ number.10.Violin.Music = {
         \once \override Staff.StaffSymbol.line-count = 5
           %! REAPPLIED_STAFF_LINES
         \startStaff
-          %! REAPPLIED_CLEF
-        \clef "treble"
         ef''!8
         :32
           %! REDUNDANT_DYNAMIC_COLOR
@@ -4074,6 +4074,8 @@ number.10.Viola.Music = {
     {
 
         % [Viola.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "alto"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -4086,8 +4088,6 @@ number.10.Viola.Music = {
           %! -PARTS
           %! REAPPLIED_SHORT_INSTRUMENT_NAME
         \set Staff.shortInstrumentName = \krummzeit-va-markup
-          %! REAPPLIED_CLEF
-        \clef "alto"
         a8
         :32
           %! REDUNDANT_DYNAMIC_COLOR
@@ -4284,6 +4284,8 @@ number.10.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Viola.Music measure 5]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_295
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -4296,8 +4298,6 @@ number.10.Viola.Music = {
     %@% \override Staff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set Staff.forceClef = ##t
-      %! EXPLICIT_CLEF
-    \clef "treble"
     ef''!4
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4510,6 +4510,8 @@ number.10.Cello.Music = {
     {
 
         % [Cello.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "bass"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -4522,8 +4524,6 @@ number.10.Cello.Music = {
           %! -PARTS
           %! REAPPLIED_SHORT_INSTRUMENT_NAME
         \set Staff.shortInstrumentName = \krummzeit-vc-markup
-          %! REAPPLIED_CLEF
-        \clef "bass"
         eqf,!8
         :32
           %! REDUNDANT_DYNAMIC_COLOR
@@ -4720,6 +4720,8 @@ number.10.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Cello.Music measure 5]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_295
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -4732,8 +4734,6 @@ number.10.Cello.Music = {
     %@% \override Staff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set Staff.forceClef = ##t
-      %! EXPLICIT_CLEF
-    \clef "treble"
     d''4
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR

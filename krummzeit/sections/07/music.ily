@@ -76,14 +76,14 @@ number.7.Skips = {
     %@% \baca-thick-red-bar-line
       %! REAPPLIED_TIME_SIGNATURE_COLOR
     \baca-time-signature-color  #(x11-color 'green4)
-      %! REAPPLIED_TIME_SIGNATURE
-    \time 9/8
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "07"
+      %! REAPPLIED_TIME_SIGNATURE
+    \time 9/8
     s1 * 9/8
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line

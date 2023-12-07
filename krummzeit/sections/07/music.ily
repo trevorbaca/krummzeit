@@ -762,6 +762,8 @@ number.7.Skips = {
 number.7.Oboe.Music = {
 
     % [Oboe.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -776,8 +778,6 @@ number.7.Oboe.Music = {
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-ob-markup
-      %! REAPPLIED_CLEF
-    \clef "treble"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -1123,6 +1123,8 @@ number.7.Oboe.Staff = {
 number.7.Clarinet.Music = {
 
     % [Clarinet.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1137,8 +1139,6 @@ number.7.Clarinet.Music = {
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-bcl-markup
-      %! REAPPLIED_CLEF
-    \clef "treble"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -1412,6 +1412,8 @@ number.7.Clarinet.Staff = {
 number.7.Piano.Music = {
 
     % [Piano.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1425,8 +1427,6 @@ number.7.Piano.Music = {
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
-      %! REAPPLIED_CLEF
-    \clef "treble"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -1572,6 +1572,8 @@ number.7.Piano.Music = {
     {
 
         % [Piano.Music measure 7]
+          %! EXPLICIT_CLEF
+        \clef "bass"
           %! MEASURE_241
           %! SHIFTED_CLEF
         \once \override Staff.Clef.X-extent = ##f
@@ -1584,8 +1586,6 @@ number.7.Piano.Music = {
         %@% \override Staff.Clef.color = ##f
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
-          %! EXPLICIT_CLEF
-        \clef "bass"
         r8
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -1822,6 +1822,8 @@ number.7.Piano.Staff = {
 number.7.Percussion.Music = {
 
     % [Percussion.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "percussion"
       %! MEASURE_235
       %! SHIFTED_CLEF
 %%% \once \override Staff.Clef.X-extent = ##f
@@ -1853,8 +1855,6 @@ number.7.Percussion.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! REAPPLIED_STAFF_LINES
     \startStaff
-      %! EXPLICIT_CLEF
-    \clef "percussion"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -2045,6 +2045,8 @@ number.7.Percussion.Staff = {
 number.7.Violin.Music = {
 
     % [Violin.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -2069,8 +2071,6 @@ number.7.Violin.Music = {
     \once \override Staff.StaffSymbol.line-count = 5
       %! REAPPLIED_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "treble"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -2231,6 +2231,8 @@ number.7.Violin.Staff = {
 number.7.Viola.Music = {
 
     % [Viola.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "alto"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -2243,8 +2245,6 @@ number.7.Viola.Music = {
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-va-markup
-      %! REAPPLIED_CLEF
-    \clef "alto"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -2459,6 +2459,8 @@ number.7.Viola.Staff = {
 number.7.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -2471,8 +2473,6 @@ number.7.Cello.Music = {
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-vc-markup
-      %! REAPPLIED_CLEF
-    \clef "bass"
     R1 * 9/8
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC

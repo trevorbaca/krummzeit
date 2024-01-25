@@ -172,7 +172,7 @@ def ob_cl_4_10(cache):
                 baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
             baca.pitch(o, "D5")
             if name == "ob":
-                baca.trill_spanner(baca.select.rleak(o))
+                baca.spanners.trill(baca.select.rleak(o))
             baca.dynamic(o.pleaf(0), "ff")
             baca.override.dls_staff_padding(o, 3)
     for name in ["ob", "cl"]:

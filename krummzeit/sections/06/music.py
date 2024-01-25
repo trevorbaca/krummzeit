@@ -289,7 +289,7 @@ def ob(m):
         for plt in baca.select.plts(o):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
-                baca.trill_spanner(plt)
+                baca.spanners.trill(plt)
         baca.dynamic(o.pleaf(0), "p")
     with baca.scope(m.get(1, 21)) as o:
         baca.override.tuplet_bracket_staff_padding(o, 4)
@@ -351,7 +351,7 @@ def pf(cache):
     with baca.scope(m.get(27, 29)) as o:
         baca.clef(o.leaf(0), "bass")
         baca.pitch(o, "Bb0")
-        baca.ottava_bassa(o.tleaves())
+        baca.spanners.ottava_bassa(o.tleaves())
         baca.dynamic(o.pleaf(0), "ppp")
     with baca.scope(m.get(30, 34)) as o:
         baca.clef(o.leaf(0), "treble")
@@ -360,7 +360,7 @@ def pf(cache):
         baca.pitches(o, pcs)
         library.displacement(o)
         library.register_narrow(o, 7)
-        baca.ottava(o.tleaves())
+        baca.spanners.ottava(o.tleaves())
         baca.staccatissimo(o.pheads())
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m.get(30, 35)) as o:
@@ -413,7 +413,7 @@ def ob_vn_29_34(cache):
             baca.dynamic(o.pleaf(0), "ppp")
             for run in baca.select.qruns(o):
                 run = baca.select.rleak(run)
-                baca.trill_spanner(run, alteration=alteration)
+                baca.spanners.trill(run, alteration=alteration)
 
 
 def va(m):

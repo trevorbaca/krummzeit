@@ -222,7 +222,7 @@ def pf_3_22(cache):
         baca.instrument(o.leaf(0), "Piano", library.manifests)
         baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
         baca.clef(o.leaf(0), "bass")
-        baca.ottava_bassa(o.tleaves())
+        baca.spanners.ottava_bassa(o.tleaves())
         baca.dynamic(o.pleaf(0), "fff-poss")
 
 

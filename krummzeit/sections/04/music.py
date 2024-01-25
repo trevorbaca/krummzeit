@@ -244,7 +244,7 @@ def pf(cache):
     m = cache["pf"]
     with baca.scope(m[1]) as o:
         baca.hairpin(o, "ff > pp")
-        baca.ottava(o.tleaves())
+        baca.spanners.ottava(o.tleaves())
         baca.staccatissimo(o.pheads())
     with baca.scope(m[3]) as o:
         baca.hairpin(o, "pp < ff")
@@ -259,13 +259,13 @@ def pf(cache):
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m[9, 12]) as o:
-        baca.ottava_bassa(o.tleaves())
+        baca.spanners.ottava_bassa(o.tleaves())
         baca.dynamic(o.pleaf(0), "fff")
     library.replace_with_clusters(m[14, 16], "low")
     cache.rebuild()
     m = cache["pf"]
     with baca.scope(m[14, 16]) as o:
-        baca.ottava_bassa(o.tleaves())
+        baca.spanners.ottava_bassa(o.tleaves())
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m[9, 16]) as o:
         baca.override.dls_staff_padding(o, 10)
@@ -287,7 +287,7 @@ def perc(m):
 def vn(m):
     with baca.scope(m[5]) as o:
         baca.hairpin(o.tleaves(), "ff > pp")
-        baca.ottava(o.tleaves()),
+        baca.spanners.ottava(o.tleaves()),
         baca.markup(o.pleaf(0), r"\baca-pizz-markup"),
         baca.staccatissimo(o.pheads())
     with baca.scope(m[7]) as o:
@@ -304,7 +304,7 @@ def va(m):
     with baca.scope(m[5]) as o:
         baca.clef(o.leaf(0), "treble"),
         baca.hairpin(o.tleaves(), "ff > pp")
-        baca.ottava(o.tleaves()),
+        baca.spanners.ottava(o.tleaves()),
         baca.markup(o.pleaf(0), r"\baca-pizz-markup"),
         baca.staccatissimo(o.pheads())
     with baca.scope(m[7]) as o:

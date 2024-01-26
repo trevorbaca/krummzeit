@@ -195,11 +195,11 @@ def cl(m):
     with baca.scope(m.get(3, 4)) as o:
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m.get(5, 6)) as o:
-        baca.hairpin(baca.select.rleak(o), "ff < fff")
+        baca.spanners.hairpin(baca.select.rleak(o), "ff < fff")
     with baca.scope(m[9]) as o:
         baca.dynamic(o.pleaf(0), "fff-poss")
     with baca.scope(m.get(11, 14)) as o:
-        baca.hairpin(o, "fff > ppp")
+        baca.spanners.hairpin(o, "fff > ppp")
 
 
 def pf_perc_1(cache):

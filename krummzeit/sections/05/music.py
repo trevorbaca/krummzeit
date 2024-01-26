@@ -397,10 +397,10 @@ def strings(cache):
             baca.override.note_head_style_harmonic(o.pleaves())
     with baca.scope(cache.va.get(8, 10)) as o:
         baca.clef(o.leaf(0), "treble")
-        baca.hairpin(o.tleaves(), "pp < f")
+        baca.spanners.hairpin(o.tleaves(), "pp < f")
         baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
     with baca.scope(cache.va.get(11, 16)) as o:
-        baca.hairpin(o.tleaves(), "pp < f")
+        baca.spanners.hairpin(o.tleaves(), "pp < f")
         baca.text_spanner(
             o.tleaves(),
             "molto flautando => molto gridato",
@@ -408,7 +408,7 @@ def strings(cache):
         )
     for name in ["vn", "vc"]:
         with baca.scope(cache[name].get(14, 16)) as o:
-            baca.hairpin(o.tleaves(), "pp < f")
+            baca.spanners.hairpin(o.tleaves(), "pp < f")
             baca.text_spanner(
                 o.tleaves(),
                 "molto flautando => molto gridato",

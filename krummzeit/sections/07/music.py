@@ -257,7 +257,7 @@ def strings_7_19(cache):
         ("va", (13, 15)),
         ("vc", (13, 15)),
     ):
-        baca.text_spanner(
+        baca.piecewise.text(
             cache[name].get(pair),
             "grid. possibile => flaut. possibile",
             abjad.Tweak(r"- \tweak staff-padding 5"),

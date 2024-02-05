@@ -288,7 +288,7 @@ def ob(m):
         library.color_fingerings(o.pheads())
         for plt in baca.select.plts(o):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
-                baca.spanners.trill(plt)
+                baca.rspanners.trill(plt)
         baca.dynamic(o.pleaf(0), "p")
     with baca.scope(m.get(1, 21)) as o:
         baca.override.tuplet_bracket_staff_padding(o, 4)
@@ -411,7 +411,7 @@ def ob_vn_29_34(cache):
             baca.pitch(o, pitch)
             baca.dynamic(o.pleaf(0), "ppp")
             for run in baca.select.qruns(o):
-                baca.spanners.trill(run, alteration=alteration)
+                baca.rspanners.trill(run, alteration=alteration)
 
 
 def va(m):

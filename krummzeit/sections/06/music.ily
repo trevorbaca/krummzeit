@@ -3491,9 +3491,9 @@ number.6.Piano.Music = {
     r32
 
     bf,,,!8..
+
       %! SPANNER_STOP
     \ottava 0
-
     r32
 
     % [Piano.Music measure 30]
@@ -3604,10 +3604,10 @@ number.6.Piano.Music = {
 
     g''''4
     - \staccatissimo
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Piano.Music measure 35]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 9/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"

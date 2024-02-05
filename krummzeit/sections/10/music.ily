@@ -3343,12 +3343,12 @@ number.10.Piano.Music = {
         <c,, e,, g,, b,, d, f, a,>8
         ^ \markup \center-align \concat { \natural \flat }
         ]
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
     % [Piano.Music measure 23]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"

@@ -5898,9 +5898,9 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
     ^ \markup \center-align \concat { \natural \flat }
+
       %! SPANNER_STOP
     \ottava 0
-
     r8
 
     r4.

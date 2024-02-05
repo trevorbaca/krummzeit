@@ -259,13 +259,13 @@ def pf(cache):
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m[9, 12]) as o:
-        baca.rspanners.ottava_bassa(o.tleaves())
+        baca.rspanners.ottava(o.tleaves(), -1)
         baca.dynamic(o.pleaf(0), "fff")
     library.replace_with_clusters(m[14, 16], "low")
     cache.rebuild()
     m = cache["pf"]
     with baca.scope(m[14, 16]) as o:
-        baca.rspanners.ottava_bassa(o.tleaves())
+        baca.rspanners.ottava(o.tleaves(), -1)
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m[9, 16]) as o:
         baca.override.dls_staff_padding(o, 10)

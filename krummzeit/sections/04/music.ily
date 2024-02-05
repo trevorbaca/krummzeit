@@ -1211,12 +1211,12 @@ number.4.Piano.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
         \pp
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
     % [Piano.Music measure 2]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
@@ -1450,10 +1450,10 @@ number.4.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
     ^ \markup \center-align \concat { \natural \flat }
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Piano.Music measure 13]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
@@ -1506,11 +1506,11 @@ number.4.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2
     ^ \markup \center-align \concat { \natural \flat }
-      %! SPANNER_STOP
-    \ottava 0
     \revert DynamicLineSpanner.staff-padding
 
     % [Piano.Music measure 17]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 5/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
@@ -1892,12 +1892,12 @@ number.4.Violin.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
         \pp
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
     % [Violin.Music measure 6]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
@@ -2232,12 +2232,12 @@ number.4.Viola.Music = {
           %! SPANNER_STOP
         \pp
         ]
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
     % [Viola.Music measure 6]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"

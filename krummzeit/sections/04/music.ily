@@ -1138,6 +1138,9 @@ number.4.Piano.Music = {
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
         \once \override Staff.InstrumentName.color = #(x11-color 'green4)
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override Staff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
@@ -1215,6 +1218,9 @@ number.4.Piano.Music = {
     }
 
     % [Piano.Music measure 2]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
@@ -1380,6 +1386,9 @@ number.4.Piano.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     % [Piano.Music measure 9]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
     \override DynamicLineSpanner.staff-padding = 10
@@ -1452,6 +1461,9 @@ number.4.Piano.Music = {
     ^ \markup \center-align \concat { \natural \flat }
 
     % [Piano.Music measure 13]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
@@ -1459,6 +1471,9 @@ number.4.Piano.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     % [Piano.Music measure 14]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
     \once \override Accidental.stencil = ##f
@@ -1509,6 +1524,9 @@ number.4.Piano.Music = {
     \revert DynamicLineSpanner.staff-padding
 
     % [Piano.Music measure 17]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 5/4
@@ -1835,6 +1853,9 @@ number.4.Violin.Music = {
         \override TupletBracket.staff-padding = 4
         r8
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override Staff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         e''''8
@@ -1896,6 +1917,9 @@ number.4.Violin.Music = {
     }
 
     % [Violin.Music measure 6]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
@@ -2185,6 +2209,9 @@ number.4.Viola.Music = {
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override Staff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         ef'''!4
@@ -2236,6 +2263,9 @@ number.4.Viola.Music = {
     }
 
     % [Viola.Music measure 6]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 1/4

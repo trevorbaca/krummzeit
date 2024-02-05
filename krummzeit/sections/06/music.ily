@@ -3439,6 +3439,9 @@ number.6.Piano.Music = {
       %! MEASURE_226
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -3492,6 +3495,9 @@ number.6.Piano.Music = {
 
     bf,,,!8..
 
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     r32
@@ -3522,6 +3528,9 @@ number.6.Piano.Music = {
     \times 7/8
     {
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override Staff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         c''''8
@@ -3606,6 +3615,9 @@ number.6.Piano.Music = {
     - \staccatissimo
 
     % [Piano.Music measure 35]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 9/8

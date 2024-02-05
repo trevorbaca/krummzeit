@@ -5741,6 +5741,9 @@ number.2.Piano.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
 
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
     \once \override Accidental.stencil = ##f
@@ -5899,6 +5902,9 @@ number.2.Piano.Music = {
     - \marcato
     ^ \markup \center-align \concat { \natural \flat }
 
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     r8

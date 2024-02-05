@@ -1526,6 +1526,9 @@ number.10.Piano.Music = {
     \times 2/3
     {
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override Staff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava -1
         \once \override Accidental.stencil = ##f
@@ -3347,6 +3350,9 @@ number.10.Piano.Music = {
     }
 
     % [Piano.Music measure 23]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 1/4

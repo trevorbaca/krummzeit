@@ -1141,7 +1141,6 @@ number.4.Piano.Music = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override Staff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
@@ -1221,7 +1220,6 @@ number.4.Piano.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
@@ -1389,7 +1387,6 @@ number.4.Piano.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_START
     \ottava -1
     \override DynamicLineSpanner.staff-padding = 10
     \once \override Accidental.stencil = ##f
@@ -1464,7 +1461,6 @@ number.4.Piano.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
@@ -1474,7 +1470,6 @@ number.4.Piano.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_START
     \ottava -1
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -1527,7 +1522,6 @@ number.4.Piano.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     R1 * 5/4
       %! DURATION_MULTIPLIER
@@ -1856,7 +1850,6 @@ number.4.Violin.Music = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override Staff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         e''''8
         - \staccatissimo
@@ -1920,7 +1913,6 @@ number.4.Violin.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER
@@ -2212,7 +2204,6 @@ number.4.Viola.Music = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override Staff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         ef'''!4
         - \staccatissimo
@@ -2266,7 +2257,6 @@ number.4.Viola.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     R1 * 1/4
       %! DURATION_MULTIPLIER

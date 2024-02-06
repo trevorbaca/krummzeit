@@ -4552,10 +4552,8 @@ number.6.Violin.Music = {
     ef''!4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \p
     ^ \baca-molto-flautando-markup
       %! EXPLICIT_DYNAMIC_COLOR
@@ -5437,10 +5435,8 @@ number.6.Viola.Music = {
         ef'!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         ^ \baca-molto-flautando-markup
           %! EXPLICIT_DYNAMIC_COLOR
@@ -5919,10 +5915,8 @@ number.6.Cello.Music = {
         ef'!8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         ^ \baca-molto-flautando-markup
           %! EXPLICIT_DYNAMIC_COLOR

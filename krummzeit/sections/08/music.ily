@@ -1309,10 +1309,8 @@ number.8.Clarinet.Music = {
     cs2
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ff
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -1519,10 +1517,8 @@ number.8.Clarinet.Music = {
         d4.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \revert DynamicLineSpanner.staff-padding
@@ -2809,10 +2805,8 @@ number.8.Viola.Music = {
     g4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \revert DynamicLineSpanner.staff-padding
 
@@ -2857,10 +2851,8 @@ number.8.Viola.Music = {
         ftqs!\breve
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding
@@ -3144,10 +3136,8 @@ number.8.Cello.Music = {
     b,2.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \revert DynamicLineSpanner.staff-padding
 
@@ -3182,10 +3172,8 @@ number.8.Cello.Music = {
         atqs,!1
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding

@@ -1261,10 +1261,8 @@ number.1.Violin.Music = {
         ef''!4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         ^ \baca-molto-flautando-markup
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1608,10 +1606,8 @@ number.1.Viola.Music = {
         fs'!4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         ^ \baca-molto-flautando-markup
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1941,10 +1937,8 @@ number.1.Cello.Music = {
         e'8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         ^ \baca-molto-flautando-markup
           %! EXPLICIT_DYNAMIC_COLOR

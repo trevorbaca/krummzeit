@@ -4428,10 +4428,8 @@ number.5.Violin.Music = {
         fs''!4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
           %! SPANNER_START
         - \baca-dashed-line-with-arrow
@@ -5249,10 +5247,8 @@ number.5.Viola.Music = {
     a''8
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \pp
     ^ \baca-molto-flautando-markup
       %! EXPLICIT_DYNAMIC_COLOR
@@ -5335,10 +5331,8 @@ number.5.Viola.Music = {
         cs''!16
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
           %! SPANNER_START
         - \baca-dashed-line-with-arrow
@@ -6323,10 +6317,8 @@ number.5.Cello.Music = {
         g''4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
           %! SPANNER_START
         - \baca-dashed-line-with-arrow

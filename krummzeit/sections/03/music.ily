@@ -4347,10 +4347,8 @@ number.3.Violin.Music = {
     ftqs!2
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \revert DynamicLineSpanner.staff-padding
 
@@ -4462,10 +4460,8 @@ number.3.Viola.Music = {
         dtqs!8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4498,10 +4494,8 @@ number.3.Viola.Music = {
         eqs!1
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4534,10 +4528,8 @@ number.3.Viola.Music = {
         c4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4570,10 +4562,8 @@ number.3.Viola.Music = {
         e2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4606,10 +4596,8 @@ number.3.Viola.Music = {
         f4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         ~
 
@@ -4799,10 +4787,8 @@ number.3.Viola.Music = {
     cqs!2.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \revert DynamicLineSpanner.staff-padding
 
@@ -4912,10 +4898,8 @@ number.3.Cello.Music = {
         ctqs,!4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4948,10 +4932,8 @@ number.3.Cello.Music = {
         dqs,!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -4984,10 +4966,8 @@ number.3.Cello.Music = {
         b,,2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -5020,10 +5000,8 @@ number.3.Cello.Music = {
         d,4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
 
     }
@@ -5056,10 +5034,8 @@ number.3.Cello.Music = {
         e,2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         ~
 
@@ -5245,10 +5221,8 @@ number.3.Cello.Music = {
     bqf,,!1..
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \revert DynamicLineSpanner.staff-padding
 

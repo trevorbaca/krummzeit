@@ -1036,10 +1036,8 @@ number.7.Oboe.Music = {
         - \staccato
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         ]
 
@@ -1306,10 +1304,8 @@ number.7.Clarinet.Music = {
     a''4.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ff
     \revert DynamicLineSpanner.staff-padding
     \revert TupletBracket.staff-padding
@@ -2343,10 +2339,8 @@ number.7.Viola.Music = {
     fs!8..
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
 
     r32
@@ -2569,10 +2563,8 @@ number.7.Cello.Music = {
     c,8..
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
 
     r32

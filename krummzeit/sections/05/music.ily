@@ -4507,10 +4507,8 @@ number.5.Violin.Music = {
         cs''!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
           %! SPANNER_STOP
         \stopTextSpan
@@ -5310,10 +5308,8 @@ number.5.Viola.Music = {
         d''2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
 
     }
@@ -5505,10 +5501,8 @@ number.5.Viola.Music = {
         c''2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
           %! SPANNER_STOP
         \stopTextSpan
@@ -6380,10 +6374,8 @@ number.5.Cello.Music = {
         bf''!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
           %! SPANNER_STOP
         \stopTextSpan

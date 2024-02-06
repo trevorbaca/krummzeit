@@ -1096,10 +1096,8 @@ number.10.Clarinet.Music = {
     fs4.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     - \tweak stencil ##f
     ~
@@ -1177,10 +1175,8 @@ number.10.Clarinet.Music = {
     fs1
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ppp
     \repeatTie
 

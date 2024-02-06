@@ -1371,10 +1371,8 @@ number.1.Violin.Music = {
         g'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         \revert NoteHead.style
 
@@ -1707,10 +1705,8 @@ number.1.Viola.Music = {
         af!8.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         \revert NoteHead.style
 
@@ -2037,10 +2033,8 @@ number.1.Cello.Music = {
         a8.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         \revert NoteHead.style
 

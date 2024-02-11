@@ -260,7 +260,7 @@ def strings_7_19(cache):
         baca.mspanners.text(
             cache[name].get(pair),
             "grid. possibile => flaut. possibile",
-            abjad.Tweak(r"- \tweak staff-padding 5"),
+            staff_padding=5,
         )
 
 

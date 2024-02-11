@@ -258,7 +258,7 @@ def strings_7_19(cache):
         ("vc", (13, 15)),
     ):
         baca.mspanners.text(
-            cache[name].get(pair),
+            [cache[name].get(pair)],
             "grid. possibile => flaut. possibile",
             staff_padding=5,
         )

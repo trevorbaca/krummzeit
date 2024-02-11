@@ -404,7 +404,7 @@ def strings(cache):
         baca.mspanners.text(
             o.tleaves(),
             "molto flautando => molto gridato",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
+            staff_padding=6,
         )
     for name in ["vn", "vc"]:
         with baca.scope(cache[name].get(14, 16)) as o:
@@ -412,7 +412,7 @@ def strings(cache):
             baca.mspanners.text(
                 o.tleaves(),
                 "molto flautando => molto gridato",
-                abjad.Tweak(r"- \tweak staff-padding 6"),
+                staff_padding=6,
             )
     for name, pitch in zip(["vn", "va", "vc"], ["A+3", "Bb2", "A2"]):
         m = cache[name]

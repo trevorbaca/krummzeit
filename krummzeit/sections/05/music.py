@@ -402,7 +402,7 @@ def strings(cache):
     with baca.scope(cache.va.get(11, 16)) as o:
         baca.spanners.hairpin(o.tleaves(), "pp < f")
         baca.mspanners.text(
-            o.tleaves(),
+            [o.tleaves()],
             "molto flautando => molto gridato",
             staff_padding=6,
         )
@@ -410,7 +410,7 @@ def strings(cache):
         with baca.scope(cache[name].get(14, 16)) as o:
             baca.spanners.hairpin(o.tleaves(), "pp < f")
             baca.mspanners.text(
-                o.tleaves(),
+                [o.tleaves()],
                 "molto flautando => molto gridato",
                 staff_padding=6,
             )

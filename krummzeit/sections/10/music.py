@@ -195,7 +195,7 @@ def cl(m):
     with baca.scope(m.get(3, 4)) as o:
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m.get(5, 6)) as o:
-        baca.spanners.hairpin(baca.select.rleak(o), "ff < fff")
+        baca.spanners.hairpin(o, "ff < fff", rleak=True)
     with baca.scope(m[9]) as o:
         baca.dynamic(o.pleaf(0), "fff-poss")
     with baca.scope(m.get(11, 14)) as o:

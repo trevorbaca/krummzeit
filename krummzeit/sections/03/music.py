@@ -505,7 +505,7 @@ def composites(cache):
     for name in ["va", "vc"]:
         with baca.scope(cache[name][1, 23]) as o:
             for run in baca.select.runs(o):
-                run = baca.select.tleaves(run)[:2]
+                run = run[:2]
                 baca.spanners.hairpin(run, "ff > pp")
     for name, string in (
         ("vn", "ftqs g"),

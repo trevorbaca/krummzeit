@@ -404,6 +404,7 @@ def strings(cache):
         baca.mspanners.text(
             [o.tleaves()],
             "molto flautando => molto gridato",
+            do_not_rleak=True,
             staff_padding=6,
         )
     for name in ["vn", "vc"]:
@@ -412,6 +413,7 @@ def strings(cache):
             baca.mspanners.text(
                 [o.tleaves()],
                 "molto flautando => molto gridato",
+                do_not_rleak=True,
                 staff_padding=6,
             )
     for name, pitch in zip(["vn", "va", "vc"], ["A+3", "Bb2", "A2"]):

@@ -195,11 +195,11 @@ def cl(m):
     with baca.scope(m.get(3, 4)) as o:
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m.get(5, 6)) as o:
-        baca.hairpinlib.exact(o, "ff<fff", rleak=True)
+        baca.hairpins.exact(o, "ff<fff", rleak=True)
     with baca.scope(m[9]) as o:
         baca.dynamic(o.pleaf(0), "fff-poss")
     with baca.scope(m.get(11, 14)) as o:
-        baca.hairpinlib.exact(o, "fff>ppp")
+        baca.hairpins.exact(o, "fff>ppp")
 
 
 def pf_perc_1(cache):

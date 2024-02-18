@@ -237,7 +237,7 @@ def va_vc_1_6(cache):
     ):
         with baca.scope(cache[name].get(1, 6)) as o:
             baca.pitch(o, pitch)
-            baca.spanners.hairpin(o.tleaves(), "ppp < fff")
+            baca.hairpinlib.exact(o.tleaves(), "ppp<fff")
         with baca.scope(cache[name].get(2, 6)) as o:
             baca.override.dls_staff_padding(o, 6)
 
@@ -294,7 +294,7 @@ def ob_cl_4_10(cache):
             library.register_narrow(o, *register)
             for ptlt in baca.select.ptlts(o):
                 baca.staccato(ptlt)
-            baca.spanners.hairpin(o, "p < ff")
+            baca.hairpinlib.exact(o, "p<ff")
 
 
 @baca.build.timed("make_score")

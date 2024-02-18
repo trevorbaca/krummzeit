@@ -458,7 +458,7 @@ def strings_12_20(cache):
             baca.pitches(o, pcs)
             for run in baca.select.runs(o):
                 baca.glissando(run)
-            baca.spanners.hairpin(o.tleaves(), "p > ppp")
+            baca.hairpinlib.exact(o.tleaves(), "p>ppp")
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             baca.override.note_head_style_harmonic(o.pleaves())
             library.register_narrow(o, *pair),

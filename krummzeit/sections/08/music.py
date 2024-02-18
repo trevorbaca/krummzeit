@@ -263,7 +263,7 @@ def ob(m):
 def cl(m):
     with baca.scope(m.get(1, 5)) as o:
         baca.pitch(o, "B1")
-        baca.hairpinlib.exact(o.tleaves(), "ppp<ff")
+        baca.hairpins.exact(o.tleaves(), "ppp<ff")
         baca.override.dls_staff_padding(o, 8)
     with baca.scope(m[9]) as o:
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
@@ -273,7 +273,7 @@ def cl(m):
         baca.pitch(o, "C2")
         library.color_fingerings(o.pheads())
         baca.override.tuplet_bracket_staff_padding(o, 6)
-        baca.hairpinlib.exact(o.tleaves(), "f<ff")
+        baca.hairpins.exact(o.tleaves(), "f<ff")
         baca.override.dls_staff_padding(o, 10)
 
 
@@ -308,7 +308,7 @@ def va(m):
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         for run in baca.select.runs(o):
             baca.glissando(run)
-        baca.hairpinlib.exact(o, "ff<fff")
+        baca.hairpins.exact(o, "ff<fff")
         baca.override.dls_staff_padding(o, 6)
 
 
@@ -319,7 +319,7 @@ def vc(m):
         for run in baca.select.runs(o):
             baca.glissando(run)
         baca.pitches(o, "A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2")
-        baca.hairpinlib.exact(o, "ff<fff")
+        baca.hairpins.exact(o, "ff<fff")
         baca.override.dls_staff_padding(o, 6)
 
 
@@ -366,7 +366,7 @@ def va_vc_11_12(cache):
             for run in baca.select.runs(o):
                 baca.glissando(o)
             baca.override.tuplet_bracket_staff_padding(o, 4)
-            baca.hairpinlib.exact(o, "ff>pp")
+            baca.hairpins.exact(o, "ff>pp")
             baca.override.dls_staff_padding(o, 7)
 
 

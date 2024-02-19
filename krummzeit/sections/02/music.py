@@ -430,7 +430,7 @@ def _1_37_quartet(cache):
     for name in ["vn", "ob", "cl"]:
         library.register_narrow(cache[name][32, 37], 5)
     for name in ["vn", "ob", "cl"]:
-        baca.hairpins.exact(cache[name][23, 28], "f<ff")
+        baca.hairpin(cache[name][23, 28], "f<ff")
         with baca.scope(cache[name][1, 37]) as o:
             baca.staccato(o.pheads())
 

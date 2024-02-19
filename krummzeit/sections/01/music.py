@@ -255,7 +255,7 @@ def composites(cache):
             library.register_narrow(o, *register)
             baca.override.note_head_style_harmonic(o.tleaves())
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
-            baca.hairpins.exact(o.tleaves(), "pp<ff")
+            baca.hairpin(o.tleaves(), "pp<ff")
     for abbreviation in ["perc", "vn", "va", "vc"]:
         with baca.scope(cache[abbreviation].leaves()) as o:
             baca.override.dls_padding(o, 4)

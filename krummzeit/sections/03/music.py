@@ -506,7 +506,7 @@ def composites(cache):
         with baca.scope(cache[name][1, 23]) as o:
             for run in baca.select.runs(o):
                 run = run[:2]
-                baca.hairpins.exact(run, "ff>pp")
+                baca.hairpin(run, "ff>pp")
     for name, string in (
         ("vn", "ftqs g"),
         ("va", "btqs, c bqs, cqs"),
@@ -518,7 +518,7 @@ def composites(cache):
             baca.pitches(o, string)
             for run in baca.select.runs(o):
                 baca.glissando(run)
-            baca.hairpins.exact(o.tleaves(), "pp<fff")
+            baca.hairpin(o.tleaves(), "pp<fff")
 
 
 @baca.build.timed("make_score")

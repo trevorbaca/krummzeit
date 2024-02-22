@@ -260,7 +260,7 @@ def strings_3_5(cache):
                 library.register_narrow(o, register)
             baca.override.note_head_style_harmonic(o.pleaves())
             for run in baca.select.runs(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             baca.dynamic(o.pleaf(0), "ppp")
 
 
@@ -283,7 +283,7 @@ def strings_7_10(cache):
                 baca.override.tuplet_bracket_staff_padding(o, 5)
             baca.stem_tremolo(baca.select.plts(o)[1:])
             for run in baca.select.runs(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             baca.dynamic(o.pleaf(0), "fff")
 
 

@@ -268,7 +268,7 @@ def strings_5_9(cache):
             if name in ("va", "vc"):
                 baca.clef(o.leaf(0), "treble")
             for ruyn in baca.select.runs(o):
-                baca.glissando(o)
+                baca.basic_glissando(o)
             baca.alternate_bow_strokes(o)
             baca.dynamic(o.pleaf(0), '"f"')
 

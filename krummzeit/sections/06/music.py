@@ -328,7 +328,7 @@ def ob_cl_12_24(cache):
             baca.pitches(o, pitches)
             library.color_fingerings(o.pheads())
             for run in baca.select.ntruns(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             baca.dynamic(o.pleaf(0), "ff")
 
 
@@ -457,7 +457,7 @@ def strings_12_20(cache):
         with baca.scope(cache[name].get(12, 20)) as o:
             baca.pitches(o, pcs)
             for run in baca.select.runs(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             baca.hairpin(o.tleaves(), "p>ppp")
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             baca.override.note_head_style_harmonic(o.pleaves())

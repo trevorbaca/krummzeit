@@ -386,7 +386,7 @@ def cl(m):
         baca.pitches(o, "g'' dtqs'' a'' gqs'' fqs'' e'' fqs''")
     with baca.scope(m[1, 35]) as o:
         for run in baca.select.runs(o):
-            baca.glissando(run)
+            baca.basic_glissando(run)
 
 
 def pf(m):
@@ -466,7 +466,7 @@ def va(m):
         baca.clef(o.leaf(0), "alto"),
         baca.pitches(o, "e dtqs f eqs dqs c dqs")
         for run in baca.select.runs(o):
-            baca.glissando(run)
+            baca.basic_glissando(run)
     with baca.scope(m[6, 23]) as o:
         baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
         baca.override.tuplet_bracket_staff_padding(o, 4)
@@ -480,7 +480,7 @@ def vc(m):
         baca.clef(o.leaf(0), "bass"),
         baca.pitches(o, "d, ctqs, e, dqs, cqs, b,, dqs,")
         for run in baca.select.runs(o):
-            baca.glissando(run)
+            baca.basic_glissando(run)
     baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
     with baca.scope(m[32, 42]) as o:
         baca.override.dls_staff_padding(o, 5)
@@ -517,7 +517,7 @@ def composites(cache):
             baca.markup(o.pleaf(0), r"\krummzeit-show-tempo-markup"),
             baca.pitches(o, string)
             for run in baca.select.runs(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             baca.hairpin(o.tleaves(), "pp<fff")
 
 

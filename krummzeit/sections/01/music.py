@@ -248,7 +248,7 @@ def composites(cache):
     ):
         with baca.scope(cache[abbreviation][4, 8]) as o:
             for run in baca.select.runs(o):
-                baca.glissando(run)
+                baca.basic_glissando(run)
             for qrun in baca.select.qruns(o):
                 pheads = baca.select.pheads(qrun)[1:]
                 baca.repeat_tie(pheads)

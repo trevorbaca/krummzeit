@@ -247,11 +247,11 @@ def composites(cache):
         ("vc", (4, 3)),
     ):
         with baca.scope(cache[abbreviation][4, 8]) as o:
-            for run in baca.select.runs(o):
-                baca.basic_glissando(run)
             for qrun in baca.select.qruns(o):
                 pheads = baca.select.pheads(qrun)[1:]
                 baca.repeat_tie(pheads)
+            for run in baca.select.runs(o):
+                baca.basic_glissando(run)
             library.register_narrow(o, *register)
             baca.override.note_head_style_harmonic(o.tleaves())
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")

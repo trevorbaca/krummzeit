@@ -439,7 +439,7 @@ def _1_28_strings(cache):
     for name in ["va", "vc"]:
         m = cache[name]
         for run in baca.select.runs(m[1, 28]):
-            baca.multistage_glissando(
+            baca.glissando(
                 run,
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
@@ -465,7 +465,7 @@ def _34_53_strings(cache):
         baca.clef(o.leaf(0), "treble")
         baca.dynamic(o.pleaf(0), "f")
         for run in baca.select.runs(o):
-            baca.multistage_glissando(
+            baca.glissando(
                 run,
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
@@ -476,7 +476,7 @@ def _34_53_strings(cache):
         baca.alternate_bow_strokes(o.pheads()),
         baca.clef(o.leaf(0), "treble"),
         baca.dynamic(o.pleaf(0), "f"),
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
@@ -517,7 +517,7 @@ def _48_75_quartet(cache):
     with baca.scope(cache["vn"][38, 53]) as o:
         baca.alternate_bow_strokes(o.pheads()),
         baca.dynamic(o.pleaf(0), "f"),
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,

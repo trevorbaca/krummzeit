@@ -268,7 +268,7 @@ def strings_5_9(cache):
             if name in ("va", "vc"):
                 baca.clef(o.leaf(0), "treble")
             for ruyn in baca.select.runs(o):
-                baca.multistage_glissando(
+                baca.glissando(
                     o,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,

@@ -439,7 +439,11 @@ def _1_28_strings(cache):
     for name in ["va", "vc"]:
         m = cache[name]
         for run in baca.select.runs(m[1, 28]):
-            baca.basic_glissando(run, do_not_allow_repeats=True)
+            baca.multistage_glissando(
+                run,
+                do_not_allow_repeats=True,
+                do_not_hide_middle_note_heads=True,
+            )
         with baca.scope(m[1, 11]) as o:
             baca.dynamic(o.pleaf(0), "mf"),
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup"),
@@ -461,14 +465,22 @@ def _34_53_strings(cache):
         baca.clef(o.leaf(0), "treble")
         baca.dynamic(o.pleaf(0), "f")
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_allow_repeats=True)
+            baca.multistage_glissando(
+                run,
+                do_not_allow_repeats=True,
+                do_not_hide_middle_note_heads=True,
+            )
         baca.markup(o.pleaf(0), r"\krummzeit-ob-plus-full-bow-strokes-markup")
         library.register_narrow(o, 5, 3)
     with baca.scope(cache["vc"][34, 51]) as o:
         baca.alternate_bow_strokes(o.pheads()),
         baca.clef(o.leaf(0), "treble"),
         baca.dynamic(o.pleaf(0), "f"),
-        baca.basic_glissando(o, do_not_allow_repeats=True),
+        baca.multistage_glissando(
+            o,
+            do_not_allow_repeats=True,
+            do_not_hide_middle_note_heads=True,
+        )
         baca.markup(o.pleaf(0), r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(o, 5, 2),
     with baca.scope(cache["pf"][45, 56]) as o:
@@ -505,7 +517,11 @@ def _48_75_quartet(cache):
     with baca.scope(cache["vn"][38, 53]) as o:
         baca.alternate_bow_strokes(o.pheads()),
         baca.dynamic(o.pleaf(0), "f"),
-        baca.basic_glissando(o, do_not_allow_repeats=True),
+        baca.multistage_glissando(
+            o,
+            do_not_allow_repeats=True,
+            do_not_hide_middle_note_heads=True,
+        )
         baca.markup(o.pleaf(0), r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(o, 5, 4),
     with baca.scope(cache["vn"][54, 71]) as o:

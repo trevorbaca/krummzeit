@@ -307,7 +307,11 @@ def va(m):
     with baca.scope(m.get(1, 7)) as o:
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_allow_repeats=True)
+            baca.multistage_glissando(
+                run,
+                do_not_allow_repeats=True,
+                do_not_hide_middle_note_heads=True,
+            )
         baca.hairpin(o, "ff<fff")
         baca.override.dls_staff_padding(o, 6)
 
@@ -317,7 +321,11 @@ def vc(m):
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         # TODO: maybe pitches and then glissando
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_allow_repeats=True)
+            baca.multistage_glissando(
+                run,
+                do_not_allow_repeats=True,
+                do_not_hide_middle_note_heads=True,
+            )
         baca.pitches(o, "A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2")
         baca.hairpin(o, "ff<fff")
         baca.override.dls_staff_padding(o, 6)
@@ -364,7 +372,11 @@ def va_vc_11_12(cache):
             baca.pitches(o, pitches)
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             for run in baca.select.runs(o):
-                baca.basic_glissando(o, do_not_allow_repeats=True)
+                baca.multistage_glissando(
+                    o,
+                    do_not_allow_repeats=True,
+                    do_not_hide_middle_note_heads=True,
+                )
             baca.override.tuplet_bracket_staff_padding(o, 4)
             baca.hairpin(o, "ff>pp")
             baca.override.dls_staff_padding(o, 7)
@@ -403,7 +415,12 @@ def pf_vn_vc_va_14_23(cache):
                 library.register_narrow(o, register)
             for run in baca.select.runs(o):
                 run = baca.select.rleak(run)
-                baca.basic_glissando(run, do_not_allow_repeats=True)
+                baca.multistage_glissando(
+                    run,
+                    do_not_allow_repeats=True,
+                    do_not_hide_middle_note_heads=True,
+                    do_not_untie=True,
+                )
     for name, pair, pitches in (
         ("vn", (21, 23), "C4 Db4"),
         ("va", (20, 23), "B+2 C3 B+2 C3"),

@@ -149,7 +149,11 @@ def vc_1_48(m):
         baca.markup(o.pleaf(0), r"\baca-scratch-poss-markup")
         baca.pitches(o, "D4 D4 D4 D4 D4 D4 D2")
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_untie=True)
+            baca.glissando(
+                run,
+                do_not_hide_middle_note_heads=True,
+                do_not_untie=True,
+            )
         baca.dynamic(o.pleaf(0), "fff-ancora")
         baca.override.dls_staff_padding(o, 3)
     with baca.scope(m.get(25, 48)) as o:

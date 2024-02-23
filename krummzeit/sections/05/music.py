@@ -361,7 +361,7 @@ def strings(cache):
         baca.pitches(leaves, pcs)
     with baca.scope(cache["vn"].get(1, 13)) as o:
         baca.dynamic(o.pleaf(0), '"mp"')
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
@@ -370,7 +370,7 @@ def strings(cache):
         baca.markup(o.pleaf(0), r"\krummzeit-on-bridge-slow-markup")
     with baca.scope(cache["va"].get(1, 7)) as o:
         baca.dynamic(o.pleaf(0), '"mp"')
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
@@ -382,7 +382,7 @@ def strings(cache):
         library.register_narrow(o, 2)
         baca.markup(o.pleaf(0), r"\krummzeit-on-bridge-slow-markup")
         for run in baca.select.runs(o):
-            baca.multistage_glissando(
+            baca.glissando(
                 run,
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
@@ -402,7 +402,7 @@ def strings(cache):
     ):
         with baca.scope(item) as o:
             for run in baca.select.runs(o):
-                baca.multistage_glissando(
+                baca.glissando(
                     run,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,

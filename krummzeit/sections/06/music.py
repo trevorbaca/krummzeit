@@ -328,7 +328,7 @@ def ob_cl_12_24(cache):
             baca.pitches(o, pitches)
             library.color_fingerings(o.pheads())
             for run in baca.select.ntruns(o):
-                baca.multistage_glissando(
+                baca.glissando(
                     run,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,
@@ -462,7 +462,7 @@ def strings_12_20(cache):
         with baca.scope(cache[name].get(12, 20)) as o:
             baca.pitches(o, pcs)
             for run in baca.select.runs(o):
-                baca.multistage_glissando(
+                baca.glissando(
                     run,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,

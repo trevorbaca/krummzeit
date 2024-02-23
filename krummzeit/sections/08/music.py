@@ -307,7 +307,7 @@ def va(m):
     with baca.scope(m.get(1, 7)) as o:
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         for run in baca.select.runs(o):
-            baca.multistage_glissando(
+            baca.glissando(
                 run,
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
@@ -321,7 +321,7 @@ def vc(m):
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         # TODO: maybe pitches and then glissando
         for run in baca.select.runs(o):
-            baca.multistage_glissando(
+            baca.glissando(
                 run,
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
@@ -372,7 +372,7 @@ def va_vc_11_12(cache):
             baca.pitches(o, pitches)
             baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
             for run in baca.select.runs(o):
-                baca.multistage_glissando(
+                baca.glissando(
                     o,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,
@@ -415,7 +415,7 @@ def pf_vn_vc_va_14_23(cache):
                 library.register_narrow(o, register)
             for run in baca.select.runs(o):
                 run = baca.select.rleak(run)
-                baca.multistage_glissando(
+                baca.glissando(
                     run,
                     do_not_allow_repeats=True,
                     do_not_hide_middle_note_heads=True,

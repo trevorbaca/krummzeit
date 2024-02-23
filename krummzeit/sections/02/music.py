@@ -329,7 +329,10 @@ def cl(m):
         baca.dynamic(o.pleaf(0), "f")
     with baca.scope(m[69, 75]) as o:
         baca.pitches(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''")
-        baca.basic_glissando(o)
+        baca.glissando(
+            o,
+            do_not_hide_middle_note_heads=True,
+        )
         baca.dynamic(o.pleaf(0), "f")
 
 

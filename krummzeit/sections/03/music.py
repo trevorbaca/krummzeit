@@ -386,7 +386,10 @@ def cl(m):
         baca.pitches(o, "g'' dtqs'' a'' gqs'' fqs'' e'' fqs''")
     with baca.scope(m[1, 35]) as o:
         for run in baca.select.runs(o):
-            baca.basic_glissando(run)
+            baca.glissando(
+                run,
+                do_not_hide_middle_note_heads=True,
+            )
 
 
 def pf(m):
@@ -466,7 +469,11 @@ def va(m):
         baca.clef(o.leaf(0), "alto"),
         baca.pitches(o, "e dtqs f eqs dqs c dqs")
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_untie=True)
+            baca.glissando(
+                run,
+                do_not_hide_middle_note_heads=True,
+                do_not_untie=True,
+            )
     with baca.scope(m[6, 23]) as o:
         baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
         baca.override.tuplet_bracket_staff_padding(o, 4)
@@ -480,7 +487,11 @@ def vc(m):
         baca.clef(o.leaf(0), "bass"),
         baca.pitches(o, "d, ctqs, e, dqs, cqs, b,, dqs,")
         for run in baca.select.runs(o):
-            baca.basic_glissando(run, do_not_untie=True)
+            baca.glissando(
+                run,
+                do_not_hide_middle_note_heads=True,
+                do_not_untie=True,
+            )
     baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
     with baca.scope(m[32, 42]) as o:
         baca.override.dls_staff_padding(o, 5)
@@ -517,7 +528,11 @@ def composites(cache):
             baca.markup(o.pleaf(0), r"\krummzeit-show-tempo-markup"),
             baca.pitches(o, string)
             for run in baca.select.runs(o):
-                baca.basic_glissando(run)
+                baca.glissando(
+                    run,
+                    do_not_hide_middle_note_heads=True,
+                    do_not_untie=True,
+                )
             baca.hairpin(o.tleaves(), "pp<fff")
 
 

@@ -228,7 +228,7 @@ def pf_3_22(cache):
 
 def perc_3_22(cache):
     with baca.scope(cache["perc"].get(3, 22)) as o:
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_lines(o.leaf(0), 1)
         baca.staff_position(o, 0)

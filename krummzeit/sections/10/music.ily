@@ -3457,7 +3457,7 @@ number.10.Percussion.Music = {
       %! EXPLICIT_DYNAMIC
     \f
     \laissezVibrer
-    ^ \baca-tam-tam-markup
+    ^ \baca-boxed-tam-tam-markup
 
     r8
 

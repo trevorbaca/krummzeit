@@ -291,7 +291,7 @@ def pf(m):
 
 def perc(m):
     with baca.scope(m.get(1, 7)) as o:
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.staff_position(o, 0)
 
 

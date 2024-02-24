@@ -3454,9 +3454,9 @@ number.3.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \f
+    ^ \baca-boxed-slate-scrape-markup
       %! EXPLICIT_INSTRUMENT_ALERT
     ^ \baca-explicit-instrument-markup "(“Percussion”)"
-    ^ \baca-slate-scrape-markup
     - \tweak stencil ##f
     ~
       %! -PARTS

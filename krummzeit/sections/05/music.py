@@ -306,7 +306,7 @@ def pf(cache):
 def perc(m):
     with baca.scope(m.leaves()) as o:
         baca.staff_lines(o.leaf(0), 1)
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.dynamic(o.pleaf(0), "pp-ancora")
     with baca.scope(m[1, 3]) as o:
         baca.override.dls_staff_padding(o, 6)
@@ -332,7 +332,7 @@ def perc(m):
         baca.staff_position(o, 0)
         baca.stem_tremolo(o.pleaves())
         baca.markup(o.pleaf(0), r"\krummzeit-attackless-roll-markup")
-        baca.markup(o.pleaf(0), r"\baca-suspended-cymbal-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-suspended-cymbal-markup")
 
 
 def pf_perc(cache):

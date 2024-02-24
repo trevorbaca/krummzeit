@@ -187,7 +187,7 @@ def perc(m):
         baca.short_instrument_name(o.leaf(0), "Perc.", library.manifests)
         baca.clef(o.leaf(0), "treble")
     with baca.scope(m[7]) as o:
-        baca.markup(o.pleaf(0), r"\baca-xylophone-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-xylophone-markup")
         baca.pitch(o, "C#5")
         baca.stem_tremolo(o.pleaves())
         baca.dynamic(o.pleaf(0), "fff-poss")

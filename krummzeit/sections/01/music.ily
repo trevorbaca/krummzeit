@@ -954,7 +954,7 @@ number.1.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-xylophone-markup
+    ^ \baca-boxed-xylophone-markup
     - \tweak stencil ##f
     ~
 

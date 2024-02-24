@@ -3391,7 +3391,7 @@ number.5.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-pp-ancora
-    ^ \baca-tam-tam-markup
+    ^ \baca-boxed-tam-tam-markup
 
     r8
 
@@ -4128,7 +4128,7 @@ number.5.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
-    ^ \baca-suspended-cymbal-markup
+    ^ \baca-boxed-suspended-cymbal-markup
     ^ \krummzeit-attackless-roll-markup
     - \tweak stencil ##f
     ~

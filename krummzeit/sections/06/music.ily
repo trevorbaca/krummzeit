@@ -3670,9 +3670,9 @@ number.6.Percussion.Music = {
     - \tweak color #(x11-color 'green4)
       %! REAPPLIED_DYNAMIC
     \ppp
+    ^ \baca-boxed-suspended-cymbal-markup
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Xylophone”)"
-    ^ \baca-suspended-cymbal-markup
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -4305,7 +4305,7 @@ number.6.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \pp
-    ^ \baca-suspended-cymbal-markup
+    ^ \baca-boxed-suspended-cymbal-markup
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(0 . 2)

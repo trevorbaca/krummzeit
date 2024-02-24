@@ -278,7 +278,7 @@ def perc(m):
         baca.staff_position(o, 0)
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m[14, 19]) as o:
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.staff_position(o, 0)
         baca.dynamic(o.pleaf(0), "pp-sempre")
         baca.override.dls_staff_padding(o, 6)

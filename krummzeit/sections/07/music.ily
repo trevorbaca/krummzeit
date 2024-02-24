@@ -2002,7 +2002,7 @@ number.7.Percussion.Music = {
     \baca-p-sempre
     \laissezVibrer
     ^ \baca-attackless-markup
-    ^ \baca-tam-tam-markup
+    ^ \baca-boxed-tam-tam-markup
 
     c'2
     \laissezVibrer

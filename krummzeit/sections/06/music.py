@@ -376,7 +376,7 @@ def pf(cache):
 def perc(m):
     for pair in [(1, 14), (28, 34)]:
         with baca.scope(m.get(pair)) as o:
-            baca.markup(o.pleaf(0), r"\baca-suspended-cymbal-markup")
+            baca.markup(o.pleaf(0), r"\baca-boxed-suspended-cymbal-markup")
             baca.staff_position(o, 0)
             baca.stem_tremolo(o.pleaves())
     with baca.scope(m[17]) as o:

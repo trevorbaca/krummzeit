@@ -6970,7 +6970,7 @@ number.2.Percussion.Music = {
       %! EXPLICIT_DYNAMIC
     \baca-p-sempre
     \laissezVibrer
-    ^ \baca-tam-tam-markup
+    ^ \baca-boxed-tam-tam-markup
 
     r8
 

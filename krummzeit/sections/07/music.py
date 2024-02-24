@@ -224,7 +224,7 @@ def perc(m):
         baca.stem_tremolo(o.pleaves())
         baca.markup(o.pleaf(0), r"\krummzeit-fingertips-markup")
     with baca.scope(m.get(19, 22)) as o:
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.markup(o.pleaf(0), r"\baca-attackless-markup")
         baca.laissez_vibrer(o.pheads())
         baca.dynamic(o.pleaf(0), "p-sempre")

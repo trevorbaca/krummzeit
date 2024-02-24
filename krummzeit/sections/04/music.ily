@@ -1691,7 +1691,7 @@ number.4.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-pp-sempre
-    ^ \baca-tam-tam-markup
+    ^ \baca-boxed-tam-tam-markup
 
     c'4
 

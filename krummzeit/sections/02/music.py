@@ -360,7 +360,7 @@ def perc(m):
         baca.staff_position(o, 0)
         baca.accent(o.pheads())
     with baca.scope(m[45, 60]) as o:
-        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-tam-tam-markup")
         baca.dynamic(o.pleaf(0), "p-sempre")
         baca.laissez_vibrer(o.pheads())
 

@@ -1918,7 +1918,7 @@ number.9.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-ff-sempre
-    ^ \baca-crotale-markup
+    ^ \baca-boxed-crotale-markup
 
     d'4
     - \accent

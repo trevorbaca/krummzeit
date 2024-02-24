@@ -315,7 +315,7 @@ def va(m):
         baca.hairpin(o.tleaves(), "ff>pp")
         baca.staccatissimo(o.pheads())
     with baca.scope(m[11, 12]) as o:
-        baca.markup(o.pleaf(0), r"\baca-arco-markup"),
+        baca.markup(o.pleaf(0), r"\baca-boxed-acro-markup"),
         baca.dynamic(o.pleaf(0), "fff-poss"),
     with baca.scope(m[11, 16]) as o:
         baca.pitch(o, "bf,")
@@ -374,8 +374,8 @@ def composites(cache):
         with baca.scope(m[11, 16]) as o:
             baca.override.stem_up(o.tleaves())
         baca.dynamic(baca.select.pleaf(m[14], 0), "fff-poss")
-    baca.markup(baca.select.pleaf(cache["vn"][14], 0), r"\baca-arco-markup")
-    baca.markup(baca.select.pleaf(cache["vc"][14], 0), r"\baca-arco-markup")
+    baca.markup(baca.select.pleaf(cache["vn"][14], 0), r"\baca-boxed-acro-markup")
+    baca.markup(baca.select.pleaf(cache["vc"][14], 0), r"\baca-boxed-acro-markup")
 
 
 @baca.build.timed("make_score")

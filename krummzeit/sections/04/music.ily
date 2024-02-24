@@ -2057,7 +2057,7 @@ number.4.Violin.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-arco-markup
+    ^ \baca-boxed-acro-markup
     - \tweak stencil ##f
     ~
 
@@ -2368,7 +2368,7 @@ number.4.Viola.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-arco-markup
+    ^ \baca-boxed-acro-markup
     - \tweak stencil ##f
     ~
 
@@ -2705,7 +2705,7 @@ number.4.Cello.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-arco-markup
+    ^ \baca-boxed-acro-markup
     - \tweak stencil ##f
     ~
 

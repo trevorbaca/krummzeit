@@ -430,7 +430,7 @@ def strings(cache):
                 do_not_rleak=True,
                 staff_padding=6,
             )
-    for name, pitch in zip(["vn", "va", "vc"], ["A+3", "Bb2", "A2"]):
+    for name, pitch in zip(["vn", "va", "vc"], ["Aqs3", "Bb2", "A2"]):
         m = cache[name]
         with baca.scope(m[17]) as o:
             baca.dynamic(o.pleaf(0), "ff")

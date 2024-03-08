@@ -240,7 +240,7 @@ def strings_1_3(cache):
     for name, pitch in (
         ("vn", "Eb5"),
         ("va", "A3"),
-        ("vc", "E~2"),
+        ("vc", "Eqf2"),
     ):
         with baca.scope(cache[name].get(1, 3)) as o:
             baca.pitch(o, pitch)

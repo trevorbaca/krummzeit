@@ -249,6 +249,7 @@ def strings_3_5(cache):
     with baca.scope(leaves) as o:
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
+        pcs = [_.number for _ in pcs]
         leaves = baca.select.sort_by_timeline(leaves)
         baca.pitches(leaves, pcs)
     for name, register in pairs:

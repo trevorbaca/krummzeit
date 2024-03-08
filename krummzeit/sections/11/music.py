@@ -131,6 +131,7 @@ def vn_va_1_40(cache):
     with baca.scope(leaves) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs[42:34:-1].transpose(4).invert()
+        pcs = [_.number for _ in pcs]
         leaves = baca.select.sort_by_timeline(leaves)
         baca.pitches(leaves, pcs)
     for name in names:

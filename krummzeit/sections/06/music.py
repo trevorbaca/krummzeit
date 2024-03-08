@@ -282,6 +282,7 @@ def ob(m):
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
         pcs = baca.sequence.repeat_by(pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
+        pcs = [_.number for _ in pcs]
         baca.pitches(o, pcs)
         library.displacement(o)
         library.register_wide(o, 5)
@@ -361,6 +362,7 @@ def pf(cache):
         baca.clef(o.leaf(0), "treble")
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
+        pcs = [_.number for _ in pcs]
         baca.pitches(o, pcs)
         library.displacement(o)
         library.register_narrow(o, 7)
@@ -454,6 +456,7 @@ def strings_9_10(cache):
 def strings_12_20(cache):
     pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     pcs = pcs.rotate(-301).retrograde().transpose(10)
+    pcs = [_.number for _ in pcs]
     for name, pair in (
         ("vn", (5, 4)),
         ("va", (4, 3)),

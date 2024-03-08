@@ -230,7 +230,7 @@ def composites(cache):
     for abbreviation, pitch in (
         ("vn", "Eb5"),
         ("va", "A3"),
-        ("vc", "E~2"),
+        ("vc", "Eqf2"),
     ):
         with baca.scope(cache[abbreviation][1, 2]) as o:
             baca.pitch(o, pitch)

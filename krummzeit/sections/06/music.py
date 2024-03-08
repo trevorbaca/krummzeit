@@ -441,7 +441,7 @@ def vc(m):
 
 def strings_9_10(cache):
     for name, pitch in (
-        ("vn", "A+3"),
+        ("vn", "Aqs3"),
         ("va", "Bb2"),
         ("vc", "A2"),
     ):

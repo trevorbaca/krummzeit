@@ -303,7 +303,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m.get(1, 9)) as o:
-        baca.pitches(o, "Bb2 C~3 D3 E+3 F+3 G3")
+        baca.pitches(o, "Bb2 Cqf3 D3 Eqs3 Fqs3 G3")
     with baca.scope(m.get(1, 7)) as o:
         baca.markup(o.pleaf(0), r"\baca-subito-ordinario-markup")
         for run in baca.select.runs(o):
@@ -326,7 +326,7 @@ def vc(m):
                 do_not_allow_repeats=True,
                 do_not_hide_middle_note_heads=True,
             )
-        baca.pitches(o, "A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2")
+        baca.pitches(o, "A1 Bqf1 C2 Dqs2 Eqs2 F2 Gb2 Aqf2 B2")
         baca.hairpin(o, "ff<fff")
         baca.override.dls_staff_padding(o, 6)
 
@@ -365,8 +365,8 @@ def ob_cl_pf_vn_5_12(cache):
 
 def va_vc_11_12(cache):
     for name, pitches in (
-        ("va", "G3 F#+3"),
-        ("vc", "B2 A#+2"),
+        ("va", "G3 Ftqs3"),
+        ("vc", "B2 Atqs2"),
     ):
         with baca.scope(cache[name].get(11, 12)) as o:
             baca.pitches(o, pitches)
@@ -423,7 +423,7 @@ def pf_vn_vc_va_14_23(cache):
                 )
     for name, pair, pitches in (
         ("vn", (21, 23), "C4 Db4"),
-        ("va", (20, 23), "B+2 C3 B+2 C3"),
+        ("va", (20, 23), "Bqs2 C3 Bqs2 C3"),
         ("vc", (20, 23), "B1 C2"),
     ):
         with baca.scope(cache[name].get(pair)) as o:

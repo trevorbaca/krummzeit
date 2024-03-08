@@ -273,7 +273,7 @@ def strings_7_10(cache):
     for name, pitches in (
         ("vn", "D5 Eb5 Eb5 Eb5"),
         ("va", "D3 A3 A3 A3"),
-        ("vc", "D3 E~2 E~2 E~2"),
+        ("vc", "D3 Eqf2 Eqf2 Eqf2"),
     ):
         with baca.scope(cache[name].get(7, 10)) as o:
             baca.pitches(o, pitches)

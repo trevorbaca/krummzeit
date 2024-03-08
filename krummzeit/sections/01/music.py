@@ -239,6 +239,7 @@ def composites(cache):
     with baca.scope(cache["vn"][4, 8] + cache["va"][4, 8] + cache["vc"][4, 8]) as o:
         pcs = library.violet_pitch_classes()
         pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
+        pcs = [_.number for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     for abbreviation, register in (

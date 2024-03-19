@@ -100,7 +100,7 @@ def ob_1_40(m):
 def cl_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch(o, "D2")
-        baca.override.stem_up(o.pleaves())
+        baca.override.stem_direction_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "f")
         baca.override.dls_staff_padding(o, 7)
 
@@ -166,7 +166,7 @@ def vc_1_48(m):
 def vc_48(m):
     with baca.scope(baca.select.rleaves(m[48])[-1:]) as o:
         baca.mark(o.leaf(0), r"\krummzeit-colophon-markup")
-        baca.override.rehearsal_mark_down(o)
+        baca.override.rehearsal_mark_direction_down(o)
         baca.override.rehearsal_mark_padding(o, 6)
         baca.override.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 

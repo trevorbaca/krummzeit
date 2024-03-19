@@ -185,7 +185,7 @@ def ob_cl_4_10(cache):
                 baca.pitch(o, "Eb2")
                 baca.dynamic(o.pleaf(0), "ff")
                 baca.override.dls_staff_padding(o, 9)
-                baca.override.stem_up(o)
+                baca.override.stem_direction_up(o)
                 baca.override.tuplet_bracket_staff_padding(o, 5)
             library.color_fingerings(o)
 

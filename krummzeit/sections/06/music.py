@@ -304,7 +304,7 @@ def cl(m):
         baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch(o, "B3")
-        baca.override.stem_up(o.pleaves())
+        baca.override.stem_direction_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "ppp")
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m.get(13, 21)) as o:
@@ -314,7 +314,7 @@ def cl(m):
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.short_instrument_name(o.leaf(0), "B. cl.", library.manifests)
         baca.pitch(o, "Bb1")
-        baca.override.stem_up(o.pleaves())
+        baca.override.stem_direction_up(o.pleaves())
         baca.dynamic(o.pleaf(0), "ppp")
         baca.override.dls_staff_padding(o, 7)
 

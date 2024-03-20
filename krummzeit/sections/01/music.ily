@@ -1009,9 +1009,9 @@ number.1.Percussion.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \baca-effort-ff
+        ^ \baca-boxed-sponges-markup
           %! EXPLICIT_INSTRUMENT_ALERT
         ^ \baca-explicit-instrument-markup "(“Percussion”)"
-        ^ \baca-sponges-markup
         ^ \krummzeit-accent-changes-markup
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)

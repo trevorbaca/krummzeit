@@ -1572,9 +1572,9 @@ number.4.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-ppp-ancora
+    ^ \baca-boxed-snare-drum-markup
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Xylophone”)"
-    ^ \baca-snare-drum-markup
     - \tweak stencil ##f
     ~
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -2057,7 +2057,7 @@ number.4.Violin.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-boxed-acro-markup
+    ^ \baca-boxed-arco-markup
     - \tweak stencil ##f
     ~
 
@@ -2368,7 +2368,7 @@ number.4.Viola.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-boxed-acro-markup
+    ^ \baca-boxed-arco-markup
     - \tweak stencil ##f
     ~
 
@@ -2705,7 +2705,7 @@ number.4.Cello.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-poss
-    ^ \baca-boxed-acro-markup
+    ^ \baca-boxed-arco-markup
     - \tweak stencil ##f
     ~
 

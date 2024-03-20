@@ -274,7 +274,7 @@ def pf(cache):
 def perc(m):
     with baca.scope(m[1, 9]) as o:
         baca.dynamic(o.pleaf(0), "ppp-ancora")
-        baca.markup(o.pleaf(0), r"\baca-snare-drum-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-snare-drum-markup")
         baca.staff_position(o, 0)
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m[14, 19]) as o:
@@ -315,7 +315,7 @@ def va(m):
         baca.hairpin(o.tleaves(), "ff>pp")
         baca.staccatissimo(o.pheads())
     with baca.scope(m[11, 12]) as o:
-        baca.markup(o.pleaf(0), r"\baca-boxed-acro-markup"),
+        baca.markup(o.pleaf(0), r"\baca-boxed-arco-markup"),
         baca.dynamic(o.pleaf(0), "fff-poss"),
     with baca.scope(m[11, 16]) as o:
         baca.pitch(o, "bf,")
@@ -375,8 +375,8 @@ def composites(cache):
         with baca.scope(m[11, 16]) as o:
             baca.override.stem_direction_up(o.tleaves())
         baca.dynamic(baca.select.pleaf(m[14], 0), "fff-poss")
-    baca.markup(baca.select.pleaf(cache["vn"][14], 0), r"\baca-boxed-acro-markup")
-    baca.markup(baca.select.pleaf(cache["vc"][14], 0), r"\baca-boxed-acro-markup")
+    baca.markup(baca.select.pleaf(cache["vn"][14], 0), r"\baca-boxed-arco-markup")
+    baca.markup(baca.select.pleaf(cache["vc"][14], 0), r"\baca-boxed-arco-markup")
 
 
 @baca.build.timed("make_score")

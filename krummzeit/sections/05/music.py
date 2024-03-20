@@ -313,7 +313,7 @@ def perc(m):
     with baca.scope(m[1, 24]) as o:
         baca.staff_position(o, 0)
     with baca.scope(m[6, 16]) as o:
-        baca.markup(o.pleaf(0), r"\baca-sponges-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-sponges-markup")
         baca.accent(o.pheads())
         baca.dynamic(o.pleaf(0), '"ff"')
         baca.markup(o.pleaf(0), r"\krummzeit-accent-changes-markup")

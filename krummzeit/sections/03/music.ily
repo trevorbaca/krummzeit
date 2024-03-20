@@ -3724,7 +3724,7 @@ number.3.Percussion.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
-    ^ \baca-snare-drum-markup
+    ^ \baca-boxed-snare-drum-markup
     ^ \krummzeit-fingertips-markup
     - \tweak stencil ##f
     ~

@@ -3430,7 +3430,7 @@ number.5.Percussion.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \baca-effort-ff
-        ^ \baca-sponges-markup
+        ^ \baca-boxed-sponges-markup
         ^ \krummzeit-accent-changes-markup
 
         c'1

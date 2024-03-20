@@ -1853,11 +1853,11 @@ number.7.Percussion.Music = {
     - \tweak color #(x11-color 'green4)
       %! REAPPLIED_DYNAMIC
     \pp
+    ^ \baca-boxed-snare-drum-markup
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Xylophone”)"
-    ^ \baca-snare-drum-markup
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR

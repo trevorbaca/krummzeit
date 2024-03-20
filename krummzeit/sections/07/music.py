@@ -215,7 +215,7 @@ def pf(m):
 
 def perc(m):
     with baca.scope(m.leaves()) as o:
-        baca.markup(o.leaf(0), r"\baca-snare-drum-markup")
+        baca.markup(o.leaf(0), r"\baca-boxed-snare-drum-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_position(o, 0)
         baca.override.dls_staff_padding(o, 6)

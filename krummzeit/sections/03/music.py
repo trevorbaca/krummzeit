@@ -425,7 +425,7 @@ def perc(m):
         baca.override.tuplet_bracket_staff_padding(o, 3)
         baca.override.dls_staff_padding(o, 6)
     with baca.scope(m[34, 44]) as o:
-        baca.markup(o.pleaf(0), r"\baca-snare-drum-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-snare-drum-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_lines(o.leaf(0), 1)
         baca.staff_position(o, 0)

@@ -193,7 +193,7 @@ def perc(m):
         baca.dynamic(o.pleaf(0), "fff-poss")
     with baca.scope(m[10, 13]) as o:
         baca.instrument(o.leaf(0), "Percussion", library.manifests)
-        baca.markup(o.pleaf(0), r"\baca-sponges-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-sponges-markup")
         baca.clef(o.leaf(0), "percussion")
         baca.staff_lines(o.leaf(0), 1)
         baca.staff_position(o, 0)

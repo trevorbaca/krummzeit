@@ -3377,7 +3377,9 @@ number.11.Violin.Music = {
     }
 
     % [Violin.Music measure 4]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6
@@ -3426,7 +3428,9 @@ number.11.Violin.Music = {
     }
 
     % [Violin.Music measure 8]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9
@@ -3467,7 +3471,9 @@ number.11.Violin.Music = {
     }
 
     % [Violin.Music measure 12]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6
@@ -3535,7 +3541,9 @@ number.11.Violin.Music = {
     r2
 
     % [Violin.Music measure 19]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Violin.Music measure 20]
     f'''2
@@ -3580,7 +3588,9 @@ number.11.Violin.Music = {
     }
 
     % [Violin.Music measure 24]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9
@@ -3714,7 +3724,9 @@ number.11.Violin.Music = {
     - \staccatissimo
 
     % [Violin.Music measure 36]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7

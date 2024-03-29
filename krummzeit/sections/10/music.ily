@@ -3464,9 +3464,9 @@ number.10.Percussion.Music = {
     r2
 
     % [Percussion.Music measure 4]
-    r2
-
-    r8
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Percussion.Music measure 5]
     r2..
@@ -3497,9 +3497,9 @@ number.10.Percussion.Music = {
     r4.
 
     % [Percussion.Music measure 8]
-    r2
-
-    r8
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Percussion.Music measure 9]
     r2.
@@ -3530,7 +3530,9 @@ number.10.Percussion.Music = {
     r2.
 
     % [Percussion.Music measure 12]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Percussion.Music measure 13]
     r2.
@@ -3561,7 +3563,9 @@ number.10.Percussion.Music = {
     r2
 
     % [Percussion.Music measure 16]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Percussion.Music measure 17]
     r2
@@ -3592,7 +3596,9 @@ number.10.Percussion.Music = {
     r2
 
     % [Percussion.Music measure 20]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Percussion.Music measure 21]
     r2

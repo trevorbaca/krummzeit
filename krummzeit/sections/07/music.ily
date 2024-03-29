@@ -2347,16 +2347,17 @@ number.7.Viola.Music = {
     \revert DynamicLineSpanner.staff-padding
 
     % [Viola.Music measure 7]
-    r1.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
-    % [Viola.Music measure 9]
+    % [Viola.Music measure 8]
     r\breve
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7
     {
 
-        % [Viola.Music measure 11]
         bf,!4
           %! REDUNDANT_DYNAMIC_COLOR
           %! REDUNDANT_DYNAMIC
@@ -2373,7 +2374,6 @@ number.7.Viola.Music = {
     \times 10/7
     {
 
-        % [Viola.Music measure 13]
         bf,!4
           %! SPANNER_START
         - \baca-dashed-line-with-arrow
@@ -2398,7 +2398,6 @@ number.7.Viola.Music = {
     \times 8/7
     {
 
-        % [Viola.Music measure 15]
         bf,!4
 
         bf,!1.
@@ -2411,24 +2410,21 @@ number.7.Viola.Music = {
     \times 13/7
     {
 
-        % [Viola.Music measure 17]
         bf,!4
 
         bf,!1.
 
     }
 
-    % [Viola.Music measure 20]
+    % [Viola.Music measure 19]
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
-    % [Viola.Music measure 21]
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
 
-    % [Viola.Music measure 22]
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
@@ -2571,16 +2567,17 @@ number.7.Cello.Music = {
     \revert DynamicLineSpanner.staff-padding
 
     % [Cello.Music measure 7]
-    r1.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
-    % [Cello.Music measure 9]
+    % [Cello.Music measure 8]
     r\breve
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7
     {
 
-        % [Cello.Music measure 11]
         a,,1.
           %! REDUNDANT_DYNAMIC_COLOR
           %! REDUNDANT_DYNAMIC
@@ -2597,7 +2594,6 @@ number.7.Cello.Music = {
     \times 10/7
     {
 
-        % [Cello.Music measure 13]
         a,,1.
           %! SPANNER_START
         - \baca-dashed-line-with-arrow
@@ -2622,7 +2618,6 @@ number.7.Cello.Music = {
     \times 8/7
     {
 
-        % [Cello.Music measure 15]
         a,,1.
           %! SPANNER_STOP
         \stopTextSpan
@@ -2635,24 +2630,21 @@ number.7.Cello.Music = {
     \times 13/7
     {
 
-        % [Cello.Music measure 17]
         a,,1.
 
         a,,4
 
     }
 
-    % [Cello.Music measure 20]
+    % [Cello.Music measure 19]
     R1 * 4/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
-    % [Cello.Music measure 21]
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
 
-    % [Cello.Music measure 22]
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"

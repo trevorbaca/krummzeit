@@ -491,7 +491,7 @@ def _34_53_strings(cache):
     with baca.scope(cache["pf"][45, 56]) as o:
         baca.dynamic(o.pleaf(0), "fff-sempre"),
         baca.marcato(o.pheads())
-        baca.rspanners.ottava(o.tleaves(), -1),
+        baca.spanners.ottava(o.tleaves(), -1, rleak=True),
         library.replace_with_clusters(o, "low"),
         cache.rebuild()
 

@@ -2186,7 +2186,9 @@ number.5.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
 
     % [Clarinet.Music measure 11]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5
@@ -2338,9 +2340,9 @@ number.5.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     % [Clarinet.Music measure 35]
-    r1
-
-    r8
+    R1 * 9/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/5
@@ -3398,7 +3400,9 @@ number.5.Percussion.Music = {
     r2
 
     % [Percussion.Music measure 2]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Percussion.Music measure 3]
     r2..
@@ -5006,7 +5010,9 @@ number.5.Violin.Music = {
     r8
 
     % [Violin.Music measure 41]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Violin.Music measure 42]
     r2.
@@ -6002,7 +6008,9 @@ number.5.Viola.Music = {
     r8
 
     % [Viola.Music measure 41]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Viola.Music measure 42]
     r2.
@@ -6295,11 +6303,11 @@ number.5.Cello.Music = {
     \override TupletBracket.staff-padding = 3
       %! EXPLICIT_CLEF
     \set Staff.forceClef = ##t
-    r2
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-
-    r4
 
     % [Cello.Music measure 15]
     r4
@@ -6873,7 +6881,9 @@ number.5.Cello.Music = {
     r8
 
     % [Cello.Music measure 41]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Cello.Music measure 42]
     r2.

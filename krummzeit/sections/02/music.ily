@@ -5757,7 +5757,9 @@ number.2.Piano.Music = {
     r4.
 
     % [Piano.Music measure 46]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Piano.Music measure 47]
     r4
@@ -5809,7 +5811,9 @@ number.2.Piano.Music = {
     r2.
 
     % [Piano.Music measure 50]
-    r2..
+    R1 * 7/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"7" #"8"
 
     % [Piano.Music measure 51]
     r2
@@ -5863,7 +5867,9 @@ number.2.Piano.Music = {
     r2.
 
     % [Piano.Music measure 54]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Piano.Music measure 55]
     r2.
@@ -6017,7 +6023,9 @@ number.2.Piano.Music = {
     }
 
     % [Piano.Music measure 59]
-    r2
+    R1 * 2/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     % [Piano.Music measure 60]
     r8
@@ -6083,11 +6091,9 @@ number.2.Piano.Music = {
     }
 
     % [Piano.Music measure 62]
-    r8
-
-    r4.
-
-    r4
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9
@@ -6977,7 +6983,9 @@ number.2.Percussion.Music = {
     r4.
 
     % [Percussion.Music measure 46]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Percussion.Music measure 47]
     r4
@@ -7011,7 +7019,9 @@ number.2.Percussion.Music = {
     r2.
 
     % [Percussion.Music measure 50]
-    r2..
+    R1 * 7/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"7" #"8"
 
     % [Percussion.Music measure 51]
     r2
@@ -7047,7 +7057,9 @@ number.2.Percussion.Music = {
     r2.
 
     % [Percussion.Music measure 54]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Percussion.Music measure 55]
     r2.
@@ -7081,9 +7093,9 @@ number.2.Percussion.Music = {
     r2..
 
     % [Percussion.Music measure 58]
-    r1
-
-    r4
+    R1 * 5/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"4"
 
     % [Percussion.Music measure 59]
     r4
@@ -8555,9 +8567,9 @@ number.2.Violin.Music = {
     r4
 
     % [Violin.Music measure 56]
-    r8
-
-    r2
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Violin.Music measure 57]
     r16
@@ -8920,9 +8932,9 @@ number.2.Violin.Music = {
     }
 
     % [Violin.Music measure 70]
-    r2
-
-    r8
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Violin.Music measure 71]
     r8
@@ -9662,7 +9674,9 @@ number.2.Viola.Music = {
     r4
 
     % [Viola.Music measure 51]
-    r2..
+    R1 * 7/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"7" #"8"
 
     % [Viola.Music measure 52]
     r4.
@@ -9698,12 +9712,14 @@ number.2.Viola.Music = {
     - \staccatissimo
 
     % [Viola.Music measure 53]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Viola.Music measure 54]
-    r4.
-
-    r4.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4
@@ -9854,7 +9870,9 @@ number.2.Viola.Music = {
     r4
 
     % [Viola.Music measure 61]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Viola.Music measure 62]
     r8
@@ -9976,9 +9994,9 @@ number.2.Viola.Music = {
     r4.
 
     % [Viola.Music measure 67]
-    r1
-
-    r8
+    R1 * 9/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5
@@ -10055,9 +10073,9 @@ number.2.Viola.Music = {
     r4.
 
     % [Viola.Music measure 70]
-    r2
-
-    r8
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Viola.Music measure 71]
     r8
@@ -10832,7 +10850,9 @@ number.2.Cello.Music = {
     r8
 
     % [Cello.Music measure 53]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Cello.Music measure 54]
     bf''!4
@@ -10883,9 +10903,9 @@ number.2.Cello.Music = {
     r4
 
     % [Cello.Music measure 56]
-    r8
-
-    r2
+    R1 * 5/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"5" #"8"
 
     % [Cello.Music measure 57]
     r4.
@@ -10998,7 +11018,9 @@ number.2.Cello.Music = {
     }
 
     % [Cello.Music measure 61]
-    r2.
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Cello.Music measure 62]
     r16
@@ -11125,9 +11147,9 @@ number.2.Cello.Music = {
     - \staccatissimo
 
     % [Cello.Music measure 67]
-    r1
-
-    r8
+    R1 * 9/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     % [Cello.Music measure 68]
     r8.

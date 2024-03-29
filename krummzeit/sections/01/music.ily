@@ -1592,9 +1592,9 @@ number.1.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     % [Viola.Music measure 4]
-    r2
-
-    r4
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \times 4/7
     {
@@ -1665,9 +1665,9 @@ number.1.Viola.Music = {
     e4
 
     % [Viola.Music measure 7]
-    r2.
-
-    r4.
+    R1 * 9/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     \times 2/3
     {

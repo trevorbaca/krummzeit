@@ -1511,9 +1511,9 @@ number.6.Oboe.Music = {
     }
 
     % [Oboe.Music measure 5]
-    r2
-
-    r4
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \times 8/9
     {
@@ -2558,7 +2558,9 @@ number.6.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     % [Clarinet.Music measure 12]
-    r1
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     % [Clarinet.Music measure 13]
     \override DynamicLineSpanner.staff-padding = 5
@@ -5421,9 +5423,9 @@ number.6.Viola.Music = {
     % [Viola.Music measure 12]
     \override DynamicLineSpanner.staff-padding = 8
     \override TupletBracket.staff-padding = 4
-    r2.
-
-    r4
+    R1 * 4/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     \times 4/7
     {
@@ -5497,9 +5499,9 @@ number.6.Viola.Music = {
     }
 
     % [Viola.Music measure 15]
-    r2
-
-    r4
+    R1 * 3/4
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \times 2/3
     {
@@ -5555,9 +5557,9 @@ number.6.Viola.Music = {
     }
 
     % [Viola.Music measure 18]
-    r2..
-
-    r2
+    R1 * 11/8
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"11" #"8"
 
     \times 4/5
     {

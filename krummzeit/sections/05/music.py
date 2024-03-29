@@ -417,19 +417,17 @@ def strings(cache):
         baca.markup(o.pleaf(0), r"\baca-molto-flautando-markup")
     with baca.scope(cache.va.get(11, 16)) as o:
         baca.hairpin(o.tleaves(), "pp<f")
-        baca.mspanners.text(
+        baca.spanners.text(
             [o.tleaves()],
             "molto flautando => molto gridato",
-            do_not_rleak=True,
             staff_padding=6,
         )
     for name in ["vn", "vc"]:
         with baca.scope(cache[name].get(14, 16)) as o:
             baca.hairpin(o.tleaves(), "pp<f")
-            baca.mspanners.text(
+            baca.spanners.text(
                 [o.tleaves()],
                 "molto flautando => molto gridato",
-                do_not_rleak=True,
                 staff_padding=6,
             )
     for name, pitch in zip(["vn", "va", "vc"], ["Aqs3", "Bb2", "A2"]):

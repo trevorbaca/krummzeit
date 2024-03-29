@@ -356,7 +356,7 @@ def pf(cache):
     with baca.scope(m.get(27, 29)) as o:
         baca.clef(o.leaf(0), "bass")
         baca.pitch(o, "Bb0")
-        baca.rspanners.ottava(o.tleaves(), -1)
+        baca.spanners.ottava(o.tleaves(), -1, rleak=True)
         baca.dynamic(o.pleaf(0), "ppp")
     with baca.scope(m.get(30, 34)) as o:
         baca.clef(o.leaf(0), "treble")
@@ -366,7 +366,7 @@ def pf(cache):
         baca.pitches(o, pcs)
         library.displacement(o)
         library.register_narrow(o, 7)
-        baca.rspanners.ottava(o.tleaves())
+        baca.spanners.ottava(o.tleaves(), rleak=True)
         baca.staccatissimo(o.pheads())
         baca.dynamic(o.pleaf(0), "fff")
     with baca.scope(m.get(30, 35)) as o:

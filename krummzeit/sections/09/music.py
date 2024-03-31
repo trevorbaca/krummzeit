@@ -360,22 +360,22 @@ def persist_score(score, environment):
 def make_layout():
     y_offset = 20
     distances = (20, (20, 30), (20, 30), (20, 20, 30))
-    layout = baca.make_layout(
-        baca.page(
+    layout = baca.layout.layout(
+        baca.layout.page(
             1,
-            baca.system(measure=1, y_offset=y_offset, distances=distances),
+            baca.layout.System(1, y_offset=y_offset, distances=distances),
         ),
-        baca.page(
+        baca.layout.page(
             2,
-            baca.system(measure=4, y_offset=y_offset, distances=distances),
+            baca.layout.System(4, y_offset=y_offset, distances=distances),
         ),
-        baca.page(
+        baca.layout.page(
             3,
-            baca.system(measure=7, y_offset=y_offset, distances=distances),
+            baca.layout.System(7, y_offset=y_offset, distances=distances),
         ),
-        spacing=(1, 40),
+        default_spacing=(1, 40),
     )
-    baca.section.make_layout_ly(layout)
+    baca.section.write_layout_ly(layout)
 
 
 def main():

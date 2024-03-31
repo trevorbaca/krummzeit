@@ -324,8 +324,8 @@ def persist_score(score, environment):
 
 
 def make_layout():
-    layout = baca.layout.layout(
-        baca.layout.page(
+    layout = baca.layout.Layout(
+        baca.layout.Page(
             1,
             baca.layout.System(
                 measure=1,
@@ -333,7 +333,7 @@ def make_layout():
                 distances=(20, (15, 20), (15, 20), (20, 20, 20)),
             ),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             2,
             baca.layout.System(
                 measure=7,

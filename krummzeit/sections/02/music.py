@@ -614,7 +614,7 @@ def make_layout():
         (20, 30),
         (20, 20, 30),
     )
-    spacing = baca.make_layout(
+    layout = baca.make_layout(
         baca.page(
             1,
             baca.system(measure=1, y_offset=y_offset, distances=distances),
@@ -681,7 +681,7 @@ def make_layout():
         ),
         spacing=(1, 32),
     )
-    baca.section.make_layout_ly(spacing)
+    baca.section.make_layout_ly(layout)
 
 
 def main():

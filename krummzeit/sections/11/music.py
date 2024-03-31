@@ -235,52 +235,52 @@ def persist_score(score, environment):
 def make_layout():
     y_offset = 20
     distances = (20, (20, 30), (20, 30), (20, 20, 30))
-    layout = baca.layout.layout(
-        baca.layout.page(
+    layout = baca.layout.Layout(
+        baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             2,
             baca.layout.System(5, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             3,
             baca.layout.System(9, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             4,
             baca.layout.System(13, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             5,
             baca.layout.System(17, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             6,
             baca.layout.System(21, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             7,
             baca.layout.System(25, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             8,
             baca.layout.System(29, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             9,
             baca.layout.System(33, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             10,
             baca.layout.System(37, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             11,
             baca.layout.System(41, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             12,
             baca.layout.System(45, y_offset=y_offset, distances=distances),
         ),

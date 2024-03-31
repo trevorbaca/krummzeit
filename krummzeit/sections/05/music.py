@@ -520,48 +520,48 @@ def persist_score(score, environment):
 def make_layout():
     y_offset = 20
     distances = (20, (20, 30), (20, 30), (20, 20, 30))
-    layout = baca.layout.layout(
-        baca.layout.page(
+    layout = baca.layout.Layout(
+        baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             2,
             baca.layout.System(6, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             3,
             baca.layout.System(10, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             4,
             baca.layout.System(15, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             5,
             baca.layout.System(19, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             6,
             baca.layout.System(24, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             7,
             baca.layout.System(28, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             8,
             baca.layout.System(32, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             9,
             baca.layout.System(36, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             10,
             baca.layout.System(41, y_offset=y_offset, distances=distances),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             11,
             baca.layout.System(45, y_offset=y_offset, distances=distances),
         ),

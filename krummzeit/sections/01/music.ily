@@ -975,7 +975,7 @@ number.1.Percussion.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8
+    \tuplet 8/5
     {
 
         % [Percussion.Music measure 10]
@@ -1025,7 +1025,7 @@ number.1.Percussion.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Percussion.Music measure 11]
@@ -1055,7 +1055,7 @@ number.1.Percussion.Music = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Percussion.Music measure 13]
@@ -1117,7 +1117,7 @@ number.1.Violin.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-vn-markup %@%
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1138,7 +1138,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1154,7 +1154,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1170,7 +1170,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1186,7 +1186,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1202,7 +1202,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1218,7 +1218,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1234,7 +1234,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         ef''!8
@@ -1255,7 +1255,7 @@ number.1.Violin.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Violin.Music measure 4]
@@ -1281,7 +1281,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         fs''!16
@@ -1293,7 +1293,7 @@ number.1.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Violin.Music measure 5]
@@ -1305,7 +1305,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         d''8
@@ -1318,7 +1318,7 @@ number.1.Violin.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Violin.Music measure 6]
@@ -1333,7 +1333,7 @@ number.1.Violin.Music = {
 
     r4.
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Violin.Music measure 7]
@@ -1346,7 +1346,7 @@ number.1.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         af'!4
@@ -1364,7 +1364,7 @@ number.1.Violin.Music = {
     e'4
     \glissando
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         f'16
@@ -1455,7 +1455,7 @@ number.1.Viola.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-va-markup %@%
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1476,7 +1476,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1492,7 +1492,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1508,7 +1508,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1524,7 +1524,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1540,7 +1540,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1556,7 +1556,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1572,7 +1572,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         a8
@@ -1598,7 +1598,7 @@ number.1.Viola.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Viola.Music measure 5]
@@ -1624,7 +1624,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         cs'!16
@@ -1637,7 +1637,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         ef'!16
@@ -1649,7 +1649,7 @@ number.1.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Viola.Music measure 6]
@@ -1671,7 +1671,7 @@ number.1.Viola.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Viola.Music measure 8]
@@ -1683,7 +1683,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         d32
@@ -1697,7 +1697,7 @@ number.1.Viola.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         ef4
@@ -1789,7 +1789,7 @@ number.1.Cello.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
     \set Staff.shortInstrumentName = \krummzeit-vc-markup %@%
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1810,7 +1810,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1826,7 +1826,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1842,7 +1842,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1858,7 +1858,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1874,7 +1874,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1890,7 +1890,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1906,7 +1906,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         eqf,!8
@@ -1927,7 +1927,7 @@ number.1.Cello.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 4]
@@ -1953,7 +1953,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         ef'!16
@@ -1968,7 +1968,7 @@ number.1.Cello.Music = {
     % [Cello.Music measure 5]
     r4.
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         f'16
@@ -1980,7 +1980,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Cello.Music measure 6]
@@ -1998,7 +1998,7 @@ number.1.Cello.Music = {
     c'4
     \glissando
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Cello.Music measure 7]
@@ -2011,7 +2011,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         e4
@@ -2026,7 +2026,7 @@ number.1.Cello.Music = {
     % [Cello.Music measure 8]
     r4.
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         e4

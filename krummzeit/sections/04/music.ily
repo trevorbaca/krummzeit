@@ -1130,7 +1130,7 @@ number.4.Clarinet.Staff = {
 
 number.4.Piano.Music = {
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Piano.Music measure 1]
@@ -1190,7 +1190,7 @@ number.4.Piano.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         cs''''!8
@@ -1223,7 +1223,7 @@ number.4.Piano.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Piano.Music measure 3]
@@ -1255,7 +1255,7 @@ number.4.Piano.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         ef'!16
@@ -1286,7 +1286,7 @@ number.4.Piano.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Piano.Music measure 5]
@@ -1332,7 +1332,7 @@ number.4.Piano.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 10/7
+    \tuplet 7/10
     {
 
         c16
@@ -1829,7 +1829,7 @@ number.4.Violin.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6
+    \tuplet 6/5
     {
 
         % [Violin.Music measure 5]
@@ -1869,7 +1869,7 @@ number.4.Violin.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         r8
@@ -1905,7 +1905,7 @@ number.4.Violin.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6
+    \tuplet 6/5
     {
 
         % [Violin.Music measure 7]
@@ -1938,7 +1938,7 @@ number.4.Violin.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         r8
@@ -1970,7 +1970,7 @@ number.4.Violin.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6
+    \tuplet 6/5
     {
 
         % [Violin.Music measure 9]
@@ -2003,7 +2003,7 @@ number.4.Violin.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         r8
@@ -2155,7 +2155,7 @@ number.4.Viola.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Viola.Music measure 5]
@@ -2202,7 +2202,7 @@ number.4.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         r16
@@ -2236,7 +2236,7 @@ number.4.Viola.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Viola.Music measure 7]
@@ -2260,7 +2260,7 @@ number.4.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         r16
@@ -2290,7 +2290,7 @@ number.4.Viola.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Viola.Music measure 9]
@@ -2330,7 +2330,7 @@ number.4.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         r16
@@ -2486,7 +2486,7 @@ number.4.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         % [Cello.Music measure 5]
@@ -2538,7 +2538,7 @@ number.4.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         r8
@@ -2559,7 +2559,7 @@ number.4.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         % [Cello.Music measure 7]
@@ -2608,7 +2608,7 @@ number.4.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         r8
@@ -2629,7 +2629,7 @@ number.4.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4
+    \tuplet 4/7
     {
 
         % [Cello.Music measure 9]
@@ -2662,7 +2662,7 @@ number.4.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         r8

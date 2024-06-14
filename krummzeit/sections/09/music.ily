@@ -479,7 +479,7 @@ number.9.Oboe.Music = {
     \revert DynamicLineSpanner.staff-padding
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5
+    \tuplet 5/6
     {
 
         % [Oboe.Music measure 8]
@@ -494,7 +494,7 @@ number.9.Oboe.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5
+    \tuplet 5/7
     {
 
         % [Oboe.Music measure 10]
@@ -592,7 +592,7 @@ number.9.Clarinet.Music = {
     \revert DynamicLineSpanner.staff-padding
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5
+    \tuplet 5/6
     {
 
         % [Clarinet.Music measure 8]
@@ -614,7 +614,7 @@ number.9.Clarinet.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5
+    \tuplet 5/7
     {
 
         % [Clarinet.Music measure 10]
@@ -642,7 +642,7 @@ number.9.Clarinet.Staff = {
 
 number.9.Piano.Music = {
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Piano.Music measure 1]
@@ -711,7 +711,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -745,7 +745,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -779,7 +779,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -813,7 +813,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -847,7 +847,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -881,7 +881,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -915,7 +915,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -949,7 +949,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -983,7 +983,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1017,7 +1017,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1051,7 +1051,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1085,7 +1085,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1119,7 +1119,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1153,7 +1153,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1187,7 +1187,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1221,7 +1221,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1255,7 +1255,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1289,7 +1289,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1323,7 +1323,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1357,7 +1357,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1391,7 +1391,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1425,7 +1425,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1459,7 +1459,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1493,7 +1493,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1527,7 +1527,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1561,7 +1561,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1595,7 +1595,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1629,7 +1629,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1663,7 +1663,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1697,7 +1697,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1731,7 +1731,7 @@ number.9.Piano.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.stencil = ##f
@@ -1776,7 +1776,7 @@ number.9.Piano.Music = {
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7
+    \tuplet 7/9
     {
 
         % [Piano.Music measure 9]
@@ -1955,7 +1955,7 @@ number.9.Percussion.Music = {
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7
+    \tuplet 7/9
     {
 
         % [Percussion.Music measure 9]
@@ -1990,7 +1990,7 @@ number.9.Percussion.Staff = {
 number.9.Violin.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10
+    \tuplet 10/19
     {
 
         % [Violin.Music measure 1]
@@ -2042,7 +2042,7 @@ number.9.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Violin.Music measure 3]
@@ -2071,7 +2071,7 @@ number.9.Violin.Music = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7
+    \tuplet 7/5
     {
 
         % [Violin.Music measure 4]
@@ -2083,7 +2083,7 @@ number.9.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         d'4
@@ -2094,7 +2094,7 @@ number.9.Violin.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Violin.Music measure 5]
@@ -2106,7 +2106,7 @@ number.9.Violin.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         fs'!4
@@ -2117,7 +2117,7 @@ number.9.Violin.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         b'8
@@ -2134,7 +2134,7 @@ number.9.Violin.Music = {
     %@% ^ \baca-duration-multiplier-markup #"11" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10
+    \tuplet 10/13
     {
 
         % [Violin.Music measure 7]
@@ -2156,7 +2156,7 @@ number.9.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5
+    \tuplet 5/9
     {
 
         % [Violin.Music measure 9]
@@ -2188,7 +2188,7 @@ number.9.Violin.Staff = {
 number.9.Viola.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10
+    \tuplet 10/19
     {
 
         % [Viola.Music measure 1]
@@ -2229,7 +2229,7 @@ number.9.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9
+    \tuplet 9/5
     {
 
         % [Viola.Music measure 3]
@@ -2248,7 +2248,7 @@ number.9.Viola.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2261,7 +2261,7 @@ number.9.Viola.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Viola.Music measure 4]
@@ -2279,7 +2279,7 @@ number.9.Viola.Music = {
     af!2
     ~
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         af8
@@ -2290,7 +2290,7 @@ number.9.Viola.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Viola.Music measure 5]
@@ -2302,7 +2302,7 @@ number.9.Viola.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         g4
@@ -2319,7 +2319,7 @@ number.9.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"11" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10
+    \tuplet 10/13
     {
 
         % [Viola.Music measure 7]
@@ -2341,7 +2341,7 @@ number.9.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5
+    \tuplet 5/9
     {
 
         % [Viola.Music measure 9]
@@ -2373,7 +2373,7 @@ number.9.Viola.Staff = {
 number.9.Cello.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10
+    \tuplet 10/19
     {
 
         % [Cello.Music measure 1]
@@ -2413,7 +2413,7 @@ number.9.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 3]
@@ -2431,7 +2431,7 @@ number.9.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         f,8.
@@ -2442,7 +2442,7 @@ number.9.Cello.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         d,2
@@ -2453,7 +2453,7 @@ number.9.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 4]
@@ -2471,7 +2471,7 @@ number.9.Cello.Music = {
     f,1
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Cello.Music measure 5]
@@ -2483,7 +2483,7 @@ number.9.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         c8
@@ -2500,7 +2500,7 @@ number.9.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"11" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10
+    \tuplet 10/13
     {
 
         % [Cello.Music measure 7]
@@ -2522,7 +2522,7 @@ number.9.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5
+    \tuplet 5/9
     {
 
         % [Cello.Music measure 9]

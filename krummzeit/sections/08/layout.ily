@@ -1,3 +1,5 @@
+\version "2.25.16"
+
 % first_page_number = 58
 % page_count = 7
 % measure_count = 24 + 1

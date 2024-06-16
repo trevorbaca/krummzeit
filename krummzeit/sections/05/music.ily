@@ -3234,7 +3234,7 @@ number.5.Piano.Music = {
       %! EXPLICIT_DYNAMIC
     \mp
     ^ \baca-senza-pedale-markup
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -3243,7 +3243,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r4..
 
@@ -3254,7 +3254,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -3268,7 +3268,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8.
 
@@ -3279,7 +3279,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r16
 
@@ -3293,7 +3293,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r4.
 
@@ -3307,7 +3307,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -3316,7 +3316,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r4..
 
@@ -3327,7 +3327,7 @@ number.5.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
     \revert DynamicLineSpanner.staff-padding

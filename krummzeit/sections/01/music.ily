@@ -795,7 +795,7 @@ number.1.Piano.Music = {
       %! EXPLICIT_DYNAMIC
     \fff
     ^ \krummzeit-catch-resonance-markup
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 

@@ -680,7 +680,7 @@ number.9.Piano.Music = {
         \baca-ff-sempre
           %! EXPLICIT_INSTRUMENT_ALERT
         %@% ^ \baca-explicit-instrument-markup "(“Harpsichord”)"
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -697,7 +697,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -706,7 +706,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -721,7 +721,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -731,7 +731,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -740,7 +740,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -755,7 +755,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -765,7 +765,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -774,7 +774,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -789,7 +789,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -799,7 +799,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -808,7 +808,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -823,7 +823,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -833,7 +833,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -842,7 +842,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -857,7 +857,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -867,7 +867,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -876,7 +876,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -891,7 +891,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -901,7 +901,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -910,7 +910,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -925,7 +925,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -935,7 +935,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -944,7 +944,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -959,7 +959,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -969,7 +969,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -978,7 +978,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -993,7 +993,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1003,7 +1003,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1012,7 +1012,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1027,7 +1027,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1037,7 +1037,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1046,7 +1046,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1061,7 +1061,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1071,7 +1071,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1080,7 +1080,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1095,7 +1095,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1105,7 +1105,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1114,7 +1114,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1129,7 +1129,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1139,7 +1139,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1148,7 +1148,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1163,7 +1163,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1173,7 +1173,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1182,7 +1182,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1197,7 +1197,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1207,7 +1207,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1216,7 +1216,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1231,7 +1231,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1241,7 +1241,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1250,7 +1250,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1265,7 +1265,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1275,7 +1275,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1284,7 +1284,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1299,7 +1299,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1309,7 +1309,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1318,7 +1318,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1333,7 +1333,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1343,7 +1343,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1352,7 +1352,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1367,7 +1367,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1377,7 +1377,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1386,7 +1386,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1401,7 +1401,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1411,7 +1411,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1420,7 +1420,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1435,7 +1435,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1445,7 +1445,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1454,7 +1454,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1469,7 +1469,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1479,7 +1479,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1488,7 +1488,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1503,7 +1503,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1513,7 +1513,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1522,7 +1522,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1537,7 +1537,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1547,7 +1547,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1556,7 +1556,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1571,7 +1571,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1581,7 +1581,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1590,7 +1590,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1605,7 +1605,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1615,7 +1615,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1624,7 +1624,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1639,7 +1639,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1649,7 +1649,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1658,7 +1658,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1673,7 +1673,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1683,7 +1683,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1692,7 +1692,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1707,7 +1707,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1717,7 +1717,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1726,7 +1726,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }
@@ -1741,7 +1741,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         [
 
         \once \override Accidental.stencil = ##f
@@ -1751,7 +1751,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1760,7 +1760,7 @@ number.9.Piano.Music = {
         \once \override NoteHead.text =
         \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup \center-align \concat { \natural \flat }
+        ^ \markup \center-column { \natural \flat }
         ]
 
     }

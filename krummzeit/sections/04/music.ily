@@ -1392,7 +1392,7 @@ number.4.Piano.Music = {
       %! EXPLICIT_DYNAMIC
     \fff
     ^ \baca-senza-pedale-markup
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     \once \override Accidental.stencil = ##f
@@ -1402,7 +1402,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     % [Piano.Music measure 10]
@@ -1413,7 +1413,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     \once \override Accidental.stencil = ##f
@@ -1423,7 +1423,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     % [Piano.Music measure 11]
@@ -1434,7 +1434,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     % [Piano.Music measure 12]
@@ -1445,7 +1445,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     % [Piano.Music measure 13]
       %! EXPLICIT_OTTAVA_COLOR
@@ -1473,7 +1473,7 @@ number.4.Piano.Music = {
     - \tweak color #(x11-color 'DeepPink1)
       %! REDUNDANT_DYNAMIC
     \fff
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     % [Piano.Music measure 15]
@@ -1484,7 +1484,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>1
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     % [Piano.Music measure 16]
@@ -1495,7 +1495,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     ~
 
     \once \override Accidental.stencil = ##f
@@ -1505,7 +1505,7 @@ number.4.Piano.Music = {
     \once \override NoteHead.text =
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
     \revert DynamicLineSpanner.staff-padding
 
     % [Piano.Music measure 17]

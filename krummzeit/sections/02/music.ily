@@ -5752,7 +5752,7 @@ number.2.Piano.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-fff-sempre
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -5774,7 +5774,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8.
 
@@ -5789,7 +5789,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -5806,7 +5806,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -5830,7 +5830,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8.
 
@@ -5845,7 +5845,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -5862,7 +5862,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8
 
@@ -5884,7 +5884,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
     r8.
 
@@ -5899,7 +5899,7 @@ number.2.Piano.Music = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>16
     - \marcato
-    ^ \markup \center-align \concat { \natural \flat }
+    ^ \markup \center-column { \natural \flat }
 
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue

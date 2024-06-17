@@ -1,8 +1,5 @@
 \version "2.25.16"
 
-% first_page_number = 43
-% page_count = 9
-% measure_count = 35 + 1
 
 
 \context Score = "Score"

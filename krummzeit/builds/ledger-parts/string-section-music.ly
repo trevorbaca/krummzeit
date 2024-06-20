@@ -6,7 +6,7 @@
 #(set-global-staff-size 15)
 
 \paper{
-    bottom-margin = 0\mm
+    bottom-margin = 0
     systems-per-page = 3
     system-system-spacing = #'(
         (basic-distance . 0)
@@ -14,7 +14,7 @@
         (padding . 0)
         (stretchability . 0)
     )
-    top-margin = 0\mm
+    top-margin = 0
     top-markup-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 12)

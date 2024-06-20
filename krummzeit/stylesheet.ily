@@ -1,12 +1,12 @@
 \version "2.25.16"
+\include "baca.ily"
+
 #(set-default-paper-size "ledger")
 #(set-global-staff-size 14)
 
-\include "baca.ily"
-
 \paper
 {
-  bottom-margin = 10\mm
+  bottom-margin = 10
   evenFooterMarkup = \markup
     \if \should-print-page-number
     \fill-line {
@@ -29,14 +29,14 @@
       " "
   }
   evenHeaderMarkup = \markup \fill-line { " " }
-  left-margin = 30\mm
+  left-margin = 30
   oddFooterMarkup = \evenFooterMarkup
   oddHeaderMarkup = \markup \fill-line { " " }
   print-first-page-number = ##f
   print-page-number = ##t
-  right-margin = 20\mm
+  right-margin = 20
   top-markup-spacing.minimum-distance = 4
-  top-margin = 10\mm
+  top-margin = 10
 }
 
 \layout
@@ -49,12 +49,8 @@
   ragged-right = ##t
 }
 
-%%% CONTEXTS
-
 \layout
 {
-  
-  % GLOBAL SKIPS
   \context
   {
     \name GlobalSkips
@@ -62,39 +58,28 @@
     \consists Script_engraver
     \consists Text_engraver
     \consists \alternateTextSpannerEngraver
-
     \override TextScript.font-size = 6
-
     \override TextSpanner.font-size = 6
   }
-
-  % GLOBAL RESTS
   \context
   {
     \name GlobalRests
     \type Engraver_group
     \consists Multi_measure_rest_engraver
-
     \override MultiMeasureRest.transparent = ##t
-
     \override MultiMeasureRestText.extra-offset = #'(0 . -7)
     \override MultiMeasureRestText.font-size = 3
     \override MultiMeasureRestText.outside-staff-priority = 0
     \override MultiMeasureRestText.padding = 0
   }
-
-  % PAGE LAYOUT
   \context
   {
     \name PageLayout
     \type Engraver_group
     \consists Text_engraver
     \consists \alternateTextSpannerEngraver
-
     \override TextSpanner.font-size = 6
   }
-
-  % GLOBAL CONTEXT
   \context
   {
     \name GlobalContext
@@ -111,13 +96,10 @@
     \defaultchild GlobalSkips
     \accepts GlobalRests
     \accepts PageLayout
-
     \override BarNumber.Y-extent = ##f
     \override BarNumber.extra-offset = #'(-6 . -4)
     \override BarNumber.font-size = 1
-
     \override TextSpanner.to-barline = ##t
-
     \override TimeSignature.X-extent = #'(0 . 0)
     \override TimeSignature.break-align-symbol = #'left-edge
     \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -125,22 +107,16 @@
     \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
     \override TimeSignature.style = #'numbered
   }
-
-  % STAFF
   \context
   {
     \Staff
     \remove Time_signature_engraver
   }
-
-  % VOICE
   \context
   {
     \Voice
     \remove Forbid_line_break_engraver
   }
-
-  % WIND SECTION STAFF GROUP
   \context
   {
     \PianoStaff
@@ -151,8 +127,6 @@
     \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
     \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
   }
-
-  % PERCUSSION SECTION STAFF GROUP
   \context
   {
     \PianoStaff
@@ -163,8 +137,6 @@
     \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
     \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
   }
-
-  % STRING SECTION STAFF GROUP
   \context
   {
     \PianoStaff
@@ -175,8 +147,6 @@
     \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
     \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
   }
-
-  % MUSIC CONTEXT
   \context
   {
     \ChoirStaff
@@ -189,8 +159,6 @@
 
     systemStartDelimiter = #'SystemStartBar
   }
-
-  % SCORE
   \context
   {
     \Score
@@ -199,43 +167,29 @@
     \remove Bar_number_engraver
     \remove Metronome_mark_engraver
     \remove System_start_delimiter_engraver
-
     \override BarLine.hair-thickness = 0.5
     \override BarLine.X-extent = #'(0 . 0)
-
     \override Beam.damping = 99
-
     \override Glissando.thickness = 3
-
     \override Hairpin.to-barline = ##f
-
     \override NoteCollision.merge-differently-dotted = ##t
-
     \override NoteColumn.ignore-collision = ##t
-
     \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie         
     \override RepeatTie.X-extent = ##f
-
     \override SpacingSpanner.strict-grace-spacing = ##t
     \override SpacingSpanner.strict-note-spacing = ##t
     \override SpacingSpanner.uniform-stretching = ##t
-
     \override StemTremolo.beam-width = 1.5
     \override StemTremolo.flag-count = 4
     \override StemTremolo.slope = 0.5
-
     % DISCOVERY: overriding TextScript.X-extent = ##f
     %      makes LilyPond ignore self-alignment-X tweaks;
     %      probably should never be done at stylesheet level.
     % NOTE:    may be best to override NO text script properties.
-
     \override TextSpanner.to-barline = ##t
-
     \override TupletBracket.full-length-to-extent = ##f
     \override TupletBracket.padding = 2
-
     \override TupletNumber.font-size = 1
-    
     autoBeaming = ##f
     barNumberFormatter = #baca-oval-bar-numbers
     proportionalNotationDuration = \musicLength 1*1/28

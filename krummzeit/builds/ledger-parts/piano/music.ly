@@ -7,7 +7,7 @@
 #(set-global-staff-size 15)
 
 \paper{
-    bottom-margin = 0\mm
+    bottom-margin = 0
     } 
 
 \layout {

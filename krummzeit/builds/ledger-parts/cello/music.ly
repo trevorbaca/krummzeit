@@ -5,7 +5,7 @@
 \include "../stylesheet.ily"
 
 \paper{
-    bottom-margin = 0\mm
+    bottom-margin = 0
     } 
 
 \layout {

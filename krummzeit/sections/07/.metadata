@@ -4,6 +4,7 @@
         "GlobalContext",
         "Rests",
         "Skips",
+        "TimeSignatures",
         "MusicContext",
         "WindSectionStaffGroup",
         "Oboe.Staff",
@@ -235,7 +236,7 @@
                 value="144",
             ),
             baca.Memento(
-                context="Skips",
+                context="TimeSignatures",
                 edition=None,
                 manifest=None,
                 prototype="abjad.TimeSignature",

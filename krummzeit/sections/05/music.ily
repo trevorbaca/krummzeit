@@ -154,6 +154,8 @@ number.5.Skips = {
     % [Skips measure 1]
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
+      %! REAPPLIED_METRONOME_MARK
+    \tempo 4=36
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
@@ -723,6 +725,8 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 25]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo \krummzeit-seventy-two-subito-one-hundred-eight-markup
     s1 * 4/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -784,6 +788,8 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 27]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=72
     s1 * 5/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -980,6 +986,8 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 35]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=108
     s1 * 9/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT

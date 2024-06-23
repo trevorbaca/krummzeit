@@ -115,6 +115,8 @@ number.6.Skips = {
     % [Skips measure 1]
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
+      %! REAPPLIED_METRONOME_MARK
+    \tempo 4=108
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
@@ -299,6 +301,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 9]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=135
     s1 * 5/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -360,6 +364,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 11]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=72
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -481,6 +487,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 15]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=108
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -542,6 +550,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 17]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=90
     s1 * 4/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -582,6 +592,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 18]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=108
     s1 * 11/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -643,6 +655,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 20]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=90
     s1 * 5/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -785,6 +799,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 25]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=135
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -852,6 +868,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 27]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=45
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -1027,6 +1045,8 @@ number.6.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 33]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=72
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT

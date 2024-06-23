@@ -51,6 +51,8 @@ number.1.Rests = {
 number.1.Skips = {
 
     % [Skips measure 1]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=135
     s1 * 4/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
@@ -124,6 +126,8 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 4]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=45
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -218,6 +222,8 @@ number.1.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 7]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=144
     s1 * 9/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -258,6 +264,8 @@ number.1.Skips = {
     %@% \bacaStartTextSpanSNM
 
     % [Skips measure 8]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=108
     s1 * 5/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -319,6 +327,8 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 10]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=135
     s1 * 5/8
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT

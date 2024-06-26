@@ -17,19 +17,15 @@
             s1 * 3/4
 
             % [Breaks measure 2]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 3]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 4]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 5]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 6]
@@ -38,15 +34,12 @@
             s1 * 9/8
 
             % [Breaks measure 7]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 8]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 9]
-            \noBreak
             s1 * 7/8
 
             % [Breaks measure 10]
@@ -55,19 +48,15 @@
             s1 * 5/4
 
             % [Breaks measure 11]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 12]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 13]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 14]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 15]
@@ -76,15 +65,12 @@
             s1 * 4/4
 
             % [Breaks measure 16]
-            \noBreak
             s1 * 6/4
 
             % [Breaks measure 17]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 18]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 19]
@@ -93,19 +79,15 @@
             s1 * 5/8
 
             % [Breaks measure 20]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 21]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 22]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 23]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 24]
@@ -114,15 +96,12 @@
             s1 * 3/4
 
             % [Breaks measure 25]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 26]
-            \noBreak
             s1 * 5/4
 
             % [Breaks measure 27]
-            \noBreak
             s1 * 5/4
 
             % [Breaks measure 28]
@@ -131,15 +110,12 @@
             s1 * 3/4
 
             % [Breaks measure 29]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 30]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 31]
-            \noBreak
             s1 * 11/8
 
             % [Breaks measure 32]
@@ -148,15 +124,12 @@
             s1 * 3/4
 
             % [Breaks measure 33]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 34]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 35]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 36]
@@ -165,19 +138,15 @@
             s1 * 7/8
 
             % [Breaks measure 37]
-            \noBreak
             s1 * 9/8
 
             % [Breaks measure 38]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 39]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 40]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 41]
@@ -186,15 +155,12 @@
             s1 * 3/4
 
             % [Breaks measure 42]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 43]
-            \noBreak
             s1 * 5/4
 
             % [Breaks measure 44]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 45]
@@ -203,19 +169,15 @@
             s1 * 9/8
 
             % [Breaks measure 46]
-            \noBreak
             s1 * 3/4
 
             % [Breaks measure 47]
-            \noBreak
             s1 * 5/8
 
             % [Breaks measure 48]
-            \noBreak
             s1 * 9/8
 
             % [anchor skip]
-            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 

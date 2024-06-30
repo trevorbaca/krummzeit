@@ -175,11 +175,11 @@
     \override StemTremolo.slope = 0.5
     \override TextSpanner.to-barline = ##t
     \override TrillPitchAccidental.avoid-slur = #'ignore
+    \override TrillSpanner.Y-extent = ##f
     \override TupletBracket.full-length-to-extent = ##f
     \override TupletBracket.padding = 2
     \override TupletNumber.font-size = 1
     autoBeaming = ##f
-    barNumberFormatter = #baca-oval-bar-numbers
     proportionalNotationDuration = \musicLength 1*1/28
     tupletFullLength = ##t
   }

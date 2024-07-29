@@ -13,3 +13,6 @@ part:
 	@xelatex preface.tex
 	@xelatex part.tex
 	@remove-latex-temporary-files
+
+temporary-files:
+	collect-temporary-files

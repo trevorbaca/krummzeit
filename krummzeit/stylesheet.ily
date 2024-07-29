@@ -147,7 +147,6 @@
     \accepts WindSectionStaffGroup
     \accepts PercussionSectionStaffGroup
     \accepts StringSectionStaffGroup
-
     systemStartDelimiter = #'SystemStartBar
   }
   \context

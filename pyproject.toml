@@ -22,5 +22,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/trevorbaca/krummzeit"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["krummzeit"]
+package-dir = { "" = "source" }

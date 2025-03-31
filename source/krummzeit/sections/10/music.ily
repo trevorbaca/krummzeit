@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.10.Rests = {
+number.10.Rests =
+{
 
     % [Rests measure 1]
     R1 * 4/4
@@ -76,7 +77,8 @@ number.10.Rests = {
 }
 
 
-number.10.Skips = {
+number.10.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -793,7 +795,8 @@ number.10.Skips = {
 }
 
 
-number.10.TimeSignatures = {
+number.10.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -924,7 +927,8 @@ number.10.TimeSignatures = {
 }
 
 
-number.10.Oboe.Music = {
+number.10.Oboe.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 5/8
@@ -1079,15 +1083,19 @@ number.10.Oboe.Music = {
 }
 
 
-number.10.Oboe.Staff = {
+number.10.Oboe.Staff =
+{
 
     \context Voice = "Oboe.Music"
-    { \number.10.Oboe.Music }
+    {
+        \number.10.Oboe.Music
+    }
 
 }
 
 
-number.10.Clarinet.Music = {
+number.10.Clarinet.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 5/8
@@ -1325,15 +1333,19 @@ number.10.Clarinet.Music = {
 }
 
 
-number.10.Clarinet.Staff = {
+number.10.Clarinet.Staff =
+{
 
     \context Voice = "Clarinet.Music"
-    { \number.10.Clarinet.Music }
+    {
+        \number.10.Clarinet.Music
+    }
 
 }
 
 
-number.10.Piano.Music = {
+number.10.Piano.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 7/8
@@ -3449,15 +3461,19 @@ number.10.Piano.Music = {
 }
 
 
-number.10.Piano.Staff = {
+number.10.Piano.Staff =
+{
 
     \context Voice = "Piano.Music"
-    { \number.10.Piano.Music }
+    {
+        \number.10.Piano.Music
+    }
 
 }
 
 
-number.10.Percussion.Music = {
+number.10.Percussion.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 7/8
@@ -3723,15 +3739,19 @@ number.10.Percussion.Music = {
 }
 
 
-number.10.Percussion.Staff = {
+number.10.Percussion.Staff =
+{
 
     \context Voice = "Percussion.Music"
-    { \number.10.Percussion.Music }
+    {
+        \number.10.Percussion.Music
+    }
 
 }
 
 
-number.10.Violin.Music = {
+number.10.Violin.Music =
+{
 
     \tuplet 3/2
     {
@@ -4159,15 +4179,19 @@ number.10.Violin.Music = {
 }
 
 
-number.10.Violin.Staff = {
+number.10.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.10.Violin.Music }
+    {
+        \number.10.Violin.Music
+    }
 
 }
 
 
-number.10.Viola.Music = {
+number.10.Viola.Music =
+{
 
     \tuplet 3/2
     {
@@ -4595,15 +4619,19 @@ number.10.Viola.Music = {
 }
 
 
-number.10.Viola.Staff = {
+number.10.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.10.Viola.Music }
+    {
+        \number.10.Viola.Music
+    }
 
 }
 
 
-number.10.Cello.Music = {
+number.10.Cello.Music =
+{
 
     \tuplet 3/2
     {
@@ -5031,9 +5059,12 @@ number.10.Cello.Music = {
 }
 
 
-number.10.Cello.Staff = {
+number.10.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.10.Cello.Music }
+    {
+        \number.10.Cello.Music
+    }
 
 }

@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.5.Rests = {
+number.5.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -149,7 +150,8 @@ number.5.Rests = {
 }
 
 
-number.5.Skips = {
+number.5.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -1345,7 +1347,8 @@ number.5.Skips = {
 }
 
 
-number.5.TimeSignatures = {
+number.5.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1652,7 +1655,8 @@ number.5.TimeSignatures = {
 }
 
 
-number.5.Oboe.Music = {
+number.5.Oboe.Music =
+{
 
     % [Oboe.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2262,15 +2266,19 @@ number.5.Oboe.Music = {
 }
 
 
-number.5.Oboe.Staff = {
+number.5.Oboe.Staff =
+{
 
     \context Voice = "Oboe.Music"
-    { \number.5.Oboe.Music }
+    {
+        \number.5.Oboe.Music
+    }
 
 }
 
 
-number.5.Clarinet.Music = {
+number.5.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2696,15 +2704,19 @@ number.5.Clarinet.Music = {
 }
 
 
-number.5.Clarinet.Staff = {
+number.5.Clarinet.Staff =
+{
 
     \context Voice = "Clarinet.Music"
-    { \number.5.Clarinet.Music }
+    {
+        \number.5.Clarinet.Music
+    }
 
 }
 
 
-number.5.Piano.Music = {
+number.5.Piano.Music =
+{
 
     % [Piano.Music measure 1]
       %! REAPPLIED_CLEF
@@ -3501,15 +3513,19 @@ number.5.Piano.Music = {
 }
 
 
-number.5.Piano.Staff = {
+number.5.Piano.Staff =
+{
 
     \context Voice = "Piano.Music"
-    { \number.5.Piano.Music }
+    {
+        \number.5.Piano.Music
+    }
 
 }
 
 
-number.5.Percussion.Music = {
+number.5.Percussion.Music =
+{
 
     % [Percussion.Music measure 1]
       %! REAPPLIED_CLEF
@@ -4372,15 +4388,19 @@ number.5.Percussion.Music = {
 }
 
 
-number.5.Percussion.Staff = {
+number.5.Percussion.Staff =
+{
 
     \context Voice = "Percussion.Music"
-    { \number.5.Percussion.Music }
+    {
+        \number.5.Percussion.Music
+    }
 
 }
 
 
-number.5.Violin.Music = {
+number.5.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REPEAT_PITCH_CLASS_COLORING
@@ -5257,15 +5277,19 @@ number.5.Violin.Music = {
 }
 
 
-number.5.Violin.Staff = {
+number.5.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.5.Violin.Music }
+    {
+        \number.5.Violin.Music
+    }
 
 }
 
 
-number.5.Viola.Music = {
+number.5.Viola.Music =
+{
 
     % [Viola.Music measure 1]
       %! REAPPLIED_CLEF
@@ -6255,15 +6279,19 @@ number.5.Viola.Music = {
 }
 
 
-number.5.Viola.Staff = {
+number.5.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.5.Viola.Music }
+    {
+        \number.5.Viola.Music
+    }
 
 }
 
 
-number.5.Cello.Music = {
+number.5.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! REAPPLIED_CLEF
@@ -7128,9 +7156,12 @@ number.5.Cello.Music = {
 }
 
 
-number.5.Cello.Staff = {
+number.5.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.5.Cello.Music }
+    {
+        \number.5.Cello.Music
+    }
 
 }

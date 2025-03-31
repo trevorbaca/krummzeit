@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.11.Rests = {
+number.11.Rests =
+{
 
     % [Rests measure 1]
     R1 * 5/4
@@ -149,7 +150,8 @@ number.11.Rests = {
 }
 
 
-number.11.Skips = {
+number.11.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -1241,7 +1243,8 @@ number.11.Skips = {
 }
 
 
-number.11.TimeSignatures = {
+number.11.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1534,7 +1537,8 @@ number.11.TimeSignatures = {
 }
 
 
-number.11.Oboe.Music = {
+number.11.Oboe.Music =
+{
 
     % [Oboe.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1946,15 +1950,19 @@ number.11.Oboe.Music = {
 }
 
 
-number.11.Oboe.Staff = {
+number.11.Oboe.Staff =
+{
 
     \context Voice = "Oboe.Music"
-    { \number.11.Oboe.Music }
+    {
+        \number.11.Oboe.Music
+    }
 
 }
 
 
-number.11.Clarinet.Music = {
+number.11.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2368,15 +2376,19 @@ number.11.Clarinet.Music = {
 }
 
 
-number.11.Clarinet.Staff = {
+number.11.Clarinet.Staff =
+{
 
     \context Voice = "Clarinet.Music"
-    { \number.11.Clarinet.Music }
+    {
+        \number.11.Clarinet.Music
+    }
 
 }
 
 
-number.11.Piano.Music = {
+number.11.Piano.Music =
+{
 
     % [Piano.Music measure 1]
       %! EXPLICIT_CLEF
@@ -2897,15 +2909,19 @@ number.11.Piano.Music = {
 }
 
 
-number.11.Piano.Staff = {
+number.11.Piano.Staff =
+{
 
     \context Voice = "Piano.Music"
-    { \number.11.Piano.Music }
+    {
+        \number.11.Piano.Music
+    }
 
 }
 
 
-number.11.Percussion.Music = {
+number.11.Percussion.Music =
+{
 
     % [Percussion.Music measure 1]
       %! EXPLICIT_CLEF
@@ -3434,15 +3450,19 @@ number.11.Percussion.Music = {
 }
 
 
-number.11.Percussion.Staff = {
+number.11.Percussion.Staff =
+{
 
     \context Voice = "Percussion.Music"
-    { \number.11.Percussion.Music }
+    {
+        \number.11.Percussion.Music
+    }
 
 }
 
 
-number.11.Violin.Music = {
+number.11.Violin.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 7/5
@@ -3972,15 +3992,19 @@ number.11.Violin.Music = {
 }
 
 
-number.11.Violin.Staff = {
+number.11.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.11.Violin.Music }
+    {
+        \number.11.Violin.Music
+    }
 
 }
 
 
-number.11.Viola.Music = {
+number.11.Viola.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 8/5
@@ -4283,15 +4307,19 @@ number.11.Viola.Music = {
 }
 
 
-number.11.Viola.Staff = {
+number.11.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.11.Viola.Music }
+    {
+        \number.11.Viola.Music
+    }
 
 }
 
 
-number.11.Cello.Music = {
+number.11.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! REAPPLIED_CLEF
@@ -4739,9 +4767,12 @@ number.11.Cello.Music = {
 }
 
 
-number.11.Cello.Staff = {
+number.11.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.11.Cello.Music }
+    {
+        \number.11.Cello.Music
+    }
 
 }

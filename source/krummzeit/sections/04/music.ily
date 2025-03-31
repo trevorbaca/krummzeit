@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.4.Rests = {
+number.4.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -72,7 +73,8 @@ number.4.Rests = {
 }
 
 
-number.4.Skips = {
+number.4.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -765,7 +767,8 @@ number.4.Skips = {
 }
 
 
-number.4.TimeSignatures = {
+number.4.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -897,7 +900,8 @@ number.4.TimeSignatures = {
 }
 
 
-number.4.Oboe.Music = {
+number.4.Oboe.Music =
+{
 
     % [Oboe.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1039,15 +1043,19 @@ number.4.Oboe.Music = {
 }
 
 
-number.4.Oboe.Staff = {
+number.4.Oboe.Staff =
+{
 
     \context Voice = "Oboe.Music"
-    { \number.4.Oboe.Music }
+    {
+        \number.4.Oboe.Music
+    }
 
 }
 
 
-number.4.Clarinet.Music = {
+number.4.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1207,15 +1215,19 @@ number.4.Clarinet.Music = {
 }
 
 
-number.4.Clarinet.Staff = {
+number.4.Clarinet.Staff =
+{
 
     \context Voice = "Clarinet.Music"
-    { \number.4.Clarinet.Music }
+    {
+        \number.4.Clarinet.Music
+    }
 
 }
 
 
-number.4.Piano.Music = {
+number.4.Piano.Music =
+{
 
     \tuplet 3/2
     {
@@ -1617,15 +1629,19 @@ number.4.Piano.Music = {
 }
 
 
-number.4.Piano.Staff = {
+number.4.Piano.Staff =
+{
 
     \context Voice = "Piano.Music"
-    { \number.4.Piano.Music }
+    {
+        \number.4.Piano.Music
+    }
 
 }
 
 
-number.4.Percussion.Music = {
+number.4.Percussion.Music =
+{
 
     % [Percussion.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1845,15 +1861,19 @@ number.4.Percussion.Music = {
 }
 
 
-number.4.Percussion.Staff = {
+number.4.Percussion.Staff =
+{
 
     \context Voice = "Percussion.Music"
-    { \number.4.Percussion.Music }
+    {
+        \number.4.Percussion.Music
+    }
 
 }
 
 
-number.4.Violin.Music = {
+number.4.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2184,15 +2204,19 @@ number.4.Violin.Music = {
 }
 
 
-number.4.Violin.Staff = {
+number.4.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.4.Violin.Music }
+    {
+        \number.4.Violin.Music
+    }
 
 }
 
 
-number.4.Viola.Music = {
+number.4.Viola.Music =
+{
 
     % [Viola.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2514,15 +2538,19 @@ number.4.Viola.Music = {
 }
 
 
-number.4.Viola.Staff = {
+number.4.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.4.Viola.Music }
+    {
+        \number.4.Viola.Music
+    }
 
 }
 
 
-number.4.Cello.Music = {
+number.4.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2832,9 +2860,12 @@ number.4.Cello.Music = {
 }
 
 
-number.4.Cello.Staff = {
+number.4.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.4.Cello.Music }
+    {
+        \number.4.Cello.Music
+    }
 
 }

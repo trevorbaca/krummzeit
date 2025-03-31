@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.2.Rests = {
+number.2.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -230,7 +231,8 @@ number.2.Rests = {
 }
 
 
-number.2.Skips = {
+number.2.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -2114,7 +2116,8 @@ number.2.Skips = {
 }
 
 
-number.2.TimeSignatures = {
+number.2.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! REAPPLIED_TIME_SIGNATURE_COLOR
@@ -2610,7 +2613,8 @@ number.2.TimeSignatures = {
 }
 
 
-number.2.Oboe.Music = {
+number.2.Oboe.Music =
+{
 
     % [Oboe.Music measure 1]
       %! REAPPLIED_CLEF
@@ -3522,15 +3526,19 @@ number.2.Oboe.Music = {
 }
 
 
-number.2.Oboe.Staff = {
+number.2.Oboe.Staff =
+{
 
     \context Voice = "Oboe.Music"
-    { \number.2.Oboe.Music }
+    {
+        \number.2.Oboe.Music
+    }
 
 }
 
 
-number.2.Clarinet.Music = {
+number.2.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -4625,15 +4633,19 @@ number.2.Clarinet.Music = {
 }
 
 
-number.2.Clarinet.Staff = {
+number.2.Clarinet.Staff =
+{
 
     \context Voice = "Clarinet.Music"
-    { \number.2.Clarinet.Music }
+    {
+        \number.2.Clarinet.Music
+    }
 
 }
 
 
-number.2.Piano.Music = {
+number.2.Piano.Music =
+{
 
     \tuplet 7/4
     {
@@ -6759,15 +6771,19 @@ number.2.Piano.Music = {
 }
 
 
-number.2.Piano.Staff = {
+number.2.Piano.Staff =
+{
 
     \context Voice = "Piano.Music"
-    { \number.2.Piano.Music }
+    {
+        \number.2.Piano.Music
+    }
 
 }
 
 
-number.2.Percussion.Music = {
+number.2.Percussion.Music =
+{
 
     % [Percussion.Music measure 1]
       %! REAPPLIED_CLEF
@@ -7448,15 +7464,19 @@ number.2.Percussion.Music = {
 }
 
 
-number.2.Percussion.Staff = {
+number.2.Percussion.Staff =
+{
 
     \context Voice = "Percussion.Music"
-    { \number.2.Percussion.Music }
+    {
+        \number.2.Percussion.Music
+    }
 
 }
 
 
-number.2.Violin.Music = {
+number.2.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REAPPLIED_CLEF
@@ -9265,15 +9285,19 @@ number.2.Violin.Music = {
 }
 
 
-number.2.Violin.Staff = {
+number.2.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.2.Violin.Music }
+    {
+        \number.2.Violin.Music
+    }
 
 }
 
 
-number.2.Viola.Music = {
+number.2.Viola.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 5/6
@@ -10379,15 +10403,19 @@ number.2.Viola.Music = {
 }
 
 
-number.2.Viola.Staff = {
+number.2.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.2.Viola.Music }
+    {
+        \number.2.Viola.Music
+    }
 
 }
 
 
-number.2.Cello.Music = {
+number.2.Cello.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 5/6
@@ -11544,9 +11572,12 @@ number.2.Cello.Music = {
 }
 
 
-number.2.Cello.Staff = {
+number.2.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.2.Cello.Music }
+    {
+        \number.2.Cello.Music
+    }
 
 }

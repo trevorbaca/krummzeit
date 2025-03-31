@@ -18,13 +18,19 @@
             <<
 
                 \context GlobalRests = "Rests"
-                { \number.8.Rests }
+                {
+                    \number.8.Rests
+                }
 
                 \context GlobalSkips = "Skips"
-                { \number.8.Skips }
+                {
+                    \number.8.Skips
+                }
 
                 \context GlobalSkips = "TimeSignatures"
-                { \number.8.TimeSignatures }
+                {
+                    \number.8.TimeSignatures
+                }
 
             >>
 
@@ -36,11 +42,15 @@
 
                     \tag #'Oboe
                     \context Staff = "Oboe.Staff"
-                    { \number.8.Oboe.Staff }
+                    {
+                        \number.8.Oboe.Staff
+                    }
 
                     \tag #'Clarinet
                     \context Staff = "Clarinet.Staff"
-                    { \number.8.Clarinet.Staff }
+                    {
+                        \number.8.Clarinet.Staff
+                    }
 
                 >>
 
@@ -49,11 +59,15 @@
 
                     \tag #'Piano
                     \context Staff = "Piano.Staff"
-                    { \number.8.Piano.Staff }
+                    {
+                        \number.8.Piano.Staff
+                    }
 
                     \tag #'Percussion
                     \context Staff = "Percussion.Staff"
-                    { \number.8.Percussion.Staff }
+                    {
+                        \number.8.Percussion.Staff
+                    }
 
                 >>
 
@@ -62,15 +76,21 @@
 
                     \tag #'Violin
                     \context Staff = "Violin.Staff"
-                    { \number.8.Violin.Staff }
+                    {
+                        \number.8.Violin.Staff
+                    }
 
                     \tag #'Viola
                     \context Staff = "Viola.Staff"
-                    { \number.8.Viola.Staff }
+                    {
+                        \number.8.Viola.Staff
+                    }
 
                     \tag #'Cello
                     \context Staff = "Cello.Staff"
-                    { \number.8.Cello.Staff }
+                    {
+                        \number.8.Cello.Staff
+                    }
 
                 >>
 

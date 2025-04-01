@@ -165,7 +165,7 @@ def vc_1_48(m):
 
 def vc_48(m):
     with baca.scope(baca.select.rleaves(m[48])[-1:]) as o:
-        baca.mark(o.leaf(0), r"\krummzeit-colophon-markup")
+        baca.rehearsal_mark(o.leaf(0), r"\krummzeit-colophon-markup")
         baca.override.rehearsal_mark_direction_down(o)
         baca.override.rehearsal_mark_padding(o, 6)
         baca.override.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)

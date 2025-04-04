@@ -1,6 +1,6 @@
 % Krummzeit (2014) for seven players 
 
-\version "2.25.24"
+\version "2.25.25"
 
 \include "../stylesheet.ily"
 

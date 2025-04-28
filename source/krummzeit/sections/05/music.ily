@@ -2959,21 +2959,19 @@ number.5.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 26]
-        r8
-
-        fs'''!8
-        - \staccatissimo
-        [
-
-        fs'''!8
-        - \staccatissimo
-        ]
+        r4
 
         fs'''!4
+        - \staccatissimo
+
+        fs'''!4
+        - \staccatissimo
+
+        fs'''!2
         - \staccatissimo
 
     }
@@ -3074,16 +3072,16 @@ number.5.Piano.Music =
     \revert NoteHead.style
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 35]
         \override Beam.positions = #'(-4 . -4)
         \override DynamicLineSpanner.staff-padding = 6
         \override TupletBracket.staff-padding = 3
-        r16
+        r8
 
-        fs'''!16
+        fs'''!8
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
@@ -3092,12 +3090,12 @@ number.5.Piano.Music =
         \ff
         [
 
-        fs'''!16
-        - \staccatissimo
-
         fs'''!8
         - \staccatissimo
         ]
+
+        fs'''!4
+        - \staccatissimo
 
     }
 
@@ -3148,22 +3146,22 @@ number.5.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 37]
-        r16
+        r8
 
-        fs'''!16
+        fs'''!8
         - \staccatissimo
         [
-
-        fs'''!16
-        - \staccatissimo
 
         fs'''!8
         - \staccatissimo
         ]
+
+        fs'''!4
+        - \staccatissimo
 
     }
 
@@ -3327,21 +3325,19 @@ number.5.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 42]
-        r8
-
-        fs'''!8
-        - \staccatissimo
-        [
-
-        fs'''!8
-        - \staccatissimo
-        ]
+        r4
 
         fs'''!4
+        - \staccatissimo
+
+        fs'''!4
+        - \staccatissimo
+
+        fs'''!2
         - \staccatissimo
 
     }
@@ -3834,7 +3830,7 @@ number.5.Percussion.Music =
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 25]
@@ -3866,24 +3862,22 @@ number.5.Percussion.Music =
         \once \override Staff.StaffSymbol.line-count = 5
           %! EXPLICIT_STAFF_LINES
         \startStaff
-        r8
+        r4
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-        fs''!8
+        fs''!4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ff
-        [
-
-        fs''!8
-        - \staccatissimo
-        ]
 
         fs''!4
+        - \staccatissimo
+
+        fs''!2
         - \staccatissimo
 
     }
@@ -3992,29 +3986,27 @@ number.5.Percussion.Music =
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 35]
         \override Beam.positions = #'(-4 . -4)
         \override DynamicLineSpanner.staff-padding = 6
         \override TupletBracket.staff-padding = 3
-        r8
+        r4
 
-        fs''!8
+        fs''!4
         - \staccatissimo
           %! REDUNDANT_DYNAMIC_COLOR
           %! REDUNDANT_DYNAMIC
         - \tweak color #(x11-color 'DeepPink1)
           %! REDUNDANT_DYNAMIC
         \ff
-        [
-
-        fs''!8
-        - \staccatissimo
-        ]
 
         fs''!4
+        - \staccatissimo
+
+        fs''!2
         - \staccatissimo
 
     }
@@ -4060,42 +4052,40 @@ number.5.Percussion.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/10
+    \tuplet 7/5
     {
-
-        r16
-
-        fs''!16
-        - \staccatissimo
-        [
-
-        fs''!16
-        - \staccatissimo
-        ]
 
         r8
 
         fs''!8
+        - \staccatissimo
+        [
+
+        fs''!8
+        - \staccatissimo
+        ]
+
+        r4
+
+        fs''!4
         - \staccatissimo
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 37]
-        r8
-
-        fs''!8
-        - \staccatissimo
-        [
-
-        fs''!8
-        - \staccatissimo
-        ]
+        r4
 
         fs''!4
+        - \staccatissimo
+
+        fs''!4
+        - \staccatissimo
+
+        fs''!2
         - \staccatissimo
 
     }
@@ -4714,10 +4704,11 @@ number.5.Violin.Music =
     % [Violin.Music measure 17]
     r2.
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        cs''!16.
+        cs''!8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
@@ -4726,7 +4717,7 @@ number.5.Violin.Music =
         ^ \baca-scratch-molto-markup
         \glissando
 
-        af''!4.
+        af''!2
         \glissando
 
     }
@@ -4790,14 +4781,15 @@ number.5.Violin.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Violin.Music measure 20]
-        a''8.
+        a''4
         \glissando
 
-        d''2.
+        d''1
         \glissando
 
     }
@@ -4821,13 +4813,14 @@ number.5.Violin.Music =
     c''2
     \glissando
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        af''!16.
+        af''!8
         \glissando
 
-        d''4.
+        d''2
         \glissando
 
     }
@@ -5799,13 +5792,14 @@ number.5.Viola.Music =
     cs''!2
     \glissando
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        bf''!16.
+        bf''!8
         \glissando
 
-        b''4.
+        b''2
         \glissando
 
     }
@@ -5865,14 +5859,15 @@ number.5.Viola.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Viola.Music measure 23]
-        a''16.
+        a''8
         \glissando
 
-        cs''!4.
+        cs''!2
         \glissando
 
     }
@@ -6001,14 +5996,15 @@ number.5.Viola.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Viola.Music measure 30]
-        fs''!8.
+        fs''!4
         \glissando
 
-        b''2.
+        b''1
         \glissando
 
     }
@@ -6024,14 +6020,15 @@ number.5.Viola.Music =
 
     }
 
-    \tuplet 3/2
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 6/7
     {
 
         % [Viola.Music measure 31]
-        f''4..
+        f''4
         \glissando
 
-        af''!2..
+        af''!2
         \glissando
 
     }
@@ -6108,14 +6105,15 @@ number.5.Viola.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Viola.Music measure 34]
-        cs''!8.
+        cs''!4
         \glissando
 
-        fs''!2.
+        fs''!1
         \glissando
 
     }
@@ -6688,14 +6686,15 @@ number.5.Cello.Music =
     cs''!4
     \glissando
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 21]
-        d''8.
+        d''4
         \glissando
 
-        f''2.
+        f''1
         \glissando
 
     }
@@ -6819,13 +6818,14 @@ number.5.Cello.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        cs''!8.
+        cs''!4
         \glissando
 
-        af''!2.
+        af''!1
         \glissando
 
     }
@@ -6923,13 +6923,14 @@ number.5.Cello.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        bf''!16.
+        bf''!8
         \glissando
 
-        g''4.
+        g''2
         \glissando
 
     }
@@ -6986,14 +6987,15 @@ number.5.Cello.Music =
     fs''!4
     \glissando
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/7
     {
 
         % [Cello.Music measure 34]
-        a''8..
+        a''8
         \glissando
 
-        ef''!2..
+        ef''!2
         \glissando
 
     }

@@ -1401,14 +1401,15 @@ number.1.Violin.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Violin.Music measure 6]
-        fs''!16.
+        fs''!8
         \glissando
 
-        g''4.
+        g''2
 
     }
 
@@ -1416,14 +1417,15 @@ number.1.Violin.Music =
 
     r4.
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Violin.Music measure 7]
-        cs''!8.
+        cs''!4
         \glissando
 
-        a'2.
+        a'1
         \glissando
 
     }
@@ -2089,14 +2091,15 @@ number.1.Cello.Music =
     c'4
     \glissando
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 7]
-        d'16.
+        d'8
         \glissando
 
-        fs!4.
+        fs!2
         \glissando
 
     }

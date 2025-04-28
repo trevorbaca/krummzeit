@@ -1431,29 +1431,27 @@ number.4.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/10
+    \tuplet 7/5
     {
-
-        c16
-        - \staccatissimo
-
-        r16
-
-        ef,!16
-        - \staccatissimo
-        [
 
         c8
         - \staccatissimo
 
-        cs,!8
+        r8
+
+        ef,!8
+        - \staccatissimo
+
+        c4
+        - \staccatissimo
+
+        cs,!4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \pp
-        ]
 
     }
 
@@ -2313,28 +2311,26 @@ number.4.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
-        r16
+        r8
 
-        af'''!8
+        af'''!4
         - \staccatissimo
 
-        r16
+        r8
 
-        f''8
+        f''4
         - \staccatissimo
-        [
 
-        b''8
+        b''4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \pp
-        ]
 
     }
 
@@ -2371,28 +2367,26 @@ number.4.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
-        r16
+        r8
 
-        f''8
+        f''4
         - \staccatissimo
 
-        r16
+        r8
 
-        cs''!8
+        cs''!4
         - \staccatissimo
-        [
 
-        a'8
+        a'4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ff
-        ]
 
     }
 
@@ -2441,28 +2435,26 @@ number.4.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
-        r16
+        r8
 
-        af!8
+        af!4
         - \staccatissimo
 
-        r16
+        r8
 
-        a8
+        a4
         - \staccatissimo
-        [
 
-        bf,!8
+        bf,!4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \pp
-        ]
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding
 
@@ -2601,7 +2593,7 @@ number.4.Cello.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
         % [Cello.Music measure 5]
@@ -2621,11 +2613,11 @@ number.4.Cello.Music =
         \override TupletBracket.staff-padding = 4
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
-        r16
+        r8
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-        f''8
+        f''4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
@@ -2641,15 +2633,13 @@ number.4.Cello.Music =
           %! SPANNER_START
         \>
 
-        r16
+        r8
 
-        b'8
+        b'4
         - \staccatissimo
-        [
 
-        d''8
+        d''4
         - \staccatissimo
-        ]
 
     }
 
@@ -2674,7 +2664,7 @@ number.4.Cello.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
         % [Cello.Music measure 7]
@@ -2692,11 +2682,11 @@ number.4.Cello.Music =
         %@% \override Staff.Clef.color = ##f
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
-        r16
+        r8
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-        ef'!8
+        ef'!4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
@@ -2711,15 +2701,13 @@ number.4.Cello.Music =
           %! SPANNER_START
         \<
 
-        r16
+        r8
 
-        cs'!8
+        cs'!4
         - \staccatissimo
-        [
 
-        f8
+        f4
         - \staccatissimo
-        ]
 
     }
 
@@ -2744,13 +2732,13 @@ number.4.Cello.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/7
+    \tuplet 8/7
     {
 
         % [Cello.Music measure 9]
-        r16
+        r8
 
-        b8
+        b4
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
@@ -2765,15 +2753,13 @@ number.4.Cello.Music =
           %! SPANNER_START
         \>
 
-        r16
+        r8
 
-        g8
+        g4
         - \staccatissimo
-        [
 
-        cs!8
+        cs!4
         - \staccatissimo
-        ]
 
     }
 

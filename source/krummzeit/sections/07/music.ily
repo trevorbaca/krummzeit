@@ -1592,19 +1592,17 @@ number.7.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 5]
-        r8
+        r4
 
-        g'8
-        [
+        g'4
 
-        bf'!8
-        ]
+        bf'!4
 
-        c''4
+        c''2
 
     }
 
@@ -1741,19 +1739,17 @@ number.7.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 9]
-        r8
-
-        g8
-        [
-
-        af!8
-        ]
+        r4
 
         g4
+
+        af!4
+
+        g2
 
     }
 

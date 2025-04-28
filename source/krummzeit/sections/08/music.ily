@@ -3054,25 +3054,27 @@ number.8.Viola.Music =
 
     }
 
-    \tuplet 3/2
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 6/7
     {
 
-        g4..
+        g4
         \glissando
 
-        a2..
+        a2
         \glissando
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
         % [Viola.Music measure 17]
-        f16.
+        f8
         \glissando
 
-        g4.
+        g2
         ~
 
     }

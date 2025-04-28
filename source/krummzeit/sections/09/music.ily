@@ -2301,12 +2301,12 @@ number.9.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 9/5
+    \tuplet 3/5
     {
 
         % [Viola.Music measure 3]
         \override NoteHead.style = #'harmonic
-        b2.
+        b4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
@@ -2316,7 +2316,7 @@ number.9.Viola.Music =
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        c1.
+        c2
 
     }
 
@@ -2507,13 +2507,14 @@ number.9.Cello.Music =
 
     }
 
-    \tuplet 5/4
+    \tweak text #tuplet-number::calc-fraction-text
+    \tuplet 5/3
     {
 
-        f,8.
+        f,4
         \glissando
 
-        d,2.
+        d,1
         ~
 
     }

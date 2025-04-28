@@ -2824,22 +2824,22 @@ number.3.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/10
+    \tuplet 7/5
     {
-
-        r16
-
-        cs'''!16
-        - \staccatissimo
-        [
-
-        cs'''!16
-        - \staccatissimo
-        ]
 
         r8
 
         cs'''!8
+        - \staccatissimo
+        [
+
+        cs'''!8
+        - \staccatissimo
+        ]
+
+        r4
+
+        cs'''!4
         - \staccatissimo
 
     }
@@ -3189,19 +3189,19 @@ number.3.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Piano.Music measure 35]
-        r16
+        r8
 
-        cs'''!16
+        cs'''!8
         [
-
-        cs'''!16
 
         cs'''!8
         ]
+
+        cs'''!4
 
     }
 
@@ -3467,42 +3467,38 @@ number.3.Percussion.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 16]
-        r8
-
-        cs''!8
-        - \staccatissimo
-        [
-
-        cs''!8
-        - \staccatissimo
-        ]
+        r4
 
         cs''!4
+        - \staccatissimo
+
+        cs''!4
+        - \staccatissimo
+
+        cs''!2
         - \staccatissimo
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/10
+    \tuplet 7/5
     {
-
-        r8
-
-        cs''!8
-        - \staccatissimo
-        [
-
-        cs''!8
-        - \staccatissimo
-        ]
 
         r4
 
         cs''!4
+        - \staccatissimo
+
+        cs''!4
+        - \staccatissimo
+
+        r2
+
+        cs''!2
         - \staccatissimo
 
     }
@@ -3513,21 +3509,19 @@ number.3.Percussion.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 18]
-        r8
-
-        cs''!8
-        - \staccatissimo
-        [
-
-        cs''!8
-        - \staccatissimo
-        ]
+        r4
 
         cs''!4
+        - \staccatissimo
+
+        cs''!4
+        - \staccatissimo
+
+        cs''!2
         - \staccatissimo
 
     }
@@ -3800,19 +3794,17 @@ number.3.Percussion.Music =
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/6
+    \tuplet 5/3
     {
 
         % [Percussion.Music measure 32]
-        r8
-
-        cs''!8
-        [
-
-        cs''!8
-        ]
+        r4
 
         cs''!4
+
+        cs''!4
+
+        cs''!2
 
     }
 
@@ -3834,17 +3826,19 @@ number.3.Percussion.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 10/9
+    \tuplet 5/9
     {
 
         % [Percussion.Music measure 33]
-        r4
+        r8
+
+        cs''!8
+        [
+
+        cs''!8
+        ]
 
         cs''!4
-
-        cs''!4
-
-        cs''!2
 
     }
 
@@ -4878,11 +4872,14 @@ number.3.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/5
+    \tuplet 1/1
     {
 
         % [Viola.Music measure 23]
         dqs2
+        ~
+
+        dqs8
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding
 
@@ -5320,11 +5317,14 @@ number.3.Cello.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 4/5
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 23]
         dqs,2
+        ~
+
+        dqs,8
 
     }
 

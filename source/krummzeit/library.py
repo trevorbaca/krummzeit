@@ -502,9 +502,7 @@ def make_hypermeter_tuplets(
         durations, counts, cyclic=True, overhang=True
     )
     durations = [sum(_) for _ in lists]
-    tuplets = rmakers.tuplet(
-        durations, tuplet_ratios, denominator=abjad.Duration(1, 4), tag=tag
-    )
+    tuplets = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
         tuplets = abjad.select.tuplets(voice)

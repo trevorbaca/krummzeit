@@ -591,6 +591,7 @@ def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     if durations != without_overhang:
         final_list = durations.pop()
         durations.insert(0, final_list)
+    durations = abjad.sequence.flatten(durations, depth=-1)
     components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_lts is not None:
@@ -634,6 +635,7 @@ def make_opening_triplets(
     weights = [abjad.Duration(1, 4)]
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
+    durations = abjad.sequence.flatten(durations, depth=-1)
     if durations != without_overhang and remainder == abjad.LEFT:
         final_list = durations.pop()
         durations.insert(0, final_list)
@@ -745,6 +747,7 @@ def make_pizzicato_sixteenths(
 def make_polyphony_even_divisions(
     durations, denominators, extra_counts, tag, ties, time_signatures
 ):
+    durations = abjad.sequence.flatten(durations, depth=-1)
     tuplets = rmakers.even_division(
         durations, denominators, extra_counts=extra_counts, tag=tag
     )
@@ -761,6 +764,7 @@ def make_polyphony_even_divisions(
 
 
 def make_polyphony_eighths(durations, tag, time_signatures):
+    durations = abjad.sequence.flatten(durations, depth=-1)
     tuplets = rmakers.even_division(durations, [8], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
@@ -771,6 +775,7 @@ def make_polyphony_eighths(durations, tag, time_signatures):
 
 
 def make_polyphony_quarters(durations, tag, time_signatures):
+    durations = abjad.sequence.flatten(durations, depth=-1)
     components = rmakers.note(
         durations,
         spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
@@ -959,6 +964,7 @@ def make_white_rhythm(
     if durations != without_overhang and remainder == abjad.LEFT:
         final_list = durations.pop()
         durations.insert(0, final_list)
+    durations = abjad.sequence.flatten(durations, depth=-1)
     components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if not do_not_burnish:

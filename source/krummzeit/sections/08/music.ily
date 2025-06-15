@@ -3055,13 +3055,13 @@ number.8.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 6/7
+    \tuplet 12/7
     {
 
-        g4
+        g2
         \glissando
 
-        a2
+        a1
         \glissando
 
     }

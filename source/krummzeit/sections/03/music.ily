@@ -3138,20 +3138,18 @@ number.3.Piano.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/9
+    \tuplet 14/9
     {
-
-        r8
-
-        cs'''!8
-        [
-
-        cs'''!8
-        ]
 
         r4
 
         cs'''!4
+
+        cs'''!4
+
+        r2
+
+        cs'''!2
 
     }
 
@@ -3826,19 +3824,17 @@ number.3.Percussion.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/9
+    \tuplet 10/9
     {
 
         % [Percussion.Music measure 33]
-        r8
-
-        cs''!8
-        [
-
-        cs''!8
-        ]
+        r4
 
         cs''!4
+
+        cs''!4
+
+        cs''!2
 
     }
 

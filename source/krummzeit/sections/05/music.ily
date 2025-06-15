@@ -1922,33 +1922,33 @@ number.5.Oboe.Music =
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/9
+    \tuplet 10/9
     {
 
         % [Oboe.Music measure 20]
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        ef''4.
+        ef''2.
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        d''4
+        d''2
         ~
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/9
+    \tuplet 14/9
     {
 
         % [Oboe.Music measure 21]
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        d''2
+        d''1
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        d''4.
+        d''2.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~
 
@@ -2084,33 +2084,33 @@ number.5.Oboe.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/7
+    \tuplet 10/7
     {
 
         % [Oboe.Music measure 36]
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        f''4.
+        f''2.
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        fs''!4
+        fs''!2
         ~
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/9
+    \tuplet 14/9
     {
 
         % [Oboe.Music measure 37]
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        fs''2
+        fs''1
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        fs''!4.
+        fs''!2.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~
 
@@ -2521,18 +2521,18 @@ number.5.Clarinet.Music =
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/7
+    \tuplet 10/7
     {
 
         % [Clarinet.Music measure 36]
-        g'''4.
+        g'''2.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \mf
 
-        r4
+        r2
 
     }
 
@@ -6021,14 +6021,14 @@ number.5.Viola.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 6/7
+    \tuplet 12/7
     {
 
         % [Viola.Music measure 31]
-        f''4
+        f''2
         \glissando
 
-        af''!2
+        af''!1
         \glissando
 
     }
@@ -6988,14 +6988,14 @@ number.5.Cello.Music =
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/7
+    \tuplet 10/7
     {
 
         % [Cello.Music measure 34]
-        a''8
+        a''4
         \glissando
 
-        ef''!2
+        ef''!1
         \glissando
 
     }

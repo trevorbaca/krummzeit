@@ -2075,17 +2075,17 @@ number.6.Oboe.Music =
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/9
+    \tuplet 10/9
     {
 
         % [Oboe.Music measure 21]
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        eqf'4.
+        eqf'2.
 
           %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
-        eqf'!4
+        eqf'!2
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding
 
@@ -2861,13 +2861,13 @@ number.6.Clarinet.Music =
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 5/9
+    \tuplet 10/9
     {
 
         % [Clarinet.Music measure 21]
-        dqs'4.
+        dqs'2.
 
-        r4
+        r2
         \revert DynamicLineSpanner.staff-padding
         \revert TupletBracket.staff-padding
 

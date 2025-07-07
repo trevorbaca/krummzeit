@@ -71,10 +71,10 @@ def _make_numerators():
 
 
 def _make_time_signatures_by_section():
-    ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
+    weights = (3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1)
     numerator_lists = _make_numerators()
-    numerator_lists = abjad.sequence.partition_by_ratio_of_weights(
-        numerator_lists, weights=ratio
+    numerator_lists = abjad.sequence.partition_by_proportion_of_weights(
+        numerator_lists, weights
     )
     assert len(numerator_lists) == 12
     time_signature_inventory = []
@@ -1120,11 +1120,11 @@ def section_time_signatures(section_name):
     return _make_time_signatures_by_section()[section_name]
 
 
-def split_by_rounded_ratio(pair, ratio):
+def split_by_rounded_ratio(pair, proportion):
     assert isinstance(pair, tuple)
-    assert isinstance(ratio, tuple)
+    assert isinstance(proportion, tuple)
     numerator, denominator = pair
-    numerators = abjad.math.partition_integer_by_ratio(numerator, ratio)
+    numerators = abjad.math.partition_integer_by_proportion(numerator, proportion)
     weights = [abjad.Duration(_, denominator) for _ in numerators]
     lists = abjad.sequence.split([abjad.Duration(pair)], weights)
     return lists

@@ -672,15 +672,15 @@ def make_piano_harmonics_rhythm(
         plts = abjad.select.get(plts, force_rest_plts)
         rmakers.force_rest(plts, tag=tag)
     if tie_across_divisions is not None:
-        selection = baca.select.lts(voice)[:-1]
-        selection = abjad.select.get(selection, tie_across_divisions)
-        selection = [
+        lts = baca.select.lts(voice)[:-1]
+        lts = abjad.select.get(lts, tie_across_divisions)
+        lists = [
             baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
-            for _ in selection
+            for _ in lts
         ]
-        selection = [_ for _ in selection if len(_) == 2]
-        selection = [abjad.select.leaf(_, 0) for _ in selection]
-        rmakers.tie(selection, tag=tag)
+        lists = [_ for _ in lists if len(_) == 2]
+        leaves = [abjad.select.leaf(_, 0) for _ in lists]
+        rmakers.tie(leaves, tag=tag)
     plts = baca.select.plts(voice)
     rmakers.beam(plts)
     music = abjad.mutate.eject_contents(voice)
@@ -753,10 +753,10 @@ def make_polyphony_even_divisions(
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice)
-    selection = abjad.select.tuplets(voice)[:-1]
-    selection = abjad.select.get(selection, ties)
-    selection = [baca.select.pleaf(_, -1) for _ in selection]
-    rmakers.tie(selection, tag=tag)
+    tuplets = abjad.select.tuplets(voice)[:-1]
+    tuplets = abjad.select.get(tuplets, ties)
+    pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
+    rmakers.tie(pleaves, tag=tag)
     rmakers.trivialize(voice)
     rmakers.extract_trivial(voice)
     music = abjad.mutate.eject_contents(voice)
@@ -928,8 +928,8 @@ def make_single_division_tuplets(time_signatures, ratios):
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.tuplet(durations, ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    selection = abjad.select.tuplets(voice)[:-1]
-    pleaves = [baca.select.pleaf(_, -1) for _ in selection]
+    tuplets = abjad.select.tuplets(voice)[:-1]
+    pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
     rmakers.beam(voice, tag=tag)
     rmakers.rewrite_dots(voice)

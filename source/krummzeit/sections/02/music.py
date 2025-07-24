@@ -408,7 +408,7 @@ def _1_37_quartet(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.transpose(1)
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     with baca.scope(
@@ -419,7 +419,7 @@ def _1_37_quartet(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-155).transpose(3)
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     for name in ["pf", "vn", "ob", "cl"]:
@@ -505,7 +505,7 @@ def _48_75_quartet(cache):
     ) as o:
         pcs = library.violet_pitch_classes()
         pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     with baca.scope(cache["va"][48, 71]) as o:

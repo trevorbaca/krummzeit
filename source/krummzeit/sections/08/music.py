@@ -340,7 +340,7 @@ def ob_cl_pf_vn_5_12(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs[:20].transpose(3)
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o)
         baca.pitches(leaves, pcs)
     for name, pair in (
@@ -401,7 +401,7 @@ def pf_vn_vc_va_14_23(cache):
     with baca.scope(leaves) as o:
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o)
         baca.pitches(leaves, pcs)
     for name, pair, register in triples:

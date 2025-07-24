@@ -344,7 +344,7 @@ def composites(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
-        pcs = [_.number for _ in pcs]
+        pcs = [_.get_number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     for number in [1, 3, 5]:

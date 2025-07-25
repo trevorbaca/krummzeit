@@ -261,8 +261,8 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
         upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
         range_string = "[{}, {})"
         range_string = range_string.format(
-            lower_range_pitch.get_name(locale="us"),
-            upper_range_pitch.get_name(locale="us"),
+            lower_range_pitch.get_name_in_locale(locale="us"),
+            upper_range_pitch.get_name_in_locale(locale="us"),
         )
         start_pitch = start_component.target_octave_start_pitch
         start_pitch = abjad.NumberedPitch(start_pitch)

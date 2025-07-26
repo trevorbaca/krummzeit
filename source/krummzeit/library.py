@@ -21,7 +21,7 @@ def _do_register_transition_command(argument, start_registration, stop_registrat
             leaves_timespan,
         )
         for pleaf in plt:
-            pitches = registration([pleaf.written_pitch])
+            pitches = registration([pleaf.get_written_pitch()])
             _set_pitch(pleaf, pitches[0])
 
 
@@ -286,7 +286,7 @@ def _numerator_to_time_signature(numerator):
 
 
 def _set_pitch(pleaf, pitch):
-    pleaf.written_pitch = pitch
+    pleaf.set_written_pitch(pitch)
     abjad.detach("not yet registered", pleaf)
 
 

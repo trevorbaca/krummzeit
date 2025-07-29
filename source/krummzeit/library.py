@@ -251,13 +251,13 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
     assert len(start_components) == len(stop_components)
     pairs = zip(start_components, stop_components)
     for start_component, stop_component in pairs:
-        start_pitch = start_component.source_pitch_range.get_start_pitch()
+        start_pitch = start_component.source_pitch_range.start_pitch()
         start_pitch = abjad.NumberedPitch(start_pitch)
-        stop_pitch = stop_component.source_pitch_range.get_start_pitch()
+        stop_pitch = stop_component.source_pitch_range.start_pitch()
         lower_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
-        start_pitch = start_component.source_pitch_range.get_stop_pitch()
+        start_pitch = start_component.source_pitch_range.stop_pitch()
         start_pitch = abjad.NumberedPitch(start_pitch)
-        stop_pitch = stop_component.source_pitch_range.get_stop_pitch()
+        stop_pitch = stop_component.source_pitch_range.stop_pitch()
         upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
         range_string = "[{}, {})"
         range_string = range_string.format(

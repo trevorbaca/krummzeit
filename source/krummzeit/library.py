@@ -21,7 +21,7 @@ def _do_register_transition_command(argument, start_registration, stop_registrat
             leaves_timespan,
         )
         for pleaf in plt:
-            pitches = registration([pleaf.get_written_pitch()])
+            pitches = registration([pleaf.written_pitch()])
             _set_pitch(pleaf, pitches[0])
 
 

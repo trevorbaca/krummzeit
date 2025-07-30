@@ -244,7 +244,7 @@ def _make_time_signatures_by_section():
 
 def _make_registration(start_registration, stop_registration, offset, timespan):
     assert offset in timespan
-    fraction = (offset - timespan.start_offset) / timespan.get_duration()
+    fraction = (offset - timespan.start_offset) / timespan.duration()
     components = []
     start_components = start_registration.components
     stop_components = stop_registration.components

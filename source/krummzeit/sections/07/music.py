@@ -270,7 +270,7 @@ def ob_cl_pf_1_16(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.transpose(2)
-        pcs = [_.get_number() for _ in pcs]
+        pcs = [_.number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o)
         baca.pitches(leaves, pcs)
     for name, pair in (

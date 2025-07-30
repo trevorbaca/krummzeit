@@ -361,7 +361,7 @@ def ob(m):
     pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
     pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-    pcs = [_.get_number() for _ in pcs]
+    pcs = [_.number() for _ in pcs]
     with baca.scope(m[1, 35]) as o:
         baca.pitches(o, pcs, allow_repeats=True)
         library.displacement(o)
@@ -447,7 +447,7 @@ def vn(m):
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-121).retrograde().transpose(3)
         pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-        pcs = [_.get_number() for _ in pcs]
+        pcs = [_.number() for _ in pcs]
         baca.pitches(o, pcs),
         for i, run in enumerate(ntltqruns(o)):
             if i % 2 == 0:

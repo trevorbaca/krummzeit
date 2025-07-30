@@ -357,7 +357,7 @@ def strings(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-241).retrograde().transpose(7)
-        pcs = [_.get_number() for _ in pcs]
+        pcs = [_.number() for _ in pcs]
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches(leaves, pcs)
     with baca.scope(cache["vn"].get(1, 13)) as o:
@@ -394,7 +394,7 @@ def strings(cache):
         leaves = baca.select.sort_by_timeline(o.leaves())
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
-        pcs = [_.get_number() for _ in pcs]
+        pcs = [_.number() for _ in pcs]
         baca.pitches(leaves, pcs)
     baca.clef(abjad.select.leaf(cache["vc"].get(14), 0), "treble")
     for item in (

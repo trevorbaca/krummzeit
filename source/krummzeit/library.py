@@ -473,7 +473,7 @@ def make_glissando_rhythm(
         sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
-    durations = [abjad.Duration(_) for _ in durations]
+    durations = abjad.duration.durations(durations)
     if tie_across_divisions is True:
         tie_across_divisions = ([0], 1)
     tuplets = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
@@ -613,7 +613,7 @@ def make_oboe_trill_rhythm(time_signatures):
         sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
-    durations = [abjad.Duration(_) for _ in durations]
+    durations = abjad.duration.durations(durations)
     tuplets = rmakers.tuplet(durations, [(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     tuplets = abjad.select.tuplets(voice)
@@ -664,7 +664,7 @@ def make_piano_harmonics_rhythm(
         sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
-    durations = [abjad.Duration(_) for _ in durations]
+    durations = abjad.duration.durations(durations)
     components = rmakers.note(durations, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     if force_rest_plts is not None:
@@ -887,7 +887,7 @@ def make_silver_points_rhythm(
         sequence = library.split_by_rounded_ratio(time_signature.pair, ratio)
         sequences.append(sequence)
     durations = abjad.sequence.flatten(sequences, classes=list, depth=-1)
-    durations = [abjad.Duration(_) for _ in durations]
+    durations = abjad.duration.durations(durations)
     tuplets = rmakers.tuplet(durations, tuplet_ratios, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_tuplets is not None:
@@ -958,7 +958,7 @@ def make_white_rhythm(
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration() for _ in time_signatures]
     durations = [sum(durations)]
-    weights = [abjad.Duration(_) for _ in weights]
+    weights = abjad.duration.durations(weights)
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     if durations != without_overhang and remainder == abjad.LEFT:
@@ -1126,13 +1126,13 @@ def split_by_rounded_ratio(pair, proportion):
     numerator, denominator = pair
     numerators = abjad.math.partition_integer_by_proportion(numerator, proportion)
     weights = [abjad.Duration(_, denominator) for _ in numerators]
-    lists = abjad.sequence.split([abjad.Duration(pair)], weights)
+    lists = abjad.sequence.split([abjad.Duration(*pair)], weights)
     return lists
 
 
 def split_polyphony_time_signatures(rotation, time_signatures, weights):
     durations = []
-    weights = [abjad.Duration(_) for _ in weights]
+    weights = abjad.duration.durations(weights)
     remainder_fuse_threshold = abjad.Duration(1, 8)
     for i, time_signature in enumerate(time_signatures):
         duration = time_signature.duration()

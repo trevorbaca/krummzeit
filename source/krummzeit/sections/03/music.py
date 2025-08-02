@@ -368,7 +368,7 @@ def ob(m):
         library.register_wide(o, 5)
         library.color_fingerings(o.pheads())
         for plt in baca.select.plts(o, exclude=baca.enums.HIDDEN):
-            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
+            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration(1, 4):
                 baca.spanners.trill(plt, rleak=True)
         baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m[24]) as o:
@@ -457,7 +457,7 @@ def vn(m):
         library.displacement(o)
         library.register_wide(o, 5)
         for plt in baca.select.plts(o, exclude=baca.enums.HIDDEN):
-            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
+            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration(1, 4):
                 baca.spanners.trill(plt, rleak=True)
         baca.dynamic(o.pleaf(0), "ff")
         baca.override.dls_staff_padding(o, 7)

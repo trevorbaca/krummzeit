@@ -314,7 +314,7 @@ def instrument(argument, key, manifests):
 
 def make_closing_pizzicato_rhythm(time_signatures, *, counts, extra_counts, split):
     tag = baca.helpers.function_name(inspect.currentframe())
-    weights = abjad.durations([(_, 4) for _ in split])
+    weights = abjad.duration.durations([(_, 4) for _ in split])
     durations = [_.duration() for _ in time_signatures]
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
@@ -446,7 +446,7 @@ def make_fused_expanse(time_signatures, weights):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration() for _ in time_signatures]
     durations = [sum(durations)]
-    weights = abjad.durations(weights)
+    weights = abjad.duration.durations(weights)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     components = rmakers.note(durations, tag=tag)
@@ -689,7 +689,7 @@ def make_piano_harmonics_rhythm(
 
 def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6, 18)):
     tag = baca.helpers.function_name(inspect.currentframe())
-    weights = abjad.durations([(_, 16) for _ in split])
+    weights = abjad.duration.durations([(_, 16) for _ in split])
     durations = [_.duration() for _ in time_signatures]
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
@@ -718,7 +718,7 @@ def make_pizzicato_sixteenths(
 ):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration() for _ in time_signatures]
-    weights = abjad.durations([(6, 16), (18, 16)])
+    weights = abjad.duration.durations([(6, 16), (18, 16)])
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations)
     tuplets = rmakers.talea(
@@ -842,7 +842,7 @@ def make_rest_delimited_repeated_duration_notes(time_signatures, weight, denomin
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration() for _ in time_signatures]
     durations = [sum(durations)]
-    weights = abjad.durations([weight])
+    weights = abjad.duration.durations([weight])
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations, depth=-1)
     tuplets = rmakers.incised(

@@ -17,7 +17,7 @@ def _do_register_transition_command(argument, start_registration, stop_registrat
         registration = _make_registration(
             start_registration,
             stop_registration,
-            timespan.value_start_offset(),
+            timespan.start_offset,
             leaves_timespan,
         )
         for pleaf in plt:
@@ -244,7 +244,7 @@ def _make_time_signatures_by_section():
 
 def _make_registration(start_registration, stop_registration, offset, timespan):
     assert offset in timespan
-    fraction = (offset - timespan.value_start_offset()) / timespan.duration()
+    fraction = (offset - timespan.start_offset) / timespan.duration()
     components = []
     start_components = start_registration.components
     stop_components = stop_registration.components

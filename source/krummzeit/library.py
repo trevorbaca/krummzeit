@@ -30,7 +30,7 @@ def _make_colored_numerators(numerators, addenda):
     numerators = abjad.sequence.flatten(numerators)
     length = len(numerators)
     addenda = abjad.sequence.repeat_to_length(addenda, length)
-    pairs = zip(numerators, addenda)
+    pairs = zip(numerators, addenda, strict=True)
     numerators = [sum(_) for _ in pairs]
     return numerators
 
@@ -249,7 +249,7 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
     start_components = start_registration.components
     stop_components = stop_registration.components
     assert len(start_components) == len(stop_components)
-    pairs = zip(start_components, stop_components)
+    pairs = zip(start_components, stop_components, strict=True)
     for start_component, stop_component in pairs:
         start_pitch = start_component.source_pitch_range.start_pitch()
         start_pitch = abjad.NumberedPitch(start_pitch)

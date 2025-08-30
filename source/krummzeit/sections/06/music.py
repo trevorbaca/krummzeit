@@ -324,7 +324,7 @@ def ob_cl_12_24(cache):
     ob_pitches = baca.sequence.repeat_by(ob_pitches.split(), [3, 2, 4], cyclic=True)
     cl_pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
     cl_pitches = baca.sequence.repeat_by(cl_pitches.split(), [3, 2, 4], cyclic=True)
-    for name, pitches in zip(["ob", "cl"], [ob_pitches, cl_pitches]):
+    for name, pitches in zip(["ob", "cl"], [ob_pitches, cl_pitches], strict=True):
         with baca.scope(cache[name].get(12, 21)) as o:
             baca.pitches(o, pitches)
             library.color_fingerings(o.pheads())

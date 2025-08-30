@@ -430,7 +430,7 @@ def strings(cache):
                 "molto flautando => molto gridato",
                 baca.tweak.staff_padding(6),
             )
-    for name, pitch in zip(["vn", "va", "vc"], ["Aqs3", "Bb2", "A2"]):
+    for name, pitch in zip(["vn", "va", "vc"], ["Aqs3", "Bb2", "A2"], strict=True):
         m = cache[name]
         with baca.scope(m[17]) as o:
             baca.dynamic(o.pleaf(0), "ff")

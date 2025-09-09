@@ -88,18 +88,18 @@ def _make_time_signatures_by_section():
         duration = sum([_.duration() for _ in time_signature_list])
         pair = (length, duration)
         pairs.append(pair)
-    assert pairs[0] == (31, abjad.ValueDuration(136, 4))
-    assert pairs[1] == (22, abjad.ValueDuration(177, 8))
-    assert pairs[2] == (11, abjad.ValueDuration(81, 8))
-    assert pairs[3] == (13, abjad.ValueDuration(46, 4))
-    assert pairs[4] == (35, abjad.ValueDuration(263, 8))
-    assert pairs[5] == (22, abjad.ValueDuration(181, 8))
-    assert pairs[6] == (11, abjad.ValueDuration(87, 8))
-    assert pairs[7] == (10, abjad.ValueDuration(95, 8))
-    assert pairs[8] == (34, abjad.ValueDuration(131, 4))
-    assert pairs[9] == (24, abjad.ValueDuration(179, 8))
-    assert pairs[10] == (12, abjad.ValueDuration(87, 8))
-    assert pairs[11] == (11, abjad.ValueDuration(40, 4))
+    assert pairs[0] == (31, abjad.Duration(136, 4))
+    assert pairs[1] == (22, abjad.Duration(177, 8))
+    assert pairs[2] == (11, abjad.Duration(81, 8))
+    assert pairs[3] == (13, abjad.Duration(46, 4))
+    assert pairs[4] == (35, abjad.Duration(263, 8))
+    assert pairs[5] == (22, abjad.Duration(181, 8))
+    assert pairs[6] == (11, abjad.Duration(87, 8))
+    assert pairs[7] == (10, abjad.Duration(95, 8))
+    assert pairs[8] == (34, abjad.Duration(131, 4))
+    assert pairs[9] == (24, abjad.Duration(179, 8))
+    assert pairs[10] == (12, abjad.Duration(87, 8))
+    assert pairs[11] == (11, abjad.Duration(40, 4))
     section_time_signatures = dict()
     # B
     lists = time_signature_inventory[:3]
@@ -585,7 +585,7 @@ def make_incise_chain_b_rhythm(time_signatures):
 def make_left_remainder_quarters(time_signatures, *, force_rest_lts=None):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [sum([_.duration() for _ in time_signatures])]
-    weights = [abjad.ValueDuration(1, 4)]
+    weights = [abjad.Duration(1, 4)]
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     if durations != without_overhang:
@@ -632,7 +632,7 @@ def make_opening_triplets(
 ):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = [sum([_.duration() for _ in time_signatures])]
-    weights = [abjad.ValueDuration(1, 4)]
+    weights = [abjad.Duration(1, 4)]
     without_overhang = abjad.sequence.split(durations, weights, cyclic=True)
     durations = abjad.sequence.split(durations, weights, cyclic=True, overhang=True)
     durations = abjad.sequence.flatten(durations, depth=-1)
@@ -778,7 +778,7 @@ def make_polyphony_quarters(durations, tag, time_signatures):
     durations = abjad.sequence.flatten(durations, depth=-1)
     components = rmakers.note(
         durations,
-        spelling=rmakers.Spelling(forbidden_note_duration=abjad.ValueDuration(1, 2)),
+        spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2)),
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
@@ -1125,15 +1125,15 @@ def split_by_rounded_ratio(pair, proportion):
     assert isinstance(proportion, tuple)
     numerator, denominator = pair
     numerators = abjad.math.partition_integer_by_proportion(numerator, proportion)
-    weights = [abjad.ValueDuration(_, denominator) for _ in numerators]
-    lists = abjad.sequence.split([abjad.ValueDuration(*pair)], weights)
+    weights = [abjad.Duration(_, denominator) for _ in numerators]
+    lists = abjad.sequence.split([abjad.Duration(*pair)], weights)
     return lists
 
 
 def split_polyphony_time_signatures(rotation, time_signatures, weights):
     durations = []
     weights = abjad.duration.value_durations(weights)
-    remainder_fuse_threshold = abjad.ValueDuration(1, 8)
+    remainder_fuse_threshold = abjad.Duration(1, 8)
     for i, time_signature in enumerate(time_signatures):
         duration = time_signature.duration()
         weights_ = abjad.sequence.rotate(weights, n=i * rotation)
@@ -1173,27 +1173,27 @@ instruments = {
 
 
 metronome_marks = {
-    "36": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 36),
-    "45": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 45),
+    "36": abjad.MetronomeMark(abjad.Duration(1, 4), 36),
+    "45": abjad.MetronomeMark(abjad.Duration(1, 4), 45),
     "67.5": abjad.MetronomeMark(
-        reference_duration=abjad.ValueDuration(1, 4),
+        reference_duration=abjad.Duration(1, 4),
         units_per_minute=fractions.Fraction(135, 2),
         custom_markup=abjad.Markup(
             r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
         ),
     ),
-    "72": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 72),
+    "72": abjad.MetronomeMark(abjad.Duration(1, 4), 72),
     "72/108": abjad.MetronomeMark(
-        reference_duration=abjad.ValueDuration(1, 4),
+        reference_duration=abjad.Duration(1, 4),
         units_per_minute=108,
         custom_markup=abjad.Markup(
             r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
         ),
     ),
-    "90": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 90),
-    "108": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 108),
-    "135": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 135),
-    "144": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 144),
+    "90": abjad.MetronomeMark(abjad.Duration(1, 4), 90),
+    "108": abjad.MetronomeMark(abjad.Duration(1, 4), 108),
+    "135": abjad.MetronomeMark(abjad.Duration(1, 4), 135),
+    "144": abjad.MetronomeMark(abjad.Duration(1, 4), 144),
     # slower
     "4:5(4)=4": abjad.MetricModulation(
         left_rhythm=abjad.Tuplet("4:5", "c4"),

@@ -288,7 +288,7 @@ def ob(m):
         library.register_wide(o, 5)
         library.color_fingerings(o.pheads())
         for plt in baca.select.plts(o):
-            if abjad.get.duration(plt, preprolated=True) >= abjad.ValueDuration(1, 4):
+            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration(1, 4):
                 baca.spanners.trill(plt, rleak=True)
         baca.dynamic(o.pleaf(0), "p")
     with baca.scope(m.get(1, 21)) as o:

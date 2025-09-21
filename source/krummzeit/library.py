@@ -524,12 +524,12 @@ def make_incise_attacks(time_signatures):
     durations = abjad.duration.durations(time_signatures)
     tuplets = rmakers.incised(
         durations,
+        talea_denominator=16,
         fill_with_rests=True,
         prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
         prefix_counts=[3, 1, 1, 3],
         suffix_talea=[0, 0, 1, -3, 0],
         suffix_counts=[1, 1, 2, 1],
-        talea_denominator=16,
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -544,12 +544,12 @@ def make_incise_chain_rhythm(time_signatures):
     durations = abjad.duration.durations(time_signatures)
     tuplets = rmakers.incised(
         durations,
+        talea_denominator=16,
         fill_with_rests=True,
         prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
         prefix_counts=[2, 2, 2, 1],
         suffix_talea=[0, 2, -2, 0, 2, -2],
         suffix_counts=[1, 2, 1, 2],
-        talea_denominator=16,
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -568,12 +568,12 @@ def make_incise_chain_b_rhythm(time_signatures):
     durations = abjad.duration.durations(time_signatures)
     tuplets = rmakers.incised(
         durations,
+        talea_denominator=16,
         fill_with_rests=True,
         prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
         prefix_counts=[3, 2, 2],
         suffix_talea=[2, -2, 3, -1, 0, 2, -2],
         suffix_counts=[2, 2, 1, 2],
-        talea_denominator=16,
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -847,9 +847,9 @@ def make_rest_delimited_repeated_duration_notes(time_signatures, weight, denomin
     durations = abjad.sequence.flatten(durations, depth=-1)
     tuplets = rmakers.incised(
         durations,
+        talea_denominator=denominator,
         suffix_talea=[-1],
         suffix_counts=[1],
-        talea_denominator=denominator,
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -908,12 +908,12 @@ def make_single_cluster_piano_rhythm(time_signatures):
     durations = abjad.duration.durations(time_signatures)
     tuplets = rmakers.incised(
         durations,
+        talea_denominator=16,
         fill_with_rests=True,
         prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
         prefix_counts=[3, 1, 1, 3],
         suffix_talea=[0, 0, 1, -3, 0],
         suffix_counts=[1, 1, 2, 1],
-        talea_denominator=16,
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)

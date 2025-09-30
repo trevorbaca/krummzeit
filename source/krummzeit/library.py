@@ -73,6 +73,7 @@ def _make_numerators():
 def _make_time_signatures_by_section():
     weights = (3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1)
     numerator_lists = _make_numerators()
+    numerator_lists = [float(_) for _ in numerator_lists]
     numerator_lists = abjad.sequence.partition_by_proportion_of_weights(
         numerator_lists, weights
     )
@@ -279,9 +280,11 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
 
 def _numerator_to_time_signature(numerator):
     if abjad.math.is_integer_equivalent_number(numerator):
-        time_signature = abjad.TimeSignature((numerator, 4))
+        pair = (int(numerator), 4)
+        time_signature = abjad.TimeSignature(pair)
     else:
-        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
+        pair = (int(2 * numerator), 8)
+        time_signature = abjad.TimeSignature(pair)
     return time_signature
 
 

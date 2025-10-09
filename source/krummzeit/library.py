@@ -370,7 +370,8 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
     rmakers.beam(leaf_lists, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
-    rmakers.reduce_multiplier(voice)
+    tuplets = abjad.select.tuplets(voice)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -532,7 +533,8 @@ def make_hypermeter_tuplets(
     rmakers.trivialize(voice)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
-    rmakers.reduce_multiplier(voice)
+    tuplets = abjad.select.tuplets(voice)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -652,7 +654,8 @@ def make_oboe_trill_rhythm(time_signatures):
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
-    rmakers.reduce_multiplier(voice)
+    tuplets = abjad.select.tuplets(voice)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -950,7 +953,8 @@ def make_silver_points_rhythm(
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
-    rmakers.reduce_multiplier(voice)
+    tuplets = abjad.select.tuplets(voice)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -989,7 +993,8 @@ def make_single_division_tuplets(time_signatures, ratios):
     rmakers.rewrite_dots(voice)
     tuplets = abjad.select.tuplets(voice)
     rmakers.force_augmentation(tuplets)
-    rmakers.reduce_multiplier(voice)
+    tuplets = abjad.select.tuplets(voice)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
 

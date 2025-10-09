@@ -363,7 +363,7 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
         leaves = abjad.select.leaves(tuplets)
         rmakers.force_rest(leaves)
-    rmakers.rewrite_dots(voice, tag=tag)
+    rmakers.respell_tuplets_without_dots(tuplets, tag=tag)
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     leaf_lists = [_[:] for _ in tuplets]
@@ -526,7 +526,7 @@ def make_hypermeter_tuplets(
     tuplets = abjad.select.tuplets(voice)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.rewrite_dots(voice, tag=tag)
+    rmakers.respell_tuplets_without_dots(tuplets, tag=tag)
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.force_augmentation(tuplets)
@@ -747,7 +747,7 @@ def make_pizzicato_rhythm(time_signatures, *, force_rest_tuplets=None, split=(6,
     tuplets = abjad.select.tuplets(voice)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.rewrite_dots(voice, tag=tag)
+    rmakers.respell_tuplets_without_dots(tuplets, tag=tag)
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
@@ -949,7 +949,7 @@ def make_silver_points_rhythm(
     tuplets = abjad.select.tuplets(voice)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.rewrite_dots(voice, tag=tag)
+    rmakers.respell_tuplets_without_dots(tuplets, tag=tag)
     rmakers.rewrite_rest_filled(voice, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
@@ -990,8 +990,8 @@ def make_single_division_tuplets(time_signatures, ratios):
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.rewrite_dots(voice)
     tuplets = abjad.select.tuplets(voice)
+    rmakers.respell_tuplets_without_dots(tuplets)
     rmakers.force_augmentation(tuplets)
     tuplets = abjad.select.tuplets(voice)
     rmakers.reduce_tuplet_ratios(tuplets)

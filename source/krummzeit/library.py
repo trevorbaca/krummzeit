@@ -530,7 +530,7 @@ def make_hypermeter_tuplets(
     rmakers.rewrite_rest_filled_tuplets(tuplets, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.force_augmentation(tuplets)
-    rmakers.trivialize(voice)
+    rmakers.trivialize_tuplets(tuplets)
     tuplets = abjad.select.tuplets(voice)
     rmakers.extract_trivial(tuplets)
     tuplets = abjad.select.tuplets(voice)
@@ -783,8 +783,8 @@ def make_pizzicato_sixteenths(
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
     rmakers.rewrite_rest_filled_tuplets(tuplets, tag=tag)
-    rmakers.trivialize(voice)
     tuplets = abjad.select.tuplets(voice)
+    rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
@@ -804,8 +804,8 @@ def make_polyphony_even_divisions(
     tuplets = abjad.select.get(tuplets, ties)
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
     rmakers.tie(pleaves, tag=tag)
-    rmakers.trivialize(voice)
     tuplets = abjad.select.tuplets(voice)
+    rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
@@ -817,7 +817,7 @@ def make_polyphony_eighths(durations, tag, time_signatures):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.trivialize(voice)
+    rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial(tuplets)
     music = abjad.mutate.eject_contents(voice)
     return music
@@ -1006,7 +1006,7 @@ def make_sponge_rhythm(time_signatures):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.trivialize(voice)
+    rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial(tuplets)
     leaves = abjad.select.leaves(voice)
     rmakers.force_repeat_tie(leaves)

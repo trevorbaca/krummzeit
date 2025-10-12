@@ -831,7 +831,8 @@ def make_polyphony_quarters(durations, tag, time_signatures):
         tag=tag,
     )
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
-    rmakers.untie(voice)
+    leaves = abjad.select.leaves(voice)
+    rmakers.untie_leaves(leaves)
     plts = baca.select.plts(voice)
     rmakers.beam(plts, tag=tag)
     music = abjad.mutate.eject_contents(voice)

@@ -263,7 +263,7 @@ def VA(voice, time_signatures):
         force_rest_tuplets=([1, 2, 3], 6),
     )
     voice.extend(music)
-    rmakers.untie(abjad.select.leaf(music, -12))
+    rmakers.untie_leaves([abjad.select.leaf(music, -12)])
     music = library.make_pizzicato_sixteenths(
         time_signatures(57, 71),
         force_rest_tuplets=([2, 3], 6),

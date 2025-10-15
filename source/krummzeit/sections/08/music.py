@@ -138,7 +138,7 @@ def PERC(voice, time_signatures):
         do_not_rewrite_meter=True,
     )
     voice.extend(music)
-    rmakers.force_rest(baca.select.lt(music, -1), tag=abjad.Tag("PERC()"))
+    rmakers.replace_leaves_with_rests(baca.select.lt(music, -1), tag=abjad.Tag("PERC()"))
     music = baca.make_mmrests(time_signatures(8, 24))
     voice.extend(music)
 

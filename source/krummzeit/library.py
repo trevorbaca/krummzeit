@@ -1010,7 +1010,7 @@ def make_sponge_rhythm(time_signatures):
     rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial_tuplets(tuplets)
     leaves = abjad.select.leaves(voice)
-    rmakers.force_repeat_tie(leaves)
+    rmakers.replace_ties_with_repeat_ties(leaves)
     music = abjad.mutate.eject_contents(voice)
     return music
 

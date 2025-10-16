@@ -357,7 +357,7 @@ def make_color_tuplets(time_signatures, *, force_rest_tuplets=None, rotation=0):
     ]
     lists = [_ for _ in lists if len(_) == 2]
     leaves = [abjad.select.leaf(_, 0) for _ in lists]
-    rmakers.tie(leaves, tag=tag)
+    rmakers.attach_ties_to_pleaves(leaves, tag=tag)
     if force_rest_tuplets is not None:
         tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
@@ -385,7 +385,7 @@ def make_detached_triplets(time_signatures):
     tuplets_ = abjad.select.tuplets(tuplets)[:-1]
     tuplets_ = abjad.select.get(tuplets_, [0], 2)
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets_]
-    rmakers.tie(pleaves, tag=tag)
+    rmakers.attach_ties_to_pleaves(pleaves, tag=tag)
     return tuplets
 
 
@@ -491,7 +491,7 @@ def make_glissando_rhythm(
     tuplets = abjad.select.tuplets(voice)[:-1]
     tuplets = abjad.select.get(tuplets, tie_across_divisions)
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
-    rmakers.tie(pleaves, tag=tag)
+    rmakers.attach_ties_to_pleaves(pleaves, tag=tag)
     if force_rest_tuplets is not None:
         tuplets = abjad.select.tuplets(voice)
         tuplets = abjad.select.get(tuplets, force_rest_tuplets)
@@ -718,7 +718,7 @@ def make_piano_harmonics_rhythm(
         ]
         lists = [_ for _ in lists if len(_) == 2]
         leaves = [abjad.select.leaf(_, 0) for _ in lists]
-        rmakers.tie(leaves, tag=tag)
+        rmakers.attach_ties_to_pleaves(leaves, tag=tag)
     plts = baca.select.plts(voice)
     rmakers.beam_runs(plts)
     music = abjad.mutate.eject_contents(voice)
@@ -803,7 +803,7 @@ def make_polyphony_even_divisions(
     tuplets = abjad.select.tuplets(voice)[:-1]
     tuplets = abjad.select.get(tuplets, ties)
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
-    rmakers.tie(pleaves, tag=tag)
+    rmakers.attach_ties_to_pleaves(pleaves, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial_tuplets(tuplets)
@@ -832,7 +832,7 @@ def make_polyphony_quarters(durations, tag, time_signatures):
     )
     voice = rmakers.wrap_in_time_signature_staff(components, time_signatures)
     leaves = abjad.select.leaves(voice)
-    rmakers.untie_leaves(leaves)
+    rmakers.detach_ties_from_leaves(leaves)
     plts = baca.select.plts(voice)
     rmakers.beam_runs(plts, tag=tag)
     music = abjad.mutate.eject_contents(voice)
@@ -989,7 +989,7 @@ def make_single_division_tuplets(time_signatures, ratios):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     tuplets = abjad.select.tuplets(voice)[:-1]
     pleaves = [baca.select.pleaf(_, -1) for _ in tuplets]
-    rmakers.tie(pleaves, tag=tag)
+    rmakers.attach_ties_to_pleaves(pleaves, tag=tag)
     rmakers.beam_runs(leaf_lists, tag=tag)
     tuplets = abjad.select.tuplets(voice)
     rmakers.respell_tuplets_without_dots(tuplets)
